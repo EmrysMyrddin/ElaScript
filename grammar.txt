@@ -3,17 +3,17 @@ Script ::= Statement+
 
 Statement ::= Command | Parallelized
 
-Parallelized ::= split Statement+ parallelSepartor Statement+ join
+Parallelized ::= split Statement+ parallelSeparator Statement+ join
 
 Command ::= Action | Timmer
 
 Timmer ::= timer lp number* rp sequentialSeparator
 
-Action ::= Function lp ParamList rp sequentialSepartor
+Action ::= Function lp ParamList rp sequentialSeparator
 
 Function ::= letter (letter | number)*
 
-ParamList ::=   |  Param ( coma Param)*
+ParamList ::= Param ( comma Param )*
 
 Param ::= number+
 
