@@ -1,0 +1,32 @@
+//Rules
+Script ::= Statement+
+
+Statement ::= Command | Parallelized
+
+Parallelized ::= split Statement+ parallelSepartor Statement+ join
+
+Command ::= Action | Timmer
+
+Timmer ::= timer lp number* rp sequentialSeparator
+
+Action ::= Function lp ParamList rp sequentialSepartor
+
+Function ::= letter (letter | number)*
+
+ParamList ::=   |  Param ( coma Param)*
+
+Param ::= number+
+
+//Lexems
+lp ::= '('
+rp ::= ')'
+letter ::= [a-zA-Z]
+number ::= [0-9]
+timer ::= 'wait'
+sequentialSeparator ::= ';'
+parallelSeparator ::= '||'
+comma ::= ','
+split ::= '['
+join ::= ']'
+
+
