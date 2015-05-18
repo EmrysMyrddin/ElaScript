@@ -3,13 +3,9 @@ Script ::= Statement+
 
 Statement ::= Command | Parallelized
 
-Parallelized ::= split Statement+ parallelSeparator Statement+ join
+Parallelized ::= split (Statement+ parallelSeparator Statement+)+ join
 
-Command ::= Action | Timmer
-
-Timmer ::= timer lp number* rp sequentialSeparator
-
-Action ::= Function lp ParamList rp sequentialSeparator
+Command ::= Function lp ParamList rp sequentialSeparator
 
 Function ::= letter (letter | number)*
 
