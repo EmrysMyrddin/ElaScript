@@ -1,0 +1,6 @@
+[
+Action2(); Wait();
+||
+Action1(42);
+]
+Action3();
