@@ -3,26 +3,28 @@ Script ::= Statement+
 
 Statement ::= Command | Parallelized
 
-Parallelized ::= split (Statement+ parallelSeparator Statement+)+ join
+Parallelized ::= SPLIT Body JOIN
 
-Command ::= Function lp ParamList rp sequentialSeparator
+Body ::= Statement+ (PARALLELSEPARATOR Statement+)+
 
-Function ::= letter (letter | number)*
+Command ::= Function LP ParamList RP SEQUENCIALSEPARATOR
 
-ParamList ::= Param ( comma Param )*
+Function ::= LETTER (LETTER | NUMBER)*
 
-Param ::= number+
+ParamList ::= Param ( COMMA Param )*
+
+Param ::= NUMBER+
 
 //Lexems
-lp ::= '('
-rp ::= ')'
-letter ::= [a-zA-Z]
-number ::= [0-9]
-timer ::= 'wait'
-sequentialSeparator ::= ';'
-parallelSeparator ::= '||'
-comma ::= ','
-split ::= '['
-join ::= ']'
+LP ::= '('
+RP ::= ')'
+LETTER ::= [a-zA-Z]
+NUMBER ::= [0-9]
+TIMER ::= 'wait'
+SEQUENCIALSEPARATOR ::= ';'
+PARALLELSEPARATOR ::= '||'
+COMMA ::= ','
+SPLIT ::= '['
+JOIN ::= ']'
 
 
