@@ -9,11 +9,11 @@ Body ::= BodyPart (PARALLELSEPARATOR BodyPart)+
 
 BodyPart ::= Statement+
 
-Command ::= Function LP ParamList RP SEQUENCIALSEPARATOR
+Command ::= (Function | Function ParamList) SEQUENCIALSEPARATOR
 
 Function ::= LETTER (LETTER | NUMBER)*
 
-ParamList ::= Param ( COMMA Param )*
+ParamList ::= LP Param ( COMMA Param )* RP
 
 Param ::= NUMBER+
 
