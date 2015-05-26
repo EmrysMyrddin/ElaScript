@@ -5,7 +5,9 @@ Statement ::= Command | Parallelized
 
 Parallelized ::= SPLIT Body JOIN
 
-Body ::= Statement+ (PARALLELSEPARATOR Statement+)+
+Body ::= BodyPart (PARALLELSEPARATOR BodyPart)+
+
+BodyPart ::= Statement+
 
 Command ::= Function LP ParamList RP SEQUENCIALSEPARATOR
 
