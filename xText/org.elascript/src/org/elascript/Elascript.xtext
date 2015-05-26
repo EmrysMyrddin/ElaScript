@@ -1,0 +1,44 @@
+grammar org.elascript.Elascript with org.eclipse.xtext.common.Terminals
+generate elascript "http://www.elascript.org/Elascript"
+
+Script : 
+	actions+=Action*
+;
+
+Action : 
+	Command | Parallel
+;
+Parallel :
+SPLIT ParallelBody  name=JOIN
+;
+
+ParallelBody:
+	(actions+=ActionList) (PARALLEL_SEPARATOR (actions+=ActionList))+
+;
+ActionList:
+	actions+=Action+
+;
+Command :
+	 name=FUNCTION_NAME LP params=ParamList RP SEQUENTIAL_SEPARATOR
+;
+terminal FUNCTION_NAME:
+		LETTER (LETTER | NUMBER)*
+;
+ParamList:
+	params+=PARAM (COMMA  params+=PARAM)* 
+;
+PARAM :
+	INT
+;
+
+//Lexemsr
+terminal LP : '(';
+terminal RP : ')';
+terminal fragment LETTER: '$' | 'A'..'Z' | 'a'..'z' | '_';
+terminal fragment NUMBER: '0'..'9';
+terminal SEQUENTIAL_SEPARATOR : ';';
+terminal PARALLEL_SEPARATOR : '||';
+terminal COMMA : ',';
+terminal SPLIT : '[';
+terminal JOIN : ']';
+
