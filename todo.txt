@@ -1,0 +1,9 @@
+- rendre function sans parenthèse possible (aller au moins verbeux)
+- remplacer le nom des actions par des scale out, etc...
+- modifier le body avec body part
+- faire coller la grammaire avec le code (action vs statement)
+- voir l'arbre syntaxique complet au niveau d'ecplise pour XText
+- choisir le formalisme graphisme
+- opérateur d'entrée et de sortie à ne pas oublier niveau formalisme graphique
+- présenter le formalisme graphique (sous forme d'arbre syntaxique par exemple)
+pour cette ssemaine ou semaine pro (début juin)
