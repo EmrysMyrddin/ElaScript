@@ -32,13 +32,13 @@ public interface ElascriptFactory extends EFactory
   Script createScript();
 
   /**
-   * Returns a new object of class '<em>Action</em>'.
+   * Returns a new object of class '<em>Statement</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Action</em>'.
+   * @return a new object of class '<em>Statement</em>'.
    * @generated
    */
-  Action createAction();
+  Statement createStatement();
 
   /**
    * Returns a new object of class '<em>Parallel</em>'.
@@ -59,13 +59,13 @@ public interface ElascriptFactory extends EFactory
   ParallelBody createParallelBody();
 
   /**
-   * Returns a new object of class '<em>Action List</em>'.
+   * Returns a new object of class '<em>EList</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Action List</em>'.
+   * @return a new object of class '<em>EList</em>'.
    * @generated
    */
-  ActionList createActionList();
+  EList createEList();
 
   /**
    * Returns a new object of class '<em>Command</em>'.
@@ -77,13 +77,13 @@ public interface ElascriptFactory extends EFactory
   Command createCommand();
 
   /**
-   * Returns a new object of class '<em>Param List</em>'.
+   * Returns a new object of class '<em>Param</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Param List</em>'.
+   * @return a new object of class '<em>Param</em>'.
    * @generated
    */
-  ParamList createParamList();
+  Param createParam();
 
   /**
    * Returns the package supported by this factory.

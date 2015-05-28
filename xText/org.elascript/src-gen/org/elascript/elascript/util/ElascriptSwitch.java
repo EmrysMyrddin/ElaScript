@@ -79,10 +79,10 @@ public class ElascriptSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case ElascriptPackage.ACTION:
+      case ElascriptPackage.STATEMENT:
       {
-        Action action = (Action)theEObject;
-        T result = caseAction(action);
+        Statement statement = (Statement)theEObject;
+        T result = caseStatement(statement);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -90,7 +90,7 @@ public class ElascriptSwitch<T> extends Switch<T>
       {
         Parallel parallel = (Parallel)theEObject;
         T result = caseParallel(parallel);
-        if (result == null) result = caseAction(parallel);
+        if (result == null) result = caseStatement(parallel);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -99,14 +99,14 @@ public class ElascriptSwitch<T> extends Switch<T>
         ParallelBody parallelBody = (ParallelBody)theEObject;
         T result = caseParallelBody(parallelBody);
         if (result == null) result = caseParallel(parallelBody);
-        if (result == null) result = caseAction(parallelBody);
+        if (result == null) result = caseStatement(parallelBody);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case ElascriptPackage.ACTION_LIST:
+      case ElascriptPackage.ELIST:
       {
-        ActionList actionList = (ActionList)theEObject;
-        T result = caseActionList(actionList);
+        EList eList = (EList)theEObject;
+        T result = caseEList(eList);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -114,14 +114,14 @@ public class ElascriptSwitch<T> extends Switch<T>
       {
         Command command = (Command)theEObject;
         T result = caseCommand(command);
-        if (result == null) result = caseAction(command);
+        if (result == null) result = caseStatement(command);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case ElascriptPackage.PARAM_LIST:
+      case ElascriptPackage.PARAM:
       {
-        ParamList paramList = (ParamList)theEObject;
-        T result = caseParamList(paramList);
+        Param param = (Param)theEObject;
+        T result = caseParam(param);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -146,17 +146,17 @@ public class ElascriptSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Action</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Statement</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Action</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Statement</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseAction(Action object)
+  public T caseStatement(Statement object)
   {
     return null;
   }
@@ -194,17 +194,17 @@ public class ElascriptSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Action List</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>EList</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Action List</em>'.
+   * @return the result of interpreting the object as an instance of '<em>EList</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseActionList(ActionList object)
+  public T caseEList(EList object)
   {
     return null;
   }
@@ -226,17 +226,17 @@ public class ElascriptSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Param List</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Param</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Param List</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Param</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseParamList(ParamList object)
+  public T caseParam(Param object)
   {
     return null;
   }

@@ -2,6 +2,7 @@
  */
 package org.elascript.elascript;
 
+import org.eclipse.emf.common.util.EList;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,7 +21,7 @@ package org.elascript.elascript;
  * @model
  * @generated
  */
-public interface Command extends Action
+public interface Command extends Statement
 {
   /**
    * Returns the value of the '<em><b>Name</b></em>' attribute.
@@ -49,29 +50,19 @@ public interface Command extends Action
   void setName(String value);
 
   /**
-   * Returns the value of the '<em><b>Params</b></em>' containment reference.
+   * Returns the value of the '<em><b>Params</b></em>' containment reference list.
+   * The list contents are of type {@link org.elascript.elascript.Param}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Params</em>' containment reference isn't clear,
+   * If the meaning of the '<em>Params</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Params</em>' containment reference.
-   * @see #setParams(ParamList)
+   * @return the value of the '<em>Params</em>' containment reference list.
    * @see org.elascript.elascript.ElascriptPackage#getCommand_Params()
    * @model containment="true"
    * @generated
    */
-  ParamList getParams();
-
-  /**
-   * Sets the value of the '{@link org.elascript.elascript.Command#getParams <em>Params</em>}' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Params</em>' containment reference.
-   * @see #getParams()
-   * @generated
-   */
-  void setParams(ParamList value);
+  EList<Param> getParams();
 
 } // Command

@@ -16,9 +16,9 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
-import org.elascript.elascript.Action;
 import org.elascript.elascript.ElascriptPackage;
 import org.elascript.elascript.Script;
+import org.elascript.elascript.Statement;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ import org.elascript.elascript.Script;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link org.elascript.elascript.impl.ScriptImpl#getActions <em>Actions</em>}</li>
+ *   <li>{@link org.elascript.elascript.impl.ScriptImpl#getScriptStatements <em>Script Statements</em>}</li>
  * </ul>
  * </p>
  *
@@ -36,14 +36,14 @@ import org.elascript.elascript.Script;
 public class ScriptImpl extends MinimalEObjectImpl.Container implements Script
 {
   /**
-   * The cached value of the '{@link #getActions() <em>Actions</em>}' containment reference list.
+   * The cached value of the '{@link #getScriptStatements() <em>Script Statements</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getActions()
+   * @see #getScriptStatements()
    * @generated
    * @ordered
    */
-  protected EList<Action> actions;
+  protected EList<Statement> scriptStatements;
 
   /**
    * <!-- begin-user-doc -->
@@ -71,13 +71,13 @@ public class ScriptImpl extends MinimalEObjectImpl.Container implements Script
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Action> getActions()
+  public EList<Statement> getScriptStatements()
   {
-    if (actions == null)
+    if (scriptStatements == null)
     {
-      actions = new EObjectContainmentEList<Action>(Action.class, this, ElascriptPackage.SCRIPT__ACTIONS);
+      scriptStatements = new EObjectContainmentEList<Statement>(Statement.class, this, ElascriptPackage.SCRIPT__SCRIPT_STATEMENTS);
     }
-    return actions;
+    return scriptStatements;
   }
 
   /**
@@ -90,8 +90,8 @@ public class ScriptImpl extends MinimalEObjectImpl.Container implements Script
   {
     switch (featureID)
     {
-      case ElascriptPackage.SCRIPT__ACTIONS:
-        return ((InternalEList<?>)getActions()).basicRemove(otherEnd, msgs);
+      case ElascriptPackage.SCRIPT__SCRIPT_STATEMENTS:
+        return ((InternalEList<?>)getScriptStatements()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -106,8 +106,8 @@ public class ScriptImpl extends MinimalEObjectImpl.Container implements Script
   {
     switch (featureID)
     {
-      case ElascriptPackage.SCRIPT__ACTIONS:
-        return getActions();
+      case ElascriptPackage.SCRIPT__SCRIPT_STATEMENTS:
+        return getScriptStatements();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -123,9 +123,9 @@ public class ScriptImpl extends MinimalEObjectImpl.Container implements Script
   {
     switch (featureID)
     {
-      case ElascriptPackage.SCRIPT__ACTIONS:
-        getActions().clear();
-        getActions().addAll((Collection<? extends Action>)newValue);
+      case ElascriptPackage.SCRIPT__SCRIPT_STATEMENTS:
+        getScriptStatements().clear();
+        getScriptStatements().addAll((Collection<? extends Statement>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -141,8 +141,8 @@ public class ScriptImpl extends MinimalEObjectImpl.Container implements Script
   {
     switch (featureID)
     {
-      case ElascriptPackage.SCRIPT__ACTIONS:
-        getActions().clear();
+      case ElascriptPackage.SCRIPT__SCRIPT_STATEMENTS:
+        getScriptStatements().clear();
         return;
     }
     super.eUnset(featureID);
@@ -158,8 +158,8 @@ public class ScriptImpl extends MinimalEObjectImpl.Container implements Script
   {
     switch (featureID)
     {
-      case ElascriptPackage.SCRIPT__ACTIONS:
-        return actions != null && !actions.isEmpty();
+      case ElascriptPackage.SCRIPT__SCRIPT_STATEMENTS:
+        return scriptStatements != null && !scriptStatements.isEmpty();
     }
     return super.eIsSet(featureID);
   }

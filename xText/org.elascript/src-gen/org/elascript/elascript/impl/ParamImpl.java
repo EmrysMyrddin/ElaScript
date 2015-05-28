@@ -2,50 +2,57 @@
  */
 package org.elascript.elascript.impl;
 
-import java.util.Collection;
-
-import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EDataTypeEList;
-
 import org.elascript.elascript.ElascriptPackage;
-import org.elascript.elascript.ParamList;
+import org.elascript.elascript.Param;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Param List</b></em>'.
+ * An implementation of the model object '<em><b>Param</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link org.elascript.elascript.impl.ParamListImpl#getParams <em>Params</em>}</li>
+ *   <li>{@link org.elascript.elascript.impl.ParamImpl#getValue <em>Value</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class ParamListImpl extends MinimalEObjectImpl.Container implements ParamList
+public class ParamImpl extends MinimalEObjectImpl.Container implements Param
 {
   /**
-   * The cached value of the '{@link #getParams() <em>Params</em>}' attribute list.
+   * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getParams()
+   * @see #getValue()
    * @generated
    * @ordered
    */
-  protected EList<String> params;
+  protected static final int VALUE_EDEFAULT = 0;
+
+  /**
+   * The cached value of the '{@link #getValue() <em>Value</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getValue()
+   * @generated
+   * @ordered
+   */
+  protected int value = VALUE_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected ParamListImpl()
+  protected ParamImpl()
   {
     super();
   }
@@ -58,7 +65,7 @@ public class ParamListImpl extends MinimalEObjectImpl.Container implements Param
   @Override
   protected EClass eStaticClass()
   {
-    return ElascriptPackage.Literals.PARAM_LIST;
+    return ElascriptPackage.Literals.PARAM;
   }
 
   /**
@@ -66,13 +73,22 @@ public class ParamListImpl extends MinimalEObjectImpl.Container implements Param
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<String> getParams()
+  public int getValue()
   {
-    if (params == null)
-    {
-      params = new EDataTypeEList<String>(String.class, this, ElascriptPackage.PARAM_LIST__PARAMS);
-    }
-    return params;
+    return value;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setValue(int newValue)
+  {
+    int oldValue = value;
+    value = newValue;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, ElascriptPackage.PARAM__VALUE, oldValue, value));
   }
 
   /**
@@ -85,8 +101,8 @@ public class ParamListImpl extends MinimalEObjectImpl.Container implements Param
   {
     switch (featureID)
     {
-      case ElascriptPackage.PARAM_LIST__PARAMS:
-        return getParams();
+      case ElascriptPackage.PARAM__VALUE:
+        return getValue();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -96,15 +112,13 @@ public class ParamListImpl extends MinimalEObjectImpl.Container implements Param
    * <!-- end-user-doc -->
    * @generated
    */
-  @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
     switch (featureID)
     {
-      case ElascriptPackage.PARAM_LIST__PARAMS:
-        getParams().clear();
-        getParams().addAll((Collection<? extends String>)newValue);
+      case ElascriptPackage.PARAM__VALUE:
+        setValue((Integer)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -120,8 +134,8 @@ public class ParamListImpl extends MinimalEObjectImpl.Container implements Param
   {
     switch (featureID)
     {
-      case ElascriptPackage.PARAM_LIST__PARAMS:
-        getParams().clear();
+      case ElascriptPackage.PARAM__VALUE:
+        setValue(VALUE_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -137,8 +151,8 @@ public class ParamListImpl extends MinimalEObjectImpl.Container implements Param
   {
     switch (featureID)
     {
-      case ElascriptPackage.PARAM_LIST__PARAMS:
-        return params != null && !params.isEmpty();
+      case ElascriptPackage.PARAM__VALUE:
+        return value != VALUE_EDEFAULT;
     }
     return super.eIsSet(featureID);
   }
@@ -154,10 +168,10 @@ public class ParamListImpl extends MinimalEObjectImpl.Container implements Param
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (params: ");
-    result.append(params);
+    result.append(" (value: ");
+    result.append(value);
     result.append(')');
     return result.toString();
   }
 
-} //ParamListImpl
+} //ParamImpl

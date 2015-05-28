@@ -13,7 +13,7 @@ import org.eclipse.emf.common.util.EList;
  * The following features are supported:
  * <ul>
  *   <li>{@link org.elascript.elascript.ParallelBody#getName <em>Name</em>}</li>
- *   <li>{@link org.elascript.elascript.ParallelBody#getActions <em>Actions</em>}</li>
+ *   <li>{@link org.elascript.elascript.ParallelBody#getStatements <em>Statements</em>}</li>
  * </ul>
  * </p>
  *
@@ -50,19 +50,19 @@ public interface ParallelBody extends Parallel
   void setName(String value);
 
   /**
-   * Returns the value of the '<em><b>Actions</b></em>' containment reference list.
-   * The list contents are of type {@link org.elascript.elascript.ActionList}.
+   * Returns the value of the '<em><b>Statements</b></em>' containment reference list.
+   * The list contents are of type {@link org.elascript.elascript.EList}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Actions</em>' containment reference list isn't clear,
+   * If the meaning of the '<em>Statements</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Actions</em>' containment reference list.
-   * @see org.elascript.elascript.ElascriptPackage#getParallelBody_Actions()
+   * @return the value of the '<em>Statements</em>' containment reference list.
+   * @see org.elascript.elascript.ElascriptPackage#getParallelBody_Statements()
    * @model containment="true"
    * @generated
    */
-  EList<ActionList> getActions();
+  EList<org.elascript.elascript.EList> getStatements();
 
 } // ParallelBody

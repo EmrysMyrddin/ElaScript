@@ -65,12 +65,12 @@ public class ElascriptFactoryImpl extends EFactoryImpl implements ElascriptFacto
     switch (eClass.getClassifierID())
     {
       case ElascriptPackage.SCRIPT: return createScript();
-      case ElascriptPackage.ACTION: return createAction();
+      case ElascriptPackage.STATEMENT: return createStatement();
       case ElascriptPackage.PARALLEL: return createParallel();
       case ElascriptPackage.PARALLEL_BODY: return createParallelBody();
-      case ElascriptPackage.ACTION_LIST: return createActionList();
+      case ElascriptPackage.ELIST: return createEList();
       case ElascriptPackage.COMMAND: return createCommand();
-      case ElascriptPackage.PARAM_LIST: return createParamList();
+      case ElascriptPackage.PARAM: return createParam();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -92,10 +92,10 @@ public class ElascriptFactoryImpl extends EFactoryImpl implements ElascriptFacto
    * <!-- end-user-doc -->
    * @generated
    */
-  public Action createAction()
+  public Statement createStatement()
   {
-    ActionImpl action = new ActionImpl();
-    return action;
+    StatementImpl statement = new StatementImpl();
+    return statement;
   }
 
   /**
@@ -125,10 +125,10 @@ public class ElascriptFactoryImpl extends EFactoryImpl implements ElascriptFacto
    * <!-- end-user-doc -->
    * @generated
    */
-  public ActionList createActionList()
+  public EList createEList()
   {
-    ActionListImpl actionList = new ActionListImpl();
-    return actionList;
+    EListImpl eList = new EListImpl();
+    return eList;
   }
 
   /**
@@ -147,10 +147,10 @@ public class ElascriptFactoryImpl extends EFactoryImpl implements ElascriptFacto
    * <!-- end-user-doc -->
    * @generated
    */
-  public ParamList createParamList()
+  public Param createParam()
   {
-    ParamListImpl paramList = new ParamListImpl();
-    return paramList;
+    ParamImpl param = new ParamImpl();
+    return param;
   }
 
   /**

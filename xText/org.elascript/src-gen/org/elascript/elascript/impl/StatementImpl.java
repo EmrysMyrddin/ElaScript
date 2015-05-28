@@ -6,26 +6,26 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.elascript.elascript.Action;
 import org.elascript.elascript.ElascriptPackage;
+import org.elascript.elascript.Statement;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Action</b></em>'.
+ * An implementation of the model object '<em><b>Statement</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * </p>
  *
  * @generated
  */
-public class ActionImpl extends MinimalEObjectImpl.Container implements Action
+public class StatementImpl extends MinimalEObjectImpl.Container implements Statement
 {
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected ActionImpl()
+  protected StatementImpl()
   {
     super();
   }
@@ -38,7 +38,7 @@ public class ActionImpl extends MinimalEObjectImpl.Container implements Action
   @Override
   protected EClass eStaticClass()
   {
-    return ElascriptPackage.Literals.ACTION;
+    return ElascriptPackage.Literals.STATEMENT;
   }
 
-} //ActionImpl
+} //StatementImpl

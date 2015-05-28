@@ -1,11 +1,11 @@
 grammar org.elascript.Elascript with org.eclipse.xtext.common.Terminals
 generate elascript "http://www.elascript.org/Elascript"
 
-Script : 
-	actions+=Action*
+Script : 	
+	(scriptStatements+=Statement)*
 ;
 
-Action : 
+Statement :
 	Command | Parallel
 ;
 Parallel :
@@ -13,31 +13,28 @@ SPLIT ParallelBody  name=JOIN
 ;
 
 ParallelBody:
-	(actions+=ActionList) (PARALLEL_SEPARATOR (actions+=ActionList))+
+(statements+=StatementList) (PARALLEL_SEPARATOR (statements+=StatementList))+
 ;
-ActionList:
-	actions+=Action+
+StatementList returns EList:
+	statements+=Statement+
 ;
-Command :
-	 name=FUNCTION_NAME LP params=ParamList RP SEQUENTIAL_SEPARATOR
+Command returns Command:
+	 name=FUNCTION_NAME LP params+=Param (COMMA  params+=Param)*  RP SEQUENTIAL_SEPARATOR
 ;
 terminal FUNCTION_NAME:
 		LETTER (LETTER | NUMBER)*
 ;
-ParamList:
-	params+=PARAM (COMMA  params+=PARAM)* 
+Param returns Param:
+	value=INT
 ;
-PARAM :
-	INT
-;
-
-//Lexemsr
+terminal PARALLEL_SEPARATOR : '||';
+//Lexems
 terminal LP : '(';
 terminal RP : ')';
 terminal fragment LETTER: '$' | 'A'..'Z' | 'a'..'z' | '_';
 terminal fragment NUMBER: '0'..'9';
 terminal SEQUENTIAL_SEPARATOR : ';';
-terminal PARALLEL_SEPARATOR : '||';
+
 terminal COMMA : ',';
 terminal SPLIT : '[';
 terminal JOIN : ']';
