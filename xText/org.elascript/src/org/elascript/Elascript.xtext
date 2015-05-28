@@ -9,22 +9,16 @@ Statement :
 	Command | Parallel
 ;
 Parallel :
-SPLIT ParallelBody  name=JOIN
+	 SPLIT (statements+=StatementList) (PARALLEL_SEPARATOR (statements+=StatementList))+  JOIN
 ;
 
-ParallelBody:
-(statements+=StatementList) (PARALLEL_SEPARATOR (statements+=StatementList))+
-;
 StatementList returns EList:
 	statements+=Statement+
 ;
-Command returns Command:
-	 name=FUNCTION_NAME LP params+=Param (COMMA  params+=Param)*  RP SEQUENTIAL_SEPARATOR
+Command:
+	 name=ID LP params+=Param (COMMA  params+=Param)*  RP SEQUENTIAL_SEPARATOR
 ;
-terminal FUNCTION_NAME:
-		LETTER (LETTER | NUMBER)*
-;
-Param returns Param:
+Param :
 	value=INT
 ;
 terminal PARALLEL_SEPARATOR : '||';
