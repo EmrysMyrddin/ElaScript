@@ -365,8 +365,8 @@
         </data>
       </ownedAnnotationEntries>
       <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_0xBvsAUVEeW-E_UyI4zSQQ" name="]" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="elascript:ParallelBody" href="example.elascript#//@scriptStatements.0"/>
-        <semanticElements xmi:type="elascript:ParallelBody" href="example.elascript#//@scriptStatements.0"/>
+        <target xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.0"/>
+        <semanticElements xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.0"/>
         <ownedStyle xmi:type="diagram:Square" xmi:id="_0xK5oAUVEeW-E_UyI4zSQQ">
           <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_0xK5oQUVEeW-E_UyI4zSQQ"/>
           <description xmi:type="style:SquareDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelBody']/@style"/>
@@ -376,8 +376,8 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelBody']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_0xMHwAUVEeW-E_UyI4zSQQ" name="]" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="elascript:ParallelBody" href="example.elascript#//@scriptStatements.1"/>
-        <semanticElements xmi:type="elascript:ParallelBody" href="example.elascript#//@scriptStatements.1"/>
+        <target xmi:type="elascript:Parallel" href="example.elascript#//@scriptStatements.1"/>
+        <semanticElements xmi:type="elascript:Parallel" href="example.elascript#//@scriptStatements.1"/>
         <ownedStyle xmi:type="diagram:Square" xmi:id="_0xMu0AUVEeW-E_UyI4zSQQ">
           <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_0xMu0QUVEeW-E_UyI4zSQQ"/>
           <description xmi:type="style:SquareDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelBody']/@style"/>
@@ -387,8 +387,8 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelBody']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_0xNV4AUVEeW-E_UyI4zSQQ" name="]" tooltipText="invalid" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="elascript:ParallelBody" href="example.elascript#//@scriptStatements.0"/>
-        <semanticElements xmi:type="elascript:ParallelBody" href="example.elascript#//@scriptStatements.0"/>
+        <target xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.0"/>
+        <semanticElements xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.0"/>
         <ownedStyle xmi:type="diagram:Dot" xmi:id="_00EcoAUVEeW-E_UyI4zSQQ">
           <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_00EcoQUVEeW-E_UyI4zSQQ"/>
           <description xmi:type="style:DotDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']/@style"/>
@@ -442,8 +442,8 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_00YlsAUVEeW-E_UyI4zSQQ" name="]" tooltipText="invalid" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="elascript:ParallelBody" href="example.elascript#//@scriptStatements.1"/>
-        <semanticElements xmi:type="elascript:ParallelBody" href="example.elascript#//@scriptStatements.1"/>
+        <target xmi:type="elascript:Parallel" href="example.elascript#//@scriptStatements.1"/>
+        <semanticElements xmi:type="elascript:Parallel" href="example.elascript#//@scriptStatements.1"/>
         <ownedStyle xmi:type="diagram:Dot" xmi:id="_00bB8AUVEeW-E_UyI4zSQQ">
           <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_00bB8QUVEeW-E_UyI4zSQQ"/>
           <description xmi:type="style:DotDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']/@style"/>
@@ -510,272 +510,74 @@
     <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_egYLkAUqEeWoD-XJoECcGA" name="Example Diagram">
       <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_ehm6oAUqEeWoD-XJoECcGA" source="GMF_DIAGRAMS">
         <data xmi:type="notation:Diagram" xmi:id="_ehm6oQUqEeWoD-XJoECcGA" type="Sirius" element="_egYLkAUqEeWoD-XJoECcGA" measurementUnit="Pixel">
-          <children xmi:type="notation:Node" xmi:id="_eiE0sAUqEeWoD-XJoECcGA" type="2001" element="_egYLkQUqEeWoD-XJoECcGA">
-            <children xmi:type="notation:Node" xmi:id="_eiN-oAUqEeWoD-XJoECcGA" type="5002">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_eiN-oQUqEeWoD-XJoECcGA" x="31"/>
+          <children xmi:type="notation:Node" xmi:id="_fe_AjwU4EeWVNdY_mROS1w" type="2001" element="_fe_AgAU4EeWVNdY_mROS1w">
+            <children xmi:type="notation:Node" xmi:id="_fe_AkgU4EeWVNdY_mROS1w" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_fe_AkwU4EeWVNdY_mROS1w" x="31"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_eig5oQUqEeWoD-XJoECcGA" type="3003" element="_egYLkgUqEeWoD-XJoECcGA">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_eig5ogUqEeWoD-XJoECcGA" fontName="Segoe UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eig5owUqEeWoD-XJoECcGA"/>
+            <children xmi:type="notation:Node" xmi:id="_fe_AngU4EeWVNdY_mROS1w" type="3002" element="_fe_AgQU4EeWVNdY_mROS1w">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_fe_AnwU4EeWVNdY_mROS1w" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fe_AoAU4EeWVNdY_mROS1w"/>
             </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_eiE0sQUqEeWoD-XJoECcGA" fontName="Segoe UI" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eiE0sgUqEeWoD-XJoECcGA" width="30" height="30"/>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_fe_AkAU4EeWVNdY_mROS1w" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fe_AkQU4EeWVNdY_mROS1w" width="30" height="30"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_eiXvoAUqEeWoD-XJoECcGA" type="2001" element="_egYLlgUqEeWoD-XJoECcGA">
-            <children xmi:type="notation:Node" xmi:id="_eiXvowUqEeWoD-XJoECcGA" type="5002">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_eiXvpAUqEeWoD-XJoECcGA" x="31"/>
+          <children xmi:type="notation:Node" xmi:id="_fe_AlAU4EeWVNdY_mROS1w" type="2001" element="_fe_AhQU4EeWVNdY_mROS1w">
+            <children xmi:type="notation:Node" xmi:id="_fe_AlwU4EeWVNdY_mROS1w" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_fe_AmAU4EeWVNdY_mROS1w" x="31"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_eig5pAUqEeWoD-XJoECcGA" type="3003" element="_egYLlwUqEeWoD-XJoECcGA">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_eig5pQUqEeWoD-XJoECcGA" fontName="Segoe UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eig5pgUqEeWoD-XJoECcGA"/>
+            <children xmi:type="notation:Node" xmi:id="_fe_AoQU4EeWVNdY_mROS1w" type="3002" element="_fe_AhgU4EeWVNdY_mROS1w">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_fe_AogU4EeWVNdY_mROS1w" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fe_AowU4EeWVNdY_mROS1w"/>
             </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_eiXvoQUqEeWoD-XJoECcGA" fontName="Segoe UI" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eiXvogUqEeWoD-XJoECcGA" x="90" width="30" height="30"/>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_fe_AlQU4EeWVNdY_mROS1w" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fe_AlgU4EeWVNdY_mROS1w" x="90" width="30" height="30"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_eiXvpQUqEeWoD-XJoECcGA" type="2001" element="_egYLmwUqEeWoD-XJoECcGA">
-            <children xmi:type="notation:Node" xmi:id="_eiXvqAUqEeWoD-XJoECcGA" type="5002">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_eiXvqQUqEeWoD-XJoECcGA" x="31"/>
+          <children xmi:type="notation:Node" xmi:id="_fe_AmQU4EeWVNdY_mROS1w" type="2001" element="_fe_AigU4EeWVNdY_mROS1w">
+            <children xmi:type="notation:Node" xmi:id="_fe_AnAU4EeWVNdY_mROS1w" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_fe_AnQU4EeWVNdY_mROS1w" x="31"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_eig5pwUqEeWoD-XJoECcGA" type="3002" element="_egYLnAUqEeWoD-XJoECcGA">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_eig5qAUqEeWoD-XJoECcGA" fontName="Segoe UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eig5qQUqEeWoD-XJoECcGA"/>
+            <children xmi:type="notation:Node" xmi:id="_fe_ApAU4EeWVNdY_mROS1w" type="3002" element="_fe_AiwU4EeWVNdY_mROS1w">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_fe_ApQU4EeWVNdY_mROS1w" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fe_ApgU4EeWVNdY_mROS1w"/>
             </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_eiXvpgUqEeWoD-XJoECcGA" fontName="Segoe UI" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eiXvpwUqEeWoD-XJoECcGA" x="180" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_eiXvqgUqEeWoD-XJoECcGA" type="2001" element="_egYLoAUqEeWoD-XJoECcGA">
-            <children xmi:type="notation:Node" xmi:id="_eiXvrQUqEeWoD-XJoECcGA" type="5002">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_eiXvrgUqEeWoD-XJoECcGA" x="31"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_eig5qgUqEeWoD-XJoECcGA" type="3002" element="_egYLoQUqEeWoD-XJoECcGA">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_eig5qwUqEeWoD-XJoECcGA" fontName="Segoe UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eig5rAUqEeWoD-XJoECcGA"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_eiXvqwUqEeWoD-XJoECcGA" fontName="Segoe UI" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eiXvrAUqEeWoD-XJoECcGA" x="270" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_eiXvrwUqEeWoD-XJoECcGA" type="2001" element="_egYLpQUqEeWoD-XJoECcGA">
-            <children xmi:type="notation:Node" xmi:id="_eiXvsgUqEeWoD-XJoECcGA" type="5002">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_eiXvswUqEeWoD-XJoECcGA" x="31"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_eig5rQUqEeWoD-XJoECcGA" type="3002" element="_egYLpgUqEeWoD-XJoECcGA">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_eig5rgUqEeWoD-XJoECcGA" fontName="Segoe UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eig5rwUqEeWoD-XJoECcGA"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_eiXvsAUqEeWoD-XJoECcGA" fontName="Segoe UI" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eiXvsQUqEeWoD-XJoECcGA" x="360" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_eiXvtAUqEeWoD-XJoECcGA" type="2001" element="_egYLqgUqEeWoD-XJoECcGA">
-            <children xmi:type="notation:Node" xmi:id="_eiXvtwUqEeWoD-XJoECcGA" type="5002">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_eiXvuAUqEeWoD-XJoECcGA" x="31"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_eig5sAUqEeWoD-XJoECcGA" type="3002" element="_egYLqwUqEeWoD-XJoECcGA">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_eig5sQUqEeWoD-XJoECcGA" fontName="Segoe UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eig5sgUqEeWoD-XJoECcGA"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_eiXvtQUqEeWoD-XJoECcGA" fontName="Segoe UI" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eiXvtgUqEeWoD-XJoECcGA" x="450" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_eiXvuQUqEeWoD-XJoECcGA" type="2001" element="_egYLrwUqEeWoD-XJoECcGA">
-            <children xmi:type="notation:Node" xmi:id="_eiXvvAUqEeWoD-XJoECcGA" type="5002">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_eiXvvQUqEeWoD-XJoECcGA" x="31"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_eig5swUqEeWoD-XJoECcGA" type="3002" element="_egYLsAUqEeWoD-XJoECcGA">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_eig5tAUqEeWoD-XJoECcGA" fontName="Segoe UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eig5tQUqEeWoD-XJoECcGA"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_eiXvugUqEeWoD-XJoECcGA" fontName="Segoe UI" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eiXvuwUqEeWoD-XJoECcGA" x="540" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_eiXvvgUqEeWoD-XJoECcGA" type="2001" element="_egYLtAUqEeWoD-XJoECcGA">
-            <children xmi:type="notation:Node" xmi:id="_eiXvwQUqEeWoD-XJoECcGA" type="5002">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_eiXvwgUqEeWoD-XJoECcGA" x="31"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_eig5tgUqEeWoD-XJoECcGA" type="3002" element="_egYLtQUqEeWoD-XJoECcGA">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_eig5twUqEeWoD-XJoECcGA" fontName="Segoe UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eig5uAUqEeWoD-XJoECcGA"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_eiXvvwUqEeWoD-XJoECcGA" fontName="Segoe UI" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eiXvwAUqEeWoD-XJoECcGA" x="630" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_eiXvwwUqEeWoD-XJoECcGA" type="2001" element="_egYLuQUqEeWoD-XJoECcGA">
-            <children xmi:type="notation:Node" xmi:id="_eig5kAUqEeWoD-XJoECcGA" type="5002">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_eig5kQUqEeWoD-XJoECcGA" x="31"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_eig5uQUqEeWoD-XJoECcGA" type="3002" element="_egYLugUqEeWoD-XJoECcGA">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_eig5ugUqEeWoD-XJoECcGA" fontName="Segoe UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eig5uwUqEeWoD-XJoECcGA"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_eiXvxAUqEeWoD-XJoECcGA" fontName="Segoe UI" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eiXvxQUqEeWoD-XJoECcGA" x="720" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_eig5kgUqEeWoD-XJoECcGA" type="2001" element="_egYLvgUqEeWoD-XJoECcGA">
-            <children xmi:type="notation:Node" xmi:id="_eig5lQUqEeWoD-XJoECcGA" type="5002">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_eig5lgUqEeWoD-XJoECcGA" x="31"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_eig5vAUqEeWoD-XJoECcGA" type="3002" element="_egYLvwUqEeWoD-XJoECcGA">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_eig5vQUqEeWoD-XJoECcGA" fontName="Segoe UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eig5vgUqEeWoD-XJoECcGA"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_eig5kwUqEeWoD-XJoECcGA" fontName="Segoe UI" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eig5lAUqEeWoD-XJoECcGA" x="810" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_eig5lwUqEeWoD-XJoECcGA" type="2001" element="_egYLwwUqEeWoD-XJoECcGA">
-            <children xmi:type="notation:Node" xmi:id="_eig5mgUqEeWoD-XJoECcGA" type="5002">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_eig5mwUqEeWoD-XJoECcGA" x="31"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_eig5vwUqEeWoD-XJoECcGA" type="3002" element="_egYLxAUqEeWoD-XJoECcGA">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_eig5wAUqEeWoD-XJoECcGA" fontName="Segoe UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eig5wQUqEeWoD-XJoECcGA"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_eig5mAUqEeWoD-XJoECcGA" fontName="Segoe UI" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eig5mQUqEeWoD-XJoECcGA" x="900" width="30" height="30"/>
-          </children>
-          <children xmi:type="notation:Node" xmi:id="_eig5nAUqEeWoD-XJoECcGA" type="2001" element="_egYLyAUqEeWoD-XJoECcGA">
-            <children xmi:type="notation:Node" xmi:id="_eig5nwUqEeWoD-XJoECcGA" type="5002">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_eig5oAUqEeWoD-XJoECcGA" x="31"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_eig5wgUqEeWoD-XJoECcGA" type="3002" element="_egYLyQUqEeWoD-XJoECcGA">
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_eig5wwUqEeWoD-XJoECcGA" fontName="Segoe UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eig5xAUqEeWoD-XJoECcGA"/>
-            </children>
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_eig5nQUqEeWoD-XJoECcGA" fontName="Segoe UI" fontHeight="8"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eig5ngUqEeWoD-XJoECcGA" x="990" width="30" height="30"/>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_fe_AmgU4EeWVNdY_mROS1w" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fe_AmwU4EeWVNdY_mROS1w" x="180" width="30" height="30"/>
           </children>
           <styles xmi:type="notation:DiagramStyle" xmi:id="_ehm6ogUqEeWoD-XJoECcGA"/>
         </data>
       </ownedAnnotationEntries>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_egYLkQUqEeWoD-XJoECcGA" name="]" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="elascript:ParallelBody" href="example.elascript#//@scriptStatements.0"/>
-        <semanticElements xmi:type="elascript:ParallelBody" href="example.elascript#//@scriptStatements.0"/>
-        <ownedStyle xmi:type="diagram:Square" xmi:id="_egYLkgUqEeWoD-XJoECcGA">
-          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLkwUqEeWoD-XJoECcGA"/>
-          <description xmi:type="style:SquareDescription" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelBody']/@style"/>
-          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLlAUqEeWoD-XJoECcGA"/>
-          <color xmi:type="viewpoint:RGBValues" xmi:id="_egYLlQUqEeWoD-XJoECcGA" red="136" green="136" blue="136"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_fe_AgAU4EeWVNdY_mROS1w" name="wait" tooltipText="false" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.0"/>
+        <semanticElements xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.0"/>
+        <ownedStyle xmi:type="diagram:Dot" xmi:id="_fe_AgQU4EeWVNdY_mROS1w">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_fe_AggU4EeWVNdY_mROS1w"/>
+          <description xmi:type="style:DotDescription" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='Command']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_fe_AgwU4EeWVNdY_mROS1w"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_fe_AhAU4EeWVNdY_mROS1w" red="136" green="136" blue="136"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelBody']"/>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='Command']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_egYLlgUqEeWoD-XJoECcGA" name="]" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="elascript:ParallelBody" href="example.elascript#//@scriptStatements.1"/>
-        <semanticElements xmi:type="elascript:ParallelBody" href="example.elascript#//@scriptStatements.1"/>
-        <ownedStyle xmi:type="diagram:Square" xmi:id="_egYLlwUqEeWoD-XJoECcGA">
-          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLmAUqEeWoD-XJoECcGA"/>
-          <description xmi:type="style:SquareDescription" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelBody']/@style"/>
-          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLmQUqEeWoD-XJoECcGA"/>
-          <color xmi:type="viewpoint:RGBValues" xmi:id="_egYLmgUqEeWoD-XJoECcGA" red="136" green="136" blue="136"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelBody']"/>
-      </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_egYLmwUqEeWoD-XJoECcGA" name="]" tooltipText="invalid" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="elascript:ParallelBody" href="example.elascript#//@scriptStatements.0"/>
-        <semanticElements xmi:type="elascript:ParallelBody" href="example.elascript#//@scriptStatements.0"/>
-        <ownedStyle xmi:type="diagram:Dot" xmi:id="_egYLnAUqEeWoD-XJoECcGA">
-          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLnQUqEeWoD-XJoECcGA"/>
-          <description xmi:type="style:DotDescription" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']/@style"/>
-          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLngUqEeWoD-XJoECcGA"/>
-          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLnwUqEeWoD-XJoECcGA" red="136" green="136" blue="136"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']"/>
-      </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_egYLoAUqEeWoD-XJoECcGA" name="ScaleInHard" tooltipText="invalid" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.0/@statements.0/@statements.0"/>
-        <semanticElements xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.0/@statements.0/@statements.0"/>
-        <ownedStyle xmi:type="diagram:Dot" xmi:id="_egYLoQUqEeWoD-XJoECcGA">
-          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLogUqEeWoD-XJoECcGA"/>
-          <description xmi:type="style:DotDescription" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']/@style"/>
-          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLowUqEeWoD-XJoECcGA"/>
-          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLpAUqEeWoD-XJoECcGA" red="136" green="136" blue="136"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']"/>
-      </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_egYLpQUqEeWoD-XJoECcGA" name="wait" tooltipText="invalid" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.0/@statements.0/@statements.1"/>
-        <semanticElements xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.0/@statements.0/@statements.1"/>
-        <ownedStyle xmi:type="diagram:Dot" xmi:id="_egYLpgUqEeWoD-XJoECcGA">
-          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLpwUqEeWoD-XJoECcGA"/>
-          <description xmi:type="style:DotDescription" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']/@style"/>
-          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLqAUqEeWoD-XJoECcGA"/>
-          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLqQUqEeWoD-XJoECcGA" red="136" green="136" blue="136"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']"/>
-      </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_egYLqgUqEeWoD-XJoECcGA" name="ScaleInSoft" tooltipText="invalid" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.0/@statements.0/@statements.2"/>
-        <semanticElements xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.0/@statements.0/@statements.2"/>
-        <ownedStyle xmi:type="diagram:Dot" xmi:id="_egYLqwUqEeWoD-XJoECcGA">
-          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLrAUqEeWoD-XJoECcGA"/>
-          <description xmi:type="style:DotDescription" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']/@style"/>
-          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLrQUqEeWoD-XJoECcGA"/>
-          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLrgUqEeWoD-XJoECcGA" red="136" green="136" blue="136"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']"/>
-      </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_egYLrwUqEeWoD-XJoECcGA" name="ScaleDownSoft" tooltipText="invalid" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.0/@statements.1/@statements.0"/>
-        <semanticElements xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.0/@statements.1/@statements.0"/>
-        <ownedStyle xmi:type="diagram:Dot" xmi:id="_egYLsAUqEeWoD-XJoECcGA">
-          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLsQUqEeWoD-XJoECcGA"/>
-          <description xmi:type="style:DotDescription" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']/@style"/>
-          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLsgUqEeWoD-XJoECcGA"/>
-          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLswUqEeWoD-XJoECcGA" red="136" green="136" blue="136"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']"/>
-      </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_egYLtAUqEeWoD-XJoECcGA" name="]" tooltipText="invalid" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="elascript:ParallelBody" href="example.elascript#//@scriptStatements.1"/>
-        <semanticElements xmi:type="elascript:ParallelBody" href="example.elascript#//@scriptStatements.1"/>
-        <ownedStyle xmi:type="diagram:Dot" xmi:id="_egYLtQUqEeWoD-XJoECcGA">
-          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLtgUqEeWoD-XJoECcGA"/>
-          <description xmi:type="style:DotDescription" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']/@style"/>
-          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLtwUqEeWoD-XJoECcGA"/>
-          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLuAUqEeWoD-XJoECcGA" red="136" green="136" blue="136"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']"/>
-      </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_egYLuQUqEeWoD-XJoECcGA" name="ScaleDownInfra" tooltipText="invalid" width="3" height="3" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_fe_AhQU4EeWVNdY_mROS1w" name="ScaleInSoft" tooltipText="true" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.1/@statements.0/@statements.0"/>
         <semanticElements xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.1/@statements.0/@statements.0"/>
-        <ownedStyle xmi:type="diagram:Dot" xmi:id="_egYLugUqEeWoD-XJoECcGA">
-          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLuwUqEeWoD-XJoECcGA"/>
-          <description xmi:type="style:DotDescription" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']/@style"/>
-          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLvAUqEeWoD-XJoECcGA"/>
-          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLvQUqEeWoD-XJoECcGA" red="136" green="136" blue="136"/>
+        <ownedStyle xmi:type="diagram:Dot" xmi:id="_fe_AhgU4EeWVNdY_mROS1w">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_fe_AhwU4EeWVNdY_mROS1w"/>
+          <description xmi:type="style:DotDescription" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='Command']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_fe_AiAU4EeWVNdY_mROS1w"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_fe_AiQU4EeWVNdY_mROS1w" red="136" green="136" blue="136"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']"/>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='Command']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_egYLvgUqEeWoD-XJoECcGA" name="ScaleDownInfra" tooltipText="invalid" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.1/@statements.0/@statements.1"/>
-        <semanticElements xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.1/@statements.0/@statements.1"/>
-        <ownedStyle xmi:type="diagram:Dot" xmi:id="_egYLvwUqEeWoD-XJoECcGA">
-          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLwAUqEeWoD-XJoECcGA"/>
-          <description xmi:type="style:DotDescription" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']/@style"/>
-          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLwQUqEeWoD-XJoECcGA"/>
-          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLwgUqEeWoD-XJoECcGA" red="136" green="136" blue="136"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']"/>
-      </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_egYLwwUqEeWoD-XJoECcGA" name="ScaleUpInfra" tooltipText="invalid" width="3" height="3" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_fe_AigU4EeWVNdY_mROS1w" name="ScaleOut" tooltipText="false" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.1/@statements.1/@statements.0"/>
         <semanticElements xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.1/@statements.1/@statements.0"/>
-        <ownedStyle xmi:type="diagram:Dot" xmi:id="_egYLxAUqEeWoD-XJoECcGA">
-          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLxQUqEeWoD-XJoECcGA"/>
-          <description xmi:type="style:DotDescription" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']/@style"/>
-          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLxgUqEeWoD-XJoECcGA"/>
-          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLxwUqEeWoD-XJoECcGA" red="136" green="136" blue="136"/>
+        <ownedStyle xmi:type="diagram:Dot" xmi:id="_fe_AiwU4EeWVNdY_mROS1w">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_fe_AjAU4EeWVNdY_mROS1w"/>
+          <description xmi:type="style:DotDescription" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='Command']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_fe_AjQU4EeWVNdY_mROS1w"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_fe_AjgU4EeWVNdY_mROS1w" red="136" green="136" blue="136"/>
         </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']"/>
-      </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_egYLyAUqEeWoD-XJoECcGA" name="Toto" tooltipText="invalid" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.1/@statements.2/@statements.0"/>
-        <semanticElements xmi:type="elascript:Command" href="example.elascript#//@scriptStatements.1/@statements.2/@statements.0"/>
-        <ownedStyle xmi:type="diagram:Dot" xmi:id="_egYLyQUqEeWoD-XJoECcGA">
-          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLygUqEeWoD-XJoECcGA"/>
-          <description xmi:type="style:DotDescription" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']/@style"/>
-          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLywUqEeWoD-XJoECcGA"/>
-          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_egYLzAUqEeWoD-XJoECcGA" red="136" green="136" blue="136"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='ParallelStatements']"/>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']/@defaultLayer/@nodeMappings[name='Command']"/>
       </ownedDiagramElements>
       <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.elascript.diagram.model/description/elascript.odesign#//@ownedViewpoints[name='Elascript']/@ownedRepresentations[name='Elascript%20Diagram']"/>
       <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_egYLzQUqEeWoD-XJoECcGA"/>

@@ -1,16 +1,7 @@
+wait(1);
 [
+	ScaleInSoft(1);
+	||
+	ScaleOut(2);
 	
-	ScaleInHard(3,3);
-	wait(1000);
-	ScaleInSoft(1,3);
-	||
-	ScaleDownSoft(5,3);
-]
-[
-	ScaleDownInfra(6,2);
-	ScaleDownInfra(6,2);
-	||
-	ScaleUpInfra(10,3);
-	||
-	Toto(20);
 ]
