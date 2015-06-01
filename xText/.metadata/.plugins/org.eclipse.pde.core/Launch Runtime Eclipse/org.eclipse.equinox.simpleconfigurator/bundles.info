@@ -5,6 +5,9 @@ com.ibm.icu,52.1.1.v201501240615,file:/home/maeln/outils/eclipse-dsl/plugins/com
 com.jcraft.jsch,0.1.51.v201410302000,file:/home/maeln/outils/eclipse-dsl/plugins/com.jcraft.jsch_0.1.51.v201410302000.jar,4,false
 com.jcraft.jsch,0.1.50.v201403120620,file:/home/maeln/outils/eclipse-dsl/plugins/com.jcraft.jsch_0.1.50.v201403120620.jar,4,false
 com.sun.el,2.2.0.v201303151357,file:/home/maeln/outils/eclipse-dsl/plugins/com.sun.el_2.2.0.v201303151357.jar,4,false
+emn.a1,1.0.0.qualifier,file:/home/maeln/codes/ElaScript/xText/emn.a1/,4,false
+emn.a1.tests,1.0.0.qualifier,file:/home/maeln/codes/ElaScript/xText/emn.a1.tests/,4,false
+emn.a1.ui,1.0.0.qualifier,file:/home/maeln/codes/ElaScript/xText/emn.a1.ui/,4,false
 javaewah,0.7.9.v201401101600,file:/home/maeln/outils/eclipse-dsl/plugins/javaewah_0.7.9.v201401101600.jar,4,false
 javax.annotation,1.2.0.v201401042248,file:/home/maeln/outils/eclipse-dsl/plugins/javax.annotation_1.2.0.v201401042248.jar,4,false
 javax.el,2.2.0.v201303151357,file:/home/maeln/outils/eclipse-dsl/plugins/javax.el_2.2.0.v201303151357.jar,4,false
@@ -405,9 +408,6 @@ org.eclipse.xtext.xbase.ui,2.8.0.v201503090534,file:/home/maeln/outils/eclipse-d
 org.eclipse.xtext.xtext.ui,2.8.0.v201503090534,file:/home/maeln/outils/eclipse-dsl/plugins/org.eclipse.xtext.xtext.ui_2.8.0.v201503090534.jar,4,false
 org.eclipse.xtext.xtext.ui.examples,2.8.0.v201503090534,file:/home/maeln/outils/eclipse-dsl/plugins/org.eclipse.xtext.xtext.ui.examples_2.8.0.v201503090534/,4,false
 org.eclipse.xtext.xtext.ui.graph,2.8.0.v201503090534,file:/home/maeln/outils/eclipse-dsl/plugins/org.eclipse.xtext.xtext.ui.graph_2.8.0.v201503090534.jar,4,false
-org.elascript,1.0.0.qualifier,file:/home/maeln/codes/ElaScript/xText/org.elascript/,4,false
-org.elascript.tests,1.0.0.qualifier,file:/home/maeln/codes/ElaScript/xText/org.elascript.tests/,4,false
-org.elascript.ui,1.0.0.qualifier,file:/home/maeln/codes/ElaScript/xText/org.elascript.ui/,4,false
 org.hamcrest.core,1.3.0.v201303031735,file:/home/maeln/outils/eclipse-dsl/plugins/org.hamcrest.core_1.3.0.v201303031735.jar,4,false
 org.junit,4.11.0.v201303080030,file:/home/maeln/outils/eclipse-dsl/plugins/org.junit_4.11.0.v201303080030/,4,false
 org.objectweb.asm,5.0.1.v201404251740,file:/home/maeln/outils/eclipse-dsl/plugins/org.objectweb.asm_5.0.1.v201404251740.jar,4,false
