@@ -50,15 +50,6 @@ public interface ElascriptFactory extends EFactory
   Parallel createParallel();
 
   /**
-   * Returns a new object of class '<em>Parallel Body</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Parallel Body</em>'.
-   * @generated
-   */
-  ParallelBody createParallelBody();
-
-  /**
    * Returns a new object of class '<em>EList</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

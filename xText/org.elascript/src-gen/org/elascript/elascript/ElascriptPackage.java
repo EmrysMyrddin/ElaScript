@@ -114,50 +114,22 @@ public interface ElascriptPackage extends EPackage
   int PARALLEL = 2;
 
   /**
-   * The number of structural features of the '<em>Parallel</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PARALLEL_FEATURE_COUNT = STATEMENT_FEATURE_COUNT + 0;
-
-  /**
-   * The meta object id for the '{@link org.elascript.elascript.impl.ParallelBodyImpl <em>Parallel Body</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see org.elascript.elascript.impl.ParallelBodyImpl
-   * @see org.elascript.elascript.impl.ElascriptPackageImpl#getParallelBody()
-   * @generated
-   */
-  int PARALLEL_BODY = 3;
-
-  /**
-   * The feature id for the '<em><b>Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PARALLEL_BODY__NAME = PARALLEL_FEATURE_COUNT + 0;
-
-  /**
    * The feature id for the '<em><b>Statements</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PARALLEL_BODY__STATEMENTS = PARALLEL_FEATURE_COUNT + 1;
+  int PARALLEL__STATEMENTS = STATEMENT_FEATURE_COUNT + 0;
 
   /**
-   * The number of structural features of the '<em>Parallel Body</em>' class.
+   * The number of structural features of the '<em>Parallel</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PARALLEL_BODY_FEATURE_COUNT = PARALLEL_FEATURE_COUNT + 2;
+  int PARALLEL_FEATURE_COUNT = STATEMENT_FEATURE_COUNT + 1;
 
   /**
    * The meta object id for the '{@link org.elascript.elascript.impl.EListImpl <em>EList</em>}' class.
@@ -167,7 +139,7 @@ public interface ElascriptPackage extends EPackage
    * @see org.elascript.elascript.impl.ElascriptPackageImpl#getEList()
    * @generated
    */
-  int ELIST = 4;
+  int ELIST = 3;
 
   /**
    * The feature id for the '<em><b>Statements</b></em>' containment reference list.
@@ -195,7 +167,7 @@ public interface ElascriptPackage extends EPackage
    * @see org.elascript.elascript.impl.ElascriptPackageImpl#getCommand()
    * @generated
    */
-  int COMMAND = 5;
+  int COMMAND = 4;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -232,7 +204,7 @@ public interface ElascriptPackage extends EPackage
    * @see org.elascript.elascript.impl.ElascriptPackageImpl#getParam()
    * @generated
    */
-  int PARAM = 6;
+  int PARAM = 5;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -295,36 +267,15 @@ public interface ElascriptPackage extends EPackage
   EClass getParallel();
 
   /**
-   * Returns the meta object for class '{@link org.elascript.elascript.ParallelBody <em>Parallel Body</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Parallel Body</em>'.
-   * @see org.elascript.elascript.ParallelBody
-   * @generated
-   */
-  EClass getParallelBody();
-
-  /**
-   * Returns the meta object for the attribute '{@link org.elascript.elascript.ParallelBody#getName <em>Name</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see org.elascript.elascript.ParallelBody#getName()
-   * @see #getParallelBody()
-   * @generated
-   */
-  EAttribute getParallelBody_Name();
-
-  /**
-   * Returns the meta object for the containment reference list '{@link org.elascript.elascript.ParallelBody#getStatements <em>Statements</em>}'.
+   * Returns the meta object for the containment reference list '{@link org.elascript.elascript.Parallel#getStatements <em>Statements</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference list '<em>Statements</em>'.
-   * @see org.elascript.elascript.ParallelBody#getStatements()
-   * @see #getParallelBody()
+   * @see org.elascript.elascript.Parallel#getStatements()
+   * @see #getParallel()
    * @generated
    */
-  EReference getParallelBody_Statements();
+  EReference getParallel_Statements();
 
   /**
    * Returns the meta object for class '{@link org.elascript.elascript.EList <em>EList</em>}'.
@@ -462,30 +413,12 @@ public interface ElascriptPackage extends EPackage
     EClass PARALLEL = eINSTANCE.getParallel();
 
     /**
-     * The meta object literal for the '{@link org.elascript.elascript.impl.ParallelBodyImpl <em>Parallel Body</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see org.elascript.elascript.impl.ParallelBodyImpl
-     * @see org.elascript.elascript.impl.ElascriptPackageImpl#getParallelBody()
-     * @generated
-     */
-    EClass PARALLEL_BODY = eINSTANCE.getParallelBody();
-
-    /**
-     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute PARALLEL_BODY__NAME = eINSTANCE.getParallelBody_Name();
-
-    /**
      * The meta object literal for the '<em><b>Statements</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference PARALLEL_BODY__STATEMENTS = eINSTANCE.getParallelBody_Statements();
+    EReference PARALLEL__STATEMENTS = eINSTANCE.getParallel_Statements();
 
     /**
      * The meta object literal for the '{@link org.elascript.elascript.impl.EListImpl <em>EList</em>}' class.

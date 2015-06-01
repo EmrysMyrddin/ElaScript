@@ -19,7 +19,7 @@ import org.eclipse.xtext.serializer.sequencer.ITransientValueService.ValueTransi
 import org.elascript.elascript.Command;
 import org.elascript.elascript.EList;
 import org.elascript.elascript.ElascriptPackage;
-import org.elascript.elascript.ParallelBody;
+import org.elascript.elascript.Parallel;
 import org.elascript.elascript.Param;
 import org.elascript.elascript.Script;
 import org.elascript.services.ElascriptGrammarAccess;
@@ -39,17 +39,9 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 			case ElascriptPackage.ELIST:
 				sequence_StatementList(context, (EList) semanticObject); 
 				return; 
-			case ElascriptPackage.PARALLEL_BODY:
-				if(context == grammarAccess.getParallelBodyRule()) {
-					sequence_ParallelBody(context, (ParallelBody) semanticObject); 
-					return; 
-				}
-				else if(context == grammarAccess.getParallelRule() ||
-				   context == grammarAccess.getStatementRule()) {
-					sequence_Parallel_ParallelBody(context, (ParallelBody) semanticObject); 
-					return; 
-				}
-				else break;
+			case ElascriptPackage.PARALLEL:
+				sequence_Parallel(context, (Parallel) semanticObject); 
+				return; 
 			case ElascriptPackage.PARAM:
 				sequence_Param(context, (Param) semanticObject); 
 				return; 
@@ -62,7 +54,7 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	
 	/**
 	 * Constraint:
-	 *     (name=FUNCTION_NAME params+=Param params+=Param*)
+	 *     (name=FunctionName params+=Param params+=Param*)
 	 */
 	protected void sequence_Command(EObject context, Command semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -73,16 +65,7 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	 * Constraint:
 	 *     (statements+=StatementList statements+=StatementList+)
 	 */
-	protected void sequence_ParallelBody(EObject context, ParallelBody semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
-	}
-	
-	
-	/**
-	 * Constraint:
-	 *     (statements+=StatementList statements+=StatementList+ name=JOIN)
-	 */
-	protected void sequence_Parallel_ParallelBody(EObject context, ParallelBody semanticObject) {
+	protected void sequence_Parallel(EObject context, Parallel semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	

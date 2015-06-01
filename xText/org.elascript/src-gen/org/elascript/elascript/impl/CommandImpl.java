@@ -27,11 +27,11 @@ import org.elascript.elascript.Param;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.elascript.elascript.impl.CommandImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.elascript.elascript.impl.CommandImpl#getParams <em>Params</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

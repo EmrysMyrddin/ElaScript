@@ -11,10 +11,10 @@ import org.eclipse.emf.ecore.EObject;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.elascript.elascript.Param#getValue <em>Value</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.elascript.elascript.ElascriptPackage#getParam()
  * @model

@@ -67,7 +67,6 @@ public class ElascriptFactoryImpl extends EFactoryImpl implements ElascriptFacto
       case ElascriptPackage.SCRIPT: return createScript();
       case ElascriptPackage.STATEMENT: return createStatement();
       case ElascriptPackage.PARALLEL: return createParallel();
-      case ElascriptPackage.PARALLEL_BODY: return createParallelBody();
       case ElascriptPackage.ELIST: return createEList();
       case ElascriptPackage.COMMAND: return createCommand();
       case ElascriptPackage.PARAM: return createParam();
@@ -107,17 +106,6 @@ public class ElascriptFactoryImpl extends EFactoryImpl implements ElascriptFacto
   {
     ParallelImpl parallel = new ParallelImpl();
     return parallel;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public ParallelBody createParallelBody()
-  {
-    ParallelBodyImpl parallelBody = new ParallelBodyImpl();
-    return parallelBody;
   }
 
   /**

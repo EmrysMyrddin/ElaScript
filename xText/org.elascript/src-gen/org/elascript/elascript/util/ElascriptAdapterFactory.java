@@ -90,11 +90,6 @@ public class ElascriptAdapterFactory extends AdapterFactoryImpl
         return createParallelAdapter();
       }
       @Override
-      public Adapter caseParallelBody(ParallelBody object)
-      {
-        return createParallelBodyAdapter();
-      }
-      @Override
       public Adapter caseEList(EList object)
       {
         return createEListAdapter();
@@ -172,21 +167,6 @@ public class ElascriptAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createParallelAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link org.elascript.elascript.ParallelBody <em>Parallel Body</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see org.elascript.elascript.ParallelBody
-   * @generated
-   */
-  public Adapter createParallelBodyAdapter()
   {
     return null;
   }

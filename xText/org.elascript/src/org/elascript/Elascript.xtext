@@ -8,6 +8,7 @@ Script :
 Statement :
 	Command | Parallel
 ;
+
 Parallel :
 	 SPLIT (statements+=StatementList) (PARALLEL_SEPARATOR (statements+=StatementList))+  JOIN
 ;
@@ -15,12 +16,34 @@ Parallel :
 StatementList returns EList:
 	statements+=Statement+
 ;
+
 Command:
-	 name=ID LP params+=Param (COMMA  params+=Param)*  RP SEQUENTIAL_SEPARATOR
+	 name = FunctionName LP params+=Param (COMMA  params+=Param)*  RP SEQUENTIAL_SEPARATOR
 ;
+
+FunctionName:
+	Scale Type | ID
+;
+
 Param :
 	value=INT
 ;
+
+
+Scale:
+	SCALE_IN | SCALE_OUT | SCALE_UP | SCALE_DOWN
+;
+terminal SCALE_IN : 'ScaleIn';
+terminal SCALE_OUT : 'ScaleOut';
+terminal SCALE_UP : 'ScaleUp';
+terminal SCALE_DOWN : 'ScaleDown';
+
+Type:
+	SOFT | INF
+;
+terminal SOFT : 'Soft';
+terminal INF : 'Inf';
+
 terminal PARALLEL_SEPARATOR : '||';
 //Lexems
 terminal LP : '(';

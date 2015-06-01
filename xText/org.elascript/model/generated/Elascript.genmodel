@@ -11,10 +11,8 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//Script/scriptStatements"/>
     </genClasses>
     <genClasses ecoreClass="Elascript.ecore#//Statement"/>
-    <genClasses ecoreClass="Elascript.ecore#//Parallel"/>
-    <genClasses ecoreClass="Elascript.ecore#//ParallelBody">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Elascript.ecore#//ParallelBody/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//ParallelBody/statements"/>
+    <genClasses ecoreClass="Elascript.ecore#//Parallel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//Parallel/statements"/>
     </genClasses>
     <genClasses ecoreClass="Elascript.ecore#//EList">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//EList/statements"/>

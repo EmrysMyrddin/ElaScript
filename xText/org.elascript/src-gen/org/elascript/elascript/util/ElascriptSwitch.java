@@ -50,7 +50,7 @@ public class ElascriptSwitch<T> extends Switch<T>
    * Checks whether this is a switch for the given package.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @parameter ePackage the package in question.
+   * @param ePackage the package in question.
    * @return whether this is a switch for the given package.
    * @generated
    */
@@ -91,15 +91,6 @@ public class ElascriptSwitch<T> extends Switch<T>
         Parallel parallel = (Parallel)theEObject;
         T result = caseParallel(parallel);
         if (result == null) result = caseStatement(parallel);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case ElascriptPackage.PARALLEL_BODY:
-      {
-        ParallelBody parallelBody = (ParallelBody)theEObject;
-        T result = caseParallelBody(parallelBody);
-        if (result == null) result = caseParallel(parallelBody);
-        if (result == null) result = caseStatement(parallelBody);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -173,22 +164,6 @@ public class ElascriptSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseParallel(Parallel object)
-  {
-    return null;
-  }
-
-  /**
-   * Returns the result of interpreting the object as an instance of '<em>Parallel Body</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Parallel Body</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseParallelBody(ParallelBody object)
   {
     return null;
   }

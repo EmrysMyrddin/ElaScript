@@ -14,7 +14,6 @@ import org.elascript.elascript.EList;
 import org.elascript.elascript.ElascriptFactory;
 import org.elascript.elascript.ElascriptPackage;
 import org.elascript.elascript.Parallel;
-import org.elascript.elascript.ParallelBody;
 import org.elascript.elascript.Param;
 import org.elascript.elascript.Script;
 import org.elascript.elascript.Statement;
@@ -47,13 +46,6 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * @generated
    */
   private EClass parallelEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass parallelBodyEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -184,29 +176,9 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getParallelBody()
+  public EReference getParallel_Statements()
   {
-    return parallelBodyEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getParallelBody_Name()
-  {
-    return (EAttribute)parallelBodyEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EReference getParallelBody_Statements()
-  {
-    return (EReference)parallelBodyEClass.getEStructuralFeatures().get(1);
+    return (EReference)parallelEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -315,10 +287,7 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
     statementEClass = createEClass(STATEMENT);
 
     parallelEClass = createEClass(PARALLEL);
-
-    parallelBodyEClass = createEClass(PARALLEL_BODY);
-    createEAttribute(parallelBodyEClass, PARALLEL_BODY__NAME);
-    createEReference(parallelBodyEClass, PARALLEL_BODY__STATEMENTS);
+    createEReference(parallelEClass, PARALLEL__STATEMENTS);
 
     eListEClass = createEClass(ELIST);
     createEReference(eListEClass, ELIST__STATEMENTS);
@@ -361,7 +330,6 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
 
     // Add supertypes to classes
     parallelEClass.getESuperTypes().add(this.getStatement());
-    parallelBodyEClass.getESuperTypes().add(this.getParallel());
     commandEClass.getESuperTypes().add(this.getStatement());
 
     // Initialize classes and features; add operations and parameters
@@ -371,10 +339,7 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
     initEClass(statementEClass, Statement.class, "Statement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(parallelEClass, Parallel.class, "Parallel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-    initEClass(parallelBodyEClass, ParallelBody.class, "ParallelBody", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getParallelBody_Name(), ecorePackage.getEString(), "name", null, 0, 1, ParallelBody.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getParallelBody_Statements(), this.getEList(), null, "statements", null, 0, -1, ParallelBody.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getParallel_Statements(), this.getEList(), null, "statements", null, 0, -1, Parallel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(eListEClass, EList.class, "EList", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getEList_Statements(), this.getStatement(), null, "statements", null, 0, -1, EList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
