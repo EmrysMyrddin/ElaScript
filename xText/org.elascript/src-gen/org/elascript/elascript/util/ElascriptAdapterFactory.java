@@ -80,9 +80,9 @@ public class ElascriptAdapterFactory extends AdapterFactoryImpl
         return createScriptAdapter();
       }
       @Override
-      public Adapter caseAction(Action object)
+      public Adapter caseStatement(Statement object)
       {
-        return createActionAdapter();
+        return createStatementAdapter();
       }
       @Override
       public Adapter caseParallel(Parallel object)
@@ -95,9 +95,9 @@ public class ElascriptAdapterFactory extends AdapterFactoryImpl
         return createParallelBodyAdapter();
       }
       @Override
-      public Adapter caseActionList(ActionList object)
+      public Adapter caseEList(EList object)
       {
-        return createActionListAdapter();
+        return createEListAdapter();
       }
       @Override
       public Adapter caseCommand(Command object)
@@ -105,9 +105,9 @@ public class ElascriptAdapterFactory extends AdapterFactoryImpl
         return createCommandAdapter();
       }
       @Override
-      public Adapter caseParamList(ParamList object)
+      public Adapter caseParam(Param object)
       {
-        return createParamListAdapter();
+        return createParamAdapter();
       }
       @Override
       public Adapter defaultCase(EObject object)
@@ -147,16 +147,16 @@ public class ElascriptAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.elascript.elascript.Action <em>Action</em>}'.
+   * Creates a new adapter for an object of class '{@link org.elascript.elascript.Statement <em>Statement</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.elascript.elascript.Action
+   * @see org.elascript.elascript.Statement
    * @generated
    */
-  public Adapter createActionAdapter()
+  public Adapter createStatementAdapter()
   {
     return null;
   }
@@ -192,16 +192,16 @@ public class ElascriptAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.elascript.elascript.ActionList <em>Action List</em>}'.
+   * Creates a new adapter for an object of class '{@link org.elascript.elascript.EList <em>EList</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.elascript.elascript.ActionList
+   * @see org.elascript.elascript.EList
    * @generated
    */
-  public Adapter createActionListAdapter()
+  public Adapter createEListAdapter()
   {
     return null;
   }
@@ -222,16 +222,16 @@ public class ElascriptAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.elascript.elascript.ParamList <em>Param List</em>}'.
+   * Creates a new adapter for an object of class '{@link org.elascript.elascript.Param <em>Param</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.elascript.elascript.ParamList
+   * @see org.elascript.elascript.Param
    * @generated
    */
-  public Adapter createParamListAdapter()
+  public Adapter createParamAdapter()
   {
     return null;
   }

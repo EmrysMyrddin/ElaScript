@@ -8,23 +8,23 @@
   <genPackages prefix="Elascript" basePackage="org.elascript" disposableProviderFactory="true"
       fileExtensions="elascript" ecorePackage="Elascript.ecore#/">
     <genClasses ecoreClass="Elascript.ecore#//Script">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//Script/actions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//Script/scriptStatements"/>
     </genClasses>
-    <genClasses ecoreClass="Elascript.ecore#//Action"/>
+    <genClasses ecoreClass="Elascript.ecore#//Statement"/>
     <genClasses ecoreClass="Elascript.ecore#//Parallel"/>
     <genClasses ecoreClass="Elascript.ecore#//ParallelBody">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Elascript.ecore#//ParallelBody/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//ParallelBody/actions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//ParallelBody/statements"/>
     </genClasses>
-    <genClasses ecoreClass="Elascript.ecore#//ActionList">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//ActionList/actions"/>
+    <genClasses ecoreClass="Elascript.ecore#//EList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//EList/statements"/>
     </genClasses>
     <genClasses ecoreClass="Elascript.ecore#//Command">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Elascript.ecore#//Command/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//Command/params"/>
     </genClasses>
-    <genClasses ecoreClass="Elascript.ecore#//ParamList">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Elascript.ecore#//ParamList/params"/>
+    <genClasses ecoreClass="Elascript.ecore#//Param">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Elascript.ecore#//Param/value"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

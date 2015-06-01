@@ -17,7 +17,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
-import org.elascript.elascript.ActionList;
 import org.elascript.elascript.ElascriptPackage;
 import org.elascript.elascript.ParallelBody;
 
@@ -29,7 +28,7 @@ import org.elascript.elascript.ParallelBody;
  * The following features are implemented:
  * <ul>
  *   <li>{@link org.elascript.elascript.impl.ParallelBodyImpl#getName <em>Name</em>}</li>
- *   <li>{@link org.elascript.elascript.impl.ParallelBodyImpl#getActions <em>Actions</em>}</li>
+ *   <li>{@link org.elascript.elascript.impl.ParallelBodyImpl#getStatements <em>Statements</em>}</li>
  * </ul>
  * </p>
  *
@@ -58,14 +57,14 @@ public class ParallelBodyImpl extends ParallelImpl implements ParallelBody
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getActions() <em>Actions</em>}' containment reference list.
+   * The cached value of the '{@link #getStatements() <em>Statements</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getActions()
+   * @see #getStatements()
    * @generated
    * @ordered
    */
-  protected EList<ActionList> actions;
+  protected EList<org.elascript.elascript.EList> statements;
 
   /**
    * <!-- begin-user-doc -->
@@ -116,13 +115,13 @@ public class ParallelBodyImpl extends ParallelImpl implements ParallelBody
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<ActionList> getActions()
+  public EList<org.elascript.elascript.EList> getStatements()
   {
-    if (actions == null)
+    if (statements == null)
     {
-      actions = new EObjectContainmentEList<ActionList>(ActionList.class, this, ElascriptPackage.PARALLEL_BODY__ACTIONS);
+      statements = new EObjectContainmentEList<org.elascript.elascript.EList>(org.elascript.elascript.EList.class, this, ElascriptPackage.PARALLEL_BODY__STATEMENTS);
     }
-    return actions;
+    return statements;
   }
 
   /**
@@ -135,8 +134,8 @@ public class ParallelBodyImpl extends ParallelImpl implements ParallelBody
   {
     switch (featureID)
     {
-      case ElascriptPackage.PARALLEL_BODY__ACTIONS:
-        return ((InternalEList<?>)getActions()).basicRemove(otherEnd, msgs);
+      case ElascriptPackage.PARALLEL_BODY__STATEMENTS:
+        return ((InternalEList<?>)getStatements()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -153,8 +152,8 @@ public class ParallelBodyImpl extends ParallelImpl implements ParallelBody
     {
       case ElascriptPackage.PARALLEL_BODY__NAME:
         return getName();
-      case ElascriptPackage.PARALLEL_BODY__ACTIONS:
-        return getActions();
+      case ElascriptPackage.PARALLEL_BODY__STATEMENTS:
+        return getStatements();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -173,9 +172,9 @@ public class ParallelBodyImpl extends ParallelImpl implements ParallelBody
       case ElascriptPackage.PARALLEL_BODY__NAME:
         setName((String)newValue);
         return;
-      case ElascriptPackage.PARALLEL_BODY__ACTIONS:
-        getActions().clear();
-        getActions().addAll((Collection<? extends ActionList>)newValue);
+      case ElascriptPackage.PARALLEL_BODY__STATEMENTS:
+        getStatements().clear();
+        getStatements().addAll((Collection<? extends org.elascript.elascript.EList>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -194,8 +193,8 @@ public class ParallelBodyImpl extends ParallelImpl implements ParallelBody
       case ElascriptPackage.PARALLEL_BODY__NAME:
         setName(NAME_EDEFAULT);
         return;
-      case ElascriptPackage.PARALLEL_BODY__ACTIONS:
-        getActions().clear();
+      case ElascriptPackage.PARALLEL_BODY__STATEMENTS:
+        getStatements().clear();
         return;
     }
     super.eUnset(featureID);
@@ -213,8 +212,8 @@ public class ParallelBodyImpl extends ParallelImpl implements ParallelBody
     {
       case ElascriptPackage.PARALLEL_BODY__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case ElascriptPackage.PARALLEL_BODY__ACTIONS:
-        return actions != null && !actions.isEmpty();
+      case ElascriptPackage.PARALLEL_BODY__STATEMENTS:
+        return statements != null && !statements.isEmpty();
     }
     return super.eIsSet(featureID);
   }

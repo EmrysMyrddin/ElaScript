@@ -9,15 +9,15 @@ import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
-import org.elascript.elascript.Action;
-import org.elascript.elascript.ActionList;
 import org.elascript.elascript.Command;
+import org.elascript.elascript.EList;
 import org.elascript.elascript.ElascriptFactory;
 import org.elascript.elascript.ElascriptPackage;
 import org.elascript.elascript.Parallel;
 import org.elascript.elascript.ParallelBody;
-import org.elascript.elascript.ParamList;
+import org.elascript.elascript.Param;
 import org.elascript.elascript.Script;
+import org.elascript.elascript.Statement;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,7 +39,7 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass actionEClass = null;
+  private EClass statementEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -60,7 +60,7 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass actionListEClass = null;
+  private EClass eListEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -74,7 +74,7 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass paramListEClass = null;
+  private EClass paramEClass = null;
 
   /**
    * Creates an instance of the model <b>Package</b>, registered with
@@ -154,7 +154,7 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getScript_Actions()
+  public EReference getScript_ScriptStatements()
   {
     return (EReference)scriptEClass.getEStructuralFeatures().get(0);
   }
@@ -164,9 +164,9 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getAction()
+  public EClass getStatement()
   {
-    return actionEClass;
+    return statementEClass;
   }
 
   /**
@@ -204,7 +204,7 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getParallelBody_Actions()
+  public EReference getParallelBody_Statements()
   {
     return (EReference)parallelBodyEClass.getEStructuralFeatures().get(1);
   }
@@ -214,9 +214,9 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getActionList()
+  public EClass getEList()
   {
-    return actionListEClass;
+    return eListEClass;
   }
 
   /**
@@ -224,9 +224,9 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getActionList_Actions()
+  public EReference getEList_Statements()
   {
-    return (EReference)actionListEClass.getEStructuralFeatures().get(0);
+    return (EReference)eListEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -264,9 +264,9 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getParamList()
+  public EClass getParam()
   {
-    return paramListEClass;
+    return paramEClass;
   }
 
   /**
@@ -274,9 +274,9 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getParamList_Params()
+  public EAttribute getParam_Value()
   {
-    return (EAttribute)paramListEClass.getEStructuralFeatures().get(0);
+    return (EAttribute)paramEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -310,25 +310,25 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
 
     // Create classes and their features
     scriptEClass = createEClass(SCRIPT);
-    createEReference(scriptEClass, SCRIPT__ACTIONS);
+    createEReference(scriptEClass, SCRIPT__SCRIPT_STATEMENTS);
 
-    actionEClass = createEClass(ACTION);
+    statementEClass = createEClass(STATEMENT);
 
     parallelEClass = createEClass(PARALLEL);
 
     parallelBodyEClass = createEClass(PARALLEL_BODY);
     createEAttribute(parallelBodyEClass, PARALLEL_BODY__NAME);
-    createEReference(parallelBodyEClass, PARALLEL_BODY__ACTIONS);
+    createEReference(parallelBodyEClass, PARALLEL_BODY__STATEMENTS);
 
-    actionListEClass = createEClass(ACTION_LIST);
-    createEReference(actionListEClass, ACTION_LIST__ACTIONS);
+    eListEClass = createEClass(ELIST);
+    createEReference(eListEClass, ELIST__STATEMENTS);
 
     commandEClass = createEClass(COMMAND);
     createEAttribute(commandEClass, COMMAND__NAME);
     createEReference(commandEClass, COMMAND__PARAMS);
 
-    paramListEClass = createEClass(PARAM_LIST);
-    createEAttribute(paramListEClass, PARAM_LIST__PARAMS);
+    paramEClass = createEClass(PARAM);
+    createEAttribute(paramEClass, PARAM__VALUE);
   }
 
   /**
@@ -360,31 +360,31 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
     // Set bounds for type parameters
 
     // Add supertypes to classes
-    parallelEClass.getESuperTypes().add(this.getAction());
+    parallelEClass.getESuperTypes().add(this.getStatement());
     parallelBodyEClass.getESuperTypes().add(this.getParallel());
-    commandEClass.getESuperTypes().add(this.getAction());
+    commandEClass.getESuperTypes().add(this.getStatement());
 
     // Initialize classes and features; add operations and parameters
     initEClass(scriptEClass, Script.class, "Script", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getScript_Actions(), this.getAction(), null, "actions", null, 0, -1, Script.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getScript_ScriptStatements(), this.getStatement(), null, "scriptStatements", null, 0, -1, Script.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(actionEClass, Action.class, "Action", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEClass(statementEClass, Statement.class, "Statement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(parallelEClass, Parallel.class, "Parallel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(parallelBodyEClass, ParallelBody.class, "ParallelBody", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getParallelBody_Name(), ecorePackage.getEString(), "name", null, 0, 1, ParallelBody.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getParallelBody_Actions(), this.getActionList(), null, "actions", null, 0, -1, ParallelBody.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getParallelBody_Statements(), this.getEList(), null, "statements", null, 0, -1, ParallelBody.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(actionListEClass, ActionList.class, "ActionList", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getActionList_Actions(), this.getAction(), null, "actions", null, 0, -1, ActionList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(eListEClass, EList.class, "EList", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getEList_Statements(), this.getStatement(), null, "statements", null, 0, -1, EList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(commandEClass, Command.class, "Command", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getCommand_Name(), ecorePackage.getEString(), "name", null, 0, 1, Command.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getCommand_Params(), this.getParamList(), null, "params", null, 0, 1, Command.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getCommand_Params(), this.getParam(), null, "params", null, 0, -1, Command.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(paramListEClass, ParamList.class, "ParamList", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getParamList_Params(), ecorePackage.getEString(), "params", null, 0, -1, ParamList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(paramEClass, Param.class, "Param", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getParam_Value(), ecorePackage.getEInt(), "value", null, 0, 1, Param.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Create resource
     createResource(eNS_URI);

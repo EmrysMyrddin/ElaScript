@@ -16,11 +16,11 @@ import org.eclipse.xtext.serializer.sequencer.ISemanticNodeProvider.INodesForEOb
 import org.eclipse.xtext.serializer.sequencer.ISemanticSequencer;
 import org.eclipse.xtext.serializer.sequencer.ITransientValueService;
 import org.eclipse.xtext.serializer.sequencer.ITransientValueService.ValueTransient;
-import org.elascript.elascript.ActionList;
 import org.elascript.elascript.Command;
+import org.elascript.elascript.EList;
 import org.elascript.elascript.ElascriptPackage;
 import org.elascript.elascript.ParallelBody;
-import org.elascript.elascript.ParamList;
+import org.elascript.elascript.Param;
 import org.elascript.elascript.Script;
 import org.elascript.services.ElascriptGrammarAccess;
 
@@ -33,25 +33,25 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	@Override
 	public void createSequence(EObject context, EObject semanticObject) {
 		if(semanticObject.eClass().getEPackage() == ElascriptPackage.eINSTANCE) switch(semanticObject.eClass().getClassifierID()) {
-			case ElascriptPackage.ACTION_LIST:
-				sequence_ActionList(context, (ActionList) semanticObject); 
-				return; 
 			case ElascriptPackage.COMMAND:
 				sequence_Command(context, (Command) semanticObject); 
+				return; 
+			case ElascriptPackage.ELIST:
+				sequence_StatementList(context, (EList) semanticObject); 
 				return; 
 			case ElascriptPackage.PARALLEL_BODY:
 				if(context == grammarAccess.getParallelBodyRule()) {
 					sequence_ParallelBody(context, (ParallelBody) semanticObject); 
 					return; 
 				}
-				else if(context == grammarAccess.getActionRule() ||
-				   context == grammarAccess.getParallelRule()) {
+				else if(context == grammarAccess.getParallelRule() ||
+				   context == grammarAccess.getStatementRule()) {
 					sequence_Parallel_ParallelBody(context, (ParallelBody) semanticObject); 
 					return; 
 				}
 				else break;
-			case ElascriptPackage.PARAM_LIST:
-				sequence_ParamList(context, (ParamList) semanticObject); 
+			case ElascriptPackage.PARAM:
+				sequence_Param(context, (Param) semanticObject); 
 				return; 
 			case ElascriptPackage.SCRIPT:
 				sequence_Script(context, (Script) semanticObject); 
@@ -62,35 +62,16 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	
 	/**
 	 * Constraint:
-	 *     actions+=Action+
+	 *     (name=FUNCTION_NAME params+=Param params+=Param*)
 	 */
-	protected void sequence_ActionList(EObject context, ActionList semanticObject) {
+	protected void sequence_Command(EObject context, Command semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
 	/**
 	 * Constraint:
-	 *     (name=FUNCTION_NAME params=ParamList)
-	 */
-	protected void sequence_Command(EObject context, Command semanticObject) {
-		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, ElascriptPackage.Literals.COMMAND__NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ElascriptPackage.Literals.COMMAND__NAME));
-			if(transientValues.isValueTransient(semanticObject, ElascriptPackage.Literals.COMMAND__PARAMS) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ElascriptPackage.Literals.COMMAND__PARAMS));
-		}
-		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
-		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getCommandAccess().getNameFUNCTION_NAMETerminalRuleCall_0_0(), semanticObject.getName());
-		feeder.accept(grammarAccess.getCommandAccess().getParamsParamListParserRuleCall_2_0(), semanticObject.getParams());
-		feeder.finish();
-	}
-	
-	
-	/**
-	 * Constraint:
-	 *     (actions+=ActionList actions+=ActionList+)
+	 *     (statements+=StatementList statements+=StatementList+)
 	 */
 	protected void sequence_ParallelBody(EObject context, ParallelBody semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -99,7 +80,7 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	
 	/**
 	 * Constraint:
-	 *     (actions+=ActionList actions+=ActionList+ name=JOIN)
+	 *     (statements+=StatementList statements+=StatementList+ name=JOIN)
 	 */
 	protected void sequence_Parallel_ParallelBody(EObject context, ParallelBody semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -108,18 +89,34 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	
 	/**
 	 * Constraint:
-	 *     (params+=PARAM params+=PARAM*)
+	 *     value=INT
 	 */
-	protected void sequence_ParamList(EObject context, ParamList semanticObject) {
+	protected void sequence_Param(EObject context, Param semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, ElascriptPackage.Literals.PARAM__VALUE) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ElascriptPackage.Literals.PARAM__VALUE));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getParamAccess().getValueINTTerminalRuleCall_0(), semanticObject.getValue());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     scriptStatements+=Statement*
+	 */
+	protected void sequence_Script(EObject context, Script semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
 	/**
 	 * Constraint:
-	 *     actions+=Action*
+	 *     statements+=Statement+
 	 */
-	protected void sequence_Script(EObject context, Script semanticObject) {
+	protected void sequence_StatementList(EObject context, EList semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 }

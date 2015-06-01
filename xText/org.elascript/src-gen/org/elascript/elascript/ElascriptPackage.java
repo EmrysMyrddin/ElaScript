@@ -67,13 +67,13 @@ public interface ElascriptPackage extends EPackage
   int SCRIPT = 0;
 
   /**
-   * The feature id for the '<em><b>Actions</b></em>' containment reference list.
+   * The feature id for the '<em><b>Script Statements</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int SCRIPT__ACTIONS = 0;
+  int SCRIPT__SCRIPT_STATEMENTS = 0;
 
   /**
    * The number of structural features of the '<em>Script</em>' class.
@@ -85,23 +85,23 @@ public interface ElascriptPackage extends EPackage
   int SCRIPT_FEATURE_COUNT = 1;
 
   /**
-   * The meta object id for the '{@link org.elascript.elascript.impl.ActionImpl <em>Action</em>}' class.
+   * The meta object id for the '{@link org.elascript.elascript.impl.StatementImpl <em>Statement</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see org.elascript.elascript.impl.ActionImpl
-   * @see org.elascript.elascript.impl.ElascriptPackageImpl#getAction()
+   * @see org.elascript.elascript.impl.StatementImpl
+   * @see org.elascript.elascript.impl.ElascriptPackageImpl#getStatement()
    * @generated
    */
-  int ACTION = 1;
+  int STATEMENT = 1;
 
   /**
-   * The number of structural features of the '<em>Action</em>' class.
+   * The number of structural features of the '<em>Statement</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int ACTION_FEATURE_COUNT = 0;
+  int STATEMENT_FEATURE_COUNT = 0;
 
   /**
    * The meta object id for the '{@link org.elascript.elascript.impl.ParallelImpl <em>Parallel</em>}' class.
@@ -120,7 +120,7 @@ public interface ElascriptPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PARALLEL_FEATURE_COUNT = ACTION_FEATURE_COUNT + 0;
+  int PARALLEL_FEATURE_COUNT = STATEMENT_FEATURE_COUNT + 0;
 
   /**
    * The meta object id for the '{@link org.elascript.elascript.impl.ParallelBodyImpl <em>Parallel Body</em>}' class.
@@ -142,13 +142,13 @@ public interface ElascriptPackage extends EPackage
   int PARALLEL_BODY__NAME = PARALLEL_FEATURE_COUNT + 0;
 
   /**
-   * The feature id for the '<em><b>Actions</b></em>' containment reference list.
+   * The feature id for the '<em><b>Statements</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PARALLEL_BODY__ACTIONS = PARALLEL_FEATURE_COUNT + 1;
+  int PARALLEL_BODY__STATEMENTS = PARALLEL_FEATURE_COUNT + 1;
 
   /**
    * The number of structural features of the '<em>Parallel Body</em>' class.
@@ -160,32 +160,32 @@ public interface ElascriptPackage extends EPackage
   int PARALLEL_BODY_FEATURE_COUNT = PARALLEL_FEATURE_COUNT + 2;
 
   /**
-   * The meta object id for the '{@link org.elascript.elascript.impl.ActionListImpl <em>Action List</em>}' class.
+   * The meta object id for the '{@link org.elascript.elascript.impl.EListImpl <em>EList</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see org.elascript.elascript.impl.ActionListImpl
-   * @see org.elascript.elascript.impl.ElascriptPackageImpl#getActionList()
+   * @see org.elascript.elascript.impl.EListImpl
+   * @see org.elascript.elascript.impl.ElascriptPackageImpl#getEList()
    * @generated
    */
-  int ACTION_LIST = 4;
+  int ELIST = 4;
 
   /**
-   * The feature id for the '<em><b>Actions</b></em>' containment reference list.
+   * The feature id for the '<em><b>Statements</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int ACTION_LIST__ACTIONS = 0;
+  int ELIST__STATEMENTS = 0;
 
   /**
-   * The number of structural features of the '<em>Action List</em>' class.
+   * The number of structural features of the '<em>EList</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int ACTION_LIST_FEATURE_COUNT = 1;
+  int ELIST_FEATURE_COUNT = 1;
 
   /**
    * The meta object id for the '{@link org.elascript.elascript.impl.CommandImpl <em>Command</em>}' class.
@@ -204,16 +204,16 @@ public interface ElascriptPackage extends EPackage
    * @generated
    * @ordered
    */
-  int COMMAND__NAME = ACTION_FEATURE_COUNT + 0;
+  int COMMAND__NAME = STATEMENT_FEATURE_COUNT + 0;
 
   /**
-   * The feature id for the '<em><b>Params</b></em>' containment reference.
+   * The feature id for the '<em><b>Params</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int COMMAND__PARAMS = ACTION_FEATURE_COUNT + 1;
+  int COMMAND__PARAMS = STATEMENT_FEATURE_COUNT + 1;
 
   /**
    * The number of structural features of the '<em>Command</em>' class.
@@ -222,35 +222,35 @@ public interface ElascriptPackage extends EPackage
    * @generated
    * @ordered
    */
-  int COMMAND_FEATURE_COUNT = ACTION_FEATURE_COUNT + 2;
+  int COMMAND_FEATURE_COUNT = STATEMENT_FEATURE_COUNT + 2;
 
   /**
-   * The meta object id for the '{@link org.elascript.elascript.impl.ParamListImpl <em>Param List</em>}' class.
+   * The meta object id for the '{@link org.elascript.elascript.impl.ParamImpl <em>Param</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see org.elascript.elascript.impl.ParamListImpl
-   * @see org.elascript.elascript.impl.ElascriptPackageImpl#getParamList()
+   * @see org.elascript.elascript.impl.ParamImpl
+   * @see org.elascript.elascript.impl.ElascriptPackageImpl#getParam()
    * @generated
    */
-  int PARAM_LIST = 6;
+  int PARAM = 6;
 
   /**
-   * The feature id for the '<em><b>Params</b></em>' attribute list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int PARAM_LIST__PARAMS = 0;
-
-  /**
-   * The number of structural features of the '<em>Param List</em>' class.
+   * The feature id for the '<em><b>Value</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PARAM_LIST_FEATURE_COUNT = 1;
+  int PARAM__VALUE = 0;
+
+  /**
+   * The number of structural features of the '<em>Param</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PARAM_FEATURE_COUNT = 1;
 
 
   /**
@@ -264,25 +264,25 @@ public interface ElascriptPackage extends EPackage
   EClass getScript();
 
   /**
-   * Returns the meta object for the containment reference list '{@link org.elascript.elascript.Script#getActions <em>Actions</em>}'.
+   * Returns the meta object for the containment reference list '{@link org.elascript.elascript.Script#getScriptStatements <em>Script Statements</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Actions</em>'.
-   * @see org.elascript.elascript.Script#getActions()
+   * @return the meta object for the containment reference list '<em>Script Statements</em>'.
+   * @see org.elascript.elascript.Script#getScriptStatements()
    * @see #getScript()
    * @generated
    */
-  EReference getScript_Actions();
+  EReference getScript_ScriptStatements();
 
   /**
-   * Returns the meta object for class '{@link org.elascript.elascript.Action <em>Action</em>}'.
+   * Returns the meta object for class '{@link org.elascript.elascript.Statement <em>Statement</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Action</em>'.
-   * @see org.elascript.elascript.Action
+   * @return the meta object for class '<em>Statement</em>'.
+   * @see org.elascript.elascript.Statement
    * @generated
    */
-  EClass getAction();
+  EClass getStatement();
 
   /**
    * Returns the meta object for class '{@link org.elascript.elascript.Parallel <em>Parallel</em>}'.
@@ -316,36 +316,36 @@ public interface ElascriptPackage extends EPackage
   EAttribute getParallelBody_Name();
 
   /**
-   * Returns the meta object for the containment reference list '{@link org.elascript.elascript.ParallelBody#getActions <em>Actions</em>}'.
+   * Returns the meta object for the containment reference list '{@link org.elascript.elascript.ParallelBody#getStatements <em>Statements</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Actions</em>'.
-   * @see org.elascript.elascript.ParallelBody#getActions()
+   * @return the meta object for the containment reference list '<em>Statements</em>'.
+   * @see org.elascript.elascript.ParallelBody#getStatements()
    * @see #getParallelBody()
    * @generated
    */
-  EReference getParallelBody_Actions();
+  EReference getParallelBody_Statements();
 
   /**
-   * Returns the meta object for class '{@link org.elascript.elascript.ActionList <em>Action List</em>}'.
+   * Returns the meta object for class '{@link org.elascript.elascript.EList <em>EList</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Action List</em>'.
-   * @see org.elascript.elascript.ActionList
+   * @return the meta object for class '<em>EList</em>'.
+   * @see org.elascript.elascript.EList
    * @generated
    */
-  EClass getActionList();
+  EClass getEList();
 
   /**
-   * Returns the meta object for the containment reference list '{@link org.elascript.elascript.ActionList#getActions <em>Actions</em>}'.
+   * Returns the meta object for the containment reference list '{@link org.elascript.elascript.EList#getStatements <em>Statements</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Actions</em>'.
-   * @see org.elascript.elascript.ActionList#getActions()
-   * @see #getActionList()
+   * @return the meta object for the containment reference list '<em>Statements</em>'.
+   * @see org.elascript.elascript.EList#getStatements()
+   * @see #getEList()
    * @generated
    */
-  EReference getActionList_Actions();
+  EReference getEList_Statements();
 
   /**
    * Returns the meta object for class '{@link org.elascript.elascript.Command <em>Command</em>}'.
@@ -369,10 +369,10 @@ public interface ElascriptPackage extends EPackage
   EAttribute getCommand_Name();
 
   /**
-   * Returns the meta object for the containment reference '{@link org.elascript.elascript.Command#getParams <em>Params</em>}'.
+   * Returns the meta object for the containment reference list '{@link org.elascript.elascript.Command#getParams <em>Params</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>Params</em>'.
+   * @return the meta object for the containment reference list '<em>Params</em>'.
    * @see org.elascript.elascript.Command#getParams()
    * @see #getCommand()
    * @generated
@@ -380,25 +380,25 @@ public interface ElascriptPackage extends EPackage
   EReference getCommand_Params();
 
   /**
-   * Returns the meta object for class '{@link org.elascript.elascript.ParamList <em>Param List</em>}'.
+   * Returns the meta object for class '{@link org.elascript.elascript.Param <em>Param</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Param List</em>'.
-   * @see org.elascript.elascript.ParamList
+   * @return the meta object for class '<em>Param</em>'.
+   * @see org.elascript.elascript.Param
    * @generated
    */
-  EClass getParamList();
+  EClass getParam();
 
   /**
-   * Returns the meta object for the attribute list '{@link org.elascript.elascript.ParamList#getParams <em>Params</em>}'.
+   * Returns the meta object for the attribute '{@link org.elascript.elascript.Param#getValue <em>Value</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute list '<em>Params</em>'.
-   * @see org.elascript.elascript.ParamList#getParams()
-   * @see #getParamList()
+   * @return the meta object for the attribute '<em>Value</em>'.
+   * @see org.elascript.elascript.Param#getValue()
+   * @see #getParam()
    * @generated
    */
-  EAttribute getParamList_Params();
+  EAttribute getParam_Value();
 
   /**
    * Returns the factory that creates the instances of the model.
@@ -434,22 +434,22 @@ public interface ElascriptPackage extends EPackage
     EClass SCRIPT = eINSTANCE.getScript();
 
     /**
-     * The meta object literal for the '<em><b>Actions</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Script Statements</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference SCRIPT__ACTIONS = eINSTANCE.getScript_Actions();
+    EReference SCRIPT__SCRIPT_STATEMENTS = eINSTANCE.getScript_ScriptStatements();
 
     /**
-     * The meta object literal for the '{@link org.elascript.elascript.impl.ActionImpl <em>Action</em>}' class.
+     * The meta object literal for the '{@link org.elascript.elascript.impl.StatementImpl <em>Statement</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see org.elascript.elascript.impl.ActionImpl
-     * @see org.elascript.elascript.impl.ElascriptPackageImpl#getAction()
+     * @see org.elascript.elascript.impl.StatementImpl
+     * @see org.elascript.elascript.impl.ElascriptPackageImpl#getStatement()
      * @generated
      */
-    EClass ACTION = eINSTANCE.getAction();
+    EClass STATEMENT = eINSTANCE.getStatement();
 
     /**
      * The meta object literal for the '{@link org.elascript.elascript.impl.ParallelImpl <em>Parallel</em>}' class.
@@ -480,30 +480,30 @@ public interface ElascriptPackage extends EPackage
     EAttribute PARALLEL_BODY__NAME = eINSTANCE.getParallelBody_Name();
 
     /**
-     * The meta object literal for the '<em><b>Actions</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Statements</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference PARALLEL_BODY__ACTIONS = eINSTANCE.getParallelBody_Actions();
+    EReference PARALLEL_BODY__STATEMENTS = eINSTANCE.getParallelBody_Statements();
 
     /**
-     * The meta object literal for the '{@link org.elascript.elascript.impl.ActionListImpl <em>Action List</em>}' class.
+     * The meta object literal for the '{@link org.elascript.elascript.impl.EListImpl <em>EList</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see org.elascript.elascript.impl.ActionListImpl
-     * @see org.elascript.elascript.impl.ElascriptPackageImpl#getActionList()
+     * @see org.elascript.elascript.impl.EListImpl
+     * @see org.elascript.elascript.impl.ElascriptPackageImpl#getEList()
      * @generated
      */
-    EClass ACTION_LIST = eINSTANCE.getActionList();
+    EClass ELIST = eINSTANCE.getEList();
 
     /**
-     * The meta object literal for the '<em><b>Actions</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Statements</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference ACTION_LIST__ACTIONS = eINSTANCE.getActionList_Actions();
+    EReference ELIST__STATEMENTS = eINSTANCE.getEList_Statements();
 
     /**
      * The meta object literal for the '{@link org.elascript.elascript.impl.CommandImpl <em>Command</em>}' class.
@@ -524,7 +524,7 @@ public interface ElascriptPackage extends EPackage
     EAttribute COMMAND__NAME = eINSTANCE.getCommand_Name();
 
     /**
-     * The meta object literal for the '<em><b>Params</b></em>' containment reference feature.
+     * The meta object literal for the '<em><b>Params</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -532,22 +532,22 @@ public interface ElascriptPackage extends EPackage
     EReference COMMAND__PARAMS = eINSTANCE.getCommand_Params();
 
     /**
-     * The meta object literal for the '{@link org.elascript.elascript.impl.ParamListImpl <em>Param List</em>}' class.
+     * The meta object literal for the '{@link org.elascript.elascript.impl.ParamImpl <em>Param</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see org.elascript.elascript.impl.ParamListImpl
-     * @see org.elascript.elascript.impl.ElascriptPackageImpl#getParamList()
+     * @see org.elascript.elascript.impl.ParamImpl
+     * @see org.elascript.elascript.impl.ElascriptPackageImpl#getParam()
      * @generated
      */
-    EClass PARAM_LIST = eINSTANCE.getParamList();
+    EClass PARAM = eINSTANCE.getParam();
 
     /**
-     * The meta object literal for the '<em><b>Params</b></em>' attribute list feature.
+     * The meta object literal for the '<em><b>Value</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute PARAM_LIST__PARAMS = eINSTANCE.getParamList_Params();
+    EAttribute PARAM__VALUE = eINSTANCE.getParam_Value();
 
   }
 

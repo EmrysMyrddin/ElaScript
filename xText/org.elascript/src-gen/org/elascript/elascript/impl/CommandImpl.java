@@ -2,17 +2,24 @@
  */
 package org.elascript.elascript.impl;
 
+import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
 import org.elascript.elascript.Command;
 import org.elascript.elascript.ElascriptPackage;
-import org.elascript.elascript.ParamList;
+import org.elascript.elascript.Param;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +35,7 @@ import org.elascript.elascript.ParamList;
  *
  * @generated
  */
-public class CommandImpl extends ActionImpl implements Command
+public class CommandImpl extends StatementImpl implements Command
 {
   /**
    * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -51,14 +58,14 @@ public class CommandImpl extends ActionImpl implements Command
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getParams() <em>Params</em>}' containment reference.
+   * The cached value of the '{@link #getParams() <em>Params</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @see #getParams()
    * @generated
    * @ordered
    */
-  protected ParamList params;
+  protected EList<Param> params;
 
   /**
    * <!-- begin-user-doc -->
@@ -109,47 +116,13 @@ public class CommandImpl extends ActionImpl implements Command
    * <!-- end-user-doc -->
    * @generated
    */
-  public ParamList getParams()
+  public EList<Param> getParams()
   {
+    if (params == null)
+    {
+      params = new EObjectContainmentEList<Param>(Param.class, this, ElascriptPackage.COMMAND__PARAMS);
+    }
     return params;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public NotificationChain basicSetParams(ParamList newParams, NotificationChain msgs)
-  {
-    ParamList oldParams = params;
-    params = newParams;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ElascriptPackage.COMMAND__PARAMS, oldParams, newParams);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setParams(ParamList newParams)
-  {
-    if (newParams != params)
-    {
-      NotificationChain msgs = null;
-      if (params != null)
-        msgs = ((InternalEObject)params).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ElascriptPackage.COMMAND__PARAMS, null, msgs);
-      if (newParams != null)
-        msgs = ((InternalEObject)newParams).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ElascriptPackage.COMMAND__PARAMS, null, msgs);
-      msgs = basicSetParams(newParams, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, ElascriptPackage.COMMAND__PARAMS, newParams, newParams));
   }
 
   /**
@@ -163,7 +136,7 @@ public class CommandImpl extends ActionImpl implements Command
     switch (featureID)
     {
       case ElascriptPackage.COMMAND__PARAMS:
-        return basicSetParams(null, msgs);
+        return ((InternalEList<?>)getParams()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -191,6 +164,7 @@ public class CommandImpl extends ActionImpl implements Command
    * <!-- end-user-doc -->
    * @generated
    */
+  @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
@@ -200,7 +174,8 @@ public class CommandImpl extends ActionImpl implements Command
         setName((String)newValue);
         return;
       case ElascriptPackage.COMMAND__PARAMS:
-        setParams((ParamList)newValue);
+        getParams().clear();
+        getParams().addAll((Collection<? extends Param>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -220,7 +195,7 @@ public class CommandImpl extends ActionImpl implements Command
         setName(NAME_EDEFAULT);
         return;
       case ElascriptPackage.COMMAND__PARAMS:
-        setParams((ParamList)null);
+        getParams().clear();
         return;
     }
     super.eUnset(featureID);
@@ -239,7 +214,7 @@ public class CommandImpl extends ActionImpl implements Command
       case ElascriptPackage.COMMAND__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
       case ElascriptPackage.COMMAND__PARAMS:
-        return params != null;
+        return params != null && !params.isEmpty();
     }
     return super.eIsSet(featureID);
   }

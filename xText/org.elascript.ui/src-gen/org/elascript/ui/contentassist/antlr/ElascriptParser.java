@@ -37,22 +37,21 @@ public class ElascriptParser extends AbstractContentAssistParser {
 			nameMappings = new HashMap<AbstractElement, String>() {
 				private static final long serialVersionUID = 1L;
 				{
-					put(grammarAccess.getActionAccess().getAlternatives(), "rule__Action__Alternatives");
+					put(grammarAccess.getStatementAccess().getAlternatives(), "rule__Statement__Alternatives");
 					put(grammarAccess.getParallelAccess().getGroup(), "rule__Parallel__Group__0");
 					put(grammarAccess.getParallelBodyAccess().getGroup(), "rule__ParallelBody__Group__0");
 					put(grammarAccess.getParallelBodyAccess().getGroup_1(), "rule__ParallelBody__Group_1__0");
 					put(grammarAccess.getCommandAccess().getGroup(), "rule__Command__Group__0");
-					put(grammarAccess.getParamListAccess().getGroup(), "rule__ParamList__Group__0");
-					put(grammarAccess.getParamListAccess().getGroup_1(), "rule__ParamList__Group_1__0");
-					put(grammarAccess.getScriptAccess().getActionsAssignment(), "rule__Script__ActionsAssignment");
+					put(grammarAccess.getCommandAccess().getGroup_3(), "rule__Command__Group_3__0");
+					put(grammarAccess.getScriptAccess().getScriptStatementsAssignment(), "rule__Script__ScriptStatementsAssignment");
 					put(grammarAccess.getParallelAccess().getNameAssignment_2(), "rule__Parallel__NameAssignment_2");
-					put(grammarAccess.getParallelBodyAccess().getActionsAssignment_0(), "rule__ParallelBody__ActionsAssignment_0");
-					put(grammarAccess.getParallelBodyAccess().getActionsAssignment_1_1(), "rule__ParallelBody__ActionsAssignment_1_1");
-					put(grammarAccess.getActionListAccess().getActionsAssignment(), "rule__ActionList__ActionsAssignment");
+					put(grammarAccess.getParallelBodyAccess().getStatementsAssignment_0(), "rule__ParallelBody__StatementsAssignment_0");
+					put(grammarAccess.getParallelBodyAccess().getStatementsAssignment_1_1(), "rule__ParallelBody__StatementsAssignment_1_1");
+					put(grammarAccess.getStatementListAccess().getStatementsAssignment(), "rule__StatementList__StatementsAssignment");
 					put(grammarAccess.getCommandAccess().getNameAssignment_0(), "rule__Command__NameAssignment_0");
 					put(grammarAccess.getCommandAccess().getParamsAssignment_2(), "rule__Command__ParamsAssignment_2");
-					put(grammarAccess.getParamListAccess().getParamsAssignment_0(), "rule__ParamList__ParamsAssignment_0");
-					put(grammarAccess.getParamListAccess().getParamsAssignment_1_1(), "rule__ParamList__ParamsAssignment_1_1");
+					put(grammarAccess.getCommandAccess().getParamsAssignment_3_1(), "rule__Command__ParamsAssignment_3_1");
+					put(grammarAccess.getParamAccess().getValueAssignment(), "rule__Param__ValueAssignment");
 				}
 			};
 		}

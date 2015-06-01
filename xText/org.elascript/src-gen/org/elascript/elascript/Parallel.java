@@ -13,6 +13,6 @@ package org.elascript.elascript;
  * @model
  * @generated
  */
-public interface Parallel extends Action
+public interface Parallel extends Statement
 {
 } // Parallel

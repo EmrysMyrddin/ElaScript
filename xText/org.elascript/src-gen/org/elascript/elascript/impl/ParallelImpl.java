@@ -16,7 +16,7 @@ import org.elascript.elascript.Parallel;
  *
  * @generated
  */
-public class ParallelImpl extends ActionImpl implements Parallel
+public class ParallelImpl extends StatementImpl implements Parallel
 {
   /**
    * <!-- begin-user-doc -->

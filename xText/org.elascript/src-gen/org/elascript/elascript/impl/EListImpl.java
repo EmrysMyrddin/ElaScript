@@ -6,8 +6,6 @@ import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
@@ -16,41 +14,41 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
-import org.elascript.elascript.Action;
-import org.elascript.elascript.ActionList;
+import org.elascript.elascript.EList;
 import org.elascript.elascript.ElascriptPackage;
+import org.elascript.elascript.Statement;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Action List</b></em>'.
+ * An implementation of the model object '<em><b>EList</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link org.elascript.elascript.impl.ActionListImpl#getActions <em>Actions</em>}</li>
+ *   <li>{@link org.elascript.elascript.impl.EListImpl#getStatements <em>Statements</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class ActionListImpl extends MinimalEObjectImpl.Container implements ActionList
+public class EListImpl extends MinimalEObjectImpl.Container implements EList
 {
   /**
-   * The cached value of the '{@link #getActions() <em>Actions</em>}' containment reference list.
+   * The cached value of the '{@link #getStatements() <em>Statements</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getActions()
+   * @see #getStatements()
    * @generated
    * @ordered
    */
-  protected EList<Action> actions;
+  protected org.eclipse.emf.common.util.EList<Statement> statements;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected ActionListImpl()
+  protected EListImpl()
   {
     super();
   }
@@ -63,7 +61,7 @@ public class ActionListImpl extends MinimalEObjectImpl.Container implements Acti
   @Override
   protected EClass eStaticClass()
   {
-    return ElascriptPackage.Literals.ACTION_LIST;
+    return ElascriptPackage.Literals.ELIST;
   }
 
   /**
@@ -71,13 +69,13 @@ public class ActionListImpl extends MinimalEObjectImpl.Container implements Acti
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Action> getActions()
+  public org.eclipse.emf.common.util.EList<Statement> getStatements()
   {
-    if (actions == null)
+    if (statements == null)
     {
-      actions = new EObjectContainmentEList<Action>(Action.class, this, ElascriptPackage.ACTION_LIST__ACTIONS);
+      statements = new EObjectContainmentEList<Statement>(Statement.class, this, ElascriptPackage.ELIST__STATEMENTS);
     }
-    return actions;
+    return statements;
   }
 
   /**
@@ -90,8 +88,8 @@ public class ActionListImpl extends MinimalEObjectImpl.Container implements Acti
   {
     switch (featureID)
     {
-      case ElascriptPackage.ACTION_LIST__ACTIONS:
-        return ((InternalEList<?>)getActions()).basicRemove(otherEnd, msgs);
+      case ElascriptPackage.ELIST__STATEMENTS:
+        return ((InternalEList<?>)getStatements()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -106,8 +104,8 @@ public class ActionListImpl extends MinimalEObjectImpl.Container implements Acti
   {
     switch (featureID)
     {
-      case ElascriptPackage.ACTION_LIST__ACTIONS:
-        return getActions();
+      case ElascriptPackage.ELIST__STATEMENTS:
+        return getStatements();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -123,9 +121,9 @@ public class ActionListImpl extends MinimalEObjectImpl.Container implements Acti
   {
     switch (featureID)
     {
-      case ElascriptPackage.ACTION_LIST__ACTIONS:
-        getActions().clear();
-        getActions().addAll((Collection<? extends Action>)newValue);
+      case ElascriptPackage.ELIST__STATEMENTS:
+        getStatements().clear();
+        getStatements().addAll((Collection<? extends Statement>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -141,8 +139,8 @@ public class ActionListImpl extends MinimalEObjectImpl.Container implements Acti
   {
     switch (featureID)
     {
-      case ElascriptPackage.ACTION_LIST__ACTIONS:
-        getActions().clear();
+      case ElascriptPackage.ELIST__STATEMENTS:
+        getStatements().clear();
         return;
     }
     super.eUnset(featureID);
@@ -158,10 +156,10 @@ public class ActionListImpl extends MinimalEObjectImpl.Container implements Acti
   {
     switch (featureID)
     {
-      case ElascriptPackage.ACTION_LIST__ACTIONS:
-        return actions != null && !actions.isEmpty();
+      case ElascriptPackage.ELIST__STATEMENTS:
+        return statements != null && !statements.isEmpty();
     }
     return super.eIsSet(featureID);
   }
 
-} //ActionListImpl
+} //EListImpl
