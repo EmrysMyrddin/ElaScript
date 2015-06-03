@@ -1,4 +1,0 @@
-INDEX VERSION 1.127+/home/maeln/codes/ElaScript/xText/.metadata/.plugins/org.eclipse.jdt.core
-2657648248.index
-2640748652.index
-2022108701.index

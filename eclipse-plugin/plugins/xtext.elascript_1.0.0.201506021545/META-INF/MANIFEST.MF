@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: xtext.elascript; singleton:=true
+Export-Package: xtext.elascript,xtext.elascript.services,xtext.elascri
+ pt.elascript,xtext.elascript.elascript.impl,xtext.elascript.elascript
+ .util,xtext.elascript.serializer,xtext.elascript.parser.antlr,xtext.e
+ lascript.parser.antlr.internal,xtext.elascript.validation,xtext.elasc
+ ript.scoping,xtext.elascript.generator,xtext.elascript.formatting
+Bundle-Name: xtext.elascript
+Bundle-Version: 1.0.0.201506021545
+Require-Bundle: org.eclipse.xtext;visibility:=reexport,org.eclipse.equ
+ inox.common;bundle-version="3.5.0",org.eclipse.xtext.util,org.eclipse
+ .emf.ecore,org.eclipse.emf.common,org.eclipse.xtext.xbase.lib,org.ant
+ lr.runtime,org.eclipse.xtext.common.types,org.objectweb.asm;bundle-ve
+ rsion="[5.0.1,6.0.0)";resolution:=optional
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: My Company
+Import-Package: org.apache.log4j
+
+

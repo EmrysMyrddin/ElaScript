@@ -1,7 +1,0 @@
-wait(1);
-[
-	ScaleInSoft(1);
-	||
-	ScaleOut(2);
-	
-]
