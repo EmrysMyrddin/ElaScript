@@ -7,16 +7,15 @@ import org.eclipse.xtext.formatting.impl.AbstractDeclarativeFormatter;
 import org.eclipse.xtext.formatting.impl.FormattingConfig;
 
 /**
- * This class contains custom formatting declarations.
+ * This class contains custom formatting description.
  * 
- * See https://www.eclipse.org/Xtext/documentation/303_runtime_concepts.html#formatting
- * on how and when to use it.
+ * see : http://www.eclipse.org/Xtext/documentation.html#formatting
+ * on how and when to use it
  * 
  * Also see {@link org.eclipse.xtext.xtext.XtextFormattingTokenSerializer} as an example
  */
 @SuppressWarnings("all")
 public class ElascriptFormatter extends AbstractDeclarativeFormatter {
-  @Override
   protected void configureFormatting(final FormattingConfig c) {
   }
 }

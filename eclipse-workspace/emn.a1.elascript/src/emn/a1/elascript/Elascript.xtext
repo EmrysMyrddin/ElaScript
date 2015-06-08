@@ -1,5 +1,6 @@
 grammar emn.a1.elascript.Elascript with org.eclipse.xtext.common.Terminals
-generate elascript "http://www.elascript.org/Elascript"
+
+generate elascript "http://www.a1.emn/elascript/Elascript"
 
 Script : 	
 	BeginScript=BeginScript scriptStatement=StatementList EndScript=EndScript
@@ -32,7 +33,44 @@ StatementList:
 	statements+=Statement+
 ;
 Command:
-	 name=ID LP params+=Param (COMMA  params+=Param)*  RP SEQUENTIAL_SEPARATOR
+	( ScaleFunction | GenericFunction | WaitFunction) LP params+=Param (COMMA  params+=Param)*  RP SEQUENTIAL_SEPARATOR
+;
+
+ScaleFunction:
+	ScaleInInfra | ScaleOutInfra | ScaleUpInfra | ScaleDownInfra | ScaleInSoft | ScaleOutSoft | ScaleUpSoft | ScaleDownSoft
+;
+
+WaitFunction:
+	name="wait"
+;
+
+GenericFunction:
+	name=ID
+;
+ScaleInInfra :
+	name="scaleInInfra"
+;
+ScaleOutInfra :
+	name="scaleOutInfra"
+;
+ScaleUpInfra :
+	name="scaleUpInfra"
+;
+ScaleDownInfra :
+	name="scaleDownInfra"
+;
+
+ScaleInSoft :
+	name="scaleInSoft"
+;
+ScaleOutSoft :
+	name="scaleOutSoft"
+;
+ScaleUpSoft :
+	name="scaleUpSoft" 
+	;
+ScaleDownSoft :
+	name="scaleDownSoft"
 ;
 Param :
 	value=INT
@@ -46,6 +84,3 @@ terminal fragment NUMBER: '0'..'9';
 terminal SEQUENTIAL_SEPARATOR : ';';
 
 terminal COMMA : ',';
-
-
-

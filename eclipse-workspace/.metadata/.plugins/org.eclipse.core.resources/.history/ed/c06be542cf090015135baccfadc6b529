@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:elascript="http://www.a1.emn/elascript/Elascript" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" xmi:id="_wRtBUAnOEeWUQoUWgoR15g" selectedViews="_OBFbUAnPEeWUQoUWgoR15g" version="8.1.1">
-  <models xmi:type="elascript:Script" href="example.ela#/"/>
-  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_OBFbUAnPEeWUQoUWgoR15g" initialized="true">
-    <viewpoint xmi:type="description:Viewpoint" href="Elascript.odesign#//@ownedViewpoints[name='']"/>
-  </ownedViews>
-</viewpoint:DAnalysis>

@@ -3,7 +3,7 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/emn.a1.elascript/src-gen" editDirectory="/emn.a1.elascript.edit/src"
     editorDirectory="/emn.a1.elascript.editor/src" modelPluginID="emn.a1.elascript"
     forceOverwrite="true" modelName="Elascript" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
-    complianceLevel="6.0" copyrightFields="false" editPluginID="emn.a1.elascript.edit"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="emn.a1.elascript.edit"
     editorPluginID="emn.a1.elascript.editor" runtimeVersion="2.10">
   <genPackages prefix="Elascript" basePackage="emn.a1.elascript" disposableProviderFactory="true"
       fileExtensions="ela" ecorePackage="Elascript.ecore#/">
@@ -34,9 +34,20 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//StatementList/statements"/>
     </genClasses>
     <genClasses ecoreClass="Elascript.ecore#//Command">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Elascript.ecore#//Command/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//Command/params"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Elascript.ecore#//Command/name"/>
     </genClasses>
+    <genClasses ecoreClass="Elascript.ecore#//ScaleFunction"/>
+    <genClasses ecoreClass="Elascript.ecore#//WaitFunction"/>
+    <genClasses ecoreClass="Elascript.ecore#//GenericFunction"/>
+    <genClasses ecoreClass="Elascript.ecore#//ScaleInInfra"/>
+    <genClasses ecoreClass="Elascript.ecore#//ScaleOutInfra"/>
+    <genClasses ecoreClass="Elascript.ecore#//ScaleUpInfra"/>
+    <genClasses ecoreClass="Elascript.ecore#//ScaleDownInfra"/>
+    <genClasses ecoreClass="Elascript.ecore#//ScaleInSoft"/>
+    <genClasses ecoreClass="Elascript.ecore#//ScaleOutSoft"/>
+    <genClasses ecoreClass="Elascript.ecore#//ScaleUpSoft"/>
+    <genClasses ecoreClass="Elascript.ecore#//ScaleDownSoft"/>
     <genClasses ecoreClass="Elascript.ecore#//Param">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Elascript.ecore#//Param/value"/>
     </genClasses>

@@ -28,8 +28,8 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link emn.a1.elascript.elascript.impl.CommandImpl#getName <em>Name</em>}</li>
  *   <li>{@link emn.a1.elascript.elascript.impl.CommandImpl#getParams <em>Params</em>}</li>
+ *   <li>{@link emn.a1.elascript.elascript.impl.CommandImpl#getName <em>Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -37,6 +37,16 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class CommandImpl extends StatementImpl implements Command
 {
+  /**
+   * The cached value of the '{@link #getParams() <em>Params</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getParams()
+   * @generated
+   * @ordered
+   */
+  protected EList<Param> params;
+
   /**
    * The default value of the '{@link #getName() <em>Name</em>}' attribute.
    * <!-- begin-user-doc -->
@@ -58,16 +68,6 @@ public class CommandImpl extends StatementImpl implements Command
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getParams() <em>Params</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getParams()
-   * @generated
-   * @ordered
-   */
-  protected EList<Param> params;
-
-  /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
@@ -86,6 +86,20 @@ public class CommandImpl extends StatementImpl implements Command
   protected EClass eStaticClass()
   {
     return ElascriptPackage.Literals.COMMAND;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EList<Param> getParams()
+  {
+    if (params == null)
+    {
+      params = new EObjectContainmentEList<Param>(Param.class, this, ElascriptPackage.COMMAND__PARAMS);
+    }
+    return params;
   }
 
   /**
@@ -116,20 +130,6 @@ public class CommandImpl extends StatementImpl implements Command
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Param> getParams()
-  {
-    if (params == null)
-    {
-      params = new EObjectContainmentEList<Param>(Param.class, this, ElascriptPackage.COMMAND__PARAMS);
-    }
-    return params;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
@@ -151,10 +151,10 @@ public class CommandImpl extends StatementImpl implements Command
   {
     switch (featureID)
     {
-      case ElascriptPackage.COMMAND__NAME:
-        return getName();
       case ElascriptPackage.COMMAND__PARAMS:
         return getParams();
+      case ElascriptPackage.COMMAND__NAME:
+        return getName();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -170,12 +170,12 @@ public class CommandImpl extends StatementImpl implements Command
   {
     switch (featureID)
     {
-      case ElascriptPackage.COMMAND__NAME:
-        setName((String)newValue);
-        return;
       case ElascriptPackage.COMMAND__PARAMS:
         getParams().clear();
         getParams().addAll((Collection<? extends Param>)newValue);
+        return;
+      case ElascriptPackage.COMMAND__NAME:
+        setName((String)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -191,11 +191,11 @@ public class CommandImpl extends StatementImpl implements Command
   {
     switch (featureID)
     {
-      case ElascriptPackage.COMMAND__NAME:
-        setName(NAME_EDEFAULT);
-        return;
       case ElascriptPackage.COMMAND__PARAMS:
         getParams().clear();
+        return;
+      case ElascriptPackage.COMMAND__NAME:
+        setName(NAME_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -211,10 +211,10 @@ public class CommandImpl extends StatementImpl implements Command
   {
     switch (featureID)
     {
-      case ElascriptPackage.COMMAND__NAME:
-        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
       case ElascriptPackage.COMMAND__PARAMS:
         return params != null && !params.isEmpty();
+      case ElascriptPackage.COMMAND__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
     }
     return super.eIsSet(featureID);
   }

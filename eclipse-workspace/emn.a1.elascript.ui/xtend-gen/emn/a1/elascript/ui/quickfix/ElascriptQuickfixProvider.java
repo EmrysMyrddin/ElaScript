@@ -8,7 +8,7 @@ import org.eclipse.xtext.ui.editor.quickfix.DefaultQuickfixProvider;
 /**
  * Custom quickfixes.
  * 
- * See https://www.eclipse.org/Xtext/documentation/304_ide_concepts.html#quick-fixes
+ * see http://www.eclipse.org/Xtext/documentation.html#quickfixes
  */
 @SuppressWarnings("all")
 public class ElascriptQuickfixProvider extends DefaultQuickfixProvider {

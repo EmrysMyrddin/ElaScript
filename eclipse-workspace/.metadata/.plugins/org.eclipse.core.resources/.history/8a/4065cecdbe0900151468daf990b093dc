@@ -1,9 +1,0 @@
-grammar emn.a1.elascript.Elascript with org.eclipse.xtext.common.Terminals
-
-generate elascript "http://www.a1.emn/elascript/Elascript"
-
-Model:
-	greetings+=Greeting*;
-	
-Greeting:
-	'Hello' name=ID '!';

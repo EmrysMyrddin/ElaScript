@@ -6,9 +6,9 @@ package emn.a1.elascript.validation;
 import emn.a1.elascript.validation.AbstractElascriptValidator;
 
 /**
- * This class contains custom validation rules.
+ * Custom validation rules.
  * 
- * See https://www.eclipse.org/Xtext/documentation/303_runtime_concepts.html#validation
+ * see http://www.eclipse.org/Xtext/documentation.html#validation
  */
 @SuppressWarnings("all")
 public class ElascriptValidator extends AbstractElascriptValidator {

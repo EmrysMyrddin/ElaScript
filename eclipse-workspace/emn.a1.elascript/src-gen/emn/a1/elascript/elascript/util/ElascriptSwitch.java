@@ -137,6 +137,113 @@ public class ElascriptSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case ElascriptPackage.SCALE_FUNCTION:
+      {
+        ScaleFunction scaleFunction = (ScaleFunction)theEObject;
+        T result = caseScaleFunction(scaleFunction);
+        if (result == null) result = caseCommand(scaleFunction);
+        if (result == null) result = caseStatement(scaleFunction);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ElascriptPackage.WAIT_FUNCTION:
+      {
+        WaitFunction waitFunction = (WaitFunction)theEObject;
+        T result = caseWaitFunction(waitFunction);
+        if (result == null) result = caseCommand(waitFunction);
+        if (result == null) result = caseStatement(waitFunction);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ElascriptPackage.GENERIC_FUNCTION:
+      {
+        GenericFunction genericFunction = (GenericFunction)theEObject;
+        T result = caseGenericFunction(genericFunction);
+        if (result == null) result = caseCommand(genericFunction);
+        if (result == null) result = caseStatement(genericFunction);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ElascriptPackage.SCALE_IN_INFRA:
+      {
+        ScaleInInfra scaleInInfra = (ScaleInInfra)theEObject;
+        T result = caseScaleInInfra(scaleInInfra);
+        if (result == null) result = caseScaleFunction(scaleInInfra);
+        if (result == null) result = caseCommand(scaleInInfra);
+        if (result == null) result = caseStatement(scaleInInfra);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ElascriptPackage.SCALE_OUT_INFRA:
+      {
+        ScaleOutInfra scaleOutInfra = (ScaleOutInfra)theEObject;
+        T result = caseScaleOutInfra(scaleOutInfra);
+        if (result == null) result = caseScaleFunction(scaleOutInfra);
+        if (result == null) result = caseCommand(scaleOutInfra);
+        if (result == null) result = caseStatement(scaleOutInfra);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ElascriptPackage.SCALE_UP_INFRA:
+      {
+        ScaleUpInfra scaleUpInfra = (ScaleUpInfra)theEObject;
+        T result = caseScaleUpInfra(scaleUpInfra);
+        if (result == null) result = caseScaleFunction(scaleUpInfra);
+        if (result == null) result = caseCommand(scaleUpInfra);
+        if (result == null) result = caseStatement(scaleUpInfra);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ElascriptPackage.SCALE_DOWN_INFRA:
+      {
+        ScaleDownInfra scaleDownInfra = (ScaleDownInfra)theEObject;
+        T result = caseScaleDownInfra(scaleDownInfra);
+        if (result == null) result = caseScaleFunction(scaleDownInfra);
+        if (result == null) result = caseCommand(scaleDownInfra);
+        if (result == null) result = caseStatement(scaleDownInfra);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ElascriptPackage.SCALE_IN_SOFT:
+      {
+        ScaleInSoft scaleInSoft = (ScaleInSoft)theEObject;
+        T result = caseScaleInSoft(scaleInSoft);
+        if (result == null) result = caseScaleFunction(scaleInSoft);
+        if (result == null) result = caseCommand(scaleInSoft);
+        if (result == null) result = caseStatement(scaleInSoft);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ElascriptPackage.SCALE_OUT_SOFT:
+      {
+        ScaleOutSoft scaleOutSoft = (ScaleOutSoft)theEObject;
+        T result = caseScaleOutSoft(scaleOutSoft);
+        if (result == null) result = caseScaleFunction(scaleOutSoft);
+        if (result == null) result = caseCommand(scaleOutSoft);
+        if (result == null) result = caseStatement(scaleOutSoft);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ElascriptPackage.SCALE_UP_SOFT:
+      {
+        ScaleUpSoft scaleUpSoft = (ScaleUpSoft)theEObject;
+        T result = caseScaleUpSoft(scaleUpSoft);
+        if (result == null) result = caseScaleFunction(scaleUpSoft);
+        if (result == null) result = caseCommand(scaleUpSoft);
+        if (result == null) result = caseStatement(scaleUpSoft);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ElascriptPackage.SCALE_DOWN_SOFT:
+      {
+        ScaleDownSoft scaleDownSoft = (ScaleDownSoft)theEObject;
+        T result = caseScaleDownSoft(scaleDownSoft);
+        if (result == null) result = caseScaleFunction(scaleDownSoft);
+        if (result == null) result = caseCommand(scaleDownSoft);
+        if (result == null) result = caseStatement(scaleDownSoft);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case ElascriptPackage.PARAM:
       {
         Param param = (Param)theEObject;
@@ -288,6 +395,182 @@ public class ElascriptSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseCommand(Command object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Scale Function</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Scale Function</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseScaleFunction(ScaleFunction object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Wait Function</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Wait Function</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseWaitFunction(WaitFunction object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Generic Function</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Generic Function</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseGenericFunction(GenericFunction object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Scale In Infra</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Scale In Infra</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseScaleInInfra(ScaleInInfra object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Scale Out Infra</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Scale Out Infra</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseScaleOutInfra(ScaleOutInfra object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Scale Up Infra</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Scale Up Infra</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseScaleUpInfra(ScaleUpInfra object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Scale Down Infra</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Scale Down Infra</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseScaleDownInfra(ScaleDownInfra object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Scale In Soft</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Scale In Soft</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseScaleInSoft(ScaleInSoft object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Scale Out Soft</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Scale Out Soft</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseScaleOutSoft(ScaleOutSoft object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Scale Up Soft</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Scale Up Soft</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseScaleUpSoft(ScaleUpSoft object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Scale Down Soft</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Scale Down Soft</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseScaleDownSoft(ScaleDownSoft object)
   {
     return null;
   }

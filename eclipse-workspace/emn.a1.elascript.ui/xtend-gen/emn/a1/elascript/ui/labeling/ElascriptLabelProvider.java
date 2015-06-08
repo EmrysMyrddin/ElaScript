@@ -8,9 +8,9 @@ import org.eclipse.emf.edit.ui.provider.AdapterFactoryLabelProvider;
 import org.eclipse.xtext.ui.label.DefaultEObjectLabelProvider;
 
 /**
- * Provides labels for EObjects.
+ * Provides labels for a EObjects.
  * 
- * See https://www.eclipse.org/Xtext/documentation/304_ide_concepts.html#label-provider
+ * see http://www.eclipse.org/Xtext/documentation.html#labelProvider
  */
 @SuppressWarnings("all")
 public class ElascriptLabelProvider extends DefaultEObjectLabelProvider {

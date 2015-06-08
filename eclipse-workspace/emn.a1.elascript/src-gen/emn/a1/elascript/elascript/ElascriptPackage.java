@@ -38,7 +38,7 @@ public interface ElascriptPackage extends EPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  String eNS_URI = "http://www.elascript.org/Elascript";
+  String eNS_URI = "http://www.a1.emn/elascript/Elascript";
 
   /**
    * The package namespace name.
@@ -318,22 +318,22 @@ public interface ElascriptPackage extends EPackage
   int COMMAND = 8;
 
   /**
-   * The feature id for the '<em><b>Name</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int COMMAND__NAME = STATEMENT_FEATURE_COUNT + 0;
-
-  /**
    * The feature id for the '<em><b>Params</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int COMMAND__PARAMS = STATEMENT_FEATURE_COUNT + 1;
+  int COMMAND__PARAMS = STATEMENT_FEATURE_COUNT + 0;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int COMMAND__NAME = STATEMENT_FEATURE_COUNT + 1;
 
   /**
    * The number of structural features of the '<em>Command</em>' class.
@@ -345,6 +345,413 @@ public interface ElascriptPackage extends EPackage
   int COMMAND_FEATURE_COUNT = STATEMENT_FEATURE_COUNT + 2;
 
   /**
+   * The meta object id for the '{@link emn.a1.elascript.elascript.impl.ScaleFunctionImpl <em>Scale Function</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see emn.a1.elascript.elascript.impl.ScaleFunctionImpl
+   * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleFunction()
+   * @generated
+   */
+  int SCALE_FUNCTION = 9;
+
+  /**
+   * The feature id for the '<em><b>Params</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_FUNCTION__PARAMS = COMMAND__PARAMS;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_FUNCTION__NAME = COMMAND__NAME;
+
+  /**
+   * The number of structural features of the '<em>Scale Function</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_FUNCTION_FEATURE_COUNT = COMMAND_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link emn.a1.elascript.elascript.impl.WaitFunctionImpl <em>Wait Function</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see emn.a1.elascript.elascript.impl.WaitFunctionImpl
+   * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getWaitFunction()
+   * @generated
+   */
+  int WAIT_FUNCTION = 10;
+
+  /**
+   * The feature id for the '<em><b>Params</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int WAIT_FUNCTION__PARAMS = COMMAND__PARAMS;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int WAIT_FUNCTION__NAME = COMMAND__NAME;
+
+  /**
+   * The number of structural features of the '<em>Wait Function</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int WAIT_FUNCTION_FEATURE_COUNT = COMMAND_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link emn.a1.elascript.elascript.impl.GenericFunctionImpl <em>Generic Function</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see emn.a1.elascript.elascript.impl.GenericFunctionImpl
+   * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getGenericFunction()
+   * @generated
+   */
+  int GENERIC_FUNCTION = 11;
+
+  /**
+   * The feature id for the '<em><b>Params</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GENERIC_FUNCTION__PARAMS = COMMAND__PARAMS;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GENERIC_FUNCTION__NAME = COMMAND__NAME;
+
+  /**
+   * The number of structural features of the '<em>Generic Function</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GENERIC_FUNCTION_FEATURE_COUNT = COMMAND_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link emn.a1.elascript.elascript.impl.ScaleInInfraImpl <em>Scale In Infra</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see emn.a1.elascript.elascript.impl.ScaleInInfraImpl
+   * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleInInfra()
+   * @generated
+   */
+  int SCALE_IN_INFRA = 12;
+
+  /**
+   * The feature id for the '<em><b>Params</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_IN_INFRA__PARAMS = SCALE_FUNCTION__PARAMS;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_IN_INFRA__NAME = SCALE_FUNCTION__NAME;
+
+  /**
+   * The number of structural features of the '<em>Scale In Infra</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_IN_INFRA_FEATURE_COUNT = SCALE_FUNCTION_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link emn.a1.elascript.elascript.impl.ScaleOutInfraImpl <em>Scale Out Infra</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see emn.a1.elascript.elascript.impl.ScaleOutInfraImpl
+   * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleOutInfra()
+   * @generated
+   */
+  int SCALE_OUT_INFRA = 13;
+
+  /**
+   * The feature id for the '<em><b>Params</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_OUT_INFRA__PARAMS = SCALE_FUNCTION__PARAMS;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_OUT_INFRA__NAME = SCALE_FUNCTION__NAME;
+
+  /**
+   * The number of structural features of the '<em>Scale Out Infra</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_OUT_INFRA_FEATURE_COUNT = SCALE_FUNCTION_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link emn.a1.elascript.elascript.impl.ScaleUpInfraImpl <em>Scale Up Infra</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see emn.a1.elascript.elascript.impl.ScaleUpInfraImpl
+   * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleUpInfra()
+   * @generated
+   */
+  int SCALE_UP_INFRA = 14;
+
+  /**
+   * The feature id for the '<em><b>Params</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_UP_INFRA__PARAMS = SCALE_FUNCTION__PARAMS;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_UP_INFRA__NAME = SCALE_FUNCTION__NAME;
+
+  /**
+   * The number of structural features of the '<em>Scale Up Infra</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_UP_INFRA_FEATURE_COUNT = SCALE_FUNCTION_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link emn.a1.elascript.elascript.impl.ScaleDownInfraImpl <em>Scale Down Infra</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see emn.a1.elascript.elascript.impl.ScaleDownInfraImpl
+   * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleDownInfra()
+   * @generated
+   */
+  int SCALE_DOWN_INFRA = 15;
+
+  /**
+   * The feature id for the '<em><b>Params</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_DOWN_INFRA__PARAMS = SCALE_FUNCTION__PARAMS;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_DOWN_INFRA__NAME = SCALE_FUNCTION__NAME;
+
+  /**
+   * The number of structural features of the '<em>Scale Down Infra</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_DOWN_INFRA_FEATURE_COUNT = SCALE_FUNCTION_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link emn.a1.elascript.elascript.impl.ScaleInSoftImpl <em>Scale In Soft</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see emn.a1.elascript.elascript.impl.ScaleInSoftImpl
+   * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleInSoft()
+   * @generated
+   */
+  int SCALE_IN_SOFT = 16;
+
+  /**
+   * The feature id for the '<em><b>Params</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_IN_SOFT__PARAMS = SCALE_FUNCTION__PARAMS;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_IN_SOFT__NAME = SCALE_FUNCTION__NAME;
+
+  /**
+   * The number of structural features of the '<em>Scale In Soft</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_IN_SOFT_FEATURE_COUNT = SCALE_FUNCTION_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link emn.a1.elascript.elascript.impl.ScaleOutSoftImpl <em>Scale Out Soft</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see emn.a1.elascript.elascript.impl.ScaleOutSoftImpl
+   * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleOutSoft()
+   * @generated
+   */
+  int SCALE_OUT_SOFT = 17;
+
+  /**
+   * The feature id for the '<em><b>Params</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_OUT_SOFT__PARAMS = SCALE_FUNCTION__PARAMS;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_OUT_SOFT__NAME = SCALE_FUNCTION__NAME;
+
+  /**
+   * The number of structural features of the '<em>Scale Out Soft</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_OUT_SOFT_FEATURE_COUNT = SCALE_FUNCTION_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link emn.a1.elascript.elascript.impl.ScaleUpSoftImpl <em>Scale Up Soft</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see emn.a1.elascript.elascript.impl.ScaleUpSoftImpl
+   * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleUpSoft()
+   * @generated
+   */
+  int SCALE_UP_SOFT = 18;
+
+  /**
+   * The feature id for the '<em><b>Params</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_UP_SOFT__PARAMS = SCALE_FUNCTION__PARAMS;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_UP_SOFT__NAME = SCALE_FUNCTION__NAME;
+
+  /**
+   * The number of structural features of the '<em>Scale Up Soft</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_UP_SOFT_FEATURE_COUNT = SCALE_FUNCTION_FEATURE_COUNT + 0;
+
+  /**
+   * The meta object id for the '{@link emn.a1.elascript.elascript.impl.ScaleDownSoftImpl <em>Scale Down Soft</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see emn.a1.elascript.elascript.impl.ScaleDownSoftImpl
+   * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleDownSoft()
+   * @generated
+   */
+  int SCALE_DOWN_SOFT = 19;
+
+  /**
+   * The feature id for the '<em><b>Params</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_DOWN_SOFT__PARAMS = SCALE_FUNCTION__PARAMS;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_DOWN_SOFT__NAME = SCALE_FUNCTION__NAME;
+
+  /**
+   * The number of structural features of the '<em>Scale Down Soft</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCALE_DOWN_SOFT_FEATURE_COUNT = SCALE_FUNCTION_FEATURE_COUNT + 0;
+
+  /**
    * The meta object id for the '{@link emn.a1.elascript.elascript.impl.ParamImpl <em>Param</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -352,7 +759,7 @@ public interface ElascriptPackage extends EPackage
    * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getParam()
    * @generated
    */
-  int PARAM = 9;
+  int PARAM = 20;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -585,6 +992,17 @@ public interface ElascriptPackage extends EPackage
   EClass getCommand();
 
   /**
+   * Returns the meta object for the containment reference list '{@link emn.a1.elascript.elascript.Command#getParams <em>Params</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Params</em>'.
+   * @see emn.a1.elascript.elascript.Command#getParams()
+   * @see #getCommand()
+   * @generated
+   */
+  EReference getCommand_Params();
+
+  /**
    * Returns the meta object for the attribute '{@link emn.a1.elascript.elascript.Command#getName <em>Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -596,15 +1014,114 @@ public interface ElascriptPackage extends EPackage
   EAttribute getCommand_Name();
 
   /**
-   * Returns the meta object for the containment reference list '{@link emn.a1.elascript.elascript.Command#getParams <em>Params</em>}'.
+   * Returns the meta object for class '{@link emn.a1.elascript.elascript.ScaleFunction <em>Scale Function</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Params</em>'.
-   * @see emn.a1.elascript.elascript.Command#getParams()
-   * @see #getCommand()
+   * @return the meta object for class '<em>Scale Function</em>'.
+   * @see emn.a1.elascript.elascript.ScaleFunction
    * @generated
    */
-  EReference getCommand_Params();
+  EClass getScaleFunction();
+
+  /**
+   * Returns the meta object for class '{@link emn.a1.elascript.elascript.WaitFunction <em>Wait Function</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Wait Function</em>'.
+   * @see emn.a1.elascript.elascript.WaitFunction
+   * @generated
+   */
+  EClass getWaitFunction();
+
+  /**
+   * Returns the meta object for class '{@link emn.a1.elascript.elascript.GenericFunction <em>Generic Function</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Generic Function</em>'.
+   * @see emn.a1.elascript.elascript.GenericFunction
+   * @generated
+   */
+  EClass getGenericFunction();
+
+  /**
+   * Returns the meta object for class '{@link emn.a1.elascript.elascript.ScaleInInfra <em>Scale In Infra</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Scale In Infra</em>'.
+   * @see emn.a1.elascript.elascript.ScaleInInfra
+   * @generated
+   */
+  EClass getScaleInInfra();
+
+  /**
+   * Returns the meta object for class '{@link emn.a1.elascript.elascript.ScaleOutInfra <em>Scale Out Infra</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Scale Out Infra</em>'.
+   * @see emn.a1.elascript.elascript.ScaleOutInfra
+   * @generated
+   */
+  EClass getScaleOutInfra();
+
+  /**
+   * Returns the meta object for class '{@link emn.a1.elascript.elascript.ScaleUpInfra <em>Scale Up Infra</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Scale Up Infra</em>'.
+   * @see emn.a1.elascript.elascript.ScaleUpInfra
+   * @generated
+   */
+  EClass getScaleUpInfra();
+
+  /**
+   * Returns the meta object for class '{@link emn.a1.elascript.elascript.ScaleDownInfra <em>Scale Down Infra</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Scale Down Infra</em>'.
+   * @see emn.a1.elascript.elascript.ScaleDownInfra
+   * @generated
+   */
+  EClass getScaleDownInfra();
+
+  /**
+   * Returns the meta object for class '{@link emn.a1.elascript.elascript.ScaleInSoft <em>Scale In Soft</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Scale In Soft</em>'.
+   * @see emn.a1.elascript.elascript.ScaleInSoft
+   * @generated
+   */
+  EClass getScaleInSoft();
+
+  /**
+   * Returns the meta object for class '{@link emn.a1.elascript.elascript.ScaleOutSoft <em>Scale Out Soft</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Scale Out Soft</em>'.
+   * @see emn.a1.elascript.elascript.ScaleOutSoft
+   * @generated
+   */
+  EClass getScaleOutSoft();
+
+  /**
+   * Returns the meta object for class '{@link emn.a1.elascript.elascript.ScaleUpSoft <em>Scale Up Soft</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Scale Up Soft</em>'.
+   * @see emn.a1.elascript.elascript.ScaleUpSoft
+   * @generated
+   */
+  EClass getScaleUpSoft();
+
+  /**
+   * Returns the meta object for class '{@link emn.a1.elascript.elascript.ScaleDownSoft <em>Scale Down Soft</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Scale Down Soft</em>'.
+   * @see emn.a1.elascript.elascript.ScaleDownSoft
+   * @generated
+   */
+  EClass getScaleDownSoft();
 
   /**
    * Returns the meta object for class '{@link emn.a1.elascript.elascript.Param <em>Param</em>}'.
@@ -829,6 +1346,14 @@ public interface ElascriptPackage extends EPackage
     EClass COMMAND = eINSTANCE.getCommand();
 
     /**
+     * The meta object literal for the '<em><b>Params</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference COMMAND__PARAMS = eINSTANCE.getCommand_Params();
+
+    /**
      * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -837,12 +1362,114 @@ public interface ElascriptPackage extends EPackage
     EAttribute COMMAND__NAME = eINSTANCE.getCommand_Name();
 
     /**
-     * The meta object literal for the '<em><b>Params</b></em>' containment reference list feature.
+     * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.ScaleFunctionImpl <em>Scale Function</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
+     * @see emn.a1.elascript.elascript.impl.ScaleFunctionImpl
+     * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleFunction()
      * @generated
      */
-    EReference COMMAND__PARAMS = eINSTANCE.getCommand_Params();
+    EClass SCALE_FUNCTION = eINSTANCE.getScaleFunction();
+
+    /**
+     * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.WaitFunctionImpl <em>Wait Function</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see emn.a1.elascript.elascript.impl.WaitFunctionImpl
+     * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getWaitFunction()
+     * @generated
+     */
+    EClass WAIT_FUNCTION = eINSTANCE.getWaitFunction();
+
+    /**
+     * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.GenericFunctionImpl <em>Generic Function</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see emn.a1.elascript.elascript.impl.GenericFunctionImpl
+     * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getGenericFunction()
+     * @generated
+     */
+    EClass GENERIC_FUNCTION = eINSTANCE.getGenericFunction();
+
+    /**
+     * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.ScaleInInfraImpl <em>Scale In Infra</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see emn.a1.elascript.elascript.impl.ScaleInInfraImpl
+     * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleInInfra()
+     * @generated
+     */
+    EClass SCALE_IN_INFRA = eINSTANCE.getScaleInInfra();
+
+    /**
+     * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.ScaleOutInfraImpl <em>Scale Out Infra</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see emn.a1.elascript.elascript.impl.ScaleOutInfraImpl
+     * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleOutInfra()
+     * @generated
+     */
+    EClass SCALE_OUT_INFRA = eINSTANCE.getScaleOutInfra();
+
+    /**
+     * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.ScaleUpInfraImpl <em>Scale Up Infra</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see emn.a1.elascript.elascript.impl.ScaleUpInfraImpl
+     * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleUpInfra()
+     * @generated
+     */
+    EClass SCALE_UP_INFRA = eINSTANCE.getScaleUpInfra();
+
+    /**
+     * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.ScaleDownInfraImpl <em>Scale Down Infra</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see emn.a1.elascript.elascript.impl.ScaleDownInfraImpl
+     * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleDownInfra()
+     * @generated
+     */
+    EClass SCALE_DOWN_INFRA = eINSTANCE.getScaleDownInfra();
+
+    /**
+     * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.ScaleInSoftImpl <em>Scale In Soft</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see emn.a1.elascript.elascript.impl.ScaleInSoftImpl
+     * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleInSoft()
+     * @generated
+     */
+    EClass SCALE_IN_SOFT = eINSTANCE.getScaleInSoft();
+
+    /**
+     * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.ScaleOutSoftImpl <em>Scale Out Soft</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see emn.a1.elascript.elascript.impl.ScaleOutSoftImpl
+     * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleOutSoft()
+     * @generated
+     */
+    EClass SCALE_OUT_SOFT = eINSTANCE.getScaleOutSoft();
+
+    /**
+     * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.ScaleUpSoftImpl <em>Scale Up Soft</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see emn.a1.elascript.elascript.impl.ScaleUpSoftImpl
+     * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleUpSoft()
+     * @generated
+     */
+    EClass SCALE_UP_SOFT = eINSTANCE.getScaleUpSoft();
+
+    /**
+     * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.ScaleDownSoftImpl <em>Scale Down Soft</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see emn.a1.elascript.elascript.impl.ScaleDownSoftImpl
+     * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getScaleDownSoft()
+     * @generated
+     */
+    EClass SCALE_DOWN_SOFT = eINSTANCE.getScaleDownSoft();
 
     /**
      * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.ParamImpl <em>Param</em>}' class.

@@ -120,6 +120,61 @@ public class ElascriptAdapterFactory extends AdapterFactoryImpl
         return createCommandAdapter();
       }
       @Override
+      public Adapter caseScaleFunction(ScaleFunction object)
+      {
+        return createScaleFunctionAdapter();
+      }
+      @Override
+      public Adapter caseWaitFunction(WaitFunction object)
+      {
+        return createWaitFunctionAdapter();
+      }
+      @Override
+      public Adapter caseGenericFunction(GenericFunction object)
+      {
+        return createGenericFunctionAdapter();
+      }
+      @Override
+      public Adapter caseScaleInInfra(ScaleInInfra object)
+      {
+        return createScaleInInfraAdapter();
+      }
+      @Override
+      public Adapter caseScaleOutInfra(ScaleOutInfra object)
+      {
+        return createScaleOutInfraAdapter();
+      }
+      @Override
+      public Adapter caseScaleUpInfra(ScaleUpInfra object)
+      {
+        return createScaleUpInfraAdapter();
+      }
+      @Override
+      public Adapter caseScaleDownInfra(ScaleDownInfra object)
+      {
+        return createScaleDownInfraAdapter();
+      }
+      @Override
+      public Adapter caseScaleInSoft(ScaleInSoft object)
+      {
+        return createScaleInSoftAdapter();
+      }
+      @Override
+      public Adapter caseScaleOutSoft(ScaleOutSoft object)
+      {
+        return createScaleOutSoftAdapter();
+      }
+      @Override
+      public Adapter caseScaleUpSoft(ScaleUpSoft object)
+      {
+        return createScaleUpSoftAdapter();
+      }
+      @Override
+      public Adapter caseScaleDownSoft(ScaleDownSoft object)
+      {
+        return createScaleDownSoftAdapter();
+      }
+      @Override
       public Adapter caseParam(Param object)
       {
         return createParamAdapter();
@@ -277,6 +332,171 @@ public class ElascriptAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createCommandAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.ScaleFunction <em>Scale Function</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see emn.a1.elascript.elascript.ScaleFunction
+   * @generated
+   */
+  public Adapter createScaleFunctionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.WaitFunction <em>Wait Function</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see emn.a1.elascript.elascript.WaitFunction
+   * @generated
+   */
+  public Adapter createWaitFunctionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.GenericFunction <em>Generic Function</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see emn.a1.elascript.elascript.GenericFunction
+   * @generated
+   */
+  public Adapter createGenericFunctionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.ScaleInInfra <em>Scale In Infra</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see emn.a1.elascript.elascript.ScaleInInfra
+   * @generated
+   */
+  public Adapter createScaleInInfraAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.ScaleOutInfra <em>Scale Out Infra</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see emn.a1.elascript.elascript.ScaleOutInfra
+   * @generated
+   */
+  public Adapter createScaleOutInfraAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.ScaleUpInfra <em>Scale Up Infra</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see emn.a1.elascript.elascript.ScaleUpInfra
+   * @generated
+   */
+  public Adapter createScaleUpInfraAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.ScaleDownInfra <em>Scale Down Infra</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see emn.a1.elascript.elascript.ScaleDownInfra
+   * @generated
+   */
+  public Adapter createScaleDownInfraAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.ScaleInSoft <em>Scale In Soft</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see emn.a1.elascript.elascript.ScaleInSoft
+   * @generated
+   */
+  public Adapter createScaleInSoftAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.ScaleOutSoft <em>Scale Out Soft</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see emn.a1.elascript.elascript.ScaleOutSoft
+   * @generated
+   */
+  public Adapter createScaleOutSoftAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.ScaleUpSoft <em>Scale Up Soft</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see emn.a1.elascript.elascript.ScaleUpSoft
+   * @generated
+   */
+  public Adapter createScaleUpSoftAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.ScaleDownSoft <em>Scale Down Soft</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see emn.a1.elascript.elascript.ScaleDownSoft
+   * @generated
+   */
+  public Adapter createScaleDownSoftAdapter()
   {
     return null;
   }

@@ -10,11 +10,10 @@ import org.eclipse.xtext.generator.IGenerator;
 /**
  * Generates code from your model files on save.
  * 
- * See https://www.eclipse.org/Xtext/documentation/303_runtime_concepts.html#code-generation
+ * see http://www.eclipse.org/Xtext/documentation.html#TutorialCodeGeneration
  */
 @SuppressWarnings("all")
 public class ElascriptGenerator implements IGenerator {
-  @Override
   public void doGenerate(final Resource resource, final IFileSystemAccess fsa) {
   }
 }

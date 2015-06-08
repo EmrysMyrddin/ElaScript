@@ -6,7 +6,12 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-SymbolicName: emn.a1.elascript; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.xtext;visibility:=reexport,
- org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.xtext.xbase;resolution:=optional;visibility:=reexport,
+ org.eclipse.xtext.generator;resolution:=optional,
+ org.apache.commons.logging;bundle-version="1.0.4";resolution:=optional,
+ org.eclipse.emf.codegen.ecore;resolution:=optional,
+ org.eclipse.emf.mwe.utils;resolution:=optional,
+ org.eclipse.emf.mwe2.launch;resolution:=optional,
  org.eclipse.xtext.util,
  org.eclipse.emf.ecore,
  org.eclipse.emf.common,
@@ -17,15 +22,14 @@ Require-Bundle: org.eclipse.xtext;visibility:=reexport,
 Import-Package: org.apache.log4j
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: emn.a1.elascript,
+ emn.a1.elascript.services,
  emn.a1.elascript.elascript,
  emn.a1.elascript.elascript.impl,
  emn.a1.elascript.elascript.util,
- emn.a1.elascript.formatting,
- emn.a1.elascript.generator,
+ emn.a1.elascript.serializer,
  emn.a1.elascript.parser.antlr,
  emn.a1.elascript.parser.antlr.internal,
+ emn.a1.elascript.validation,
  emn.a1.elascript.scoping,
- emn.a1.elascript.serializer,
- emn.a1.elascript.services,
- emn.a1.elascript.validation
-
+ emn.a1.elascript.generator,
+ emn.a1.elascript.formatting

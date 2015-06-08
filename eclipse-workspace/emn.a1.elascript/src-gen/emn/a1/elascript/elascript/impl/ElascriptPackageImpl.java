@@ -9,11 +9,22 @@ import emn.a1.elascript.elascript.ElascriptFactory;
 import emn.a1.elascript.elascript.ElascriptPackage;
 import emn.a1.elascript.elascript.EndParallel;
 import emn.a1.elascript.elascript.EndScript;
+import emn.a1.elascript.elascript.GenericFunction;
 import emn.a1.elascript.elascript.Parallel;
 import emn.a1.elascript.elascript.Param;
+import emn.a1.elascript.elascript.ScaleDownInfra;
+import emn.a1.elascript.elascript.ScaleDownSoft;
+import emn.a1.elascript.elascript.ScaleFunction;
+import emn.a1.elascript.elascript.ScaleInInfra;
+import emn.a1.elascript.elascript.ScaleInSoft;
+import emn.a1.elascript.elascript.ScaleOutInfra;
+import emn.a1.elascript.elascript.ScaleOutSoft;
+import emn.a1.elascript.elascript.ScaleUpInfra;
+import emn.a1.elascript.elascript.ScaleUpSoft;
 import emn.a1.elascript.elascript.Script;
 import emn.a1.elascript.elascript.Statement;
 import emn.a1.elascript.elascript.StatementList;
+import emn.a1.elascript.elascript.WaitFunction;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -92,6 +103,83 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * @generated
    */
   private EClass commandEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass scaleFunctionEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass waitFunctionEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass genericFunctionEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass scaleInInfraEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass scaleOutInfraEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass scaleUpInfraEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass scaleDownInfraEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass scaleInSoftEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass scaleOutSoftEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass scaleUpSoftEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass scaleDownSoftEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -368,9 +456,9 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getCommand_Name()
+  public EReference getCommand_Params()
   {
-    return (EAttribute)commandEClass.getEStructuralFeatures().get(0);
+    return (EReference)commandEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -378,9 +466,119 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getCommand_Params()
+  public EAttribute getCommand_Name()
   {
-    return (EReference)commandEClass.getEStructuralFeatures().get(1);
+    return (EAttribute)commandEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getScaleFunction()
+  {
+    return scaleFunctionEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getWaitFunction()
+  {
+    return waitFunctionEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getGenericFunction()
+  {
+    return genericFunctionEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getScaleInInfra()
+  {
+    return scaleInInfraEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getScaleOutInfra()
+  {
+    return scaleOutInfraEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getScaleUpInfra()
+  {
+    return scaleUpInfraEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getScaleDownInfra()
+  {
+    return scaleDownInfraEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getScaleInSoft()
+  {
+    return scaleInSoftEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getScaleOutSoft()
+  {
+    return scaleOutSoftEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getScaleUpSoft()
+  {
+    return scaleUpSoftEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getScaleDownSoft()
+  {
+    return scaleDownSoftEClass;
   }
 
   /**
@@ -461,8 +659,30 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
     createEReference(statementListEClass, STATEMENT_LIST__STATEMENTS);
 
     commandEClass = createEClass(COMMAND);
-    createEAttribute(commandEClass, COMMAND__NAME);
     createEReference(commandEClass, COMMAND__PARAMS);
+    createEAttribute(commandEClass, COMMAND__NAME);
+
+    scaleFunctionEClass = createEClass(SCALE_FUNCTION);
+
+    waitFunctionEClass = createEClass(WAIT_FUNCTION);
+
+    genericFunctionEClass = createEClass(GENERIC_FUNCTION);
+
+    scaleInInfraEClass = createEClass(SCALE_IN_INFRA);
+
+    scaleOutInfraEClass = createEClass(SCALE_OUT_INFRA);
+
+    scaleUpInfraEClass = createEClass(SCALE_UP_INFRA);
+
+    scaleDownInfraEClass = createEClass(SCALE_DOWN_INFRA);
+
+    scaleInSoftEClass = createEClass(SCALE_IN_SOFT);
+
+    scaleOutSoftEClass = createEClass(SCALE_OUT_SOFT);
+
+    scaleUpSoftEClass = createEClass(SCALE_UP_SOFT);
+
+    scaleDownSoftEClass = createEClass(SCALE_DOWN_SOFT);
 
     paramEClass = createEClass(PARAM);
     createEAttribute(paramEClass, PARAM__VALUE);
@@ -499,6 +719,17 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
     // Add supertypes to classes
     parallelEClass.getESuperTypes().add(this.getStatement());
     commandEClass.getESuperTypes().add(this.getStatement());
+    scaleFunctionEClass.getESuperTypes().add(this.getCommand());
+    waitFunctionEClass.getESuperTypes().add(this.getCommand());
+    genericFunctionEClass.getESuperTypes().add(this.getCommand());
+    scaleInInfraEClass.getESuperTypes().add(this.getScaleFunction());
+    scaleOutInfraEClass.getESuperTypes().add(this.getScaleFunction());
+    scaleUpInfraEClass.getESuperTypes().add(this.getScaleFunction());
+    scaleDownInfraEClass.getESuperTypes().add(this.getScaleFunction());
+    scaleInSoftEClass.getESuperTypes().add(this.getScaleFunction());
+    scaleOutSoftEClass.getESuperTypes().add(this.getScaleFunction());
+    scaleUpSoftEClass.getESuperTypes().add(this.getScaleFunction());
+    scaleDownSoftEClass.getESuperTypes().add(this.getScaleFunction());
 
     // Initialize classes and features; add operations and parameters
     initEClass(scriptEClass, Script.class, "Script", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -529,8 +760,30 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
     initEReference(getStatementList_Statements(), this.getStatement(), null, "statements", null, 0, -1, StatementList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(commandEClass, Command.class, "Command", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getCommand_Name(), ecorePackage.getEString(), "name", null, 0, 1, Command.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getCommand_Params(), this.getParam(), null, "params", null, 0, -1, Command.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getCommand_Name(), ecorePackage.getEString(), "name", null, 0, 1, Command.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(scaleFunctionEClass, ScaleFunction.class, "ScaleFunction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(waitFunctionEClass, WaitFunction.class, "WaitFunction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(genericFunctionEClass, GenericFunction.class, "GenericFunction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(scaleInInfraEClass, ScaleInInfra.class, "ScaleInInfra", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(scaleOutInfraEClass, ScaleOutInfra.class, "ScaleOutInfra", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(scaleUpInfraEClass, ScaleUpInfra.class, "ScaleUpInfra", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(scaleDownInfraEClass, ScaleDownInfra.class, "ScaleDownInfra", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(scaleInSoftEClass, ScaleInSoft.class, "ScaleInSoft", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(scaleOutSoftEClass, ScaleOutSoft.class, "ScaleOutSoft", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(scaleUpSoftEClass, ScaleUpSoft.class, "ScaleUpSoft", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEClass(scaleDownSoftEClass, ScaleDownSoft.class, "ScaleDownSoft", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(paramEClass, Param.class, "Param", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getParam_Value(), ecorePackage.getEInt(), "value", null, 0, 1, Param.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

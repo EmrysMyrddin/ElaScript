@@ -9,10 +9,10 @@ import org.eclipse.xtext.formatting.impl.FormattingConfig
 // import emn.a1.elascript.services.ElascriptGrammarAccess
 
 /**
- * This class contains custom formatting declarations.
+ * This class contains custom formatting description.
  * 
- * See https://www.eclipse.org/Xtext/documentation/303_runtime_concepts.html#formatting
- * on how and when to use it.
+ * see : http://www.eclipse.org/Xtext/documentation.html#formatting
+ * on how and when to use it 
  * 
  * Also see {@link org.eclipse.xtext.xtext.XtextFormattingTokenSerializer} as an example
  */

@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Sirius/Elascipt.odesign&apos; to &apos;Elascript.odesign&apos;" description="Rename resource &apos;Elascipt.odesign&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Elascipt.odesign" name="Elascript.odesign" stamp="1433321958164" updateReferences="true"/>&#x0A;<refactoring comment="Move &apos;example.ela&apos; to &apos;Sirius&apos;" description="Move &apos;example.ela&apos; to &apos;Sirius&apos;" destination="/Sirius" element1="/emn.a1.elascript.example/example.ela" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1433322058791" updateReferences="true"/>
-</session>
