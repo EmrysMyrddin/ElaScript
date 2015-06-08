@@ -32,6 +32,24 @@ public interface ElascriptFactory extends EFactory
   Script createScript();
 
   /**
+   * Returns a new object of class '<em>Begin Script</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Begin Script</em>'.
+   * @generated
+   */
+  BeginScript createBeginScript();
+
+  /**
+   * Returns a new object of class '<em>End Script</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>End Script</em>'.
+   * @generated
+   */
+  EndScript createEndScript();
+
+  /**
    * Returns a new object of class '<em>Statement</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -50,13 +68,31 @@ public interface ElascriptFactory extends EFactory
   Parallel createParallel();
 
   /**
-   * Returns a new object of class '<em>EList</em>'.
+   * Returns a new object of class '<em>Begin Parallel</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>EList</em>'.
+   * @return a new object of class '<em>Begin Parallel</em>'.
    * @generated
    */
-  EList createEList();
+  BeginParallel createBeginParallel();
+
+  /**
+   * Returns a new object of class '<em>End Parallel</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>End Parallel</em>'.
+   * @generated
+   */
+  EndParallel createEndParallel();
+
+  /**
+   * Returns a new object of class '<em>Statement List</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Statement List</em>'.
+   * @generated
+   */
+  StatementList createStatementList();
 
   /**
    * Returns a new object of class '<em>Command</em>'.

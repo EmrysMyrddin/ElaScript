@@ -20,18 +20,70 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 	
 	public class ScriptElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Script");
-		private final Assignment cScriptStatementsAssignment = (Assignment)rule.eContents().get(1);
-		private final RuleCall cScriptStatementsStatementParserRuleCall_0 = (RuleCall)cScriptStatementsAssignment.eContents().get(0);
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Assignment cBeginScriptAssignment_0 = (Assignment)cGroup.eContents().get(0);
+		private final RuleCall cBeginScriptBeginScriptParserRuleCall_0_0 = (RuleCall)cBeginScriptAssignment_0.eContents().get(0);
+		private final Assignment cScriptStatementAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cScriptStatementStatementListParserRuleCall_1_0 = (RuleCall)cScriptStatementAssignment_1.eContents().get(0);
+		private final Assignment cEndScriptAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cEndScriptEndScriptParserRuleCall_2_0 = (RuleCall)cEndScriptAssignment_2.eContents().get(0);
 		
 		//Script:
-		//	scriptStatements+=Statement*;
+		//	BeginScript=BeginScript scriptStatement=StatementList EndScript=EndScript;
 		@Override public ParserRule getRule() { return rule; }
 
-		//scriptStatements+=Statement*
-		public Assignment getScriptStatementsAssignment() { return cScriptStatementsAssignment; }
+		//BeginScript=BeginScript scriptStatement=StatementList EndScript=EndScript
+		public Group getGroup() { return cGroup; }
 
-		//Statement
-		public RuleCall getScriptStatementsStatementParserRuleCall_0() { return cScriptStatementsStatementParserRuleCall_0; }
+		//BeginScript=BeginScript
+		public Assignment getBeginScriptAssignment_0() { return cBeginScriptAssignment_0; }
+
+		//BeginScript
+		public RuleCall getBeginScriptBeginScriptParserRuleCall_0_0() { return cBeginScriptBeginScriptParserRuleCall_0_0; }
+
+		//scriptStatement=StatementList
+		public Assignment getScriptStatementAssignment_1() { return cScriptStatementAssignment_1; }
+
+		//StatementList
+		public RuleCall getScriptStatementStatementListParserRuleCall_1_0() { return cScriptStatementStatementListParserRuleCall_1_0; }
+
+		//EndScript=EndScript
+		public Assignment getEndScriptAssignment_2() { return cEndScriptAssignment_2; }
+
+		//EndScript
+		public RuleCall getEndScriptEndScriptParserRuleCall_2_0() { return cEndScriptEndScriptParserRuleCall_2_0; }
+	}
+
+	public class BeginScriptElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "BeginScript");
+		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
+		private final Keyword cNameBeginKeyword_0 = (Keyword)cNameAssignment.eContents().get(0);
+		
+		//BeginScript:
+		//	name="begin";
+		@Override public ParserRule getRule() { return rule; }
+
+		//name="begin"
+		public Assignment getNameAssignment() { return cNameAssignment; }
+
+		//"begin"
+		public Keyword getNameBeginKeyword_0() { return cNameBeginKeyword_0; }
+	}
+
+	public class EndScriptElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EndScript");
+		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
+		private final Keyword cNameEndKeyword_0 = (Keyword)cNameAssignment.eContents().get(0);
+		
+		//EndScript:
+		//	name="end";
+		@Override public ParserRule getRule() { return rule; }
+
+		//name="end"
+		public Assignment getNameAssignment() { return cNameAssignment; }
+
+		//"end"
+		public Keyword getNameEndKeyword_0() { return cNameEndKeyword_0; }
 	}
 
 	public class StatementElements extends AbstractParserRuleElementFinder {
@@ -57,45 +109,87 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 	public class ParallelElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Parallel");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final RuleCall cSPLITTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
-		private final Assignment cStatementsAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cStatementsStatementListParserRuleCall_1_0 = (RuleCall)cStatementsAssignment_1.eContents().get(0);
+		private final Assignment cBeginParallelAssignment_0 = (Assignment)cGroup.eContents().get(0);
+		private final RuleCall cBeginParallelBeginParallelParserRuleCall_0_0 = (RuleCall)cBeginParallelAssignment_0.eContents().get(0);
+		private final Assignment cStatementListsAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cStatementListsStatementListParserRuleCall_1_0 = (RuleCall)cStatementListsAssignment_1.eContents().get(0);
 		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
 		private final RuleCall cPARALLEL_SEPARATORTerminalRuleCall_2_0 = (RuleCall)cGroup_2.eContents().get(0);
-		private final Assignment cStatementsAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
-		private final RuleCall cStatementsStatementListParserRuleCall_2_1_0 = (RuleCall)cStatementsAssignment_2_1.eContents().get(0);
-		private final RuleCall cJOINTerminalRuleCall_3 = (RuleCall)cGroup.eContents().get(3);
+		private final Assignment cStatementListsAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
+		private final RuleCall cStatementListsStatementListParserRuleCall_2_1_0 = (RuleCall)cStatementListsAssignment_2_1.eContents().get(0);
+		private final Assignment cEndParallelAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cEndParallelEndParallelParserRuleCall_3_0 = (RuleCall)cEndParallelAssignment_3.eContents().get(0);
 		
 		//Parallel:
-		//	SPLIT statements+=StatementList (PARALLEL_SEPARATOR statements+=StatementList)+ JOIN;
+		//	BeginParallel=BeginParallel statementLists+=StatementList (PARALLEL_SEPARATOR statementLists+=StatementList)+
+		//	EndParallel=EndParallel;
 		@Override public ParserRule getRule() { return rule; }
 
-		//SPLIT statements+=StatementList (PARALLEL_SEPARATOR statements+=StatementList)+ JOIN
+		//BeginParallel=BeginParallel statementLists+=StatementList (PARALLEL_SEPARATOR statementLists+=StatementList)+
+		//EndParallel=EndParallel
 		public Group getGroup() { return cGroup; }
 
-		//SPLIT
-		public RuleCall getSPLITTerminalRuleCall_0() { return cSPLITTerminalRuleCall_0; }
+		//BeginParallel=BeginParallel
+		public Assignment getBeginParallelAssignment_0() { return cBeginParallelAssignment_0; }
 
-		//statements+=StatementList
-		public Assignment getStatementsAssignment_1() { return cStatementsAssignment_1; }
+		//BeginParallel
+		public RuleCall getBeginParallelBeginParallelParserRuleCall_0_0() { return cBeginParallelBeginParallelParserRuleCall_0_0; }
+
+		//statementLists+=StatementList
+		public Assignment getStatementListsAssignment_1() { return cStatementListsAssignment_1; }
 
 		//StatementList
-		public RuleCall getStatementsStatementListParserRuleCall_1_0() { return cStatementsStatementListParserRuleCall_1_0; }
+		public RuleCall getStatementListsStatementListParserRuleCall_1_0() { return cStatementListsStatementListParserRuleCall_1_0; }
 
-		//(PARALLEL_SEPARATOR statements+=StatementList)+
+		//(PARALLEL_SEPARATOR statementLists+=StatementList)+
 		public Group getGroup_2() { return cGroup_2; }
 
 		//PARALLEL_SEPARATOR
 		public RuleCall getPARALLEL_SEPARATORTerminalRuleCall_2_0() { return cPARALLEL_SEPARATORTerminalRuleCall_2_0; }
 
-		//statements+=StatementList
-		public Assignment getStatementsAssignment_2_1() { return cStatementsAssignment_2_1; }
+		//statementLists+=StatementList
+		public Assignment getStatementListsAssignment_2_1() { return cStatementListsAssignment_2_1; }
 
 		//StatementList
-		public RuleCall getStatementsStatementListParserRuleCall_2_1_0() { return cStatementsStatementListParserRuleCall_2_1_0; }
+		public RuleCall getStatementListsStatementListParserRuleCall_2_1_0() { return cStatementListsStatementListParserRuleCall_2_1_0; }
 
-		//JOIN
-		public RuleCall getJOINTerminalRuleCall_3() { return cJOINTerminalRuleCall_3; }
+		//EndParallel=EndParallel
+		public Assignment getEndParallelAssignment_3() { return cEndParallelAssignment_3; }
+
+		//EndParallel
+		public RuleCall getEndParallelEndParallelParserRuleCall_3_0() { return cEndParallelEndParallelParserRuleCall_3_0; }
+	}
+
+	public class BeginParallelElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "BeginParallel");
+		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
+		private final Keyword cNameLeftSquareBracketKeyword_0 = (Keyword)cNameAssignment.eContents().get(0);
+		
+		//BeginParallel:
+		//	name="[";
+		@Override public ParserRule getRule() { return rule; }
+
+		//name="["
+		public Assignment getNameAssignment() { return cNameAssignment; }
+
+		//"["
+		public Keyword getNameLeftSquareBracketKeyword_0() { return cNameLeftSquareBracketKeyword_0; }
+	}
+
+	public class EndParallelElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "EndParallel");
+		private final Assignment cNameAssignment = (Assignment)rule.eContents().get(1);
+		private final Keyword cNameRightSquareBracketKeyword_0 = (Keyword)cNameAssignment.eContents().get(0);
+		
+		//EndParallel:
+		//	name="]";
+		@Override public ParserRule getRule() { return rule; }
+
+		//name="]"
+		public Assignment getNameAssignment() { return cNameAssignment; }
+
+		//"]"
+		public Keyword getNameRightSquareBracketKeyword_0() { return cNameRightSquareBracketKeyword_0; }
 	}
 
 	public class StatementListElements extends AbstractParserRuleElementFinder {
@@ -103,7 +197,7 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cStatementsAssignment = (Assignment)rule.eContents().get(1);
 		private final RuleCall cStatementsStatementParserRuleCall_0 = (RuleCall)cStatementsAssignment.eContents().get(0);
 		
-		//StatementList returns EList:
+		//StatementList:
 		//	statements+=Statement+;
 		@Override public ParserRule getRule() { return rule; }
 
@@ -118,7 +212,7 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Command");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Assignment cNameAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cNameFunctionNameParserRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
+		private final RuleCall cNameIDTerminalRuleCall_0_0 = (RuleCall)cNameAssignment_0.eContents().get(0);
 		private final RuleCall cLPTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
 		private final Assignment cParamsAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cParamsParamParserRuleCall_2_0 = (RuleCall)cParamsAssignment_2.eContents().get(0);
@@ -130,17 +224,17 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cSEQUENTIAL_SEPARATORTerminalRuleCall_5 = (RuleCall)cGroup.eContents().get(5);
 		
 		//Command:
-		//	name=FunctionName LP params+=Param (COMMA params+=Param)* RP SEQUENTIAL_SEPARATOR;
+		//	name=ID LP params+=Param (COMMA params+=Param)* RP SEQUENTIAL_SEPARATOR;
 		@Override public ParserRule getRule() { return rule; }
 
-		//name=FunctionName LP params+=Param (COMMA params+=Param)* RP SEQUENTIAL_SEPARATOR
+		//name=ID LP params+=Param (COMMA params+=Param)* RP SEQUENTIAL_SEPARATOR
 		public Group getGroup() { return cGroup; }
 
-		//name=FunctionName
+		//name=ID
 		public Assignment getNameAssignment_0() { return cNameAssignment_0; }
 
-		//FunctionName
-		public RuleCall getNameFunctionNameParserRuleCall_0_0() { return cNameFunctionNameParserRuleCall_0_0; }
+		//ID
+		public RuleCall getNameIDTerminalRuleCall_0_0() { return cNameIDTerminalRuleCall_0_0; }
 
 		//LP
 		public RuleCall getLPTerminalRuleCall_1() { return cLPTerminalRuleCall_1; }
@@ -170,34 +264,6 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 		public RuleCall getSEQUENTIAL_SEPARATORTerminalRuleCall_5() { return cSEQUENTIAL_SEPARATORTerminalRuleCall_5; }
 	}
 
-	public class FunctionNameElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "FunctionName");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final Group cGroup_0 = (Group)cAlternatives.eContents().get(0);
-		private final RuleCall cScaleParserRuleCall_0_0 = (RuleCall)cGroup_0.eContents().get(0);
-		private final RuleCall cTypeParserRuleCall_0_1 = (RuleCall)cGroup_0.eContents().get(1);
-		private final RuleCall cIDTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		
-		//FunctionName:
-		//	Scale Type | ID;
-		@Override public ParserRule getRule() { return rule; }
-
-		//Scale Type | ID
-		public Alternatives getAlternatives() { return cAlternatives; }
-
-		//Scale Type
-		public Group getGroup_0() { return cGroup_0; }
-
-		//Scale
-		public RuleCall getScaleParserRuleCall_0_0() { return cScaleParserRuleCall_0_0; }
-
-		//Type
-		public RuleCall getTypeParserRuleCall_0_1() { return cTypeParserRuleCall_0_1; }
-
-		//ID
-		public RuleCall getIDTerminalRuleCall_1() { return cIDTerminalRuleCall_1; }
-	}
-
 	public class ParamElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Param");
 		private final Assignment cValueAssignment = (Assignment)rule.eContents().get(1);
@@ -213,71 +279,18 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 		//INT
 		public RuleCall getValueINTTerminalRuleCall_0() { return cValueINTTerminalRuleCall_0; }
 	}
-
-	public class ScaleElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Scale");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cSCALE_INTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cSCALE_OUTTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		private final RuleCall cSCALE_UPTerminalRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
-		private final RuleCall cSCALE_DOWNTerminalRuleCall_3 = (RuleCall)cAlternatives.eContents().get(3);
-		
-		//Scale:
-		//	SCALE_IN | SCALE_OUT | SCALE_UP | SCALE_DOWN;
-		@Override public ParserRule getRule() { return rule; }
-
-		//SCALE_IN | SCALE_OUT | SCALE_UP | SCALE_DOWN
-		public Alternatives getAlternatives() { return cAlternatives; }
-
-		//SCALE_IN
-		public RuleCall getSCALE_INTerminalRuleCall_0() { return cSCALE_INTerminalRuleCall_0; }
-
-		//SCALE_OUT
-		public RuleCall getSCALE_OUTTerminalRuleCall_1() { return cSCALE_OUTTerminalRuleCall_1; }
-
-		//SCALE_UP
-		public RuleCall getSCALE_UPTerminalRuleCall_2() { return cSCALE_UPTerminalRuleCall_2; }
-
-		//SCALE_DOWN
-		public RuleCall getSCALE_DOWNTerminalRuleCall_3() { return cSCALE_DOWNTerminalRuleCall_3; }
-	}
-
-	public class TypeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Type");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cSOFTTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cINFTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		
-		//Type:
-		//	SOFT | INF;
-		@Override public ParserRule getRule() { return rule; }
-
-		//SOFT | INF
-		public Alternatives getAlternatives() { return cAlternatives; }
-
-		//SOFT
-		public RuleCall getSOFTTerminalRuleCall_0() { return cSOFTTerminalRuleCall_0; }
-
-		//INF
-		public RuleCall getINFTerminalRuleCall_1() { return cINFTerminalRuleCall_1; }
-	}
 	
 	
 	private final ScriptElements pScript;
+	private final BeginScriptElements pBeginScript;
+	private final EndScriptElements pEndScript;
 	private final StatementElements pStatement;
 	private final ParallelElements pParallel;
+	private final BeginParallelElements pBeginParallel;
+	private final EndParallelElements pEndParallel;
 	private final StatementListElements pStatementList;
 	private final CommandElements pCommand;
-	private final FunctionNameElements pFunctionName;
 	private final ParamElements pParam;
-	private final ScaleElements pScale;
-	private final TerminalRule tSCALE_IN;
-	private final TerminalRule tSCALE_OUT;
-	private final TerminalRule tSCALE_UP;
-	private final TerminalRule tSCALE_DOWN;
-	private final TypeElements pType;
-	private final TerminalRule tSOFT;
-	private final TerminalRule tINF;
 	private final TerminalRule tPARALLEL_SEPARATOR;
 	private final TerminalRule tLP;
 	private final TerminalRule tRP;
@@ -285,8 +298,6 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 	private final TerminalRule tNUMBER;
 	private final TerminalRule tSEQUENTIAL_SEPARATOR;
 	private final TerminalRule tCOMMA;
-	private final TerminalRule tSPLIT;
-	private final TerminalRule tJOIN;
 	
 	private final Grammar grammar;
 
@@ -298,20 +309,15 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 		this.grammar = internalFindGrammar(grammarProvider);
 		this.gaTerminals = gaTerminals;
 		this.pScript = new ScriptElements();
+		this.pBeginScript = new BeginScriptElements();
+		this.pEndScript = new EndScriptElements();
 		this.pStatement = new StatementElements();
 		this.pParallel = new ParallelElements();
+		this.pBeginParallel = new BeginParallelElements();
+		this.pEndParallel = new EndParallelElements();
 		this.pStatementList = new StatementListElements();
 		this.pCommand = new CommandElements();
-		this.pFunctionName = new FunctionNameElements();
 		this.pParam = new ParamElements();
-		this.pScale = new ScaleElements();
-		this.tSCALE_IN = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "SCALE_IN");
-		this.tSCALE_OUT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "SCALE_OUT");
-		this.tSCALE_UP = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "SCALE_UP");
-		this.tSCALE_DOWN = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "SCALE_DOWN");
-		this.pType = new TypeElements();
-		this.tSOFT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "SOFT");
-		this.tINF = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "INF");
 		this.tPARALLEL_SEPARATOR = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "PARALLEL_SEPARATOR");
 		this.tLP = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "LP");
 		this.tRP = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "RP");
@@ -319,8 +325,6 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 		this.tNUMBER = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "NUMBER");
 		this.tSEQUENTIAL_SEPARATOR = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "SEQUENTIAL_SEPARATOR");
 		this.tCOMMA = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "COMMA");
-		this.tSPLIT = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "SPLIT");
-		this.tJOIN = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "JOIN");
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {
@@ -351,13 +355,33 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 
 	
 	//Script:
-	//	scriptStatements+=Statement*;
+	//	BeginScript=BeginScript scriptStatement=StatementList EndScript=EndScript;
 	public ScriptElements getScriptAccess() {
 		return pScript;
 	}
 	
 	public ParserRule getScriptRule() {
 		return getScriptAccess().getRule();
+	}
+
+	//BeginScript:
+	//	name="begin";
+	public BeginScriptElements getBeginScriptAccess() {
+		return pBeginScript;
+	}
+	
+	public ParserRule getBeginScriptRule() {
+		return getBeginScriptAccess().getRule();
+	}
+
+	//EndScript:
+	//	name="end";
+	public EndScriptElements getEndScriptAccess() {
+		return pEndScript;
+	}
+	
+	public ParserRule getEndScriptRule() {
+		return getEndScriptAccess().getRule();
 	}
 
 	//Statement:
@@ -371,7 +395,8 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Parallel:
-	//	SPLIT statements+=StatementList (PARALLEL_SEPARATOR statements+=StatementList)+ JOIN;
+	//	BeginParallel=BeginParallel statementLists+=StatementList (PARALLEL_SEPARATOR statementLists+=StatementList)+
+	//	EndParallel=EndParallel;
 	public ParallelElements getParallelAccess() {
 		return pParallel;
 	}
@@ -380,7 +405,27 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 		return getParallelAccess().getRule();
 	}
 
-	//StatementList returns EList:
+	//BeginParallel:
+	//	name="[";
+	public BeginParallelElements getBeginParallelAccess() {
+		return pBeginParallel;
+	}
+	
+	public ParserRule getBeginParallelRule() {
+		return getBeginParallelAccess().getRule();
+	}
+
+	//EndParallel:
+	//	name="]";
+	public EndParallelElements getEndParallelAccess() {
+		return pEndParallel;
+	}
+	
+	public ParserRule getEndParallelRule() {
+		return getEndParallelAccess().getRule();
+	}
+
+	//StatementList:
 	//	statements+=Statement+;
 	public StatementListElements getStatementListAccess() {
 		return pStatementList;
@@ -391,23 +436,13 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Command:
-	//	name=FunctionName LP params+=Param (COMMA params+=Param)* RP SEQUENTIAL_SEPARATOR;
+	//	name=ID LP params+=Param (COMMA params+=Param)* RP SEQUENTIAL_SEPARATOR;
 	public CommandElements getCommandAccess() {
 		return pCommand;
 	}
 	
 	public ParserRule getCommandRule() {
 		return getCommandAccess().getRule();
-	}
-
-	//FunctionName:
-	//	Scale Type | ID;
-	public FunctionNameElements getFunctionNameAccess() {
-		return pFunctionName;
-	}
-	
-	public ParserRule getFunctionNameRule() {
-		return getFunctionNameAccess().getRule();
 	}
 
 	//Param:
@@ -419,62 +454,6 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 	public ParserRule getParamRule() {
 		return getParamAccess().getRule();
 	}
-
-	//Scale:
-	//	SCALE_IN | SCALE_OUT | SCALE_UP | SCALE_DOWN;
-	public ScaleElements getScaleAccess() {
-		return pScale;
-	}
-	
-	public ParserRule getScaleRule() {
-		return getScaleAccess().getRule();
-	}
-
-	//terminal SCALE_IN:
-	//	"ScaleIn";
-	public TerminalRule getSCALE_INRule() {
-		return tSCALE_IN;
-	} 
-
-	//terminal SCALE_OUT:
-	//	"ScaleOut";
-	public TerminalRule getSCALE_OUTRule() {
-		return tSCALE_OUT;
-	} 
-
-	//terminal SCALE_UP:
-	//	"ScaleUp";
-	public TerminalRule getSCALE_UPRule() {
-		return tSCALE_UP;
-	} 
-
-	//terminal SCALE_DOWN:
-	//	"ScaleDown";
-	public TerminalRule getSCALE_DOWNRule() {
-		return tSCALE_DOWN;
-	} 
-
-	//Type:
-	//	SOFT | INF;
-	public TypeElements getTypeAccess() {
-		return pType;
-	}
-	
-	public ParserRule getTypeRule() {
-		return getTypeAccess().getRule();
-	}
-
-	//terminal SOFT:
-	//	"Soft";
-	public TerminalRule getSOFTRule() {
-		return tSOFT;
-	} 
-
-	//terminal INF:
-	//	"Inf";
-	public TerminalRule getINFRule() {
-		return tINF;
-	} 
 
 	//terminal PARALLEL_SEPARATOR:
 	//	"||";
@@ -517,18 +496,6 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 	//	",";
 	public TerminalRule getCOMMARule() {
 		return tCOMMA;
-	} 
-
-	//terminal SPLIT:
-	//	"[";
-	public TerminalRule getSPLITRule() {
-		return tSPLIT;
-	} 
-
-	//terminal JOIN:
-	//	"]";
-	public TerminalRule getJOINRule() {
-		return tJOIN;
 	} 
 
 	//terminal ID:

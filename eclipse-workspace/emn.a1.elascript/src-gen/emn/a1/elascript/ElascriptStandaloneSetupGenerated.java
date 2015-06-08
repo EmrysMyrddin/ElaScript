@@ -30,8 +30,8 @@ public class ElascriptStandaloneSetupGenerated implements ISetup {
 	}
 	
 	public void register(Injector injector) {
-	if (!EPackage.Registry.INSTANCE.containsKey("http://www.a1.emn/elascript/Elascript")) {
-		EPackage.Registry.INSTANCE.put("http://www.a1.emn/elascript/Elascript", emn.a1.elascript.elascript.ElascriptPackage.eINSTANCE);
+	if (!EPackage.Registry.INSTANCE.containsKey("http://www.elascript.org/Elascript")) {
+		EPackage.Registry.INSTANCE.put("http://www.elascript.org/Elascript", emn.a1.elascript.elascript.ElascriptPackage.eINSTANCE);
 	}
 
 		org.eclipse.xtext.resource.IResourceFactory resourceFactory = injector.getInstance(org.eclipse.xtext.resource.IResourceFactory.class);

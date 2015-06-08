@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_DJcrAQktEeWrIauBHp4hxg" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_DJcrAgktEeWrIauBHp4hxg" bindingContexts="_DJcrBAktEeWrIauBHp4hxg">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInputFactory&quot; id=&quot;org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID&quot; name=&quot;Test&quot; tooltip=&quot;platform:/resource/Sirius/representations.aird/Test&quot;>&#xD;&#xA;&lt;persistable SESSION_RESOURCE_URI=&quot;platform:/resource/Sirius/representations.aird&quot; bundle=&quot;org.eclipse.sirius.ui&quot; class=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInput&quot; name=&quot;Test&quot; uri=&quot;platform:/resource/Sirius/representations.aird#_PhWUMQnPEeWUQoUWgoR15g&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;emn.a1.elascript.Elascript&quot; name=&quot;example.ela&quot; tooltip=&quot;Sirius/example.ela&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Sirius/example.ela&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.sirius.editor.editorPlugin.SiriusEditorID&quot; name=&quot;Elascript.odesign&quot; tooltip=&quot;Sirius/Elascript.odesign&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Sirius/Elascript.odesign&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.sirius.editor.editorPlugin.SiriusEditorID&quot; name=&quot;Elascipt.odesign&quot; tooltip=&quot;Sirius/Elascipt.odesign&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Sirius/Elascipt.odesign&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;emn.a1.elascript.Elascript&quot; name=&quot;example.ela&quot; tooltip=&quot;emn.a1.elascript.example/example.ela&quot;>&#xD;&#xA;&lt;persistable path=&quot;/emn.a1.elascript.example/example.ela&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.xtext.Xtext&quot; name=&quot;Elascript.xtext&quot; tooltip=&quot;emn.a1.elascript/src/emn/a1/elascript/Elascript.xtext&quot;>&#xD;&#xA;&lt;persistable path=&quot;/emn.a1.elascript/src/emn/a1/elascript/Elascript.xtext&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.xtext.Xtext&quot; name=&quot;Elascript.xtext&quot; tooltip=&quot;emn.a1.elascript/src/emn/a1/elascript/Elascript.xtext&quot;>&#xD;&#xA;&lt;persistable path=&quot;/emn.a1.elascript/src/emn/a1/elascript/Elascript.xtext&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;dummy&quot; tooltip=&quot;emn.a1.elascript.tests/xtend-gen/dummy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/emn.a1.elascript.tests/xtend-gen/dummy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;dummy&quot; tooltip=&quot;emn.a1.elascript.tests/src/dummy&quot;>&#xD;&#xA;&lt;persistable path=&quot;/emn.a1.elascript.tests/src/dummy&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.pde.ui.manifestEditor&quot; name=&quot;MANIFEST.MF&quot; tooltip=&quot;emn.a1.elascript/META-INF/MANIFEST.MF&quot;>&#xD;&#xA;&lt;persistable path=&quot;/emn.a1.elascript/META-INF/MANIFEST.MF&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.pde.ui.manifestEditor&quot; name=&quot;MANIFEST.MF&quot; tooltip=&quot;emn.a1.elascript.ui/META-INF/MANIFEST.MF&quot;>&#xD;&#xA;&lt;persistable path=&quot;/emn.a1.elascript.ui/META-INF/MANIFEST.MF&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.pde.ui.manifestEditor&quot; name=&quot;MANIFEST.MF&quot; tooltip=&quot;emn.a1.elascript.tests/META-INF/MANIFEST.MF&quot;>&#xD;&#xA;&lt;persistable path=&quot;/emn.a1.elascript.tests/META-INF/MANIFEST.MF&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ElascriptUiInjectorProvider.java&quot; tooltip=&quot;emn.a1.elascript.tests/src-gen/emn/a1/elascript/ElascriptUiInjectorProvider.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/emn.a1.elascript.tests/src-gen/emn/a1/elascript/ElascriptUiInjectorProvider.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInputFactory&quot; id=&quot;org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID&quot; name=&quot;Test&quot; tooltip=&quot;platform:/resource/Sirius/representations.aird/Test&quot;>&#xD;&#xA;&lt;persistable SESSION_RESOURCE_URI=&quot;platform:/resource/Sirius/representations.aird&quot; bundle=&quot;org.eclipse.sirius.ui&quot; class=&quot;org.eclipse.sirius.ui.business.api.session.SessionEditorInput&quot; name=&quot;Test&quot; uri=&quot;platform:/resource/Sirius/representations.aird#_PhWUMQnPEeWUQoUWgoR15g&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;emn.a1.elascript.Elascript&quot; name=&quot;example.ela&quot; tooltip=&quot;Sirius/example.ela&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Sirius/example.ela&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.sirius.editor.editorPlugin.SiriusEditorID&quot; name=&quot;Elascript.odesign&quot; tooltip=&quot;Sirius/Elascript.odesign&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Sirius/Elascript.odesign&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.sirius.editor.editorPlugin.SiriusEditorID&quot; name=&quot;Elascipt.odesign&quot; tooltip=&quot;Sirius/Elascipt.odesign&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Sirius/Elascipt.odesign&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;emn.a1.elascript.Elascript&quot; name=&quot;example.ela&quot; tooltip=&quot;emn.a1.elascript.example/example.ela&quot;>&#xD;&#xA;&lt;persistable path=&quot;/emn.a1.elascript.example/example.ela&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_DJcrAgktEeWrIauBHp4hxg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_DZtUkwktEeWrIauBHp4hxg" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="960" height="1040">
@@ -11,7 +11,7 @@
     <tags>topLevel</tags>
     <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_DZtUkwktEeWrIauBHp4hxg" selectedElement="_DZtUlAktEeWrIauBHp4hxg" horizontal="true">
-      <children xsi:type="advanced:PerspectiveStack" xmi:id="_DZtUlAktEeWrIauBHp4hxg" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_mhHRAgnOEeWUQoUWgoR15g">
+      <children xsi:type="advanced:PerspectiveStack" xmi:id="_DZtUlAktEeWrIauBHp4hxg" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_DjsXBgktEeWrIauBHp4hxg">
         <children xsi:type="advanced:Perspective" xmi:id="_DjsXBgktEeWrIauBHp4hxg" elementId="org.eclipse.jdt.ui.JavaPerspective" selectedElement="_DjsXBwktEeWrIauBHp4hxg" label="Java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/eview16/jperspective.gif">
           <persistedState key="persp.hiddenItems" value="persp.hideToolbarSC:org.eclipse.debug.ui.commands.RunToLine,persp.hideToolbarSC:org.eclipse.jdt.ui.actions.OpenProjectWizard,persp.hideToolbarSC:org.eclipse.ui.edit.text.toggleShowSelectedElementOnly,"/>
           <tags>persp.actionSet:org.eclipse.mylyn.doc.actionSet</tags>
@@ -112,7 +112,7 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_DjsXHQktEeWrIauBHp4hxg" elementId="bottom" containerData="2500" selectedElement="_DjsXIAktEeWrIauBHp4hxg">
+              <children xsi:type="basic:PartStack" xmi:id="_DjsXHQktEeWrIauBHp4hxg" elementId="bottom" containerData="2500" selectedElement="_DjsXIgktEeWrIauBHp4hxg">
                 <tags>newtablook</tags>
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_DjsXHgktEeWrIauBHp4hxg" elementId="org.eclipse.ui.views.ProblemView" ref="_DjjNYgktEeWrIauBHp4hxg"/>
@@ -199,16 +199,18 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_DjZcEAktEeWrIauBHp4hxg" elementId="org.eclipse.ui.editorss" selectedElement="_DjZcEQktEeWrIauBHp4hxg">
-      <children xsi:type="basic:PartStack" xmi:id="_DjZcEQktEeWrIauBHp4hxg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_Pjb-4AnPEeWUQoUWgoR15g">
+      <children xsi:type="basic:PartStack" xmi:id="_DjZcEQktEeWrIauBHp4hxg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_wLPnQAm-EeWBvOIPVUFX-Q">
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_wLPnQAm-EeWBvOIPVUFX-Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Elascript.xtext" iconURI="platform:/plugin/org.eclipse.xtext.xtext.ui/icons/editor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.xtext.Xtext&quot; name=&quot;Elascript.xtext&quot; partName=&quot;Elascript.xtext&quot; title=&quot;Elascript.xtext&quot; tooltip=&quot;emn.a1.elascript/src/emn/a1/elascript/Elascript.xtext&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/emn.a1.elascript/src/emn/a1/elascript/Elascript.xtext&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;186&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.xtext.Xtext&quot; name=&quot;Elascript.xtext&quot; partName=&quot;Elascript.xtext&quot; title=&quot;Elascript.xtext&quot; tooltip=&quot;emn.a1.elascript/src/emn/a1/elascript/Elascript.xtext&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/emn.a1.elascript/src/emn/a1/elascript/Elascript.xtext&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;515&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.xtext.Xtext</tags>
           <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_G5CQAAnOEeWUQoUWgoR15g" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="example.ela" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;emn.a1.elascript.Elascript&quot; name=&quot;example.ela&quot; partName=&quot;example.ela&quot; title=&quot;example.ela&quot; tooltip=&quot;Sirius/example.ela&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Sirius/example.ela&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;50&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
@@ -227,8 +229,36 @@
           <tags>Editor</tags>
           <tags>org.eclipse.sirius.diagram.ui.part.SiriusDiagramEditorID</tags>
           <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_DzzRYA3UEeWFHLLLajtkkw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="emn.a1.elascript.tests" iconURI="platform:/plugin/org.eclipse.pde.ui/icons/obj16/plugin_mf_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.pde.ui.manifestEditor&quot; name=&quot;MANIFEST.MF&quot; partName=&quot;emn.a1.elascript.tests&quot; title=&quot;emn.a1.elascript.tests&quot; tooltip=&quot;emn.a1.elascript.tests/META-INF/MANIFEST.MF&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/emn.a1.elascript.tests/META-INF/MANIFEST.MF&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.pde.ui.manifestEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_JgzQcA3UEeWFHLLLajtkkw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="emn.a1.elascript.ui" iconURI="platform:/plugin/org.eclipse.pde.ui/icons/obj16/plugin_mf_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.pde.ui.manifestEditor&quot; name=&quot;MANIFEST.MF&quot; partName=&quot;emn.a1.elascript.ui&quot; title=&quot;emn.a1.elascript.ui&quot; tooltip=&quot;emn.a1.elascript.ui/META-INF/MANIFEST.MF&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/emn.a1.elascript.ui/META-INF/MANIFEST.MF&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.pde.ui.manifestEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_OdQjYA3UEeWFHLLLajtkkw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="emn.a1.elascript" iconURI="platform:/plugin/org.eclipse.pde.ui/icons/obj16/plugin_mf_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.pde.ui.manifestEditor&quot; name=&quot;MANIFEST.MF&quot; partName=&quot;emn.a1.elascript&quot; title=&quot;emn.a1.elascript&quot; tooltip=&quot;emn.a1.elascript/META-INF/MANIFEST.MF&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/emn.a1.elascript/META-INF/MANIFEST.MF&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.pde.ui.manifestEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_gaasgA3UEeWFHLLLajtkkw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="dummy" iconURI="platform:/plugin/org.eclipse.ui.editors/icons/full/obj16/file_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;dummy&quot; partName=&quot;dummy&quot; title=&quot;dummy&quot; tooltip=&quot;emn.a1.elascript.tests/src/dummy&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/emn.a1.elascript.tests/src/dummy&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.ui.DefaultTextEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_iJSCEA3UEeWFHLLLajtkkw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="dummy" iconURI="platform:/plugin/org.eclipse.ui.editors/icons/full/obj16/file_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;dummy&quot; partName=&quot;dummy&quot; title=&quot;dummy&quot; tooltip=&quot;emn.a1.elascript.tests/xtend-gen/dummy&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/emn.a1.elascript.tests/xtend-gen/dummy&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.ui.DefaultTextEditor</tags>
+          <tags>removeOnHide</tags>
         </children>
       </children>
     </sharedElements>
@@ -269,13 +299,14 @@
       <tags>categoryTag:Java</tags>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_DjjNZAktEeWrIauBHp4hxg" elementId="org.eclipse.jdt.ui.SourceView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Declaration" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/eview16/source.gif" closeable="true">
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:Java</tags>
       <menus xmi:id="_gXQ94AnOEeWUQoUWgoR15g" elementId="org.eclipse.jdt.ui.SourceView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_gXQ94QnOEeWUQoUWgoR15g" elementId="org.eclipse.jdt.ui.SourceView"/>
+      <toolbar xmi:id="_gXQ94QnOEeWUQoUWgoR15g" elementId="org.eclipse.jdt.ui.SourceView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_DjjNZQktEeWrIauBHp4hxg" elementId="org.eclipse.search.ui.views.SearchView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Search" iconURI="platform:/plugin/org.eclipse.search/icons/full/eview16/searchres.gif" closeable="true">
       <tags>View</tags>
@@ -289,7 +320,7 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_ee9DkQktEeWrIauBHp4hxg" elementId="org.eclipse.ui.console.ConsoleView" visible="false"/>
+      <toolbar xmi:id="_ee9DkQktEeWrIauBHp4hxg" elementId="org.eclipse.ui.console.ConsoleView"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_DjjNZwktEeWrIauBHp4hxg" elementId="org.eclipse.ui.views.BookmarkView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Bookmarks" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/bkmrk_nav.png" closeable="true">
       <tags>View</tags>
@@ -374,7 +405,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_DbWTUgktEeWrIauBHp4hxg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_A1_vgAnOEeWUQoUWgoR15g" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_DJ4ytwktEeWrIauBHp4hxg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_l0b6oA3TEeWFHLLLajtkkw" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_DJ4ytwktEeWrIauBHp4hxg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_DbWTUwktEeWrIauBHp4hxg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -386,7 +417,7 @@
       <children xsi:type="menu:ToolBar" xmi:id="_DuIFYAktEeWrIauBHp4hxg" elementId="org.eclipse.debug.ui.launchActionSet">
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_DubAUAktEeWrIauBHp4hxg" elementId="org.eclipse.jdt.ui.JavaElementCreationActionSet" visible="false">
+      <children xsi:type="menu:ToolBar" xmi:id="_DubAUAktEeWrIauBHp4hxg" elementId="org.eclipse.jdt.ui.JavaElementCreationActionSet">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_DuIFYQktEeWrIauBHp4hxg" elementId="org.eclipse.search.searchActionSet">
@@ -398,7 +429,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_DbWTVwktEeWrIauBHp4hxg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_A2Cy0AnOEeWUQoUWgoR15g" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_DJ4yaQktEeWrIauBHp4hxg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_l0dv2Q3TEeWFHLLLajtkkw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_DJ4yaQktEeWrIauBHp4hxg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_DbWTWAktEeWrIauBHp4hxg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

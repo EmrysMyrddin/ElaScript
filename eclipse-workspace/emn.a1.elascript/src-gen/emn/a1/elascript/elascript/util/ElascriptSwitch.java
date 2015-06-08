@@ -79,6 +79,20 @@ public class ElascriptSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case ElascriptPackage.BEGIN_SCRIPT:
+      {
+        BeginScript beginScript = (BeginScript)theEObject;
+        T result = caseBeginScript(beginScript);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ElascriptPackage.END_SCRIPT:
+      {
+        EndScript endScript = (EndScript)theEObject;
+        T result = caseEndScript(endScript);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case ElascriptPackage.STATEMENT:
       {
         Statement statement = (Statement)theEObject;
@@ -94,10 +108,24 @@ public class ElascriptSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case ElascriptPackage.ELIST:
+      case ElascriptPackage.BEGIN_PARALLEL:
       {
-        EList eList = (EList)theEObject;
-        T result = caseEList(eList);
+        BeginParallel beginParallel = (BeginParallel)theEObject;
+        T result = caseBeginParallel(beginParallel);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ElascriptPackage.END_PARALLEL:
+      {
+        EndParallel endParallel = (EndParallel)theEObject;
+        T result = caseEndParallel(endParallel);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case ElascriptPackage.STATEMENT_LIST:
+      {
+        StatementList statementList = (StatementList)theEObject;
+        T result = caseStatementList(statementList);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -137,6 +165,38 @@ public class ElascriptSwitch<T> extends Switch<T>
   }
 
   /**
+   * Returns the result of interpreting the object as an instance of '<em>Begin Script</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Begin Script</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseBeginScript(BeginScript object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>End Script</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>End Script</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseEndScript(EndScript object)
+  {
+    return null;
+  }
+
+  /**
    * Returns the result of interpreting the object as an instance of '<em>Statement</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
@@ -169,17 +229,49 @@ public class ElascriptSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>EList</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Begin Parallel</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>EList</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Begin Parallel</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseEList(EList object)
+  public T caseBeginParallel(BeginParallel object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>End Parallel</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>End Parallel</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseEndParallel(EndParallel object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Statement List</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Statement List</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseStatementList(StatementList object)
   {
     return null;
   }

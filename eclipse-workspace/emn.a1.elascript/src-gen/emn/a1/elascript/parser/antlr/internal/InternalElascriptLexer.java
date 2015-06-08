@@ -12,29 +12,25 @@ import java.util.ArrayList;
 
 @SuppressWarnings("all")
 public class InternalElascriptLexer extends Lexer {
-    public static final int RULE_SEQUENTIAL_SEPARATOR=10;
-    public static final int RULE_INF=18;
-    public static final int RULE_STRING=21;
-    public static final int RULE_SPLIT=4;
-    public static final int RULE_SL_COMMENT=23;
-    public static final int RULE_SCALE_DOWN=16;
+    public static final int RULE_SEQUENTIAL_SEPARATOR=9;
+    public static final int RULE_STRING=13;
+    public static final int RULE_SL_COMMENT=15;
+    public static final int T__19=19;
+    public static final int T__18=18;
     public static final int EOF=-1;
-    public static final int RULE_ID=11;
-    public static final int RULE_SOFT=17;
-    public static final int RULE_COMMA=8;
-    public static final int RULE_WS=24;
-    public static final int RULE_PARALLEL_SEPARATOR=5;
-    public static final int RULE_JOIN=6;
-    public static final int RULE_ANY_OTHER=25;
-    public static final int RULE_NUMBER=20;
-    public static final int RULE_LETTER=19;
-    public static final int RULE_SCALE_UP=15;
-    public static final int RULE_INT=12;
-    public static final int RULE_ML_COMMENT=22;
-    public static final int RULE_SCALE_IN=13;
-    public static final int RULE_RP=9;
-    public static final int RULE_SCALE_OUT=14;
-    public static final int RULE_LP=7;
+    public static final int RULE_ID=5;
+    public static final int RULE_COMMA=7;
+    public static final int RULE_WS=16;
+    public static final int RULE_PARALLEL_SEPARATOR=4;
+    public static final int RULE_ANY_OTHER=17;
+    public static final int RULE_NUMBER=12;
+    public static final int RULE_LETTER=11;
+    public static final int RULE_INT=10;
+    public static final int RULE_ML_COMMENT=14;
+    public static final int RULE_RP=8;
+    public static final int RULE_LP=6;
+    public static final int T__20=20;
+    public static final int T__21=21;
 
     // delegates
     // delegators
@@ -49,15 +45,15 @@ public class InternalElascriptLexer extends Lexer {
     }
     public String getGrammarFileName() { return "../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g"; }
 
-    // $ANTLR start "RULE_SCALE_IN"
-    public final void mRULE_SCALE_IN() throws RecognitionException {
+    // $ANTLR start "T__18"
+    public final void mT__18() throws RecognitionException {
         try {
-            int _type = RULE_SCALE_IN;
+            int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:522:15: ( 'ScaleIn' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:522:17: 'ScaleIn'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:11:7: ( 'begin' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:11:9: 'begin'
             {
-            match("ScaleIn"); 
+            match("begin"); 
 
 
             }
@@ -68,17 +64,17 @@ public class InternalElascriptLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end "RULE_SCALE_IN"
+    // $ANTLR end "T__18"
 
-    // $ANTLR start "RULE_SCALE_OUT"
-    public final void mRULE_SCALE_OUT() throws RecognitionException {
+    // $ANTLR start "T__19"
+    public final void mT__19() throws RecognitionException {
         try {
-            int _type = RULE_SCALE_OUT;
+            int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:524:16: ( 'ScaleOut' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:524:18: 'ScaleOut'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:12:7: ( 'end' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:12:9: 'end'
             {
-            match("ScaleOut"); 
+            match("end"); 
 
 
             }
@@ -89,18 +85,17 @@ public class InternalElascriptLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end "RULE_SCALE_OUT"
+    // $ANTLR end "T__19"
 
-    // $ANTLR start "RULE_SCALE_UP"
-    public final void mRULE_SCALE_UP() throws RecognitionException {
+    // $ANTLR start "T__20"
+    public final void mT__20() throws RecognitionException {
         try {
-            int _type = RULE_SCALE_UP;
+            int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:526:15: ( 'ScaleUp' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:526:17: 'ScaleUp'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:13:7: ( '[' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:13:9: '['
             {
-            match("ScaleUp"); 
-
+            match('['); 
 
             }
 
@@ -110,18 +105,17 @@ public class InternalElascriptLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end "RULE_SCALE_UP"
+    // $ANTLR end "T__20"
 
-    // $ANTLR start "RULE_SCALE_DOWN"
-    public final void mRULE_SCALE_DOWN() throws RecognitionException {
+    // $ANTLR start "T__21"
+    public final void mT__21() throws RecognitionException {
         try {
-            int _type = RULE_SCALE_DOWN;
+            int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:528:17: ( 'ScaleDown' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:528:19: 'ScaleDown'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:14:7: ( ']' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:14:9: ']'
             {
-            match("ScaleDown"); 
-
+            match(']'); 
 
             }
 
@@ -131,57 +125,15 @@ public class InternalElascriptLexer extends Lexer {
         finally {
         }
     }
-    // $ANTLR end "RULE_SCALE_DOWN"
-
-    // $ANTLR start "RULE_SOFT"
-    public final void mRULE_SOFT() throws RecognitionException {
-        try {
-            int _type = RULE_SOFT;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:530:11: ( 'Soft' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:530:13: 'Soft'
-            {
-            match("Soft"); 
-
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "RULE_SOFT"
-
-    // $ANTLR start "RULE_INF"
-    public final void mRULE_INF() throws RecognitionException {
-        try {
-            int _type = RULE_INF;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:532:10: ( 'Inf' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:532:12: 'Inf'
-            {
-            match("Inf"); 
-
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "RULE_INF"
+    // $ANTLR end "T__21"
 
     // $ANTLR start "RULE_PARALLEL_SEPARATOR"
     public final void mRULE_PARALLEL_SEPARATOR() throws RecognitionException {
         try {
             int _type = RULE_PARALLEL_SEPARATOR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:534:25: ( '||' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:534:27: '||'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:591:25: ( '||' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:591:27: '||'
             {
             match("||"); 
 
@@ -201,8 +153,8 @@ public class InternalElascriptLexer extends Lexer {
         try {
             int _type = RULE_LP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:536:9: ( '(' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:536:11: '('
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:593:9: ( '(' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:593:11: '('
             {
             match('('); 
 
@@ -221,8 +173,8 @@ public class InternalElascriptLexer extends Lexer {
         try {
             int _type = RULE_RP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:538:9: ( ')' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:538:11: ')'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:595:9: ( ')' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:595:11: ')'
             {
             match(')'); 
 
@@ -239,8 +191,8 @@ public class InternalElascriptLexer extends Lexer {
     // $ANTLR start "RULE_LETTER"
     public final void mRULE_LETTER() throws RecognitionException {
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:540:22: ( ( '$' | 'A' .. 'Z' | 'a' .. 'z' | '_' ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:540:24: ( '$' | 'A' .. 'Z' | 'a' .. 'z' | '_' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:597:22: ( ( '$' | 'A' .. 'Z' | 'a' .. 'z' | '_' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:597:24: ( '$' | 'A' .. 'Z' | 'a' .. 'z' | '_' )
             {
             if ( input.LA(1)=='$'||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
                 input.consume();
@@ -263,8 +215,8 @@ public class InternalElascriptLexer extends Lexer {
     // $ANTLR start "RULE_NUMBER"
     public final void mRULE_NUMBER() throws RecognitionException {
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:542:22: ( '0' .. '9' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:542:24: '0' .. '9'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:599:22: ( '0' .. '9' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:599:24: '0' .. '9'
             {
             matchRange('0','9'); 
 
@@ -281,8 +233,8 @@ public class InternalElascriptLexer extends Lexer {
         try {
             int _type = RULE_SEQUENTIAL_SEPARATOR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:544:27: ( ';' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:544:29: ';'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:601:27: ( ';' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:601:29: ';'
             {
             match(';'); 
 
@@ -301,8 +253,8 @@ public class InternalElascriptLexer extends Lexer {
         try {
             int _type = RULE_COMMA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:546:12: ( ',' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:546:14: ','
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:603:12: ( ',' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:603:14: ','
             {
             match(','); 
 
@@ -316,55 +268,15 @@ public class InternalElascriptLexer extends Lexer {
     }
     // $ANTLR end "RULE_COMMA"
 
-    // $ANTLR start "RULE_SPLIT"
-    public final void mRULE_SPLIT() throws RecognitionException {
-        try {
-            int _type = RULE_SPLIT;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:548:12: ( '[' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:548:14: '['
-            {
-            match('['); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "RULE_SPLIT"
-
-    // $ANTLR start "RULE_JOIN"
-    public final void mRULE_JOIN() throws RecognitionException {
-        try {
-            int _type = RULE_JOIN;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:550:11: ( ']' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:550:13: ']'
-            {
-            match(']'); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        }
-    }
-    // $ANTLR end "RULE_JOIN"
-
     // $ANTLR start "RULE_ID"
     public final void mRULE_ID() throws RecognitionException {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:552:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:552:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:605:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:605:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:552:11: ( '^' )?
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:605:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -373,7 +285,7 @@ public class InternalElascriptLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:552:11: '^'
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:605:11: '^'
                     {
                     match('^'); 
 
@@ -391,7 +303,7 @@ public class InternalElascriptLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:552:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:605:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -440,10 +352,10 @@ public class InternalElascriptLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:554:10: ( ( '0' .. '9' )+ )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:554:12: ( '0' .. '9' )+
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:607:10: ( ( '0' .. '9' )+ )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:607:12: ( '0' .. '9' )+
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:554:12: ( '0' .. '9' )+
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:607:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -457,7 +369,7 @@ public class InternalElascriptLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:554:13: '0' .. '9'
+            	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:607:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -489,10 +401,10 @@ public class InternalElascriptLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:556:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:556:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:609:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:609:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:556:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:609:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -510,10 +422,10 @@ public class InternalElascriptLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:556:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:609:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:556:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:609:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -529,7 +441,7 @@ public class InternalElascriptLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:556:21: '\\\\' .
+                    	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:609:21: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -537,7 +449,7 @@ public class InternalElascriptLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:556:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:609:28: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -562,10 +474,10 @@ public class InternalElascriptLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:556:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:609:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:556:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:609:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -581,7 +493,7 @@ public class InternalElascriptLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:556:54: '\\\\' .
+                    	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:609:54: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -589,7 +501,7 @@ public class InternalElascriptLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:556:61: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:609:61: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -632,12 +544,12 @@ public class InternalElascriptLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:558:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:558:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:611:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:611:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:558:24: ( options {greedy=false; } : . )*
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:611:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -662,7 +574,7 @@ public class InternalElascriptLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:558:52: .
+            	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:611:52: .
             	    {
             	    matchAny(); 
 
@@ -692,12 +604,12 @@ public class InternalElascriptLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:560:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:560:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:613:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:613:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:560:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:613:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -710,7 +622,7 @@ public class InternalElascriptLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:560:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:613:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -730,7 +642,7 @@ public class InternalElascriptLexer extends Lexer {
                 }
             } while (true);
 
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:560:40: ( ( '\\r' )? '\\n' )?
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:613:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -739,9 +651,9 @@ public class InternalElascriptLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:560:41: ( '\\r' )? '\\n'
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:613:41: ( '\\r' )? '\\n'
                     {
-                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:560:41: ( '\\r' )?
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:613:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -750,7 +662,7 @@ public class InternalElascriptLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:560:41: '\\r'
+                            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:613:41: '\\r'
                             {
                             match('\r'); 
 
@@ -782,10 +694,10 @@ public class InternalElascriptLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:562:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:562:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:615:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:615:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:562:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:615:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -839,8 +751,8 @@ public class InternalElascriptLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:564:16: ( . )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:564:18: .
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:617:16: ( . )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:617:18: .
             {
             matchAny(); 
 
@@ -855,145 +767,117 @@ public class InternalElascriptLexer extends Lexer {
     // $ANTLR end "RULE_ANY_OTHER"
 
     public void mTokens() throws RecognitionException {
-        // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:8: ( RULE_SCALE_IN | RULE_SCALE_OUT | RULE_SCALE_UP | RULE_SCALE_DOWN | RULE_SOFT | RULE_INF | RULE_PARALLEL_SEPARATOR | RULE_LP | RULE_RP | RULE_SEQUENTIAL_SEPARATOR | RULE_COMMA | RULE_SPLIT | RULE_JOIN | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
-        int alt12=20;
+        // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:8: ( T__18 | T__19 | T__20 | T__21 | RULE_PARALLEL_SEPARATOR | RULE_LP | RULE_RP | RULE_SEQUENTIAL_SEPARATOR | RULE_COMMA | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
+        int alt12=16;
         alt12 = dfa12.predict(input);
         switch (alt12) {
             case 1 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:10: RULE_SCALE_IN
+                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:10: T__18
                 {
-                mRULE_SCALE_IN(); 
+                mT__18(); 
 
                 }
                 break;
             case 2 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:24: RULE_SCALE_OUT
+                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:16: T__19
                 {
-                mRULE_SCALE_OUT(); 
+                mT__19(); 
 
                 }
                 break;
             case 3 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:39: RULE_SCALE_UP
+                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:22: T__20
                 {
-                mRULE_SCALE_UP(); 
+                mT__20(); 
 
                 }
                 break;
             case 4 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:53: RULE_SCALE_DOWN
+                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:28: T__21
                 {
-                mRULE_SCALE_DOWN(); 
+                mT__21(); 
 
                 }
                 break;
             case 5 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:69: RULE_SOFT
-                {
-                mRULE_SOFT(); 
-
-                }
-                break;
-            case 6 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:79: RULE_INF
-                {
-                mRULE_INF(); 
-
-                }
-                break;
-            case 7 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:88: RULE_PARALLEL_SEPARATOR
+                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:34: RULE_PARALLEL_SEPARATOR
                 {
                 mRULE_PARALLEL_SEPARATOR(); 
 
                 }
                 break;
-            case 8 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:112: RULE_LP
+            case 6 :
+                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:58: RULE_LP
                 {
                 mRULE_LP(); 
 
                 }
                 break;
-            case 9 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:120: RULE_RP
+            case 7 :
+                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:66: RULE_RP
                 {
                 mRULE_RP(); 
 
                 }
                 break;
-            case 10 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:128: RULE_SEQUENTIAL_SEPARATOR
+            case 8 :
+                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:74: RULE_SEQUENTIAL_SEPARATOR
                 {
                 mRULE_SEQUENTIAL_SEPARATOR(); 
 
                 }
                 break;
-            case 11 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:154: RULE_COMMA
+            case 9 :
+                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:100: RULE_COMMA
                 {
                 mRULE_COMMA(); 
 
                 }
                 break;
-            case 12 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:165: RULE_SPLIT
-                {
-                mRULE_SPLIT(); 
-
-                }
-                break;
-            case 13 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:176: RULE_JOIN
-                {
-                mRULE_JOIN(); 
-
-                }
-                break;
-            case 14 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:186: RULE_ID
+            case 10 :
+                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:111: RULE_ID
                 {
                 mRULE_ID(); 
 
                 }
                 break;
-            case 15 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:194: RULE_INT
+            case 11 :
+                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:119: RULE_INT
                 {
                 mRULE_INT(); 
 
                 }
                 break;
-            case 16 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:203: RULE_STRING
+            case 12 :
+                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:128: RULE_STRING
                 {
                 mRULE_STRING(); 
 
                 }
                 break;
-            case 17 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:215: RULE_ML_COMMENT
+            case 13 :
+                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:140: RULE_ML_COMMENT
                 {
                 mRULE_ML_COMMENT(); 
 
                 }
                 break;
-            case 18 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:231: RULE_SL_COMMENT
+            case 14 :
+                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:156: RULE_SL_COMMENT
                 {
                 mRULE_SL_COMMENT(); 
 
                 }
                 break;
-            case 19 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:247: RULE_WS
+            case 15 :
+                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:172: RULE_WS
                 {
                 mRULE_WS(); 
 
                 }
                 break;
-            case 20 :
-                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:255: RULE_ANY_OTHER
+            case 16 :
+                // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1:180: RULE_ANY_OTHER
                 {
                 mRULE_ANY_OTHER(); 
 
@@ -1007,87 +891,65 @@ public class InternalElascriptLexer extends Lexer {
 
     protected DFA12 dfa12 = new DFA12(this);
     static final String DFA12_eotS =
-        "\1\uffff\2\24\1\21\6\uffff\1\21\2\uffff\3\21\2\uffff\2\24\1\uffff"+
-        "\1\24\14\uffff\2\24\1\47\1\24\1\51\1\uffff\1\24\1\uffff\4\24\1\62"+
-        "\1\24\1\64\1\24\1\uffff\1\66\1\uffff\1\24\1\uffff\1\70\1\uffff";
+        "\1\uffff\2\23\2\uffff\1\21\4\uffff\1\21\2\uffff\3\21\2\uffff\1"+
+        "\23\1\uffff\1\23\14\uffff\1\23\1\44\1\23\1\uffff\1\46\1\uffff";
     static final String DFA12_eofS =
-        "\71\uffff";
+        "\47\uffff";
     static final String DFA12_minS =
-        "\1\0\1\143\1\156\1\174\6\uffff\1\101\2\uffff\2\0\1\52\2\uffff\1"+
-        "\141\1\146\1\uffff\1\146\14\uffff\1\154\1\164\1\60\1\145\1\60\1"+
-        "\uffff\1\104\1\uffff\1\156\1\165\1\160\1\157\1\60\1\164\1\60\1\167"+
-        "\1\uffff\1\60\1\uffff\1\156\1\uffff\1\60\1\uffff";
+        "\1\0\1\145\1\156\2\uffff\1\174\4\uffff\1\101\2\uffff\2\0\1\52\2"+
+        "\uffff\1\147\1\uffff\1\144\14\uffff\1\151\1\60\1\156\1\uffff\1\60"+
+        "\1\uffff";
     static final String DFA12_maxS =
-        "\1\uffff\1\157\1\156\1\174\6\uffff\1\172\2\uffff\2\uffff\1\57\2"+
-        "\uffff\1\141\1\146\1\uffff\1\146\14\uffff\1\154\1\164\1\172\1\145"+
-        "\1\172\1\uffff\1\125\1\uffff\1\156\1\165\1\160\1\157\1\172\1\164"+
-        "\1\172\1\167\1\uffff\1\172\1\uffff\1\156\1\uffff\1\172\1\uffff";
+        "\1\uffff\1\145\1\156\2\uffff\1\174\4\uffff\1\172\2\uffff\2\uffff"+
+        "\1\57\2\uffff\1\147\1\uffff\1\144\14\uffff\1\151\1\172\1\156\1\uffff"+
+        "\1\172\1\uffff";
     static final String DFA12_acceptS =
-        "\4\uffff\1\10\1\11\1\12\1\13\1\14\1\15\1\uffff\1\16\1\17\3\uffff"+
-        "\1\23\1\24\2\uffff\1\16\1\uffff\1\7\1\10\1\11\1\12\1\13\1\14\1\15"+
-        "\1\17\1\20\1\21\1\22\1\23\5\uffff\1\6\1\uffff\1\5\10\uffff\1\1\1"+
-        "\uffff\1\3\1\uffff\1\2\1\uffff\1\4";
+        "\3\uffff\1\3\1\4\1\uffff\1\6\1\7\1\10\1\11\1\uffff\1\12\1\13\3"+
+        "\uffff\1\17\1\20\1\uffff\1\12\1\uffff\1\3\1\4\1\5\1\6\1\7\1\10\1"+
+        "\11\1\13\1\14\1\15\1\16\1\17\3\uffff\1\2\1\uffff\1\1";
     static final String DFA12_specialS =
-        "\1\2\14\uffff\1\0\1\1\52\uffff}>";
+        "\1\0\14\uffff\1\1\1\2\30\uffff}>";
     static final String[] DFA12_transitionS = {
-            "\11\21\2\20\2\21\1\20\22\21\1\20\1\21\1\15\4\21\1\16\1\4\1"+
-            "\5\2\21\1\7\2\21\1\17\12\14\1\21\1\6\5\21\10\13\1\2\11\13\1"+
-            "\1\7\13\1\10\1\21\1\11\1\12\1\13\1\21\32\13\1\21\1\3\uff83\21",
-            "\1\22\13\uffff\1\23",
-            "\1\25",
-            "\1\26",
+            "\11\21\2\20\2\21\1\20\22\21\1\20\1\21\1\15\4\21\1\16\1\6\1"+
+            "\7\2\21\1\11\2\21\1\17\12\14\1\21\1\10\5\21\32\13\1\3\1\21\1"+
+            "\4\1\12\1\13\1\21\1\13\1\1\2\13\1\2\25\13\1\21\1\5\uff83\21",
+            "\1\22",
+            "\1\24",
+            "",
+            "",
+            "\1\27",
             "",
             "",
             "",
             "",
+            "\32\23\4\uffff\1\23\1\uffff\32\23",
             "",
             "",
-            "\32\24\4\uffff\1\24\1\uffff\32\24",
+            "\0\35",
+            "\0\35",
+            "\1\36\4\uffff\1\37",
             "",
             "",
-            "\0\36",
-            "\0\36",
-            "\1\37\4\uffff\1\40",
-            "",
+            "\1\41",
             "",
             "\1\42",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\43",
-            "",
-            "\1\44",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "\12\23\7\uffff\32\23\4\uffff\1\23\1\uffff\32\23",
             "\1\45",
-            "\1\46",
-            "\12\24\7\uffff\32\24\4\uffff\1\24\1\uffff\32\24",
-            "\1\50",
-            "\12\24\7\uffff\32\24\4\uffff\1\24\1\uffff\32\24",
             "",
-            "\1\55\4\uffff\1\52\5\uffff\1\53\5\uffff\1\54",
-            "",
-            "\1\56",
-            "\1\57",
-            "\1\60",
-            "\1\61",
-            "\12\24\7\uffff\32\24\4\uffff\1\24\1\uffff\32\24",
-            "\1\63",
-            "\12\24\7\uffff\32\24\4\uffff\1\24\1\uffff\32\24",
-            "\1\65",
-            "",
-            "\12\24\7\uffff\32\24\4\uffff\1\24\1\uffff\32\24",
-            "",
-            "\1\67",
-            "",
-            "\12\24\7\uffff\32\24\4\uffff\1\24\1\uffff\32\24",
+            "\12\23\7\uffff\32\23\4\uffff\1\23\1\uffff\32\23",
             ""
     };
 
@@ -1121,57 +983,37 @@ public class InternalElascriptLexer extends Lexer {
             this.transition = DFA12_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( RULE_SCALE_IN | RULE_SCALE_OUT | RULE_SCALE_UP | RULE_SCALE_DOWN | RULE_SOFT | RULE_INF | RULE_PARALLEL_SEPARATOR | RULE_LP | RULE_RP | RULE_SEQUENTIAL_SEPARATOR | RULE_COMMA | RULE_SPLIT | RULE_JOIN | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
+            return "1:1: Tokens : ( T__18 | T__19 | T__20 | T__21 | RULE_PARALLEL_SEPARATOR | RULE_LP | RULE_RP | RULE_SEQUENTIAL_SEPARATOR | RULE_COMMA | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA12_13 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA12_13>='\u0000' && LA12_13<='\uFFFF')) ) {s = 30;}
-
-                        else s = 17;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA12_14 = input.LA(1);
-
-                        s = -1;
-                        if ( ((LA12_14>='\u0000' && LA12_14<='\uFFFF')) ) {s = 30;}
-
-                        else s = 17;
-
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
                         int LA12_0 = input.LA(1);
 
                         s = -1;
-                        if ( (LA12_0=='S') ) {s = 1;}
+                        if ( (LA12_0=='b') ) {s = 1;}
 
-                        else if ( (LA12_0=='I') ) {s = 2;}
+                        else if ( (LA12_0=='e') ) {s = 2;}
 
-                        else if ( (LA12_0=='|') ) {s = 3;}
+                        else if ( (LA12_0=='[') ) {s = 3;}
 
-                        else if ( (LA12_0=='(') ) {s = 4;}
+                        else if ( (LA12_0==']') ) {s = 4;}
 
-                        else if ( (LA12_0==')') ) {s = 5;}
+                        else if ( (LA12_0=='|') ) {s = 5;}
 
-                        else if ( (LA12_0==';') ) {s = 6;}
+                        else if ( (LA12_0=='(') ) {s = 6;}
 
-                        else if ( (LA12_0==',') ) {s = 7;}
+                        else if ( (LA12_0==')') ) {s = 7;}
 
-                        else if ( (LA12_0=='[') ) {s = 8;}
+                        else if ( (LA12_0==';') ) {s = 8;}
 
-                        else if ( (LA12_0==']') ) {s = 9;}
+                        else if ( (LA12_0==',') ) {s = 9;}
 
                         else if ( (LA12_0=='^') ) {s = 10;}
 
-                        else if ( ((LA12_0>='A' && LA12_0<='H')||(LA12_0>='J' && LA12_0<='R')||(LA12_0>='T' && LA12_0<='Z')||LA12_0=='_'||(LA12_0>='a' && LA12_0<='z')) ) {s = 11;}
+                        else if ( ((LA12_0>='A' && LA12_0<='Z')||LA12_0=='_'||LA12_0=='a'||(LA12_0>='c' && LA12_0<='d')||(LA12_0>='f' && LA12_0<='z')) ) {s = 11;}
 
                         else if ( ((LA12_0>='0' && LA12_0<='9')) ) {s = 12;}
 
@@ -1184,6 +1026,26 @@ public class InternalElascriptLexer extends Lexer {
                         else if ( ((LA12_0>='\t' && LA12_0<='\n')||LA12_0=='\r'||LA12_0==' ') ) {s = 16;}
 
                         else if ( ((LA12_0>='\u0000' && LA12_0<='\b')||(LA12_0>='\u000B' && LA12_0<='\f')||(LA12_0>='\u000E' && LA12_0<='\u001F')||LA12_0=='!'||(LA12_0>='#' && LA12_0<='&')||(LA12_0>='*' && LA12_0<='+')||(LA12_0>='-' && LA12_0<='.')||LA12_0==':'||(LA12_0>='<' && LA12_0<='@')||LA12_0=='\\'||LA12_0=='`'||LA12_0=='{'||(LA12_0>='}' && LA12_0<='\uFFFF')) ) {s = 17;}
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 1 : 
+                        int LA12_13 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA12_13>='\u0000' && LA12_13<='\uFFFF')) ) {s = 29;}
+
+                        else s = 17;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 2 : 
+                        int LA12_14 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA12_14>='\u0000' && LA12_14<='\uFFFF')) ) {s = 29;}
+
+                        else s = 17;
 
                         if ( s>=0 ) return s;
                         break;

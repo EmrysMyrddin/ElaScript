@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="PDEFormActionManager">
+	</section>
 	<section name="PluginExportWizard">
 		<item value="E:\ElaScript\eclipse-plugin" key="destination0"/>
 		<item value="E:\ElaScript\eclipse-plugin" key="destination1"/>

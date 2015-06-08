@@ -1,4 +1,4 @@
-grammar org.elascript.Elascript with org.eclipse.xtext.common.Terminals
+grammar emn.a1.elascript.Elascript with org.eclipse.xtext.common.Terminals
 generate elascript "http://www.elascript.org/Elascript"
 
 Script : 	

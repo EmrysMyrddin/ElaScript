@@ -5,12 +5,16 @@ package emn.a1.elascript.serializer;
 
 import com.google.inject.Inject;
 import com.google.inject.Provider;
+import emn.a1.elascript.elascript.BeginParallel;
+import emn.a1.elascript.elascript.BeginScript;
 import emn.a1.elascript.elascript.Command;
-import emn.a1.elascript.elascript.EList;
 import emn.a1.elascript.elascript.ElascriptPackage;
+import emn.a1.elascript.elascript.EndParallel;
+import emn.a1.elascript.elascript.EndScript;
 import emn.a1.elascript.elascript.Parallel;
 import emn.a1.elascript.elascript.Param;
 import emn.a1.elascript.elascript.Script;
+import emn.a1.elascript.elascript.StatementList;
 import emn.a1.elascript.services.ElascriptGrammarAccess;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.serializer.acceptor.ISemanticSequenceAcceptor;
@@ -33,11 +37,20 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	@Override
 	public void createSequence(EObject context, EObject semanticObject) {
 		if(semanticObject.eClass().getEPackage() == ElascriptPackage.eINSTANCE) switch(semanticObject.eClass().getClassifierID()) {
+			case ElascriptPackage.BEGIN_PARALLEL:
+				sequence_BeginParallel(context, (BeginParallel) semanticObject); 
+				return; 
+			case ElascriptPackage.BEGIN_SCRIPT:
+				sequence_BeginScript(context, (BeginScript) semanticObject); 
+				return; 
 			case ElascriptPackage.COMMAND:
 				sequence_Command(context, (Command) semanticObject); 
 				return; 
-			case ElascriptPackage.ELIST:
-				sequence_StatementList(context, (EList) semanticObject); 
+			case ElascriptPackage.END_PARALLEL:
+				sequence_EndParallel(context, (EndParallel) semanticObject); 
+				return; 
+			case ElascriptPackage.END_SCRIPT:
+				sequence_EndScript(context, (EndScript) semanticObject); 
 				return; 
 			case ElascriptPackage.PARALLEL:
 				sequence_Parallel(context, (Parallel) semanticObject); 
@@ -48,13 +61,48 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 			case ElascriptPackage.SCRIPT:
 				sequence_Script(context, (Script) semanticObject); 
 				return; 
+			case ElascriptPackage.STATEMENT_LIST:
+				sequence_StatementList(context, (StatementList) semanticObject); 
+				return; 
 			}
 		if (errorAcceptor != null) errorAcceptor.accept(diagnosticProvider.createInvalidContextOrTypeDiagnostic(semanticObject, context));
 	}
 	
 	/**
 	 * Constraint:
-	 *     (name=FunctionName params+=Param params+=Param*)
+	 *     name='['
+	 */
+	protected void sequence_BeginParallel(EObject context, BeginParallel semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, ElascriptPackage.Literals.BEGIN_PARALLEL__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ElascriptPackage.Literals.BEGIN_PARALLEL__NAME));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getBeginParallelAccess().getNameLeftSquareBracketKeyword_0(), semanticObject.getName());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     name='begin'
+	 */
+	protected void sequence_BeginScript(EObject context, BeginScript semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, ElascriptPackage.Literals.BEGIN_SCRIPT__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ElascriptPackage.Literals.BEGIN_SCRIPT__NAME));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getBeginScriptAccess().getNameBeginKeyword_0(), semanticObject.getName());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (name=ID params+=Param params+=Param*)
 	 */
 	protected void sequence_Command(EObject context, Command semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -63,7 +111,39 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	
 	/**
 	 * Constraint:
-	 *     (statements+=StatementList statements+=StatementList+)
+	 *     name=']'
+	 */
+	protected void sequence_EndParallel(EObject context, EndParallel semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, ElascriptPackage.Literals.END_PARALLEL__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ElascriptPackage.Literals.END_PARALLEL__NAME));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getEndParallelAccess().getNameRightSquareBracketKeyword_0(), semanticObject.getName());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     name='end'
+	 */
+	protected void sequence_EndScript(EObject context, EndScript semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, ElascriptPackage.Literals.END_SCRIPT__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ElascriptPackage.Literals.END_SCRIPT__NAME));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getEndScriptAccess().getNameEndKeyword_0(), semanticObject.getName());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (BeginParallel=BeginParallel statementLists+=StatementList statementLists+=StatementList+ EndParallel=EndParallel)
 	 */
 	protected void sequence_Parallel(EObject context, Parallel semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -88,10 +168,23 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	
 	/**
 	 * Constraint:
-	 *     scriptStatements+=Statement*
+	 *     (BeginScript=BeginScript scriptStatement=StatementList EndScript=EndScript)
 	 */
 	protected void sequence_Script(EObject context, Script semanticObject) {
-		genericSequencer.createSequence(context, semanticObject);
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, ElascriptPackage.Literals.SCRIPT__BEGIN_SCRIPT) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ElascriptPackage.Literals.SCRIPT__BEGIN_SCRIPT));
+			if(transientValues.isValueTransient(semanticObject, ElascriptPackage.Literals.SCRIPT__SCRIPT_STATEMENT) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ElascriptPackage.Literals.SCRIPT__SCRIPT_STATEMENT));
+			if(transientValues.isValueTransient(semanticObject, ElascriptPackage.Literals.SCRIPT__END_SCRIPT) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, ElascriptPackage.Literals.SCRIPT__END_SCRIPT));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getScriptAccess().getBeginScriptBeginScriptParserRuleCall_0_0(), semanticObject.getBeginScript());
+		feeder.accept(grammarAccess.getScriptAccess().getScriptStatementStatementListParserRuleCall_1_0(), semanticObject.getScriptStatement());
+		feeder.accept(grammarAccess.getScriptAccess().getEndScriptEndScriptParserRuleCall_2_0(), semanticObject.getEndScript());
+		feeder.finish();
 	}
 	
 	
@@ -99,7 +192,7 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	 * Constraint:
 	 *     statements+=Statement+
 	 */
-	protected void sequence_StatementList(EObject context, EList semanticObject) {
+	protected void sequence_StatementList(EObject context, StatementList semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 }

@@ -65,9 +65,13 @@ public class ElascriptFactoryImpl extends EFactoryImpl implements ElascriptFacto
     switch (eClass.getClassifierID())
     {
       case ElascriptPackage.SCRIPT: return createScript();
+      case ElascriptPackage.BEGIN_SCRIPT: return createBeginScript();
+      case ElascriptPackage.END_SCRIPT: return createEndScript();
       case ElascriptPackage.STATEMENT: return createStatement();
       case ElascriptPackage.PARALLEL: return createParallel();
-      case ElascriptPackage.ELIST: return createEList();
+      case ElascriptPackage.BEGIN_PARALLEL: return createBeginParallel();
+      case ElascriptPackage.END_PARALLEL: return createEndParallel();
+      case ElascriptPackage.STATEMENT_LIST: return createStatementList();
       case ElascriptPackage.COMMAND: return createCommand();
       case ElascriptPackage.PARAM: return createParam();
       default:
@@ -84,6 +88,28 @@ public class ElascriptFactoryImpl extends EFactoryImpl implements ElascriptFacto
   {
     ScriptImpl script = new ScriptImpl();
     return script;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public BeginScript createBeginScript()
+  {
+    BeginScriptImpl beginScript = new BeginScriptImpl();
+    return beginScript;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EndScript createEndScript()
+  {
+    EndScriptImpl endScript = new EndScriptImpl();
+    return endScript;
   }
 
   /**
@@ -113,10 +139,32 @@ public class ElascriptFactoryImpl extends EFactoryImpl implements ElascriptFacto
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList createEList()
+  public BeginParallel createBeginParallel()
   {
-    EListImpl eList = new EListImpl();
-    return eList;
+    BeginParallelImpl beginParallel = new BeginParallelImpl();
+    return beginParallel;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EndParallel createEndParallel()
+  {
+    EndParallelImpl endParallel = new EndParallelImpl();
+    return endParallel;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public StatementList createStatementList()
+  {
+    StatementListImpl statementList = new StatementListImpl();
+    return statementList;
   }
 
   /**

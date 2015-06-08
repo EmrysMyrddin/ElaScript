@@ -28,8 +28,6 @@ public class ElascriptSyntacticSequencer extends AbstractSyntacticSequencer {
 	protected String getUnassignedRuleCallToken(EObject semanticObject, RuleCall ruleCall, INode node) {
 		if(ruleCall.getRule() == grammarAccess.getCOMMARule())
 			return getCOMMAToken(semanticObject, ruleCall, node);
-		else if(ruleCall.getRule() == grammarAccess.getJOINRule())
-			return getJOINToken(semanticObject, ruleCall, node);
 		else if(ruleCall.getRule() == grammarAccess.getLPRule())
 			return getLPToken(semanticObject, ruleCall, node);
 		else if(ruleCall.getRule() == grammarAccess.getPARALLEL_SEPARATORRule())
@@ -38,8 +36,6 @@ public class ElascriptSyntacticSequencer extends AbstractSyntacticSequencer {
 			return getRPToken(semanticObject, ruleCall, node);
 		else if(ruleCall.getRule() == grammarAccess.getSEQUENTIAL_SEPARATORRule())
 			return getSEQUENTIAL_SEPARATORToken(semanticObject, ruleCall, node);
-		else if(ruleCall.getRule() == grammarAccess.getSPLITRule())
-			return getSPLITToken(semanticObject, ruleCall, node);
 		return "";
 	}
 	
@@ -50,15 +46,6 @@ public class ElascriptSyntacticSequencer extends AbstractSyntacticSequencer {
 		if (node != null)
 			return getTokenText(node);
 		return ",";
-	}
-	
-	/**
-	 * terminal JOIN : ']';
-	 */
-	protected String getJOINToken(EObject semanticObject, RuleCall ruleCall, INode node) {
-		if (node != null)
-			return getTokenText(node);
-		return "]";
 	}
 	
 	/**
@@ -95,15 +82,6 @@ public class ElascriptSyntacticSequencer extends AbstractSyntacticSequencer {
 		if (node != null)
 			return getTokenText(node);
 		return ";";
-	}
-	
-	/**
-	 * terminal SPLIT : '[';
-	 */
-	protected String getSPLITToken(EObject semanticObject, RuleCall ruleCall, INode node) {
-		if (node != null)
-			return getTokenText(node);
-		return "[";
 	}
 	
 	@Override

@@ -18,8 +18,8 @@ Require-Bundle: emn.a1.elascript;visibility:=reexport,
  org.eclipse.compare
 Import-Package: org.apache.log4j
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Export-Package: emn.a1.elascript.ui.quickfix,
- emn.a1.elascript.ui.contentassist,
+Export-Package: emn.a1.elascript.ui.contentassist,
+ emn.a1.elascript.ui.contentassist.antlr,
  emn.a1.elascript.ui.internal,
- emn.a1.elascript.ui.contentassist.antlr
+ emn.a1.elascript.ui.quickfix
 Bundle-Activator: emn.a1.elascript.ui.internal.ElascriptActivator

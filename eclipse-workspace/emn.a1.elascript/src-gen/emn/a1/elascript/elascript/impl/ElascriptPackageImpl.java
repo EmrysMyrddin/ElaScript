@@ -2,14 +2,18 @@
  */
 package emn.a1.elascript.elascript.impl;
 
+import emn.a1.elascript.elascript.BeginParallel;
+import emn.a1.elascript.elascript.BeginScript;
 import emn.a1.elascript.elascript.Command;
-import emn.a1.elascript.elascript.EList;
 import emn.a1.elascript.elascript.ElascriptFactory;
 import emn.a1.elascript.elascript.ElascriptPackage;
+import emn.a1.elascript.elascript.EndParallel;
+import emn.a1.elascript.elascript.EndScript;
 import emn.a1.elascript.elascript.Parallel;
 import emn.a1.elascript.elascript.Param;
 import emn.a1.elascript.elascript.Script;
 import emn.a1.elascript.elascript.Statement;
+import emn.a1.elascript.elascript.StatementList;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -38,6 +42,20 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
+  private EClass beginScriptEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass endScriptEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   private EClass statementEClass = null;
 
   /**
@@ -52,7 +70,21 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass eListEClass = null;
+  private EClass beginParallelEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass endParallelEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass statementListEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -146,9 +178,69 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getScript_ScriptStatements()
+  public EReference getScript_BeginScript()
   {
     return (EReference)scriptEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getScript_ScriptStatement()
+  {
+    return (EReference)scriptEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getScript_EndScript()
+  {
+    return (EReference)scriptEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getBeginScript()
+  {
+    return beginScriptEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getBeginScript_Name()
+  {
+    return (EAttribute)beginScriptEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getEndScript()
+  {
+    return endScriptEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getEndScript_Name()
+  {
+    return (EAttribute)endScriptEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -176,7 +268,7 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getParallel_Statements()
+  public EReference getParallel_BeginParallel()
   {
     return (EReference)parallelEClass.getEStructuralFeatures().get(0);
   }
@@ -186,9 +278,9 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getEList()
+  public EReference getParallel_StatementLists()
   {
-    return eListEClass;
+    return (EReference)parallelEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -196,9 +288,69 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getEList_Statements()
+  public EReference getParallel_EndParallel()
   {
-    return (EReference)eListEClass.getEStructuralFeatures().get(0);
+    return (EReference)parallelEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getBeginParallel()
+  {
+    return beginParallelEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getBeginParallel_Name()
+  {
+    return (EAttribute)beginParallelEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getEndParallel()
+  {
+    return endParallelEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getEndParallel_Name()
+  {
+    return (EAttribute)endParallelEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getStatementList()
+  {
+    return statementListEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getStatementList_Statements()
+  {
+    return (EReference)statementListEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -282,15 +434,31 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
 
     // Create classes and their features
     scriptEClass = createEClass(SCRIPT);
-    createEReference(scriptEClass, SCRIPT__SCRIPT_STATEMENTS);
+    createEReference(scriptEClass, SCRIPT__BEGIN_SCRIPT);
+    createEReference(scriptEClass, SCRIPT__SCRIPT_STATEMENT);
+    createEReference(scriptEClass, SCRIPT__END_SCRIPT);
+
+    beginScriptEClass = createEClass(BEGIN_SCRIPT);
+    createEAttribute(beginScriptEClass, BEGIN_SCRIPT__NAME);
+
+    endScriptEClass = createEClass(END_SCRIPT);
+    createEAttribute(endScriptEClass, END_SCRIPT__NAME);
 
     statementEClass = createEClass(STATEMENT);
 
     parallelEClass = createEClass(PARALLEL);
-    createEReference(parallelEClass, PARALLEL__STATEMENTS);
+    createEReference(parallelEClass, PARALLEL__BEGIN_PARALLEL);
+    createEReference(parallelEClass, PARALLEL__STATEMENT_LISTS);
+    createEReference(parallelEClass, PARALLEL__END_PARALLEL);
 
-    eListEClass = createEClass(ELIST);
-    createEReference(eListEClass, ELIST__STATEMENTS);
+    beginParallelEClass = createEClass(BEGIN_PARALLEL);
+    createEAttribute(beginParallelEClass, BEGIN_PARALLEL__NAME);
+
+    endParallelEClass = createEClass(END_PARALLEL);
+    createEAttribute(endParallelEClass, END_PARALLEL__NAME);
+
+    statementListEClass = createEClass(STATEMENT_LIST);
+    createEReference(statementListEClass, STATEMENT_LIST__STATEMENTS);
 
     commandEClass = createEClass(COMMAND);
     createEAttribute(commandEClass, COMMAND__NAME);
@@ -334,15 +502,31 @@ public class ElascriptPackageImpl extends EPackageImpl implements ElascriptPacka
 
     // Initialize classes and features; add operations and parameters
     initEClass(scriptEClass, Script.class, "Script", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getScript_ScriptStatements(), this.getStatement(), null, "scriptStatements", null, 0, -1, Script.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getScript_BeginScript(), this.getBeginScript(), null, "BeginScript", null, 0, 1, Script.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getScript_ScriptStatement(), this.getStatementList(), null, "scriptStatement", null, 0, 1, Script.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getScript_EndScript(), this.getEndScript(), null, "EndScript", null, 0, 1, Script.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(beginScriptEClass, BeginScript.class, "BeginScript", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getBeginScript_Name(), ecorePackage.getEString(), "name", null, 0, 1, BeginScript.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(endScriptEClass, EndScript.class, "EndScript", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getEndScript_Name(), ecorePackage.getEString(), "name", null, 0, 1, EndScript.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(statementEClass, Statement.class, "Statement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(parallelEClass, Parallel.class, "Parallel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getParallel_Statements(), this.getEList(), null, "statements", null, 0, -1, Parallel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getParallel_BeginParallel(), this.getBeginParallel(), null, "BeginParallel", null, 0, 1, Parallel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getParallel_StatementLists(), this.getStatementList(), null, "statementLists", null, 0, -1, Parallel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getParallel_EndParallel(), this.getEndParallel(), null, "EndParallel", null, 0, 1, Parallel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(eListEClass, EList.class, "EList", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getEList_Statements(), this.getStatement(), null, "statements", null, 0, -1, EList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(beginParallelEClass, BeginParallel.class, "BeginParallel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getBeginParallel_Name(), ecorePackage.getEString(), "name", null, 0, 1, BeginParallel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(endParallelEClass, EndParallel.class, "EndParallel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getEndParallel_Name(), ecorePackage.getEString(), "name", null, 0, 1, EndParallel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(statementListEClass, StatementList.class, "StatementList", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getStatementList_Statements(), this.getStatement(), null, "statements", null, 0, -1, StatementList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(commandEClass, Command.class, "Command", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getCommand_Name(), ecorePackage.getEString(), "name", null, 0, 1, Command.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

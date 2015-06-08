@@ -12,7 +12,9 @@ import org.eclipse.emf.common.util.EList;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link emn.a1.elascript.elascript.Parallel#getStatements <em>Statements</em>}</li>
+ *   <li>{@link emn.a1.elascript.elascript.Parallel#getBeginParallel <em>Begin Parallel</em>}</li>
+ *   <li>{@link emn.a1.elascript.elascript.Parallel#getStatementLists <em>Statement Lists</em>}</li>
+ *   <li>{@link emn.a1.elascript.elascript.Parallel#getEndParallel <em>End Parallel</em>}</li>
  * </ul>
  * </p>
  *
@@ -23,19 +25,71 @@ import org.eclipse.emf.common.util.EList;
 public interface Parallel extends Statement
 {
   /**
-   * Returns the value of the '<em><b>Statements</b></em>' containment reference list.
-   * The list contents are of type {@link emn.a1.elascript.elascript.EList}.
+   * Returns the value of the '<em><b>Begin Parallel</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Statements</em>' containment reference list isn't clear,
+   * If the meaning of the '<em>Begin Parallel</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Statements</em>' containment reference list.
-   * @see emn.a1.elascript.elascript.ElascriptPackage#getParallel_Statements()
+   * @return the value of the '<em>Begin Parallel</em>' containment reference.
+   * @see #setBeginParallel(BeginParallel)
+   * @see emn.a1.elascript.elascript.ElascriptPackage#getParallel_BeginParallel()
    * @model containment="true"
    * @generated
    */
-  EList<emn.a1.elascript.elascript.EList> getStatements();
+  BeginParallel getBeginParallel();
+
+  /**
+   * Sets the value of the '{@link emn.a1.elascript.elascript.Parallel#getBeginParallel <em>Begin Parallel</em>}' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Begin Parallel</em>' containment reference.
+   * @see #getBeginParallel()
+   * @generated
+   */
+  void setBeginParallel(BeginParallel value);
+
+  /**
+   * Returns the value of the '<em><b>Statement Lists</b></em>' containment reference list.
+   * The list contents are of type {@link emn.a1.elascript.elascript.StatementList}.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Statement Lists</em>' containment reference list isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Statement Lists</em>' containment reference list.
+   * @see emn.a1.elascript.elascript.ElascriptPackage#getParallel_StatementLists()
+   * @model containment="true"
+   * @generated
+   */
+  EList<StatementList> getStatementLists();
+
+  /**
+   * Returns the value of the '<em><b>End Parallel</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>End Parallel</em>' containment reference isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>End Parallel</em>' containment reference.
+   * @see #setEndParallel(EndParallel)
+   * @see emn.a1.elascript.elascript.ElascriptPackage#getParallel_EndParallel()
+   * @model containment="true"
+   * @generated
+   */
+  EndParallel getEndParallel();
+
+  /**
+   * Sets the value of the '{@link emn.a1.elascript.elascript.Parallel#getEndParallel <em>End Parallel</em>}' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>End Parallel</em>' containment reference.
+   * @see #getEndParallel()
+   * @generated
+   */
+  void setEndParallel(EndParallel value);
 
 } // Parallel

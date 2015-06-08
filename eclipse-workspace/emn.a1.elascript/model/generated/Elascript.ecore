@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="elascript" nsURI="http://www.a1.emn/elascript/Elascript" nsPrefix="elascript">
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="elascript" nsURI="http://www.elascript.org/Elascript" nsPrefix="elascript">
   <eClassifiers xsi:type="ecore:EClass" name="Script">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="scriptStatements" upperBound="-1"
-        eType="#//Statement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="BeginScript" eType="#//BeginScript"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="scriptStatement" eType="#//StatementList"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="EndScript" eType="#//EndScript"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BeginScript">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EndScript">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Statement"/>
   <eClassifiers xsi:type="ecore:EClass" name="Parallel" eSuperTypes="#//Statement">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="statements" upperBound="-1"
-        eType="#//EList" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="BeginParallel" eType="#//BeginParallel"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="statementLists" upperBound="-1"
+        eType="#//StatementList" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="EndParallel" eType="#//EndParallel"
+        containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="EList">
+  <eClassifiers xsi:type="ecore:EClass" name="BeginParallel">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EndParallel">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StatementList">
     <eStructuralFeatures xsi:type="ecore:EReference" name="statements" upperBound="-1"
         eType="#//Statement" containment="true"/>
   </eClassifiers>

@@ -8,14 +8,30 @@
   <genPackages prefix="Elascript" basePackage="emn.a1.elascript" disposableProviderFactory="true"
       fileExtensions="ela" ecorePackage="Elascript.ecore#/">
     <genClasses ecoreClass="Elascript.ecore#//Script">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//Script/scriptStatements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//Script/BeginScript"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//Script/scriptStatement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//Script/EndScript"/>
+    </genClasses>
+    <genClasses ecoreClass="Elascript.ecore#//BeginScript">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Elascript.ecore#//BeginScript/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Elascript.ecore#//EndScript">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Elascript.ecore#//EndScript/name"/>
     </genClasses>
     <genClasses ecoreClass="Elascript.ecore#//Statement"/>
     <genClasses ecoreClass="Elascript.ecore#//Parallel">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//Parallel/statements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//Parallel/BeginParallel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//Parallel/statementLists"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//Parallel/EndParallel"/>
     </genClasses>
-    <genClasses ecoreClass="Elascript.ecore#//EList">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//EList/statements"/>
+    <genClasses ecoreClass="Elascript.ecore#//BeginParallel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Elascript.ecore#//BeginParallel/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Elascript.ecore#//EndParallel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Elascript.ecore#//EndParallel/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Elascript.ecore#//StatementList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Elascript.ecore#//StatementList/statements"/>
     </genClasses>
     <genClasses ecoreClass="Elascript.ecore#//Command">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Elascript.ecore#//Command/name"/>

@@ -80,6 +80,16 @@ public class ElascriptAdapterFactory extends AdapterFactoryImpl
         return createScriptAdapter();
       }
       @Override
+      public Adapter caseBeginScript(BeginScript object)
+      {
+        return createBeginScriptAdapter();
+      }
+      @Override
+      public Adapter caseEndScript(EndScript object)
+      {
+        return createEndScriptAdapter();
+      }
+      @Override
       public Adapter caseStatement(Statement object)
       {
         return createStatementAdapter();
@@ -90,9 +100,19 @@ public class ElascriptAdapterFactory extends AdapterFactoryImpl
         return createParallelAdapter();
       }
       @Override
-      public Adapter caseEList(EList object)
+      public Adapter caseBeginParallel(BeginParallel object)
       {
-        return createEListAdapter();
+        return createBeginParallelAdapter();
+      }
+      @Override
+      public Adapter caseEndParallel(EndParallel object)
+      {
+        return createEndParallelAdapter();
+      }
+      @Override
+      public Adapter caseStatementList(StatementList object)
+      {
+        return createStatementListAdapter();
       }
       @Override
       public Adapter caseCommand(Command object)
@@ -142,6 +162,36 @@ public class ElascriptAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
+   * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.BeginScript <em>Begin Script</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see emn.a1.elascript.elascript.BeginScript
+   * @generated
+   */
+  public Adapter createBeginScriptAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.EndScript <em>End Script</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see emn.a1.elascript.elascript.EndScript
+   * @generated
+   */
+  public Adapter createEndScriptAdapter()
+  {
+    return null;
+  }
+
+  /**
    * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.Statement <em>Statement</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
@@ -172,16 +222,46 @@ public class ElascriptAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.EList <em>EList</em>}'.
+   * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.BeginParallel <em>Begin Parallel</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see emn.a1.elascript.elascript.EList
+   * @see emn.a1.elascript.elascript.BeginParallel
    * @generated
    */
-  public Adapter createEListAdapter()
+  public Adapter createBeginParallelAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.EndParallel <em>End Parallel</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see emn.a1.elascript.elascript.EndParallel
+   * @generated
+   */
+  public Adapter createEndParallelAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link emn.a1.elascript.elascript.StatementList <em>Statement List</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see emn.a1.elascript.elascript.StatementList
+   * @generated
+   */
+  public Adapter createStatementListAdapter()
   {
     return null;
   }

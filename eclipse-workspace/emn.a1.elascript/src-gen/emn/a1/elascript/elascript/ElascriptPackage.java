@@ -38,7 +38,7 @@ public interface ElascriptPackage extends EPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  String eNS_URI = "http://www.a1.emn/elascript/Elascript";
+  String eNS_URI = "http://www.elascript.org/Elascript";
 
   /**
    * The package namespace name.
@@ -67,13 +67,31 @@ public interface ElascriptPackage extends EPackage
   int SCRIPT = 0;
 
   /**
-   * The feature id for the '<em><b>Script Statements</b></em>' containment reference list.
+   * The feature id for the '<em><b>Begin Script</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int SCRIPT__SCRIPT_STATEMENTS = 0;
+  int SCRIPT__BEGIN_SCRIPT = 0;
+
+  /**
+   * The feature id for the '<em><b>Script Statement</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCRIPT__SCRIPT_STATEMENT = 1;
+
+  /**
+   * The feature id for the '<em><b>End Script</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SCRIPT__END_SCRIPT = 2;
 
   /**
    * The number of structural features of the '<em>Script</em>' class.
@@ -82,7 +100,63 @@ public interface ElascriptPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SCRIPT_FEATURE_COUNT = 1;
+  int SCRIPT_FEATURE_COUNT = 3;
+
+  /**
+   * The meta object id for the '{@link emn.a1.elascript.elascript.impl.BeginScriptImpl <em>Begin Script</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see emn.a1.elascript.elascript.impl.BeginScriptImpl
+   * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getBeginScript()
+   * @generated
+   */
+  int BEGIN_SCRIPT = 1;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int BEGIN_SCRIPT__NAME = 0;
+
+  /**
+   * The number of structural features of the '<em>Begin Script</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int BEGIN_SCRIPT_FEATURE_COUNT = 1;
+
+  /**
+   * The meta object id for the '{@link emn.a1.elascript.elascript.impl.EndScriptImpl <em>End Script</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see emn.a1.elascript.elascript.impl.EndScriptImpl
+   * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getEndScript()
+   * @generated
+   */
+  int END_SCRIPT = 2;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int END_SCRIPT__NAME = 0;
+
+  /**
+   * The number of structural features of the '<em>End Script</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int END_SCRIPT_FEATURE_COUNT = 1;
 
   /**
    * The meta object id for the '{@link emn.a1.elascript.elascript.impl.StatementImpl <em>Statement</em>}' class.
@@ -92,7 +166,7 @@ public interface ElascriptPackage extends EPackage
    * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getStatement()
    * @generated
    */
-  int STATEMENT = 1;
+  int STATEMENT = 3;
 
   /**
    * The number of structural features of the '<em>Statement</em>' class.
@@ -111,16 +185,34 @@ public interface ElascriptPackage extends EPackage
    * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getParallel()
    * @generated
    */
-  int PARALLEL = 2;
+  int PARALLEL = 4;
 
   /**
-   * The feature id for the '<em><b>Statements</b></em>' containment reference list.
+   * The feature id for the '<em><b>Begin Parallel</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int PARALLEL__STATEMENTS = STATEMENT_FEATURE_COUNT + 0;
+  int PARALLEL__BEGIN_PARALLEL = STATEMENT_FEATURE_COUNT + 0;
+
+  /**
+   * The feature id for the '<em><b>Statement Lists</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PARALLEL__STATEMENT_LISTS = STATEMENT_FEATURE_COUNT + 1;
+
+  /**
+   * The feature id for the '<em><b>End Parallel</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PARALLEL__END_PARALLEL = STATEMENT_FEATURE_COUNT + 2;
 
   /**
    * The number of structural features of the '<em>Parallel</em>' class.
@@ -129,17 +221,73 @@ public interface ElascriptPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PARALLEL_FEATURE_COUNT = STATEMENT_FEATURE_COUNT + 1;
+  int PARALLEL_FEATURE_COUNT = STATEMENT_FEATURE_COUNT + 3;
 
   /**
-   * The meta object id for the '{@link emn.a1.elascript.elascript.impl.EListImpl <em>EList</em>}' class.
+   * The meta object id for the '{@link emn.a1.elascript.elascript.impl.BeginParallelImpl <em>Begin Parallel</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see emn.a1.elascript.elascript.impl.EListImpl
-   * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getEList()
+   * @see emn.a1.elascript.elascript.impl.BeginParallelImpl
+   * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getBeginParallel()
    * @generated
    */
-  int ELIST = 3;
+  int BEGIN_PARALLEL = 5;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int BEGIN_PARALLEL__NAME = 0;
+
+  /**
+   * The number of structural features of the '<em>Begin Parallel</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int BEGIN_PARALLEL_FEATURE_COUNT = 1;
+
+  /**
+   * The meta object id for the '{@link emn.a1.elascript.elascript.impl.EndParallelImpl <em>End Parallel</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see emn.a1.elascript.elascript.impl.EndParallelImpl
+   * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getEndParallel()
+   * @generated
+   */
+  int END_PARALLEL = 6;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int END_PARALLEL__NAME = 0;
+
+  /**
+   * The number of structural features of the '<em>End Parallel</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int END_PARALLEL_FEATURE_COUNT = 1;
+
+  /**
+   * The meta object id for the '{@link emn.a1.elascript.elascript.impl.StatementListImpl <em>Statement List</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see emn.a1.elascript.elascript.impl.StatementListImpl
+   * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getStatementList()
+   * @generated
+   */
+  int STATEMENT_LIST = 7;
 
   /**
    * The feature id for the '<em><b>Statements</b></em>' containment reference list.
@@ -148,16 +296,16 @@ public interface ElascriptPackage extends EPackage
    * @generated
    * @ordered
    */
-  int ELIST__STATEMENTS = 0;
+  int STATEMENT_LIST__STATEMENTS = 0;
 
   /**
-   * The number of structural features of the '<em>EList</em>' class.
+   * The number of structural features of the '<em>Statement List</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int ELIST_FEATURE_COUNT = 1;
+  int STATEMENT_LIST_FEATURE_COUNT = 1;
 
   /**
    * The meta object id for the '{@link emn.a1.elascript.elascript.impl.CommandImpl <em>Command</em>}' class.
@@ -167,7 +315,7 @@ public interface ElascriptPackage extends EPackage
    * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getCommand()
    * @generated
    */
-  int COMMAND = 4;
+  int COMMAND = 8;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -204,7 +352,7 @@ public interface ElascriptPackage extends EPackage
    * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getParam()
    * @generated
    */
-  int PARAM = 5;
+  int PARAM = 9;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
@@ -236,15 +384,79 @@ public interface ElascriptPackage extends EPackage
   EClass getScript();
 
   /**
-   * Returns the meta object for the containment reference list '{@link emn.a1.elascript.elascript.Script#getScriptStatements <em>Script Statements</em>}'.
+   * Returns the meta object for the containment reference '{@link emn.a1.elascript.elascript.Script#getBeginScript <em>Begin Script</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Script Statements</em>'.
-   * @see emn.a1.elascript.elascript.Script#getScriptStatements()
+   * @return the meta object for the containment reference '<em>Begin Script</em>'.
+   * @see emn.a1.elascript.elascript.Script#getBeginScript()
    * @see #getScript()
    * @generated
    */
-  EReference getScript_ScriptStatements();
+  EReference getScript_BeginScript();
+
+  /**
+   * Returns the meta object for the containment reference '{@link emn.a1.elascript.elascript.Script#getScriptStatement <em>Script Statement</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Script Statement</em>'.
+   * @see emn.a1.elascript.elascript.Script#getScriptStatement()
+   * @see #getScript()
+   * @generated
+   */
+  EReference getScript_ScriptStatement();
+
+  /**
+   * Returns the meta object for the containment reference '{@link emn.a1.elascript.elascript.Script#getEndScript <em>End Script</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>End Script</em>'.
+   * @see emn.a1.elascript.elascript.Script#getEndScript()
+   * @see #getScript()
+   * @generated
+   */
+  EReference getScript_EndScript();
+
+  /**
+   * Returns the meta object for class '{@link emn.a1.elascript.elascript.BeginScript <em>Begin Script</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Begin Script</em>'.
+   * @see emn.a1.elascript.elascript.BeginScript
+   * @generated
+   */
+  EClass getBeginScript();
+
+  /**
+   * Returns the meta object for the attribute '{@link emn.a1.elascript.elascript.BeginScript#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see emn.a1.elascript.elascript.BeginScript#getName()
+   * @see #getBeginScript()
+   * @generated
+   */
+  EAttribute getBeginScript_Name();
+
+  /**
+   * Returns the meta object for class '{@link emn.a1.elascript.elascript.EndScript <em>End Script</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>End Script</em>'.
+   * @see emn.a1.elascript.elascript.EndScript
+   * @generated
+   */
+  EClass getEndScript();
+
+  /**
+   * Returns the meta object for the attribute '{@link emn.a1.elascript.elascript.EndScript#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see emn.a1.elascript.elascript.EndScript#getName()
+   * @see #getEndScript()
+   * @generated
+   */
+  EAttribute getEndScript_Name();
 
   /**
    * Returns the meta object for class '{@link emn.a1.elascript.elascript.Statement <em>Statement</em>}'.
@@ -267,36 +479,100 @@ public interface ElascriptPackage extends EPackage
   EClass getParallel();
 
   /**
-   * Returns the meta object for the containment reference list '{@link emn.a1.elascript.elascript.Parallel#getStatements <em>Statements</em>}'.
+   * Returns the meta object for the containment reference '{@link emn.a1.elascript.elascript.Parallel#getBeginParallel <em>Begin Parallel</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Statements</em>'.
-   * @see emn.a1.elascript.elascript.Parallel#getStatements()
+   * @return the meta object for the containment reference '<em>Begin Parallel</em>'.
+   * @see emn.a1.elascript.elascript.Parallel#getBeginParallel()
    * @see #getParallel()
    * @generated
    */
-  EReference getParallel_Statements();
+  EReference getParallel_BeginParallel();
 
   /**
-   * Returns the meta object for class '{@link emn.a1.elascript.elascript.EList <em>EList</em>}'.
+   * Returns the meta object for the containment reference list '{@link emn.a1.elascript.elascript.Parallel#getStatementLists <em>Statement Lists</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for class '<em>EList</em>'.
-   * @see emn.a1.elascript.elascript.EList
+   * @return the meta object for the containment reference list '<em>Statement Lists</em>'.
+   * @see emn.a1.elascript.elascript.Parallel#getStatementLists()
+   * @see #getParallel()
    * @generated
    */
-  EClass getEList();
+  EReference getParallel_StatementLists();
 
   /**
-   * Returns the meta object for the containment reference list '{@link emn.a1.elascript.elascript.EList#getStatements <em>Statements</em>}'.
+   * Returns the meta object for the containment reference '{@link emn.a1.elascript.elascript.Parallel#getEndParallel <em>End Parallel</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>End Parallel</em>'.
+   * @see emn.a1.elascript.elascript.Parallel#getEndParallel()
+   * @see #getParallel()
+   * @generated
+   */
+  EReference getParallel_EndParallel();
+
+  /**
+   * Returns the meta object for class '{@link emn.a1.elascript.elascript.BeginParallel <em>Begin Parallel</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Begin Parallel</em>'.
+   * @see emn.a1.elascript.elascript.BeginParallel
+   * @generated
+   */
+  EClass getBeginParallel();
+
+  /**
+   * Returns the meta object for the attribute '{@link emn.a1.elascript.elascript.BeginParallel#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see emn.a1.elascript.elascript.BeginParallel#getName()
+   * @see #getBeginParallel()
+   * @generated
+   */
+  EAttribute getBeginParallel_Name();
+
+  /**
+   * Returns the meta object for class '{@link emn.a1.elascript.elascript.EndParallel <em>End Parallel</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>End Parallel</em>'.
+   * @see emn.a1.elascript.elascript.EndParallel
+   * @generated
+   */
+  EClass getEndParallel();
+
+  /**
+   * Returns the meta object for the attribute '{@link emn.a1.elascript.elascript.EndParallel#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see emn.a1.elascript.elascript.EndParallel#getName()
+   * @see #getEndParallel()
+   * @generated
+   */
+  EAttribute getEndParallel_Name();
+
+  /**
+   * Returns the meta object for class '{@link emn.a1.elascript.elascript.StatementList <em>Statement List</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Statement List</em>'.
+   * @see emn.a1.elascript.elascript.StatementList
+   * @generated
+   */
+  EClass getStatementList();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link emn.a1.elascript.elascript.StatementList#getStatements <em>Statements</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the meta object for the containment reference list '<em>Statements</em>'.
-   * @see emn.a1.elascript.elascript.EList#getStatements()
-   * @see #getEList()
+   * @see emn.a1.elascript.elascript.StatementList#getStatements()
+   * @see #getStatementList()
    * @generated
    */
-  EReference getEList_Statements();
+  EReference getStatementList_Statements();
 
   /**
    * Returns the meta object for class '{@link emn.a1.elascript.elascript.Command <em>Command</em>}'.
@@ -385,12 +661,64 @@ public interface ElascriptPackage extends EPackage
     EClass SCRIPT = eINSTANCE.getScript();
 
     /**
-     * The meta object literal for the '<em><b>Script Statements</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Begin Script</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference SCRIPT__SCRIPT_STATEMENTS = eINSTANCE.getScript_ScriptStatements();
+    EReference SCRIPT__BEGIN_SCRIPT = eINSTANCE.getScript_BeginScript();
+
+    /**
+     * The meta object literal for the '<em><b>Script Statement</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference SCRIPT__SCRIPT_STATEMENT = eINSTANCE.getScript_ScriptStatement();
+
+    /**
+     * The meta object literal for the '<em><b>End Script</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference SCRIPT__END_SCRIPT = eINSTANCE.getScript_EndScript();
+
+    /**
+     * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.BeginScriptImpl <em>Begin Script</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see emn.a1.elascript.elascript.impl.BeginScriptImpl
+     * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getBeginScript()
+     * @generated
+     */
+    EClass BEGIN_SCRIPT = eINSTANCE.getBeginScript();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute BEGIN_SCRIPT__NAME = eINSTANCE.getBeginScript_Name();
+
+    /**
+     * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.EndScriptImpl <em>End Script</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see emn.a1.elascript.elascript.impl.EndScriptImpl
+     * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getEndScript()
+     * @generated
+     */
+    EClass END_SCRIPT = eINSTANCE.getEndScript();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute END_SCRIPT__NAME = eINSTANCE.getEndScript_Name();
 
     /**
      * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.StatementImpl <em>Statement</em>}' class.
@@ -413,30 +741,82 @@ public interface ElascriptPackage extends EPackage
     EClass PARALLEL = eINSTANCE.getParallel();
 
     /**
+     * The meta object literal for the '<em><b>Begin Parallel</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference PARALLEL__BEGIN_PARALLEL = eINSTANCE.getParallel_BeginParallel();
+
+    /**
+     * The meta object literal for the '<em><b>Statement Lists</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference PARALLEL__STATEMENT_LISTS = eINSTANCE.getParallel_StatementLists();
+
+    /**
+     * The meta object literal for the '<em><b>End Parallel</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference PARALLEL__END_PARALLEL = eINSTANCE.getParallel_EndParallel();
+
+    /**
+     * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.BeginParallelImpl <em>Begin Parallel</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see emn.a1.elascript.elascript.impl.BeginParallelImpl
+     * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getBeginParallel()
+     * @generated
+     */
+    EClass BEGIN_PARALLEL = eINSTANCE.getBeginParallel();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute BEGIN_PARALLEL__NAME = eINSTANCE.getBeginParallel_Name();
+
+    /**
+     * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.EndParallelImpl <em>End Parallel</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see emn.a1.elascript.elascript.impl.EndParallelImpl
+     * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getEndParallel()
+     * @generated
+     */
+    EClass END_PARALLEL = eINSTANCE.getEndParallel();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute END_PARALLEL__NAME = eINSTANCE.getEndParallel_Name();
+
+    /**
+     * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.StatementListImpl <em>Statement List</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see emn.a1.elascript.elascript.impl.StatementListImpl
+     * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getStatementList()
+     * @generated
+     */
+    EClass STATEMENT_LIST = eINSTANCE.getStatementList();
+
+    /**
      * The meta object literal for the '<em><b>Statements</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference PARALLEL__STATEMENTS = eINSTANCE.getParallel_Statements();
-
-    /**
-     * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.EListImpl <em>EList</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see emn.a1.elascript.elascript.impl.EListImpl
-     * @see emn.a1.elascript.elascript.impl.ElascriptPackageImpl#getEList()
-     * @generated
-     */
-    EClass ELIST = eINSTANCE.getEList();
-
-    /**
-     * The meta object literal for the '<em><b>Statements</b></em>' containment reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference ELIST__STATEMENTS = eINSTANCE.getEList_Statements();
+    EReference STATEMENT_LIST__STATEMENTS = eINSTANCE.getStatementList_Statements();
 
     /**
      * The meta object literal for the '{@link emn.a1.elascript.elascript.impl.CommandImpl <em>Command</em>}' class.
