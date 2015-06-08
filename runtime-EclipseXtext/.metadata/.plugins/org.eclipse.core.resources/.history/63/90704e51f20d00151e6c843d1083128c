@@ -1,0 +1,4 @@
+begin 
+wait(5);
+scaleInInfra(5);
+end

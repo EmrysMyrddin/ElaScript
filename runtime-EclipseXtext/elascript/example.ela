@@ -1,0 +1,9 @@
+begin 
+wait(5);
+scaleInInfra(56);
+[
+	lol(56);
+	||
+	super(63);
+]
+end

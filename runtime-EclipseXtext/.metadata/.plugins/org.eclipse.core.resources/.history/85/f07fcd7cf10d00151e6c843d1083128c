@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="elascript" version="8.1.0">
+  <ownedViewpoints name="ElascriptFlowChart">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="script" label="script" initialisation="true" domainClass="elascript.Script">
+      <defaultLayer name="Representations">
+        <nodeMappings name="command" label="Command" synchronizationLock="true" domainClass="elascript.Command">
+          <style xsi:type="style:DotDescription" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+          </style>
+          <conditionnalStyles predicateExpression="[self.oclIsTypeOf(ScaleInInfra)/]">
+            <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="0" workspacePath="/sirius/images/50/II.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[self.oclIsTypeOf(ScaleOutInfra)/]">
+            <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="0" workspacePath="/sirius/images/50/IO.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[self.oclIsTypeOf(ScaleDownInfra)/]">
+            <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="0" workspacePath="/sirius/images/50/ID.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[self.oclIsTypeOf(ScaleUpInfra)/]">
+            <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="0" workspacePath="/sirius/images/50/IU.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[self.oclIsTypeOf(WaitFunction)/]">
+            <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="0" workspacePath="/sirius/images/50/Wait.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[self.oclIsTypeOf(ScaleInSoft)/]">
+            <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="0" workspacePath="/sirius/images/50/SI.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[self.oclIsTypeOf(ScaleOutSoft)/]">
+            <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="0" workspacePath="/sirius/images/50/SO.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[self.oclIsTypeOf(ScaleDownSoft)/]">
+            <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="0" workspacePath="/sirius/images/50/SD.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="[self.oclIsTypeOf(ScaleUpSoft)/]">
+            <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="0" workspacePath="/sirius/images/50/SU.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
+        </nodeMappings>
+        <nodeMappings name="EndParallel" domainClass="elascript.EndParallel">
+          <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="0" workspacePath="/sirius/images/50/parallel.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="BeginParallel" label="BeginParallel" domainClass="elascript.BeginParallel">
+          <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="0" workspacePath="/sirius/images/50/parallel.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="BeginScript" label="BeginScript" domainClass="elascript.BeginScript">
+          <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="0" workspacePath="/sirius/images/50/start.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="EndScript" label="EndScript" domainClass="elascript.EndScript">
+          <style xsi:type="style:WorkspaceImageDescription" sizeComputationExpression="0" workspacePath="/sirius/images/50/end.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+      </defaultLayer>
+      <additionalLayers name="Relations" activeByDefault="true" optional="false">
+        <edgeMappings name="CommandToEndParallel" preconditionExpression="[self.followingSiblings()->size()=0/]" sourceMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']" targetMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='EndParallel']" targetFinderExpression="[self.ancestors(Parallel)->first().EndParallel/]">
+          <style sizeComputationExpression="2" routingStyle="tree">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="BeginParallelToCommand" sourceMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='BeginParallel']" targetMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']" targetFinderExpression="[self.siblings(StatementList)->collectNested(statements->first())/]">
+          <style sizeComputationExpression="2" routingStyle="tree">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="CommandToCommand" sourceMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']" targetMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']" targetFinderExpression="[self.followingSiblings()->first()/]">
+          <style sizeComputationExpression="2" routingStyle="tree">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="CommandToBeginParallel" sourceMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']" targetMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='BeginParallel']" targetFinderExpression="[self.followingSiblings()->first().oclAsType(Parallel).BeginParallel/]">
+          <style sizeComputationExpression="2" routingStyle="tree">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="EndParallelToCommand" sourceMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='EndParallel']" targetMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']" targetFinderExpression="[self.eContainer().followingSiblings()->first()/]">
+          <style sizeComputationExpression="2" routingStyle="tree">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="EndParallelToEndParallel" sourceMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='EndParallel']" targetMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='EndParallel']" targetFinderExpression="[self.ancestors(Parallel)->at(2).EndParallel/]">
+          <style sizeComputationExpression="2" routingStyle="tree">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="BeginParallelToBeginParallel" preconditionExpression="[target.ancestors()->first().precedingSiblings()->size()=0/]" sourceMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='BeginParallel']" targetMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='BeginParallel']" targetFinderExpression="[self.siblings(StatementList)->collect(statements)->filter(Parallel).BeginParallel/]">
+          <style sizeComputationExpression="2" routingStyle="tree">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="BeginScriptToCommand" sourceMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='BeginScript']" targetMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']" targetFinderExpression="[self.followingSiblings(StatementList).statements->first()/]">
+          <style sizeComputationExpression="2" routingStyle="tree">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="BeginScriptToBeginParallel" sourceMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='BeginScript']" targetMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='BeginParallel']" targetFinderExpression="[self.siblings(StatementList)->collect(statements)->first()->filter(Parallel).BeginParallel/]">
+          <style sizeComputationExpression="2" routingStyle="tree">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="CommandToEndScript" preconditionExpression="[self.followingSiblings()->size()=0/]" sourceMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']" targetMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='EndScript']" targetFinderExpression="[self.ancestors().followingSiblings()->first()/]">
+          <style sizeComputationExpression="2" routingStyle="tree">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="EndParallelToEndScript" sourceMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='EndParallel']" targetMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='EndScript']" targetFinderExpression="[self.ancestors().followingSiblings()->first()/]">
+          <style sizeComputationExpression="2" routingStyle="tree">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="EndParallelToBeginParallel" sourceMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='EndParallel']" targetMapping="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='BeginParallel']" targetFinderExpression="[self.ancestors()->first().followingSiblings()->first().oclAsType(Parallel).BeginParallel/]">
+          <style sizeComputationExpression="2" routingStyle="tree">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+      </additionalLayers>
+      <additionalLayers name="Tools" activeByDefault="true" optional="false">
+        <toolSections name="Creation">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Begin" nodeMappings="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='BeginScript']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="elascript.BeginScript" referenceName="BeginScript">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['begin'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="End" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='EndScript']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="elascript.EndScript" referenceName="EndScript">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['end'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Comm" nodeMappings="//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container.oclAsType(Script).scriptStatement/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="elascript.Command" referenceName="statements">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="['newCommand'/]"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </additionalLayers>
+    </ownedRepresentations>
+  </ownedViewpoints>
+</description:Group>
