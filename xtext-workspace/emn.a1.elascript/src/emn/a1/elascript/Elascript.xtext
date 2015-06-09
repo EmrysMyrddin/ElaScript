@@ -13,6 +13,7 @@ BeginScript:
 EndScript:
 	name="end"
 ;
+
 Statement :
 	Command | Parallel
 ;
@@ -25,15 +26,16 @@ BeginParallel :
 	name="[" 
 ;
 
-
 EndParallel :
 	name="]"
 ;
+
 StatementList:
 	statements+=Statement+
 ;
+
 Command:
-	( ScaleFunction | GenericFunction | WaitFunction) LP params+=Param (COMMA  params+=Param)*  RP SEQUENTIAL_SEPARATOR
+	( ScaleFunction | GenericFunction | WaitFunction )  LP ( RP | (params+=Param COMMA)* params+=Param RP)  SEQUENTIAL_SEPARATOR
 ;
 
 ScaleFunction:

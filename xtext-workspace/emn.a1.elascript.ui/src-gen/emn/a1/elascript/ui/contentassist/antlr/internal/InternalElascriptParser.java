@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalElascriptParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_PARALLEL_SEPARATOR", "RULE_LP", "RULE_RP", "RULE_SEQUENTIAL_SEPARATOR", "RULE_COMMA", "RULE_ID", "RULE_INT", "RULE_LETTER", "RULE_NUMBER", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'begin'", "'end'", "'['", "']'", "'wait'", "'scaleInInfra'", "'scaleOutInfra'", "'scaleUpInfra'", "'scaleDownInfra'", "'scaleInSoft'", "'scaleOutSoft'", "'scaleUpSoft'", "'scaleDownSoft'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_RP", "RULE_PARALLEL_SEPARATOR", "RULE_LP", "RULE_SEQUENTIAL_SEPARATOR", "RULE_COMMA", "RULE_ID", "RULE_INT", "RULE_LETTER", "RULE_NUMBER", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'begin'", "'end'", "'['", "']'", "'wait'", "'scaleInInfra'", "'scaleOutInfra'", "'scaleUpInfra'", "'scaleDownInfra'", "'scaleInSoft'", "'scaleOutSoft'", "'scaleUpSoft'", "'scaleDownSoft'"
     };
     public static final int RULE_SEQUENTIAL_SEPARATOR=7;
     public static final int RULE_STRING=13;
@@ -34,7 +34,7 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
     public static final int RULE_ID=9;
     public static final int RULE_COMMA=8;
     public static final int RULE_WS=16;
-    public static final int RULE_PARALLEL_SEPARATOR=4;
+    public static final int RULE_PARALLEL_SEPARATOR=5;
     public static final int RULE_ANY_OTHER=17;
     public static final int RULE_NUMBER=12;
     public static final int RULE_LETTER=11;
@@ -48,8 +48,8 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
     public static final int T__23=23;
     public static final int T__24=24;
     public static final int T__25=25;
-    public static final int RULE_RP=6;
-    public static final int RULE_LP=5;
+    public static final int RULE_RP=4;
+    public static final int RULE_LP=6;
     public static final int T__20=20;
     public static final int T__21=21;
 
@@ -1943,72 +1943,153 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
     // $ANTLR end "rule__Command__Alternatives_0"
 
 
-    // $ANTLR start "rule__ScaleFunction__Alternatives"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:705:1: rule__ScaleFunction__Alternatives : ( ( ruleScaleInInfra ) | ( ruleScaleOutInfra ) | ( ruleScaleUpInfra ) | ( ruleScaleDownInfra ) | ( ruleScaleInSoft ) | ( ruleScaleOutSoft ) | ( ruleScaleUpSoft ) | ( ruleScaleDownSoft ) );
-    public final void rule__ScaleFunction__Alternatives() throws RecognitionException {
+    // $ANTLR start "rule__Command__Alternatives_2"
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:705:1: rule__Command__Alternatives_2 : ( ( RULE_RP ) | ( ( rule__Command__Group_2_1__0 ) ) );
+    public final void rule__Command__Alternatives_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:709:1: ( ( ruleScaleInInfra ) | ( ruleScaleOutInfra ) | ( ruleScaleUpInfra ) | ( ruleScaleDownInfra ) | ( ruleScaleInSoft ) | ( ruleScaleOutSoft ) | ( ruleScaleUpSoft ) | ( ruleScaleDownSoft ) )
-            int alt4=8;
-            switch ( input.LA(1) ) {
-            case 23:
-                {
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:709:1: ( ( RULE_RP ) | ( ( rule__Command__Group_2_1__0 ) ) )
+            int alt4=2;
+            int LA4_0 = input.LA(1);
+
+            if ( (LA4_0==RULE_RP) ) {
                 alt4=1;
-                }
-                break;
-            case 24:
-                {
+            }
+            else if ( (LA4_0==RULE_INT) ) {
                 alt4=2;
-                }
-                break;
-            case 25:
-                {
-                alt4=3;
-                }
-                break;
-            case 26:
-                {
-                alt4=4;
-                }
-                break;
-            case 27:
-                {
-                alt4=5;
-                }
-                break;
-            case 28:
-                {
-                alt4=6;
-                }
-                break;
-            case 29:
-                {
-                alt4=7;
-                }
-                break;
-            case 30:
-                {
-                alt4=8;
-                }
-                break;
-            default:
+            }
+            else {
                 NoViableAltException nvae =
                     new NoViableAltException("", 4, 0, input);
 
                 throw nvae;
             }
-
             switch (alt4) {
                 case 1 :
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:710:1: ( ruleScaleInInfra )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:710:1: ( RULE_RP )
                     {
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:710:1: ( ruleScaleInInfra )
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:711:1: ruleScaleInInfra
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:710:1: ( RULE_RP )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:711:1: RULE_RP
+                    {
+                     before(grammarAccess.getCommandAccess().getRPTerminalRuleCall_2_0()); 
+                    match(input,RULE_RP,FOLLOW_RULE_RP_in_rule__Command__Alternatives_21462); 
+                     after(grammarAccess.getCommandAccess().getRPTerminalRuleCall_2_0()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 2 :
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:716:6: ( ( rule__Command__Group_2_1__0 ) )
+                    {
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:716:6: ( ( rule__Command__Group_2_1__0 ) )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:717:1: ( rule__Command__Group_2_1__0 )
+                    {
+                     before(grammarAccess.getCommandAccess().getGroup_2_1()); 
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:718:1: ( rule__Command__Group_2_1__0 )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:718:2: rule__Command__Group_2_1__0
+                    {
+                    pushFollow(FOLLOW_rule__Command__Group_2_1__0_in_rule__Command__Alternatives_21479);
+                    rule__Command__Group_2_1__0();
+
+                    state._fsp--;
+
+
+                    }
+
+                     after(grammarAccess.getCommandAccess().getGroup_2_1()); 
+
+                    }
+
+
+                    }
+                    break;
+
+            }
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Command__Alternatives_2"
+
+
+    // $ANTLR start "rule__ScaleFunction__Alternatives"
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:727:1: rule__ScaleFunction__Alternatives : ( ( ruleScaleInInfra ) | ( ruleScaleOutInfra ) | ( ruleScaleUpInfra ) | ( ruleScaleDownInfra ) | ( ruleScaleInSoft ) | ( ruleScaleOutSoft ) | ( ruleScaleUpSoft ) | ( ruleScaleDownSoft ) );
+    public final void rule__ScaleFunction__Alternatives() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:731:1: ( ( ruleScaleInInfra ) | ( ruleScaleOutInfra ) | ( ruleScaleUpInfra ) | ( ruleScaleDownInfra ) | ( ruleScaleInSoft ) | ( ruleScaleOutSoft ) | ( ruleScaleUpSoft ) | ( ruleScaleDownSoft ) )
+            int alt5=8;
+            switch ( input.LA(1) ) {
+            case 23:
+                {
+                alt5=1;
+                }
+                break;
+            case 24:
+                {
+                alt5=2;
+                }
+                break;
+            case 25:
+                {
+                alt5=3;
+                }
+                break;
+            case 26:
+                {
+                alt5=4;
+                }
+                break;
+            case 27:
+                {
+                alt5=5;
+                }
+                break;
+            case 28:
+                {
+                alt5=6;
+                }
+                break;
+            case 29:
+                {
+                alt5=7;
+                }
+                break;
+            case 30:
+                {
+                alt5=8;
+                }
+                break;
+            default:
+                NoViableAltException nvae =
+                    new NoViableAltException("", 5, 0, input);
+
+                throw nvae;
+            }
+
+            switch (alt5) {
+                case 1 :
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:732:1: ( ruleScaleInInfra )
+                    {
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:732:1: ( ruleScaleInInfra )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:733:1: ruleScaleInInfra
                     {
                      before(grammarAccess.getScaleFunctionAccess().getScaleInInfraParserRuleCall_0()); 
-                    pushFollow(FOLLOW_ruleScaleInInfra_in_rule__ScaleFunction__Alternatives1462);
+                    pushFollow(FOLLOW_ruleScaleInInfra_in_rule__ScaleFunction__Alternatives1512);
                     ruleScaleInInfra();
 
                     state._fsp--;
@@ -2021,13 +2102,13 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
                     }
                     break;
                 case 2 :
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:716:6: ( ruleScaleOutInfra )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:738:6: ( ruleScaleOutInfra )
                     {
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:716:6: ( ruleScaleOutInfra )
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:717:1: ruleScaleOutInfra
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:738:6: ( ruleScaleOutInfra )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:739:1: ruleScaleOutInfra
                     {
                      before(grammarAccess.getScaleFunctionAccess().getScaleOutInfraParserRuleCall_1()); 
-                    pushFollow(FOLLOW_ruleScaleOutInfra_in_rule__ScaleFunction__Alternatives1479);
+                    pushFollow(FOLLOW_ruleScaleOutInfra_in_rule__ScaleFunction__Alternatives1529);
                     ruleScaleOutInfra();
 
                     state._fsp--;
@@ -2040,13 +2121,13 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
                     }
                     break;
                 case 3 :
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:722:6: ( ruleScaleUpInfra )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:744:6: ( ruleScaleUpInfra )
                     {
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:722:6: ( ruleScaleUpInfra )
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:723:1: ruleScaleUpInfra
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:744:6: ( ruleScaleUpInfra )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:745:1: ruleScaleUpInfra
                     {
                      before(grammarAccess.getScaleFunctionAccess().getScaleUpInfraParserRuleCall_2()); 
-                    pushFollow(FOLLOW_ruleScaleUpInfra_in_rule__ScaleFunction__Alternatives1496);
+                    pushFollow(FOLLOW_ruleScaleUpInfra_in_rule__ScaleFunction__Alternatives1546);
                     ruleScaleUpInfra();
 
                     state._fsp--;
@@ -2059,13 +2140,13 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
                     }
                     break;
                 case 4 :
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:728:6: ( ruleScaleDownInfra )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:750:6: ( ruleScaleDownInfra )
                     {
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:728:6: ( ruleScaleDownInfra )
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:729:1: ruleScaleDownInfra
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:750:6: ( ruleScaleDownInfra )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:751:1: ruleScaleDownInfra
                     {
                      before(grammarAccess.getScaleFunctionAccess().getScaleDownInfraParserRuleCall_3()); 
-                    pushFollow(FOLLOW_ruleScaleDownInfra_in_rule__ScaleFunction__Alternatives1513);
+                    pushFollow(FOLLOW_ruleScaleDownInfra_in_rule__ScaleFunction__Alternatives1563);
                     ruleScaleDownInfra();
 
                     state._fsp--;
@@ -2078,13 +2159,13 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
                     }
                     break;
                 case 5 :
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:734:6: ( ruleScaleInSoft )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:756:6: ( ruleScaleInSoft )
                     {
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:734:6: ( ruleScaleInSoft )
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:735:1: ruleScaleInSoft
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:756:6: ( ruleScaleInSoft )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:757:1: ruleScaleInSoft
                     {
                      before(grammarAccess.getScaleFunctionAccess().getScaleInSoftParserRuleCall_4()); 
-                    pushFollow(FOLLOW_ruleScaleInSoft_in_rule__ScaleFunction__Alternatives1530);
+                    pushFollow(FOLLOW_ruleScaleInSoft_in_rule__ScaleFunction__Alternatives1580);
                     ruleScaleInSoft();
 
                     state._fsp--;
@@ -2097,13 +2178,13 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
                     }
                     break;
                 case 6 :
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:740:6: ( ruleScaleOutSoft )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:762:6: ( ruleScaleOutSoft )
                     {
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:740:6: ( ruleScaleOutSoft )
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:741:1: ruleScaleOutSoft
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:762:6: ( ruleScaleOutSoft )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:763:1: ruleScaleOutSoft
                     {
                      before(grammarAccess.getScaleFunctionAccess().getScaleOutSoftParserRuleCall_5()); 
-                    pushFollow(FOLLOW_ruleScaleOutSoft_in_rule__ScaleFunction__Alternatives1547);
+                    pushFollow(FOLLOW_ruleScaleOutSoft_in_rule__ScaleFunction__Alternatives1597);
                     ruleScaleOutSoft();
 
                     state._fsp--;
@@ -2116,13 +2197,13 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
                     }
                     break;
                 case 7 :
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:746:6: ( ruleScaleUpSoft )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:768:6: ( ruleScaleUpSoft )
                     {
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:746:6: ( ruleScaleUpSoft )
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:747:1: ruleScaleUpSoft
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:768:6: ( ruleScaleUpSoft )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:769:1: ruleScaleUpSoft
                     {
                      before(grammarAccess.getScaleFunctionAccess().getScaleUpSoftParserRuleCall_6()); 
-                    pushFollow(FOLLOW_ruleScaleUpSoft_in_rule__ScaleFunction__Alternatives1564);
+                    pushFollow(FOLLOW_ruleScaleUpSoft_in_rule__ScaleFunction__Alternatives1614);
                     ruleScaleUpSoft();
 
                     state._fsp--;
@@ -2135,13 +2216,13 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
                     }
                     break;
                 case 8 :
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:752:6: ( ruleScaleDownSoft )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:774:6: ( ruleScaleDownSoft )
                     {
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:752:6: ( ruleScaleDownSoft )
-                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:753:1: ruleScaleDownSoft
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:774:6: ( ruleScaleDownSoft )
+                    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:775:1: ruleScaleDownSoft
                     {
                      before(grammarAccess.getScaleFunctionAccess().getScaleDownSoftParserRuleCall_7()); 
-                    pushFollow(FOLLOW_ruleScaleDownSoft_in_rule__ScaleFunction__Alternatives1581);
+                    pushFollow(FOLLOW_ruleScaleDownSoft_in_rule__ScaleFunction__Alternatives1631);
                     ruleScaleDownSoft();
 
                     state._fsp--;
@@ -2171,21 +2252,21 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Script__Group__0"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:765:1: rule__Script__Group__0 : rule__Script__Group__0__Impl rule__Script__Group__1 ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:787:1: rule__Script__Group__0 : rule__Script__Group__0__Impl rule__Script__Group__1 ;
     public final void rule__Script__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:769:1: ( rule__Script__Group__0__Impl rule__Script__Group__1 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:770:2: rule__Script__Group__0__Impl rule__Script__Group__1
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:791:1: ( rule__Script__Group__0__Impl rule__Script__Group__1 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:792:2: rule__Script__Group__0__Impl rule__Script__Group__1
             {
-            pushFollow(FOLLOW_rule__Script__Group__0__Impl_in_rule__Script__Group__01611);
+            pushFollow(FOLLOW_rule__Script__Group__0__Impl_in_rule__Script__Group__01661);
             rule__Script__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Script__Group__1_in_rule__Script__Group__01614);
+            pushFollow(FOLLOW_rule__Script__Group__1_in_rule__Script__Group__01664);
             rule__Script__Group__1();
 
             state._fsp--;
@@ -2209,23 +2290,23 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Script__Group__0__Impl"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:777:1: rule__Script__Group__0__Impl : ( ( rule__Script__BeginScriptAssignment_0 ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:799:1: rule__Script__Group__0__Impl : ( ( rule__Script__BeginScriptAssignment_0 ) ) ;
     public final void rule__Script__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:781:1: ( ( ( rule__Script__BeginScriptAssignment_0 ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:782:1: ( ( rule__Script__BeginScriptAssignment_0 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:803:1: ( ( ( rule__Script__BeginScriptAssignment_0 ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:804:1: ( ( rule__Script__BeginScriptAssignment_0 ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:782:1: ( ( rule__Script__BeginScriptAssignment_0 ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:783:1: ( rule__Script__BeginScriptAssignment_0 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:804:1: ( ( rule__Script__BeginScriptAssignment_0 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:805:1: ( rule__Script__BeginScriptAssignment_0 )
             {
              before(grammarAccess.getScriptAccess().getBeginScriptAssignment_0()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:784:1: ( rule__Script__BeginScriptAssignment_0 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:784:2: rule__Script__BeginScriptAssignment_0
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:806:1: ( rule__Script__BeginScriptAssignment_0 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:806:2: rule__Script__BeginScriptAssignment_0
             {
-            pushFollow(FOLLOW_rule__Script__BeginScriptAssignment_0_in_rule__Script__Group__0__Impl1641);
+            pushFollow(FOLLOW_rule__Script__BeginScriptAssignment_0_in_rule__Script__Group__0__Impl1691);
             rule__Script__BeginScriptAssignment_0();
 
             state._fsp--;
@@ -2256,21 +2337,21 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Script__Group__1"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:794:1: rule__Script__Group__1 : rule__Script__Group__1__Impl rule__Script__Group__2 ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:816:1: rule__Script__Group__1 : rule__Script__Group__1__Impl rule__Script__Group__2 ;
     public final void rule__Script__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:798:1: ( rule__Script__Group__1__Impl rule__Script__Group__2 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:799:2: rule__Script__Group__1__Impl rule__Script__Group__2
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:820:1: ( rule__Script__Group__1__Impl rule__Script__Group__2 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:821:2: rule__Script__Group__1__Impl rule__Script__Group__2
             {
-            pushFollow(FOLLOW_rule__Script__Group__1__Impl_in_rule__Script__Group__11671);
+            pushFollow(FOLLOW_rule__Script__Group__1__Impl_in_rule__Script__Group__11721);
             rule__Script__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Script__Group__2_in_rule__Script__Group__11674);
+            pushFollow(FOLLOW_rule__Script__Group__2_in_rule__Script__Group__11724);
             rule__Script__Group__2();
 
             state._fsp--;
@@ -2294,23 +2375,23 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Script__Group__1__Impl"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:806:1: rule__Script__Group__1__Impl : ( ( rule__Script__ScriptStatementAssignment_1 ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:828:1: rule__Script__Group__1__Impl : ( ( rule__Script__ScriptStatementAssignment_1 ) ) ;
     public final void rule__Script__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:810:1: ( ( ( rule__Script__ScriptStatementAssignment_1 ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:811:1: ( ( rule__Script__ScriptStatementAssignment_1 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:832:1: ( ( ( rule__Script__ScriptStatementAssignment_1 ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:833:1: ( ( rule__Script__ScriptStatementAssignment_1 ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:811:1: ( ( rule__Script__ScriptStatementAssignment_1 ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:812:1: ( rule__Script__ScriptStatementAssignment_1 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:833:1: ( ( rule__Script__ScriptStatementAssignment_1 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:834:1: ( rule__Script__ScriptStatementAssignment_1 )
             {
              before(grammarAccess.getScriptAccess().getScriptStatementAssignment_1()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:813:1: ( rule__Script__ScriptStatementAssignment_1 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:813:2: rule__Script__ScriptStatementAssignment_1
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:835:1: ( rule__Script__ScriptStatementAssignment_1 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:835:2: rule__Script__ScriptStatementAssignment_1
             {
-            pushFollow(FOLLOW_rule__Script__ScriptStatementAssignment_1_in_rule__Script__Group__1__Impl1701);
+            pushFollow(FOLLOW_rule__Script__ScriptStatementAssignment_1_in_rule__Script__Group__1__Impl1751);
             rule__Script__ScriptStatementAssignment_1();
 
             state._fsp--;
@@ -2341,16 +2422,16 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Script__Group__2"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:823:1: rule__Script__Group__2 : rule__Script__Group__2__Impl ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:845:1: rule__Script__Group__2 : rule__Script__Group__2__Impl ;
     public final void rule__Script__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:827:1: ( rule__Script__Group__2__Impl )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:828:2: rule__Script__Group__2__Impl
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:849:1: ( rule__Script__Group__2__Impl )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:850:2: rule__Script__Group__2__Impl
             {
-            pushFollow(FOLLOW_rule__Script__Group__2__Impl_in_rule__Script__Group__21731);
+            pushFollow(FOLLOW_rule__Script__Group__2__Impl_in_rule__Script__Group__21781);
             rule__Script__Group__2__Impl();
 
             state._fsp--;
@@ -2374,23 +2455,23 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Script__Group__2__Impl"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:834:1: rule__Script__Group__2__Impl : ( ( rule__Script__EndScriptAssignment_2 ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:856:1: rule__Script__Group__2__Impl : ( ( rule__Script__EndScriptAssignment_2 ) ) ;
     public final void rule__Script__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:838:1: ( ( ( rule__Script__EndScriptAssignment_2 ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:839:1: ( ( rule__Script__EndScriptAssignment_2 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:860:1: ( ( ( rule__Script__EndScriptAssignment_2 ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:861:1: ( ( rule__Script__EndScriptAssignment_2 ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:839:1: ( ( rule__Script__EndScriptAssignment_2 ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:840:1: ( rule__Script__EndScriptAssignment_2 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:861:1: ( ( rule__Script__EndScriptAssignment_2 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:862:1: ( rule__Script__EndScriptAssignment_2 )
             {
              before(grammarAccess.getScriptAccess().getEndScriptAssignment_2()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:841:1: ( rule__Script__EndScriptAssignment_2 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:841:2: rule__Script__EndScriptAssignment_2
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:863:1: ( rule__Script__EndScriptAssignment_2 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:863:2: rule__Script__EndScriptAssignment_2
             {
-            pushFollow(FOLLOW_rule__Script__EndScriptAssignment_2_in_rule__Script__Group__2__Impl1758);
+            pushFollow(FOLLOW_rule__Script__EndScriptAssignment_2_in_rule__Script__Group__2__Impl1808);
             rule__Script__EndScriptAssignment_2();
 
             state._fsp--;
@@ -2421,21 +2502,21 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Parallel__Group__0"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:857:1: rule__Parallel__Group__0 : rule__Parallel__Group__0__Impl rule__Parallel__Group__1 ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:879:1: rule__Parallel__Group__0 : rule__Parallel__Group__0__Impl rule__Parallel__Group__1 ;
     public final void rule__Parallel__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:861:1: ( rule__Parallel__Group__0__Impl rule__Parallel__Group__1 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:862:2: rule__Parallel__Group__0__Impl rule__Parallel__Group__1
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:883:1: ( rule__Parallel__Group__0__Impl rule__Parallel__Group__1 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:884:2: rule__Parallel__Group__0__Impl rule__Parallel__Group__1
             {
-            pushFollow(FOLLOW_rule__Parallel__Group__0__Impl_in_rule__Parallel__Group__01794);
+            pushFollow(FOLLOW_rule__Parallel__Group__0__Impl_in_rule__Parallel__Group__01844);
             rule__Parallel__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Parallel__Group__1_in_rule__Parallel__Group__01797);
+            pushFollow(FOLLOW_rule__Parallel__Group__1_in_rule__Parallel__Group__01847);
             rule__Parallel__Group__1();
 
             state._fsp--;
@@ -2459,23 +2540,23 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Parallel__Group__0__Impl"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:869:1: rule__Parallel__Group__0__Impl : ( ( rule__Parallel__BeginParallelAssignment_0 ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:891:1: rule__Parallel__Group__0__Impl : ( ( rule__Parallel__BeginParallelAssignment_0 ) ) ;
     public final void rule__Parallel__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:873:1: ( ( ( rule__Parallel__BeginParallelAssignment_0 ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:874:1: ( ( rule__Parallel__BeginParallelAssignment_0 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:895:1: ( ( ( rule__Parallel__BeginParallelAssignment_0 ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:896:1: ( ( rule__Parallel__BeginParallelAssignment_0 ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:874:1: ( ( rule__Parallel__BeginParallelAssignment_0 ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:875:1: ( rule__Parallel__BeginParallelAssignment_0 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:896:1: ( ( rule__Parallel__BeginParallelAssignment_0 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:897:1: ( rule__Parallel__BeginParallelAssignment_0 )
             {
              before(grammarAccess.getParallelAccess().getBeginParallelAssignment_0()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:876:1: ( rule__Parallel__BeginParallelAssignment_0 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:876:2: rule__Parallel__BeginParallelAssignment_0
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:898:1: ( rule__Parallel__BeginParallelAssignment_0 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:898:2: rule__Parallel__BeginParallelAssignment_0
             {
-            pushFollow(FOLLOW_rule__Parallel__BeginParallelAssignment_0_in_rule__Parallel__Group__0__Impl1824);
+            pushFollow(FOLLOW_rule__Parallel__BeginParallelAssignment_0_in_rule__Parallel__Group__0__Impl1874);
             rule__Parallel__BeginParallelAssignment_0();
 
             state._fsp--;
@@ -2506,21 +2587,21 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Parallel__Group__1"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:886:1: rule__Parallel__Group__1 : rule__Parallel__Group__1__Impl rule__Parallel__Group__2 ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:908:1: rule__Parallel__Group__1 : rule__Parallel__Group__1__Impl rule__Parallel__Group__2 ;
     public final void rule__Parallel__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:890:1: ( rule__Parallel__Group__1__Impl rule__Parallel__Group__2 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:891:2: rule__Parallel__Group__1__Impl rule__Parallel__Group__2
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:912:1: ( rule__Parallel__Group__1__Impl rule__Parallel__Group__2 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:913:2: rule__Parallel__Group__1__Impl rule__Parallel__Group__2
             {
-            pushFollow(FOLLOW_rule__Parallel__Group__1__Impl_in_rule__Parallel__Group__11854);
+            pushFollow(FOLLOW_rule__Parallel__Group__1__Impl_in_rule__Parallel__Group__11904);
             rule__Parallel__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Parallel__Group__2_in_rule__Parallel__Group__11857);
+            pushFollow(FOLLOW_rule__Parallel__Group__2_in_rule__Parallel__Group__11907);
             rule__Parallel__Group__2();
 
             state._fsp--;
@@ -2544,23 +2625,23 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Parallel__Group__1__Impl"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:898:1: rule__Parallel__Group__1__Impl : ( ( rule__Parallel__StatementListsAssignment_1 ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:920:1: rule__Parallel__Group__1__Impl : ( ( rule__Parallel__StatementListsAssignment_1 ) ) ;
     public final void rule__Parallel__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:902:1: ( ( ( rule__Parallel__StatementListsAssignment_1 ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:903:1: ( ( rule__Parallel__StatementListsAssignment_1 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:924:1: ( ( ( rule__Parallel__StatementListsAssignment_1 ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:925:1: ( ( rule__Parallel__StatementListsAssignment_1 ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:903:1: ( ( rule__Parallel__StatementListsAssignment_1 ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:904:1: ( rule__Parallel__StatementListsAssignment_1 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:925:1: ( ( rule__Parallel__StatementListsAssignment_1 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:926:1: ( rule__Parallel__StatementListsAssignment_1 )
             {
              before(grammarAccess.getParallelAccess().getStatementListsAssignment_1()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:905:1: ( rule__Parallel__StatementListsAssignment_1 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:905:2: rule__Parallel__StatementListsAssignment_1
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:927:1: ( rule__Parallel__StatementListsAssignment_1 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:927:2: rule__Parallel__StatementListsAssignment_1
             {
-            pushFollow(FOLLOW_rule__Parallel__StatementListsAssignment_1_in_rule__Parallel__Group__1__Impl1884);
+            pushFollow(FOLLOW_rule__Parallel__StatementListsAssignment_1_in_rule__Parallel__Group__1__Impl1934);
             rule__Parallel__StatementListsAssignment_1();
 
             state._fsp--;
@@ -2591,21 +2672,21 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Parallel__Group__2"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:915:1: rule__Parallel__Group__2 : rule__Parallel__Group__2__Impl rule__Parallel__Group__3 ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:937:1: rule__Parallel__Group__2 : rule__Parallel__Group__2__Impl rule__Parallel__Group__3 ;
     public final void rule__Parallel__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:919:1: ( rule__Parallel__Group__2__Impl rule__Parallel__Group__3 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:920:2: rule__Parallel__Group__2__Impl rule__Parallel__Group__3
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:941:1: ( rule__Parallel__Group__2__Impl rule__Parallel__Group__3 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:942:2: rule__Parallel__Group__2__Impl rule__Parallel__Group__3
             {
-            pushFollow(FOLLOW_rule__Parallel__Group__2__Impl_in_rule__Parallel__Group__21914);
+            pushFollow(FOLLOW_rule__Parallel__Group__2__Impl_in_rule__Parallel__Group__21964);
             rule__Parallel__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Parallel__Group__3_in_rule__Parallel__Group__21917);
+            pushFollow(FOLLOW_rule__Parallel__Group__3_in_rule__Parallel__Group__21967);
             rule__Parallel__Group__3();
 
             state._fsp--;
@@ -2629,26 +2710,26 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Parallel__Group__2__Impl"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:927:1: rule__Parallel__Group__2__Impl : ( ( ( rule__Parallel__Group_2__0 ) ) ( ( rule__Parallel__Group_2__0 )* ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:949:1: rule__Parallel__Group__2__Impl : ( ( ( rule__Parallel__Group_2__0 ) ) ( ( rule__Parallel__Group_2__0 )* ) ) ;
     public final void rule__Parallel__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:931:1: ( ( ( ( rule__Parallel__Group_2__0 ) ) ( ( rule__Parallel__Group_2__0 )* ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:932:1: ( ( ( rule__Parallel__Group_2__0 ) ) ( ( rule__Parallel__Group_2__0 )* ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:953:1: ( ( ( ( rule__Parallel__Group_2__0 ) ) ( ( rule__Parallel__Group_2__0 )* ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:954:1: ( ( ( rule__Parallel__Group_2__0 ) ) ( ( rule__Parallel__Group_2__0 )* ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:932:1: ( ( ( rule__Parallel__Group_2__0 ) ) ( ( rule__Parallel__Group_2__0 )* ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:933:1: ( ( rule__Parallel__Group_2__0 ) ) ( ( rule__Parallel__Group_2__0 )* )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:954:1: ( ( ( rule__Parallel__Group_2__0 ) ) ( ( rule__Parallel__Group_2__0 )* ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:955:1: ( ( rule__Parallel__Group_2__0 ) ) ( ( rule__Parallel__Group_2__0 )* )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:933:1: ( ( rule__Parallel__Group_2__0 ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:934:1: ( rule__Parallel__Group_2__0 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:955:1: ( ( rule__Parallel__Group_2__0 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:956:1: ( rule__Parallel__Group_2__0 )
             {
              before(grammarAccess.getParallelAccess().getGroup_2()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:935:1: ( rule__Parallel__Group_2__0 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:935:2: rule__Parallel__Group_2__0
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:957:1: ( rule__Parallel__Group_2__0 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:957:2: rule__Parallel__Group_2__0
             {
-            pushFollow(FOLLOW_rule__Parallel__Group_2__0_in_rule__Parallel__Group__2__Impl1946);
+            pushFollow(FOLLOW_rule__Parallel__Group_2__0_in_rule__Parallel__Group__2__Impl1996);
             rule__Parallel__Group_2__0();
 
             state._fsp--;
@@ -2660,26 +2741,26 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
             }
 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:938:1: ( ( rule__Parallel__Group_2__0 )* )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:939:1: ( rule__Parallel__Group_2__0 )*
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:960:1: ( ( rule__Parallel__Group_2__0 )* )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:961:1: ( rule__Parallel__Group_2__0 )*
             {
              before(grammarAccess.getParallelAccess().getGroup_2()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:940:1: ( rule__Parallel__Group_2__0 )*
-            loop5:
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:962:1: ( rule__Parallel__Group_2__0 )*
+            loop6:
             do {
-                int alt5=2;
-                int LA5_0 = input.LA(1);
+                int alt6=2;
+                int LA6_0 = input.LA(1);
 
-                if ( (LA5_0==RULE_PARALLEL_SEPARATOR) ) {
-                    alt5=1;
+                if ( (LA6_0==RULE_PARALLEL_SEPARATOR) ) {
+                    alt6=1;
                 }
 
 
-                switch (alt5) {
+                switch (alt6) {
             	case 1 :
-            	    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:940:2: rule__Parallel__Group_2__0
+            	    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:962:2: rule__Parallel__Group_2__0
             	    {
-            	    pushFollow(FOLLOW_rule__Parallel__Group_2__0_in_rule__Parallel__Group__2__Impl1958);
+            	    pushFollow(FOLLOW_rule__Parallel__Group_2__0_in_rule__Parallel__Group__2__Impl2008);
             	    rule__Parallel__Group_2__0();
 
             	    state._fsp--;
@@ -2689,7 +2770,7 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
             	    break;
 
             	default :
-            	    break loop5;
+            	    break loop6;
                 }
             } while (true);
 
@@ -2719,16 +2800,16 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Parallel__Group__3"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:951:1: rule__Parallel__Group__3 : rule__Parallel__Group__3__Impl ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:973:1: rule__Parallel__Group__3 : rule__Parallel__Group__3__Impl ;
     public final void rule__Parallel__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:955:1: ( rule__Parallel__Group__3__Impl )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:956:2: rule__Parallel__Group__3__Impl
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:977:1: ( rule__Parallel__Group__3__Impl )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:978:2: rule__Parallel__Group__3__Impl
             {
-            pushFollow(FOLLOW_rule__Parallel__Group__3__Impl_in_rule__Parallel__Group__31991);
+            pushFollow(FOLLOW_rule__Parallel__Group__3__Impl_in_rule__Parallel__Group__32041);
             rule__Parallel__Group__3__Impl();
 
             state._fsp--;
@@ -2752,23 +2833,23 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Parallel__Group__3__Impl"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:962:1: rule__Parallel__Group__3__Impl : ( ( rule__Parallel__EndParallelAssignment_3 ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:984:1: rule__Parallel__Group__3__Impl : ( ( rule__Parallel__EndParallelAssignment_3 ) ) ;
     public final void rule__Parallel__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:966:1: ( ( ( rule__Parallel__EndParallelAssignment_3 ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:967:1: ( ( rule__Parallel__EndParallelAssignment_3 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:988:1: ( ( ( rule__Parallel__EndParallelAssignment_3 ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:989:1: ( ( rule__Parallel__EndParallelAssignment_3 ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:967:1: ( ( rule__Parallel__EndParallelAssignment_3 ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:968:1: ( rule__Parallel__EndParallelAssignment_3 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:989:1: ( ( rule__Parallel__EndParallelAssignment_3 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:990:1: ( rule__Parallel__EndParallelAssignment_3 )
             {
              before(grammarAccess.getParallelAccess().getEndParallelAssignment_3()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:969:1: ( rule__Parallel__EndParallelAssignment_3 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:969:2: rule__Parallel__EndParallelAssignment_3
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:991:1: ( rule__Parallel__EndParallelAssignment_3 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:991:2: rule__Parallel__EndParallelAssignment_3
             {
-            pushFollow(FOLLOW_rule__Parallel__EndParallelAssignment_3_in_rule__Parallel__Group__3__Impl2018);
+            pushFollow(FOLLOW_rule__Parallel__EndParallelAssignment_3_in_rule__Parallel__Group__3__Impl2068);
             rule__Parallel__EndParallelAssignment_3();
 
             state._fsp--;
@@ -2799,21 +2880,21 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Parallel__Group_2__0"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:987:1: rule__Parallel__Group_2__0 : rule__Parallel__Group_2__0__Impl rule__Parallel__Group_2__1 ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1009:1: rule__Parallel__Group_2__0 : rule__Parallel__Group_2__0__Impl rule__Parallel__Group_2__1 ;
     public final void rule__Parallel__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:991:1: ( rule__Parallel__Group_2__0__Impl rule__Parallel__Group_2__1 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:992:2: rule__Parallel__Group_2__0__Impl rule__Parallel__Group_2__1
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1013:1: ( rule__Parallel__Group_2__0__Impl rule__Parallel__Group_2__1 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1014:2: rule__Parallel__Group_2__0__Impl rule__Parallel__Group_2__1
             {
-            pushFollow(FOLLOW_rule__Parallel__Group_2__0__Impl_in_rule__Parallel__Group_2__02056);
+            pushFollow(FOLLOW_rule__Parallel__Group_2__0__Impl_in_rule__Parallel__Group_2__02106);
             rule__Parallel__Group_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Parallel__Group_2__1_in_rule__Parallel__Group_2__02059);
+            pushFollow(FOLLOW_rule__Parallel__Group_2__1_in_rule__Parallel__Group_2__02109);
             rule__Parallel__Group_2__1();
 
             state._fsp--;
@@ -2837,20 +2918,20 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Parallel__Group_2__0__Impl"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:999:1: rule__Parallel__Group_2__0__Impl : ( RULE_PARALLEL_SEPARATOR ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1021:1: rule__Parallel__Group_2__0__Impl : ( RULE_PARALLEL_SEPARATOR ) ;
     public final void rule__Parallel__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1003:1: ( ( RULE_PARALLEL_SEPARATOR ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1004:1: ( RULE_PARALLEL_SEPARATOR )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1025:1: ( ( RULE_PARALLEL_SEPARATOR ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1026:1: ( RULE_PARALLEL_SEPARATOR )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1004:1: ( RULE_PARALLEL_SEPARATOR )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1005:1: RULE_PARALLEL_SEPARATOR
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1026:1: ( RULE_PARALLEL_SEPARATOR )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1027:1: RULE_PARALLEL_SEPARATOR
             {
              before(grammarAccess.getParallelAccess().getPARALLEL_SEPARATORTerminalRuleCall_2_0()); 
-            match(input,RULE_PARALLEL_SEPARATOR,FOLLOW_RULE_PARALLEL_SEPARATOR_in_rule__Parallel__Group_2__0__Impl2086); 
+            match(input,RULE_PARALLEL_SEPARATOR,FOLLOW_RULE_PARALLEL_SEPARATOR_in_rule__Parallel__Group_2__0__Impl2136); 
              after(grammarAccess.getParallelAccess().getPARALLEL_SEPARATORTerminalRuleCall_2_0()); 
 
             }
@@ -2874,16 +2955,16 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Parallel__Group_2__1"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1016:1: rule__Parallel__Group_2__1 : rule__Parallel__Group_2__1__Impl ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1038:1: rule__Parallel__Group_2__1 : rule__Parallel__Group_2__1__Impl ;
     public final void rule__Parallel__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1020:1: ( rule__Parallel__Group_2__1__Impl )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1021:2: rule__Parallel__Group_2__1__Impl
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1042:1: ( rule__Parallel__Group_2__1__Impl )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1043:2: rule__Parallel__Group_2__1__Impl
             {
-            pushFollow(FOLLOW_rule__Parallel__Group_2__1__Impl_in_rule__Parallel__Group_2__12115);
+            pushFollow(FOLLOW_rule__Parallel__Group_2__1__Impl_in_rule__Parallel__Group_2__12165);
             rule__Parallel__Group_2__1__Impl();
 
             state._fsp--;
@@ -2907,23 +2988,23 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Parallel__Group_2__1__Impl"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1027:1: rule__Parallel__Group_2__1__Impl : ( ( rule__Parallel__StatementListsAssignment_2_1 ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1049:1: rule__Parallel__Group_2__1__Impl : ( ( rule__Parallel__StatementListsAssignment_2_1 ) ) ;
     public final void rule__Parallel__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1031:1: ( ( ( rule__Parallel__StatementListsAssignment_2_1 ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1032:1: ( ( rule__Parallel__StatementListsAssignment_2_1 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1053:1: ( ( ( rule__Parallel__StatementListsAssignment_2_1 ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1054:1: ( ( rule__Parallel__StatementListsAssignment_2_1 ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1032:1: ( ( rule__Parallel__StatementListsAssignment_2_1 ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1033:1: ( rule__Parallel__StatementListsAssignment_2_1 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1054:1: ( ( rule__Parallel__StatementListsAssignment_2_1 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1055:1: ( rule__Parallel__StatementListsAssignment_2_1 )
             {
              before(grammarAccess.getParallelAccess().getStatementListsAssignment_2_1()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1034:1: ( rule__Parallel__StatementListsAssignment_2_1 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1034:2: rule__Parallel__StatementListsAssignment_2_1
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1056:1: ( rule__Parallel__StatementListsAssignment_2_1 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1056:2: rule__Parallel__StatementListsAssignment_2_1
             {
-            pushFollow(FOLLOW_rule__Parallel__StatementListsAssignment_2_1_in_rule__Parallel__Group_2__1__Impl2142);
+            pushFollow(FOLLOW_rule__Parallel__StatementListsAssignment_2_1_in_rule__Parallel__Group_2__1__Impl2192);
             rule__Parallel__StatementListsAssignment_2_1();
 
             state._fsp--;
@@ -2954,21 +3035,21 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Command__Group__0"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1048:1: rule__Command__Group__0 : rule__Command__Group__0__Impl rule__Command__Group__1 ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1070:1: rule__Command__Group__0 : rule__Command__Group__0__Impl rule__Command__Group__1 ;
     public final void rule__Command__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1052:1: ( rule__Command__Group__0__Impl rule__Command__Group__1 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1053:2: rule__Command__Group__0__Impl rule__Command__Group__1
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1074:1: ( rule__Command__Group__0__Impl rule__Command__Group__1 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1075:2: rule__Command__Group__0__Impl rule__Command__Group__1
             {
-            pushFollow(FOLLOW_rule__Command__Group__0__Impl_in_rule__Command__Group__02176);
+            pushFollow(FOLLOW_rule__Command__Group__0__Impl_in_rule__Command__Group__02226);
             rule__Command__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Command__Group__1_in_rule__Command__Group__02179);
+            pushFollow(FOLLOW_rule__Command__Group__1_in_rule__Command__Group__02229);
             rule__Command__Group__1();
 
             state._fsp--;
@@ -2992,23 +3073,23 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Command__Group__0__Impl"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1060:1: rule__Command__Group__0__Impl : ( ( rule__Command__Alternatives_0 ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1082:1: rule__Command__Group__0__Impl : ( ( rule__Command__Alternatives_0 ) ) ;
     public final void rule__Command__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1064:1: ( ( ( rule__Command__Alternatives_0 ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1065:1: ( ( rule__Command__Alternatives_0 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1086:1: ( ( ( rule__Command__Alternatives_0 ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1087:1: ( ( rule__Command__Alternatives_0 ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1065:1: ( ( rule__Command__Alternatives_0 ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1066:1: ( rule__Command__Alternatives_0 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1087:1: ( ( rule__Command__Alternatives_0 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1088:1: ( rule__Command__Alternatives_0 )
             {
              before(grammarAccess.getCommandAccess().getAlternatives_0()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1067:1: ( rule__Command__Alternatives_0 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1067:2: rule__Command__Alternatives_0
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1089:1: ( rule__Command__Alternatives_0 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1089:2: rule__Command__Alternatives_0
             {
-            pushFollow(FOLLOW_rule__Command__Alternatives_0_in_rule__Command__Group__0__Impl2206);
+            pushFollow(FOLLOW_rule__Command__Alternatives_0_in_rule__Command__Group__0__Impl2256);
             rule__Command__Alternatives_0();
 
             state._fsp--;
@@ -3039,21 +3120,21 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Command__Group__1"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1077:1: rule__Command__Group__1 : rule__Command__Group__1__Impl rule__Command__Group__2 ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1099:1: rule__Command__Group__1 : rule__Command__Group__1__Impl rule__Command__Group__2 ;
     public final void rule__Command__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1081:1: ( rule__Command__Group__1__Impl rule__Command__Group__2 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1082:2: rule__Command__Group__1__Impl rule__Command__Group__2
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1103:1: ( rule__Command__Group__1__Impl rule__Command__Group__2 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1104:2: rule__Command__Group__1__Impl rule__Command__Group__2
             {
-            pushFollow(FOLLOW_rule__Command__Group__1__Impl_in_rule__Command__Group__12236);
+            pushFollow(FOLLOW_rule__Command__Group__1__Impl_in_rule__Command__Group__12286);
             rule__Command__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Command__Group__2_in_rule__Command__Group__12239);
+            pushFollow(FOLLOW_rule__Command__Group__2_in_rule__Command__Group__12289);
             rule__Command__Group__2();
 
             state._fsp--;
@@ -3077,20 +3158,20 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Command__Group__1__Impl"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1089:1: rule__Command__Group__1__Impl : ( RULE_LP ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1111:1: rule__Command__Group__1__Impl : ( RULE_LP ) ;
     public final void rule__Command__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1093:1: ( ( RULE_LP ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1094:1: ( RULE_LP )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1115:1: ( ( RULE_LP ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1116:1: ( RULE_LP )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1094:1: ( RULE_LP )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1095:1: RULE_LP
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1116:1: ( RULE_LP )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1117:1: RULE_LP
             {
              before(grammarAccess.getCommandAccess().getLPTerminalRuleCall_1()); 
-            match(input,RULE_LP,FOLLOW_RULE_LP_in_rule__Command__Group__1__Impl2266); 
+            match(input,RULE_LP,FOLLOW_RULE_LP_in_rule__Command__Group__1__Impl2316); 
              after(grammarAccess.getCommandAccess().getLPTerminalRuleCall_1()); 
 
             }
@@ -3114,21 +3195,21 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Command__Group__2"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1106:1: rule__Command__Group__2 : rule__Command__Group__2__Impl rule__Command__Group__3 ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1128:1: rule__Command__Group__2 : rule__Command__Group__2__Impl rule__Command__Group__3 ;
     public final void rule__Command__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1110:1: ( rule__Command__Group__2__Impl rule__Command__Group__3 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1111:2: rule__Command__Group__2__Impl rule__Command__Group__3
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1132:1: ( rule__Command__Group__2__Impl rule__Command__Group__3 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1133:2: rule__Command__Group__2__Impl rule__Command__Group__3
             {
-            pushFollow(FOLLOW_rule__Command__Group__2__Impl_in_rule__Command__Group__22295);
+            pushFollow(FOLLOW_rule__Command__Group__2__Impl_in_rule__Command__Group__22345);
             rule__Command__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Command__Group__3_in_rule__Command__Group__22298);
+            pushFollow(FOLLOW_rule__Command__Group__3_in_rule__Command__Group__22348);
             rule__Command__Group__3();
 
             state._fsp--;
@@ -3152,31 +3233,31 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Command__Group__2__Impl"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1118:1: rule__Command__Group__2__Impl : ( ( rule__Command__ParamsAssignment_2 ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1140:1: rule__Command__Group__2__Impl : ( ( rule__Command__Alternatives_2 ) ) ;
     public final void rule__Command__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1122:1: ( ( ( rule__Command__ParamsAssignment_2 ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1123:1: ( ( rule__Command__ParamsAssignment_2 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1144:1: ( ( ( rule__Command__Alternatives_2 ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1145:1: ( ( rule__Command__Alternatives_2 ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1123:1: ( ( rule__Command__ParamsAssignment_2 ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1124:1: ( rule__Command__ParamsAssignment_2 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1145:1: ( ( rule__Command__Alternatives_2 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1146:1: ( rule__Command__Alternatives_2 )
             {
-             before(grammarAccess.getCommandAccess().getParamsAssignment_2()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1125:1: ( rule__Command__ParamsAssignment_2 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1125:2: rule__Command__ParamsAssignment_2
+             before(grammarAccess.getCommandAccess().getAlternatives_2()); 
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1147:1: ( rule__Command__Alternatives_2 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1147:2: rule__Command__Alternatives_2
             {
-            pushFollow(FOLLOW_rule__Command__ParamsAssignment_2_in_rule__Command__Group__2__Impl2325);
-            rule__Command__ParamsAssignment_2();
+            pushFollow(FOLLOW_rule__Command__Alternatives_2_in_rule__Command__Group__2__Impl2375);
+            rule__Command__Alternatives_2();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getCommandAccess().getParamsAssignment_2()); 
+             after(grammarAccess.getCommandAccess().getAlternatives_2()); 
 
             }
 
@@ -3199,22 +3280,17 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Command__Group__3"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1135:1: rule__Command__Group__3 : rule__Command__Group__3__Impl rule__Command__Group__4 ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1157:1: rule__Command__Group__3 : rule__Command__Group__3__Impl ;
     public final void rule__Command__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1139:1: ( rule__Command__Group__3__Impl rule__Command__Group__4 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1140:2: rule__Command__Group__3__Impl rule__Command__Group__4
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1161:1: ( rule__Command__Group__3__Impl )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1162:2: rule__Command__Group__3__Impl
             {
-            pushFollow(FOLLOW_rule__Command__Group__3__Impl_in_rule__Command__Group__32355);
+            pushFollow(FOLLOW_rule__Command__Group__3__Impl_in_rule__Command__Group__32405);
             rule__Command__Group__3__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_rule__Command__Group__4_in_rule__Command__Group__32358);
-            rule__Command__Group__4();
 
             state._fsp--;
 
@@ -3237,49 +3313,21 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Command__Group__3__Impl"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1147:1: rule__Command__Group__3__Impl : ( ( rule__Command__Group_3__0 )* ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1168:1: rule__Command__Group__3__Impl : ( RULE_SEQUENTIAL_SEPARATOR ) ;
     public final void rule__Command__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1151:1: ( ( ( rule__Command__Group_3__0 )* ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1152:1: ( ( rule__Command__Group_3__0 )* )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1172:1: ( ( RULE_SEQUENTIAL_SEPARATOR ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1173:1: ( RULE_SEQUENTIAL_SEPARATOR )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1152:1: ( ( rule__Command__Group_3__0 )* )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1153:1: ( rule__Command__Group_3__0 )*
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1173:1: ( RULE_SEQUENTIAL_SEPARATOR )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1174:1: RULE_SEQUENTIAL_SEPARATOR
             {
-             before(grammarAccess.getCommandAccess().getGroup_3()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1154:1: ( rule__Command__Group_3__0 )*
-            loop6:
-            do {
-                int alt6=2;
-                int LA6_0 = input.LA(1);
-
-                if ( (LA6_0==RULE_COMMA) ) {
-                    alt6=1;
-                }
-
-
-                switch (alt6) {
-            	case 1 :
-            	    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1154:2: rule__Command__Group_3__0
-            	    {
-            	    pushFollow(FOLLOW_rule__Command__Group_3__0_in_rule__Command__Group__3__Impl2385);
-            	    rule__Command__Group_3__0();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop6;
-                }
-            } while (true);
-
-             after(grammarAccess.getCommandAccess().getGroup_3()); 
+             before(grammarAccess.getCommandAccess().getSEQUENTIAL_SEPARATORTerminalRuleCall_3()); 
+            match(input,RULE_SEQUENTIAL_SEPARATOR,FOLLOW_RULE_SEQUENTIAL_SEPARATOR_in_rule__Command__Group__3__Impl2432); 
+             after(grammarAccess.getCommandAccess().getSEQUENTIAL_SEPARATORTerminalRuleCall_3()); 
 
             }
 
@@ -3301,93 +3349,23 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
     // $ANTLR end "rule__Command__Group__3__Impl"
 
 
-    // $ANTLR start "rule__Command__Group__4"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1164:1: rule__Command__Group__4 : rule__Command__Group__4__Impl rule__Command__Group__5 ;
-    public final void rule__Command__Group__4() throws RecognitionException {
+    // $ANTLR start "rule__Command__Group_2_1__0"
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1193:1: rule__Command__Group_2_1__0 : rule__Command__Group_2_1__0__Impl rule__Command__Group_2_1__1 ;
+    public final void rule__Command__Group_2_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1168:1: ( rule__Command__Group__4__Impl rule__Command__Group__5 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1169:2: rule__Command__Group__4__Impl rule__Command__Group__5
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1197:1: ( rule__Command__Group_2_1__0__Impl rule__Command__Group_2_1__1 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1198:2: rule__Command__Group_2_1__0__Impl rule__Command__Group_2_1__1
             {
-            pushFollow(FOLLOW_rule__Command__Group__4__Impl_in_rule__Command__Group__42416);
-            rule__Command__Group__4__Impl();
+            pushFollow(FOLLOW_rule__Command__Group_2_1__0__Impl_in_rule__Command__Group_2_1__02469);
+            rule__Command__Group_2_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Command__Group__5_in_rule__Command__Group__42419);
-            rule__Command__Group__5();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Command__Group__4"
-
-
-    // $ANTLR start "rule__Command__Group__4__Impl"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1176:1: rule__Command__Group__4__Impl : ( RULE_RP ) ;
-    public final void rule__Command__Group__4__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1180:1: ( ( RULE_RP ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1181:1: ( RULE_RP )
-            {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1181:1: ( RULE_RP )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1182:1: RULE_RP
-            {
-             before(grammarAccess.getCommandAccess().getRPTerminalRuleCall_4()); 
-            match(input,RULE_RP,FOLLOW_RULE_RP_in_rule__Command__Group__4__Impl2446); 
-             after(grammarAccess.getCommandAccess().getRPTerminalRuleCall_4()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Command__Group__4__Impl"
-
-
-    // $ANTLR start "rule__Command__Group__5"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1193:1: rule__Command__Group__5 : rule__Command__Group__5__Impl ;
-    public final void rule__Command__Group__5() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1197:1: ( rule__Command__Group__5__Impl )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1198:2: rule__Command__Group__5__Impl
-            {
-            pushFollow(FOLLOW_rule__Command__Group__5__Impl_in_rule__Command__Group__52475);
-            rule__Command__Group__5__Impl();
+            pushFollow(FOLLOW_rule__Command__Group_2_1__1_in_rule__Command__Group_2_1__02472);
+            rule__Command__Group_2_1__1();
 
             state._fsp--;
 
@@ -3406,25 +3384,59 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
         }
         return ;
     }
-    // $ANTLR end "rule__Command__Group__5"
+    // $ANTLR end "rule__Command__Group_2_1__0"
 
 
-    // $ANTLR start "rule__Command__Group__5__Impl"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1204:1: rule__Command__Group__5__Impl : ( RULE_SEQUENTIAL_SEPARATOR ) ;
-    public final void rule__Command__Group__5__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Command__Group_2_1__0__Impl"
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1205:1: rule__Command__Group_2_1__0__Impl : ( ( rule__Command__Group_2_1_0__0 )* ) ;
+    public final void rule__Command__Group_2_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1208:1: ( ( RULE_SEQUENTIAL_SEPARATOR ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1209:1: ( RULE_SEQUENTIAL_SEPARATOR )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1209:1: ( ( ( rule__Command__Group_2_1_0__0 )* ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1210:1: ( ( rule__Command__Group_2_1_0__0 )* )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1209:1: ( RULE_SEQUENTIAL_SEPARATOR )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1210:1: RULE_SEQUENTIAL_SEPARATOR
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1210:1: ( ( rule__Command__Group_2_1_0__0 )* )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1211:1: ( rule__Command__Group_2_1_0__0 )*
             {
-             before(grammarAccess.getCommandAccess().getSEQUENTIAL_SEPARATORTerminalRuleCall_5()); 
-            match(input,RULE_SEQUENTIAL_SEPARATOR,FOLLOW_RULE_SEQUENTIAL_SEPARATOR_in_rule__Command__Group__5__Impl2502); 
-             after(grammarAccess.getCommandAccess().getSEQUENTIAL_SEPARATORTerminalRuleCall_5()); 
+             before(grammarAccess.getCommandAccess().getGroup_2_1_0()); 
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1212:1: ( rule__Command__Group_2_1_0__0 )*
+            loop7:
+            do {
+                int alt7=2;
+                int LA7_0 = input.LA(1);
+
+                if ( (LA7_0==RULE_INT) ) {
+                    int LA7_1 = input.LA(2);
+
+                    if ( (LA7_1==RULE_COMMA) ) {
+                        alt7=1;
+                    }
+
+
+                }
+
+
+                switch (alt7) {
+            	case 1 :
+            	    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1212:2: rule__Command__Group_2_1_0__0
+            	    {
+            	    pushFollow(FOLLOW_rule__Command__Group_2_1_0__0_in_rule__Command__Group_2_1__0__Impl2499);
+            	    rule__Command__Group_2_1_0__0();
+
+            	    state._fsp--;
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop7;
+                }
+            } while (true);
+
+             after(grammarAccess.getCommandAccess().getGroup_2_1_0()); 
 
             }
 
@@ -3443,96 +3455,26 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
         }
         return ;
     }
-    // $ANTLR end "rule__Command__Group__5__Impl"
+    // $ANTLR end "rule__Command__Group_2_1__0__Impl"
 
 
-    // $ANTLR start "rule__Command__Group_3__0"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1233:1: rule__Command__Group_3__0 : rule__Command__Group_3__0__Impl rule__Command__Group_3__1 ;
-    public final void rule__Command__Group_3__0() throws RecognitionException {
+    // $ANTLR start "rule__Command__Group_2_1__1"
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1222:1: rule__Command__Group_2_1__1 : rule__Command__Group_2_1__1__Impl rule__Command__Group_2_1__2 ;
+    public final void rule__Command__Group_2_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1237:1: ( rule__Command__Group_3__0__Impl rule__Command__Group_3__1 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1238:2: rule__Command__Group_3__0__Impl rule__Command__Group_3__1
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1226:1: ( rule__Command__Group_2_1__1__Impl rule__Command__Group_2_1__2 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1227:2: rule__Command__Group_2_1__1__Impl rule__Command__Group_2_1__2
             {
-            pushFollow(FOLLOW_rule__Command__Group_3__0__Impl_in_rule__Command__Group_3__02543);
-            rule__Command__Group_3__0__Impl();
+            pushFollow(FOLLOW_rule__Command__Group_2_1__1__Impl_in_rule__Command__Group_2_1__12530);
+            rule__Command__Group_2_1__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__Command__Group_3__1_in_rule__Command__Group_3__02546);
-            rule__Command__Group_3__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Command__Group_3__0"
-
-
-    // $ANTLR start "rule__Command__Group_3__0__Impl"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1245:1: rule__Command__Group_3__0__Impl : ( RULE_COMMA ) ;
-    public final void rule__Command__Group_3__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1249:1: ( ( RULE_COMMA ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1250:1: ( RULE_COMMA )
-            {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1250:1: ( RULE_COMMA )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1251:1: RULE_COMMA
-            {
-             before(grammarAccess.getCommandAccess().getCOMMATerminalRuleCall_3_0()); 
-            match(input,RULE_COMMA,FOLLOW_RULE_COMMA_in_rule__Command__Group_3__0__Impl2573); 
-             after(grammarAccess.getCommandAccess().getCOMMATerminalRuleCall_3_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__Command__Group_3__0__Impl"
-
-
-    // $ANTLR start "rule__Command__Group_3__1"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1262:1: rule__Command__Group_3__1 : rule__Command__Group_3__1__Impl ;
-    public final void rule__Command__Group_3__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1266:1: ( rule__Command__Group_3__1__Impl )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1267:2: rule__Command__Group_3__1__Impl
-            {
-            pushFollow(FOLLOW_rule__Command__Group_3__1__Impl_in_rule__Command__Group_3__12602);
-            rule__Command__Group_3__1__Impl();
+            pushFollow(FOLLOW_rule__Command__Group_2_1__2_in_rule__Command__Group_2_1__12533);
+            rule__Command__Group_2_1__2();
 
             state._fsp--;
 
@@ -3551,35 +3493,35 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
         }
         return ;
     }
-    // $ANTLR end "rule__Command__Group_3__1"
+    // $ANTLR end "rule__Command__Group_2_1__1"
 
 
-    // $ANTLR start "rule__Command__Group_3__1__Impl"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1273:1: rule__Command__Group_3__1__Impl : ( ( rule__Command__ParamsAssignment_3_1 ) ) ;
-    public final void rule__Command__Group_3__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__Command__Group_2_1__1__Impl"
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1234:1: rule__Command__Group_2_1__1__Impl : ( ( rule__Command__ParamsAssignment_2_1_1 ) ) ;
+    public final void rule__Command__Group_2_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1277:1: ( ( ( rule__Command__ParamsAssignment_3_1 ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1278:1: ( ( rule__Command__ParamsAssignment_3_1 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1238:1: ( ( ( rule__Command__ParamsAssignment_2_1_1 ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1239:1: ( ( rule__Command__ParamsAssignment_2_1_1 ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1278:1: ( ( rule__Command__ParamsAssignment_3_1 ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1279:1: ( rule__Command__ParamsAssignment_3_1 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1239:1: ( ( rule__Command__ParamsAssignment_2_1_1 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1240:1: ( rule__Command__ParamsAssignment_2_1_1 )
             {
-             before(grammarAccess.getCommandAccess().getParamsAssignment_3_1()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1280:1: ( rule__Command__ParamsAssignment_3_1 )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1280:2: rule__Command__ParamsAssignment_3_1
+             before(grammarAccess.getCommandAccess().getParamsAssignment_2_1_1()); 
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1241:1: ( rule__Command__ParamsAssignment_2_1_1 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1241:2: rule__Command__ParamsAssignment_2_1_1
             {
-            pushFollow(FOLLOW_rule__Command__ParamsAssignment_3_1_in_rule__Command__Group_3__1__Impl2629);
-            rule__Command__ParamsAssignment_3_1();
+            pushFollow(FOLLOW_rule__Command__ParamsAssignment_2_1_1_in_rule__Command__Group_2_1__1__Impl2560);
+            rule__Command__ParamsAssignment_2_1_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getCommandAccess().getParamsAssignment_3_1()); 
+             after(grammarAccess.getCommandAccess().getParamsAssignment_2_1_1()); 
 
             }
 
@@ -3598,24 +3540,249 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
         }
         return ;
     }
-    // $ANTLR end "rule__Command__Group_3__1__Impl"
+    // $ANTLR end "rule__Command__Group_2_1__1__Impl"
+
+
+    // $ANTLR start "rule__Command__Group_2_1__2"
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1251:1: rule__Command__Group_2_1__2 : rule__Command__Group_2_1__2__Impl ;
+    public final void rule__Command__Group_2_1__2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1255:1: ( rule__Command__Group_2_1__2__Impl )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1256:2: rule__Command__Group_2_1__2__Impl
+            {
+            pushFollow(FOLLOW_rule__Command__Group_2_1__2__Impl_in_rule__Command__Group_2_1__22590);
+            rule__Command__Group_2_1__2__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Command__Group_2_1__2"
+
+
+    // $ANTLR start "rule__Command__Group_2_1__2__Impl"
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1262:1: rule__Command__Group_2_1__2__Impl : ( RULE_RP ) ;
+    public final void rule__Command__Group_2_1__2__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1266:1: ( ( RULE_RP ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1267:1: ( RULE_RP )
+            {
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1267:1: ( RULE_RP )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1268:1: RULE_RP
+            {
+             before(grammarAccess.getCommandAccess().getRPTerminalRuleCall_2_1_2()); 
+            match(input,RULE_RP,FOLLOW_RULE_RP_in_rule__Command__Group_2_1__2__Impl2617); 
+             after(grammarAccess.getCommandAccess().getRPTerminalRuleCall_2_1_2()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Command__Group_2_1__2__Impl"
+
+
+    // $ANTLR start "rule__Command__Group_2_1_0__0"
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1285:1: rule__Command__Group_2_1_0__0 : rule__Command__Group_2_1_0__0__Impl rule__Command__Group_2_1_0__1 ;
+    public final void rule__Command__Group_2_1_0__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1289:1: ( rule__Command__Group_2_1_0__0__Impl rule__Command__Group_2_1_0__1 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1290:2: rule__Command__Group_2_1_0__0__Impl rule__Command__Group_2_1_0__1
+            {
+            pushFollow(FOLLOW_rule__Command__Group_2_1_0__0__Impl_in_rule__Command__Group_2_1_0__02652);
+            rule__Command__Group_2_1_0__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_rule__Command__Group_2_1_0__1_in_rule__Command__Group_2_1_0__02655);
+            rule__Command__Group_2_1_0__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Command__Group_2_1_0__0"
+
+
+    // $ANTLR start "rule__Command__Group_2_1_0__0__Impl"
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1297:1: rule__Command__Group_2_1_0__0__Impl : ( ( rule__Command__ParamsAssignment_2_1_0_0 ) ) ;
+    public final void rule__Command__Group_2_1_0__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1301:1: ( ( ( rule__Command__ParamsAssignment_2_1_0_0 ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1302:1: ( ( rule__Command__ParamsAssignment_2_1_0_0 ) )
+            {
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1302:1: ( ( rule__Command__ParamsAssignment_2_1_0_0 ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1303:1: ( rule__Command__ParamsAssignment_2_1_0_0 )
+            {
+             before(grammarAccess.getCommandAccess().getParamsAssignment_2_1_0_0()); 
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1304:1: ( rule__Command__ParamsAssignment_2_1_0_0 )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1304:2: rule__Command__ParamsAssignment_2_1_0_0
+            {
+            pushFollow(FOLLOW_rule__Command__ParamsAssignment_2_1_0_0_in_rule__Command__Group_2_1_0__0__Impl2682);
+            rule__Command__ParamsAssignment_2_1_0_0();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getCommandAccess().getParamsAssignment_2_1_0_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Command__Group_2_1_0__0__Impl"
+
+
+    // $ANTLR start "rule__Command__Group_2_1_0__1"
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1314:1: rule__Command__Group_2_1_0__1 : rule__Command__Group_2_1_0__1__Impl ;
+    public final void rule__Command__Group_2_1_0__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1318:1: ( rule__Command__Group_2_1_0__1__Impl )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1319:2: rule__Command__Group_2_1_0__1__Impl
+            {
+            pushFollow(FOLLOW_rule__Command__Group_2_1_0__1__Impl_in_rule__Command__Group_2_1_0__12712);
+            rule__Command__Group_2_1_0__1__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Command__Group_2_1_0__1"
+
+
+    // $ANTLR start "rule__Command__Group_2_1_0__1__Impl"
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1325:1: rule__Command__Group_2_1_0__1__Impl : ( RULE_COMMA ) ;
+    public final void rule__Command__Group_2_1_0__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1329:1: ( ( RULE_COMMA ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1330:1: ( RULE_COMMA )
+            {
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1330:1: ( RULE_COMMA )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1331:1: RULE_COMMA
+            {
+             before(grammarAccess.getCommandAccess().getCOMMATerminalRuleCall_2_1_0_1()); 
+            match(input,RULE_COMMA,FOLLOW_RULE_COMMA_in_rule__Command__Group_2_1_0__1__Impl2739); 
+             after(grammarAccess.getCommandAccess().getCOMMATerminalRuleCall_2_1_0_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Command__Group_2_1_0__1__Impl"
 
 
     // $ANTLR start "rule__Script__BeginScriptAssignment_0"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1295:1: rule__Script__BeginScriptAssignment_0 : ( ruleBeginScript ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1347:1: rule__Script__BeginScriptAssignment_0 : ( ruleBeginScript ) ;
     public final void rule__Script__BeginScriptAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1299:1: ( ( ruleBeginScript ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1300:1: ( ruleBeginScript )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1351:1: ( ( ruleBeginScript ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1352:1: ( ruleBeginScript )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1300:1: ( ruleBeginScript )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1301:1: ruleBeginScript
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1352:1: ( ruleBeginScript )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1353:1: ruleBeginScript
             {
              before(grammarAccess.getScriptAccess().getBeginScriptBeginScriptParserRuleCall_0_0()); 
-            pushFollow(FOLLOW_ruleBeginScript_in_rule__Script__BeginScriptAssignment_02668);
+            pushFollow(FOLLOW_ruleBeginScript_in_rule__Script__BeginScriptAssignment_02777);
             ruleBeginScript();
 
             state._fsp--;
@@ -3643,20 +3810,20 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Script__ScriptStatementAssignment_1"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1310:1: rule__Script__ScriptStatementAssignment_1 : ( ruleStatementList ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1362:1: rule__Script__ScriptStatementAssignment_1 : ( ruleStatementList ) ;
     public final void rule__Script__ScriptStatementAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1314:1: ( ( ruleStatementList ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1315:1: ( ruleStatementList )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1366:1: ( ( ruleStatementList ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1367:1: ( ruleStatementList )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1315:1: ( ruleStatementList )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1316:1: ruleStatementList
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1367:1: ( ruleStatementList )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1368:1: ruleStatementList
             {
              before(grammarAccess.getScriptAccess().getScriptStatementStatementListParserRuleCall_1_0()); 
-            pushFollow(FOLLOW_ruleStatementList_in_rule__Script__ScriptStatementAssignment_12699);
+            pushFollow(FOLLOW_ruleStatementList_in_rule__Script__ScriptStatementAssignment_12808);
             ruleStatementList();
 
             state._fsp--;
@@ -3684,20 +3851,20 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Script__EndScriptAssignment_2"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1325:1: rule__Script__EndScriptAssignment_2 : ( ruleEndScript ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1377:1: rule__Script__EndScriptAssignment_2 : ( ruleEndScript ) ;
     public final void rule__Script__EndScriptAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1329:1: ( ( ruleEndScript ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1330:1: ( ruleEndScript )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1381:1: ( ( ruleEndScript ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1382:1: ( ruleEndScript )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1330:1: ( ruleEndScript )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1331:1: ruleEndScript
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1382:1: ( ruleEndScript )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1383:1: ruleEndScript
             {
              before(grammarAccess.getScriptAccess().getEndScriptEndScriptParserRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleEndScript_in_rule__Script__EndScriptAssignment_22730);
+            pushFollow(FOLLOW_ruleEndScript_in_rule__Script__EndScriptAssignment_22839);
             ruleEndScript();
 
             state._fsp--;
@@ -3725,24 +3892,24 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__BeginScript__NameAssignment"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1340:1: rule__BeginScript__NameAssignment : ( ( 'begin' ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1392:1: rule__BeginScript__NameAssignment : ( ( 'begin' ) ) ;
     public final void rule__BeginScript__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1344:1: ( ( ( 'begin' ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1345:1: ( ( 'begin' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1396:1: ( ( ( 'begin' ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1397:1: ( ( 'begin' ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1345:1: ( ( 'begin' ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1346:1: ( 'begin' )
-            {
-             before(grammarAccess.getBeginScriptAccess().getNameBeginKeyword_0()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1347:1: ( 'begin' )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1348:1: 'begin'
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1397:1: ( ( 'begin' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1398:1: ( 'begin' )
             {
              before(grammarAccess.getBeginScriptAccess().getNameBeginKeyword_0()); 
-            match(input,18,FOLLOW_18_in_rule__BeginScript__NameAssignment2766); 
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1399:1: ( 'begin' )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1400:1: 'begin'
+            {
+             before(grammarAccess.getBeginScriptAccess().getNameBeginKeyword_0()); 
+            match(input,18,FOLLOW_18_in_rule__BeginScript__NameAssignment2875); 
              after(grammarAccess.getBeginScriptAccess().getNameBeginKeyword_0()); 
 
             }
@@ -3770,24 +3937,24 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__EndScript__NameAssignment"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1363:1: rule__EndScript__NameAssignment : ( ( 'end' ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1415:1: rule__EndScript__NameAssignment : ( ( 'end' ) ) ;
     public final void rule__EndScript__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1367:1: ( ( ( 'end' ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1368:1: ( ( 'end' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1419:1: ( ( ( 'end' ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1420:1: ( ( 'end' ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1368:1: ( ( 'end' ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1369:1: ( 'end' )
-            {
-             before(grammarAccess.getEndScriptAccess().getNameEndKeyword_0()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1370:1: ( 'end' )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1371:1: 'end'
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1420:1: ( ( 'end' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1421:1: ( 'end' )
             {
              before(grammarAccess.getEndScriptAccess().getNameEndKeyword_0()); 
-            match(input,19,FOLLOW_19_in_rule__EndScript__NameAssignment2810); 
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1422:1: ( 'end' )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1423:1: 'end'
+            {
+             before(grammarAccess.getEndScriptAccess().getNameEndKeyword_0()); 
+            match(input,19,FOLLOW_19_in_rule__EndScript__NameAssignment2919); 
              after(grammarAccess.getEndScriptAccess().getNameEndKeyword_0()); 
 
             }
@@ -3815,20 +3982,20 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Parallel__BeginParallelAssignment_0"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1386:1: rule__Parallel__BeginParallelAssignment_0 : ( ruleBeginParallel ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1438:1: rule__Parallel__BeginParallelAssignment_0 : ( ruleBeginParallel ) ;
     public final void rule__Parallel__BeginParallelAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1390:1: ( ( ruleBeginParallel ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1391:1: ( ruleBeginParallel )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1442:1: ( ( ruleBeginParallel ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1443:1: ( ruleBeginParallel )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1391:1: ( ruleBeginParallel )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1392:1: ruleBeginParallel
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1443:1: ( ruleBeginParallel )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1444:1: ruleBeginParallel
             {
              before(grammarAccess.getParallelAccess().getBeginParallelBeginParallelParserRuleCall_0_0()); 
-            pushFollow(FOLLOW_ruleBeginParallel_in_rule__Parallel__BeginParallelAssignment_02849);
+            pushFollow(FOLLOW_ruleBeginParallel_in_rule__Parallel__BeginParallelAssignment_02958);
             ruleBeginParallel();
 
             state._fsp--;
@@ -3856,20 +4023,20 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Parallel__StatementListsAssignment_1"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1401:1: rule__Parallel__StatementListsAssignment_1 : ( ruleStatementList ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1453:1: rule__Parallel__StatementListsAssignment_1 : ( ruleStatementList ) ;
     public final void rule__Parallel__StatementListsAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1405:1: ( ( ruleStatementList ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1406:1: ( ruleStatementList )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1457:1: ( ( ruleStatementList ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1458:1: ( ruleStatementList )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1406:1: ( ruleStatementList )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1407:1: ruleStatementList
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1458:1: ( ruleStatementList )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1459:1: ruleStatementList
             {
              before(grammarAccess.getParallelAccess().getStatementListsStatementListParserRuleCall_1_0()); 
-            pushFollow(FOLLOW_ruleStatementList_in_rule__Parallel__StatementListsAssignment_12880);
+            pushFollow(FOLLOW_ruleStatementList_in_rule__Parallel__StatementListsAssignment_12989);
             ruleStatementList();
 
             state._fsp--;
@@ -3897,20 +4064,20 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Parallel__StatementListsAssignment_2_1"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1416:1: rule__Parallel__StatementListsAssignment_2_1 : ( ruleStatementList ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1468:1: rule__Parallel__StatementListsAssignment_2_1 : ( ruleStatementList ) ;
     public final void rule__Parallel__StatementListsAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1420:1: ( ( ruleStatementList ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1421:1: ( ruleStatementList )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1472:1: ( ( ruleStatementList ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1473:1: ( ruleStatementList )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1421:1: ( ruleStatementList )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1422:1: ruleStatementList
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1473:1: ( ruleStatementList )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1474:1: ruleStatementList
             {
              before(grammarAccess.getParallelAccess().getStatementListsStatementListParserRuleCall_2_1_0()); 
-            pushFollow(FOLLOW_ruleStatementList_in_rule__Parallel__StatementListsAssignment_2_12911);
+            pushFollow(FOLLOW_ruleStatementList_in_rule__Parallel__StatementListsAssignment_2_13020);
             ruleStatementList();
 
             state._fsp--;
@@ -3938,20 +4105,20 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Parallel__EndParallelAssignment_3"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1431:1: rule__Parallel__EndParallelAssignment_3 : ( ruleEndParallel ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1483:1: rule__Parallel__EndParallelAssignment_3 : ( ruleEndParallel ) ;
     public final void rule__Parallel__EndParallelAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1435:1: ( ( ruleEndParallel ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1436:1: ( ruleEndParallel )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1487:1: ( ( ruleEndParallel ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1488:1: ( ruleEndParallel )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1436:1: ( ruleEndParallel )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1437:1: ruleEndParallel
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1488:1: ( ruleEndParallel )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1489:1: ruleEndParallel
             {
              before(grammarAccess.getParallelAccess().getEndParallelEndParallelParserRuleCall_3_0()); 
-            pushFollow(FOLLOW_ruleEndParallel_in_rule__Parallel__EndParallelAssignment_32942);
+            pushFollow(FOLLOW_ruleEndParallel_in_rule__Parallel__EndParallelAssignment_33051);
             ruleEndParallel();
 
             state._fsp--;
@@ -3979,24 +4146,24 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__BeginParallel__NameAssignment"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1446:1: rule__BeginParallel__NameAssignment : ( ( '[' ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1498:1: rule__BeginParallel__NameAssignment : ( ( '[' ) ) ;
     public final void rule__BeginParallel__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1450:1: ( ( ( '[' ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1451:1: ( ( '[' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1502:1: ( ( ( '[' ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1503:1: ( ( '[' ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1451:1: ( ( '[' ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1452:1: ( '[' )
-            {
-             before(grammarAccess.getBeginParallelAccess().getNameLeftSquareBracketKeyword_0()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1453:1: ( '[' )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1454:1: '['
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1503:1: ( ( '[' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1504:1: ( '[' )
             {
              before(grammarAccess.getBeginParallelAccess().getNameLeftSquareBracketKeyword_0()); 
-            match(input,20,FOLLOW_20_in_rule__BeginParallel__NameAssignment2978); 
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1505:1: ( '[' )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1506:1: '['
+            {
+             before(grammarAccess.getBeginParallelAccess().getNameLeftSquareBracketKeyword_0()); 
+            match(input,20,FOLLOW_20_in_rule__BeginParallel__NameAssignment3087); 
              after(grammarAccess.getBeginParallelAccess().getNameLeftSquareBracketKeyword_0()); 
 
             }
@@ -4024,24 +4191,24 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__EndParallel__NameAssignment"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1469:1: rule__EndParallel__NameAssignment : ( ( ']' ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1521:1: rule__EndParallel__NameAssignment : ( ( ']' ) ) ;
     public final void rule__EndParallel__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1473:1: ( ( ( ']' ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1474:1: ( ( ']' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1525:1: ( ( ( ']' ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1526:1: ( ( ']' ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1474:1: ( ( ']' ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1475:1: ( ']' )
-            {
-             before(grammarAccess.getEndParallelAccess().getNameRightSquareBracketKeyword_0()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1476:1: ( ']' )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1477:1: ']'
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1526:1: ( ( ']' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1527:1: ( ']' )
             {
              before(grammarAccess.getEndParallelAccess().getNameRightSquareBracketKeyword_0()); 
-            match(input,21,FOLLOW_21_in_rule__EndParallel__NameAssignment3022); 
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1528:1: ( ']' )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1529:1: ']'
+            {
+             before(grammarAccess.getEndParallelAccess().getNameRightSquareBracketKeyword_0()); 
+            match(input,21,FOLLOW_21_in_rule__EndParallel__NameAssignment3131); 
              after(grammarAccess.getEndParallelAccess().getNameRightSquareBracketKeyword_0()); 
 
             }
@@ -4069,20 +4236,20 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__StatementList__StatementsAssignment"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1492:1: rule__StatementList__StatementsAssignment : ( ruleStatement ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1544:1: rule__StatementList__StatementsAssignment : ( ruleStatement ) ;
     public final void rule__StatementList__StatementsAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1496:1: ( ( ruleStatement ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1497:1: ( ruleStatement )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1548:1: ( ( ruleStatement ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1549:1: ( ruleStatement )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1497:1: ( ruleStatement )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1498:1: ruleStatement
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1549:1: ( ruleStatement )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1550:1: ruleStatement
             {
              before(grammarAccess.getStatementListAccess().getStatementsStatementParserRuleCall_0()); 
-            pushFollow(FOLLOW_ruleStatement_in_rule__StatementList__StatementsAssignment3061);
+            pushFollow(FOLLOW_ruleStatement_in_rule__StatementList__StatementsAssignment3170);
             ruleStatement();
 
             state._fsp--;
@@ -4109,26 +4276,26 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
     // $ANTLR end "rule__StatementList__StatementsAssignment"
 
 
-    // $ANTLR start "rule__Command__ParamsAssignment_2"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1507:1: rule__Command__ParamsAssignment_2 : ( ruleParam ) ;
-    public final void rule__Command__ParamsAssignment_2() throws RecognitionException {
+    // $ANTLR start "rule__Command__ParamsAssignment_2_1_0_0"
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1559:1: rule__Command__ParamsAssignment_2_1_0_0 : ( ruleParam ) ;
+    public final void rule__Command__ParamsAssignment_2_1_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1511:1: ( ( ruleParam ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1512:1: ( ruleParam )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1563:1: ( ( ruleParam ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1564:1: ( ruleParam )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1512:1: ( ruleParam )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1513:1: ruleParam
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1564:1: ( ruleParam )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1565:1: ruleParam
             {
-             before(grammarAccess.getCommandAccess().getParamsParamParserRuleCall_2_0()); 
-            pushFollow(FOLLOW_ruleParam_in_rule__Command__ParamsAssignment_23092);
+             before(grammarAccess.getCommandAccess().getParamsParamParserRuleCall_2_1_0_0_0()); 
+            pushFollow(FOLLOW_ruleParam_in_rule__Command__ParamsAssignment_2_1_0_03201);
             ruleParam();
 
             state._fsp--;
 
-             after(grammarAccess.getCommandAccess().getParamsParamParserRuleCall_2_0()); 
+             after(grammarAccess.getCommandAccess().getParamsParamParserRuleCall_2_1_0_0_0()); 
 
             }
 
@@ -4147,29 +4314,29 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
         }
         return ;
     }
-    // $ANTLR end "rule__Command__ParamsAssignment_2"
+    // $ANTLR end "rule__Command__ParamsAssignment_2_1_0_0"
 
 
-    // $ANTLR start "rule__Command__ParamsAssignment_3_1"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1522:1: rule__Command__ParamsAssignment_3_1 : ( ruleParam ) ;
-    public final void rule__Command__ParamsAssignment_3_1() throws RecognitionException {
+    // $ANTLR start "rule__Command__ParamsAssignment_2_1_1"
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1574:1: rule__Command__ParamsAssignment_2_1_1 : ( ruleParam ) ;
+    public final void rule__Command__ParamsAssignment_2_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1526:1: ( ( ruleParam ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1527:1: ( ruleParam )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1578:1: ( ( ruleParam ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1579:1: ( ruleParam )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1527:1: ( ruleParam )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1528:1: ruleParam
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1579:1: ( ruleParam )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1580:1: ruleParam
             {
-             before(grammarAccess.getCommandAccess().getParamsParamParserRuleCall_3_1_0()); 
-            pushFollow(FOLLOW_ruleParam_in_rule__Command__ParamsAssignment_3_13123);
+             before(grammarAccess.getCommandAccess().getParamsParamParserRuleCall_2_1_1_0()); 
+            pushFollow(FOLLOW_ruleParam_in_rule__Command__ParamsAssignment_2_1_13232);
             ruleParam();
 
             state._fsp--;
 
-             after(grammarAccess.getCommandAccess().getParamsParamParserRuleCall_3_1_0()); 
+             after(grammarAccess.getCommandAccess().getParamsParamParserRuleCall_2_1_1_0()); 
 
             }
 
@@ -4188,28 +4355,28 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
         }
         return ;
     }
-    // $ANTLR end "rule__Command__ParamsAssignment_3_1"
+    // $ANTLR end "rule__Command__ParamsAssignment_2_1_1"
 
 
     // $ANTLR start "rule__WaitFunction__NameAssignment"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1537:1: rule__WaitFunction__NameAssignment : ( ( 'wait' ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1589:1: rule__WaitFunction__NameAssignment : ( ( 'wait' ) ) ;
     public final void rule__WaitFunction__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1541:1: ( ( ( 'wait' ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1542:1: ( ( 'wait' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1593:1: ( ( ( 'wait' ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1594:1: ( ( 'wait' ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1542:1: ( ( 'wait' ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1543:1: ( 'wait' )
-            {
-             before(grammarAccess.getWaitFunctionAccess().getNameWaitKeyword_0()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1544:1: ( 'wait' )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1545:1: 'wait'
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1594:1: ( ( 'wait' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1595:1: ( 'wait' )
             {
              before(grammarAccess.getWaitFunctionAccess().getNameWaitKeyword_0()); 
-            match(input,22,FOLLOW_22_in_rule__WaitFunction__NameAssignment3159); 
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1596:1: ( 'wait' )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1597:1: 'wait'
+            {
+             before(grammarAccess.getWaitFunctionAccess().getNameWaitKeyword_0()); 
+            match(input,22,FOLLOW_22_in_rule__WaitFunction__NameAssignment3268); 
              after(grammarAccess.getWaitFunctionAccess().getNameWaitKeyword_0()); 
 
             }
@@ -4237,20 +4404,20 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__GenericFunction__NameAssignment"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1560:1: rule__GenericFunction__NameAssignment : ( RULE_ID ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1612:1: rule__GenericFunction__NameAssignment : ( RULE_ID ) ;
     public final void rule__GenericFunction__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1564:1: ( ( RULE_ID ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1565:1: ( RULE_ID )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1616:1: ( ( RULE_ID ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1617:1: ( RULE_ID )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1565:1: ( RULE_ID )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1566:1: RULE_ID
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1617:1: ( RULE_ID )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1618:1: RULE_ID
             {
              before(grammarAccess.getGenericFunctionAccess().getNameIDTerminalRuleCall_0()); 
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__GenericFunction__NameAssignment3198); 
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__GenericFunction__NameAssignment3307); 
              after(grammarAccess.getGenericFunctionAccess().getNameIDTerminalRuleCall_0()); 
 
             }
@@ -4274,24 +4441,24 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__ScaleInInfra__NameAssignment"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1575:1: rule__ScaleInInfra__NameAssignment : ( ( 'scaleInInfra' ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1627:1: rule__ScaleInInfra__NameAssignment : ( ( 'scaleInInfra' ) ) ;
     public final void rule__ScaleInInfra__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1579:1: ( ( ( 'scaleInInfra' ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1580:1: ( ( 'scaleInInfra' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1631:1: ( ( ( 'scaleInInfra' ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1632:1: ( ( 'scaleInInfra' ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1580:1: ( ( 'scaleInInfra' ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1581:1: ( 'scaleInInfra' )
-            {
-             before(grammarAccess.getScaleInInfraAccess().getNameScaleInInfraKeyword_0()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1582:1: ( 'scaleInInfra' )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1583:1: 'scaleInInfra'
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1632:1: ( ( 'scaleInInfra' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1633:1: ( 'scaleInInfra' )
             {
              before(grammarAccess.getScaleInInfraAccess().getNameScaleInInfraKeyword_0()); 
-            match(input,23,FOLLOW_23_in_rule__ScaleInInfra__NameAssignment3234); 
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1634:1: ( 'scaleInInfra' )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1635:1: 'scaleInInfra'
+            {
+             before(grammarAccess.getScaleInInfraAccess().getNameScaleInInfraKeyword_0()); 
+            match(input,23,FOLLOW_23_in_rule__ScaleInInfra__NameAssignment3343); 
              after(grammarAccess.getScaleInInfraAccess().getNameScaleInInfraKeyword_0()); 
 
             }
@@ -4319,24 +4486,24 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__ScaleOutInfra__NameAssignment"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1598:1: rule__ScaleOutInfra__NameAssignment : ( ( 'scaleOutInfra' ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1650:1: rule__ScaleOutInfra__NameAssignment : ( ( 'scaleOutInfra' ) ) ;
     public final void rule__ScaleOutInfra__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1602:1: ( ( ( 'scaleOutInfra' ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1603:1: ( ( 'scaleOutInfra' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1654:1: ( ( ( 'scaleOutInfra' ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1655:1: ( ( 'scaleOutInfra' ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1603:1: ( ( 'scaleOutInfra' ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1604:1: ( 'scaleOutInfra' )
-            {
-             before(grammarAccess.getScaleOutInfraAccess().getNameScaleOutInfraKeyword_0()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1605:1: ( 'scaleOutInfra' )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1606:1: 'scaleOutInfra'
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1655:1: ( ( 'scaleOutInfra' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1656:1: ( 'scaleOutInfra' )
             {
              before(grammarAccess.getScaleOutInfraAccess().getNameScaleOutInfraKeyword_0()); 
-            match(input,24,FOLLOW_24_in_rule__ScaleOutInfra__NameAssignment3278); 
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1657:1: ( 'scaleOutInfra' )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1658:1: 'scaleOutInfra'
+            {
+             before(grammarAccess.getScaleOutInfraAccess().getNameScaleOutInfraKeyword_0()); 
+            match(input,24,FOLLOW_24_in_rule__ScaleOutInfra__NameAssignment3387); 
              after(grammarAccess.getScaleOutInfraAccess().getNameScaleOutInfraKeyword_0()); 
 
             }
@@ -4364,24 +4531,24 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__ScaleUpInfra__NameAssignment"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1621:1: rule__ScaleUpInfra__NameAssignment : ( ( 'scaleUpInfra' ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1673:1: rule__ScaleUpInfra__NameAssignment : ( ( 'scaleUpInfra' ) ) ;
     public final void rule__ScaleUpInfra__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1625:1: ( ( ( 'scaleUpInfra' ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1626:1: ( ( 'scaleUpInfra' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1677:1: ( ( ( 'scaleUpInfra' ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1678:1: ( ( 'scaleUpInfra' ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1626:1: ( ( 'scaleUpInfra' ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1627:1: ( 'scaleUpInfra' )
-            {
-             before(grammarAccess.getScaleUpInfraAccess().getNameScaleUpInfraKeyword_0()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1628:1: ( 'scaleUpInfra' )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1629:1: 'scaleUpInfra'
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1678:1: ( ( 'scaleUpInfra' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1679:1: ( 'scaleUpInfra' )
             {
              before(grammarAccess.getScaleUpInfraAccess().getNameScaleUpInfraKeyword_0()); 
-            match(input,25,FOLLOW_25_in_rule__ScaleUpInfra__NameAssignment3322); 
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1680:1: ( 'scaleUpInfra' )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1681:1: 'scaleUpInfra'
+            {
+             before(grammarAccess.getScaleUpInfraAccess().getNameScaleUpInfraKeyword_0()); 
+            match(input,25,FOLLOW_25_in_rule__ScaleUpInfra__NameAssignment3431); 
              after(grammarAccess.getScaleUpInfraAccess().getNameScaleUpInfraKeyword_0()); 
 
             }
@@ -4409,24 +4576,24 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__ScaleDownInfra__NameAssignment"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1644:1: rule__ScaleDownInfra__NameAssignment : ( ( 'scaleDownInfra' ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1696:1: rule__ScaleDownInfra__NameAssignment : ( ( 'scaleDownInfra' ) ) ;
     public final void rule__ScaleDownInfra__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1648:1: ( ( ( 'scaleDownInfra' ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1649:1: ( ( 'scaleDownInfra' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1700:1: ( ( ( 'scaleDownInfra' ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1701:1: ( ( 'scaleDownInfra' ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1649:1: ( ( 'scaleDownInfra' ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1650:1: ( 'scaleDownInfra' )
-            {
-             before(grammarAccess.getScaleDownInfraAccess().getNameScaleDownInfraKeyword_0()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1651:1: ( 'scaleDownInfra' )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1652:1: 'scaleDownInfra'
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1701:1: ( ( 'scaleDownInfra' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1702:1: ( 'scaleDownInfra' )
             {
              before(grammarAccess.getScaleDownInfraAccess().getNameScaleDownInfraKeyword_0()); 
-            match(input,26,FOLLOW_26_in_rule__ScaleDownInfra__NameAssignment3366); 
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1703:1: ( 'scaleDownInfra' )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1704:1: 'scaleDownInfra'
+            {
+             before(grammarAccess.getScaleDownInfraAccess().getNameScaleDownInfraKeyword_0()); 
+            match(input,26,FOLLOW_26_in_rule__ScaleDownInfra__NameAssignment3475); 
              after(grammarAccess.getScaleDownInfraAccess().getNameScaleDownInfraKeyword_0()); 
 
             }
@@ -4454,24 +4621,24 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__ScaleInSoft__NameAssignment"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1667:1: rule__ScaleInSoft__NameAssignment : ( ( 'scaleInSoft' ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1719:1: rule__ScaleInSoft__NameAssignment : ( ( 'scaleInSoft' ) ) ;
     public final void rule__ScaleInSoft__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1671:1: ( ( ( 'scaleInSoft' ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1672:1: ( ( 'scaleInSoft' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1723:1: ( ( ( 'scaleInSoft' ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1724:1: ( ( 'scaleInSoft' ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1672:1: ( ( 'scaleInSoft' ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1673:1: ( 'scaleInSoft' )
-            {
-             before(grammarAccess.getScaleInSoftAccess().getNameScaleInSoftKeyword_0()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1674:1: ( 'scaleInSoft' )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1675:1: 'scaleInSoft'
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1724:1: ( ( 'scaleInSoft' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1725:1: ( 'scaleInSoft' )
             {
              before(grammarAccess.getScaleInSoftAccess().getNameScaleInSoftKeyword_0()); 
-            match(input,27,FOLLOW_27_in_rule__ScaleInSoft__NameAssignment3410); 
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1726:1: ( 'scaleInSoft' )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1727:1: 'scaleInSoft'
+            {
+             before(grammarAccess.getScaleInSoftAccess().getNameScaleInSoftKeyword_0()); 
+            match(input,27,FOLLOW_27_in_rule__ScaleInSoft__NameAssignment3519); 
              after(grammarAccess.getScaleInSoftAccess().getNameScaleInSoftKeyword_0()); 
 
             }
@@ -4499,24 +4666,24 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__ScaleOutSoft__NameAssignment"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1690:1: rule__ScaleOutSoft__NameAssignment : ( ( 'scaleOutSoft' ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1742:1: rule__ScaleOutSoft__NameAssignment : ( ( 'scaleOutSoft' ) ) ;
     public final void rule__ScaleOutSoft__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1694:1: ( ( ( 'scaleOutSoft' ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1695:1: ( ( 'scaleOutSoft' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1746:1: ( ( ( 'scaleOutSoft' ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1747:1: ( ( 'scaleOutSoft' ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1695:1: ( ( 'scaleOutSoft' ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1696:1: ( 'scaleOutSoft' )
-            {
-             before(grammarAccess.getScaleOutSoftAccess().getNameScaleOutSoftKeyword_0()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1697:1: ( 'scaleOutSoft' )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1698:1: 'scaleOutSoft'
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1747:1: ( ( 'scaleOutSoft' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1748:1: ( 'scaleOutSoft' )
             {
              before(grammarAccess.getScaleOutSoftAccess().getNameScaleOutSoftKeyword_0()); 
-            match(input,28,FOLLOW_28_in_rule__ScaleOutSoft__NameAssignment3454); 
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1749:1: ( 'scaleOutSoft' )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1750:1: 'scaleOutSoft'
+            {
+             before(grammarAccess.getScaleOutSoftAccess().getNameScaleOutSoftKeyword_0()); 
+            match(input,28,FOLLOW_28_in_rule__ScaleOutSoft__NameAssignment3563); 
              after(grammarAccess.getScaleOutSoftAccess().getNameScaleOutSoftKeyword_0()); 
 
             }
@@ -4544,24 +4711,24 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__ScaleUpSoft__NameAssignment"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1713:1: rule__ScaleUpSoft__NameAssignment : ( ( 'scaleUpSoft' ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1765:1: rule__ScaleUpSoft__NameAssignment : ( ( 'scaleUpSoft' ) ) ;
     public final void rule__ScaleUpSoft__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1717:1: ( ( ( 'scaleUpSoft' ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1718:1: ( ( 'scaleUpSoft' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1769:1: ( ( ( 'scaleUpSoft' ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1770:1: ( ( 'scaleUpSoft' ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1718:1: ( ( 'scaleUpSoft' ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1719:1: ( 'scaleUpSoft' )
-            {
-             before(grammarAccess.getScaleUpSoftAccess().getNameScaleUpSoftKeyword_0()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1720:1: ( 'scaleUpSoft' )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1721:1: 'scaleUpSoft'
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1770:1: ( ( 'scaleUpSoft' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1771:1: ( 'scaleUpSoft' )
             {
              before(grammarAccess.getScaleUpSoftAccess().getNameScaleUpSoftKeyword_0()); 
-            match(input,29,FOLLOW_29_in_rule__ScaleUpSoft__NameAssignment3498); 
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1772:1: ( 'scaleUpSoft' )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1773:1: 'scaleUpSoft'
+            {
+             before(grammarAccess.getScaleUpSoftAccess().getNameScaleUpSoftKeyword_0()); 
+            match(input,29,FOLLOW_29_in_rule__ScaleUpSoft__NameAssignment3607); 
              after(grammarAccess.getScaleUpSoftAccess().getNameScaleUpSoftKeyword_0()); 
 
             }
@@ -4589,24 +4756,24 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__ScaleDownSoft__NameAssignment"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1736:1: rule__ScaleDownSoft__NameAssignment : ( ( 'scaleDownSoft' ) ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1788:1: rule__ScaleDownSoft__NameAssignment : ( ( 'scaleDownSoft' ) ) ;
     public final void rule__ScaleDownSoft__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1740:1: ( ( ( 'scaleDownSoft' ) ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1741:1: ( ( 'scaleDownSoft' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1792:1: ( ( ( 'scaleDownSoft' ) ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1793:1: ( ( 'scaleDownSoft' ) )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1741:1: ( ( 'scaleDownSoft' ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1742:1: ( 'scaleDownSoft' )
-            {
-             before(grammarAccess.getScaleDownSoftAccess().getNameScaleDownSoftKeyword_0()); 
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1743:1: ( 'scaleDownSoft' )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1744:1: 'scaleDownSoft'
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1793:1: ( ( 'scaleDownSoft' ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1794:1: ( 'scaleDownSoft' )
             {
              before(grammarAccess.getScaleDownSoftAccess().getNameScaleDownSoftKeyword_0()); 
-            match(input,30,FOLLOW_30_in_rule__ScaleDownSoft__NameAssignment3542); 
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1795:1: ( 'scaleDownSoft' )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1796:1: 'scaleDownSoft'
+            {
+             before(grammarAccess.getScaleDownSoftAccess().getNameScaleDownSoftKeyword_0()); 
+            match(input,30,FOLLOW_30_in_rule__ScaleDownSoft__NameAssignment3651); 
              after(grammarAccess.getScaleDownSoftAccess().getNameScaleDownSoftKeyword_0()); 
 
             }
@@ -4634,20 +4801,20 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
 
 
     // $ANTLR start "rule__Param__ValueAssignment"
-    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1759:1: rule__Param__ValueAssignment : ( RULE_INT ) ;
+    // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1811:1: rule__Param__ValueAssignment : ( RULE_INT ) ;
     public final void rule__Param__ValueAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1763:1: ( ( RULE_INT ) )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1764:1: ( RULE_INT )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1815:1: ( ( RULE_INT ) )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1816:1: ( RULE_INT )
             {
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1764:1: ( RULE_INT )
-            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1765:1: RULE_INT
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1816:1: ( RULE_INT )
+            // ../emn.a1.elascript.ui/src-gen/emn/a1/elascript/ui/contentassist/antlr/internal/InternalElascript.g:1817:1: RULE_INT
             {
              before(grammarAccess.getParamAccess().getValueINTTerminalRuleCall_0()); 
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Param__ValueAssignment3581); 
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__Param__ValueAssignment3690); 
              after(grammarAccess.getParamAccess().getValueINTTerminalRuleCall_0()); 
 
             }
@@ -4743,85 +4910,89 @@ public class InternalElascriptParser extends AbstractInternalContentAssistParser
     public static final BitSet FOLLOW_ruleScaleFunction_in_rule__Command__Alternatives_01396 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleGenericFunction_in_rule__Command__Alternatives_01413 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleWaitFunction_in_rule__Command__Alternatives_01430 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleInInfra_in_rule__ScaleFunction__Alternatives1462 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleOutInfra_in_rule__ScaleFunction__Alternatives1479 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleUpInfra_in_rule__ScaleFunction__Alternatives1496 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleDownInfra_in_rule__ScaleFunction__Alternatives1513 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleInSoft_in_rule__ScaleFunction__Alternatives1530 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleOutSoft_in_rule__ScaleFunction__Alternatives1547 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleUpSoft_in_rule__ScaleFunction__Alternatives1564 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleDownSoft_in_rule__ScaleFunction__Alternatives1581 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Script__Group__0__Impl_in_rule__Script__Group__01611 = new BitSet(new long[]{0x000000007FD00200L});
-    public static final BitSet FOLLOW_rule__Script__Group__1_in_rule__Script__Group__01614 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Script__BeginScriptAssignment_0_in_rule__Script__Group__0__Impl1641 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Script__Group__1__Impl_in_rule__Script__Group__11671 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_rule__Script__Group__2_in_rule__Script__Group__11674 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Script__ScriptStatementAssignment_1_in_rule__Script__Group__1__Impl1701 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Script__Group__2__Impl_in_rule__Script__Group__21731 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Script__EndScriptAssignment_2_in_rule__Script__Group__2__Impl1758 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parallel__Group__0__Impl_in_rule__Parallel__Group__01794 = new BitSet(new long[]{0x000000007FD00200L});
-    public static final BitSet FOLLOW_rule__Parallel__Group__1_in_rule__Parallel__Group__01797 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parallel__BeginParallelAssignment_0_in_rule__Parallel__Group__0__Impl1824 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parallel__Group__1__Impl_in_rule__Parallel__Group__11854 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__Parallel__Group__2_in_rule__Parallel__Group__11857 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parallel__StatementListsAssignment_1_in_rule__Parallel__Group__1__Impl1884 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parallel__Group__2__Impl_in_rule__Parallel__Group__21914 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_rule__Parallel__Group__3_in_rule__Parallel__Group__21917 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parallel__Group_2__0_in_rule__Parallel__Group__2__Impl1946 = new BitSet(new long[]{0x0000000000000012L});
-    public static final BitSet FOLLOW_rule__Parallel__Group_2__0_in_rule__Parallel__Group__2__Impl1958 = new BitSet(new long[]{0x0000000000000012L});
-    public static final BitSet FOLLOW_rule__Parallel__Group__3__Impl_in_rule__Parallel__Group__31991 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parallel__EndParallelAssignment_3_in_rule__Parallel__Group__3__Impl2018 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parallel__Group_2__0__Impl_in_rule__Parallel__Group_2__02056 = new BitSet(new long[]{0x000000007FD00200L});
-    public static final BitSet FOLLOW_rule__Parallel__Group_2__1_in_rule__Parallel__Group_2__02059 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_PARALLEL_SEPARATOR_in_rule__Parallel__Group_2__0__Impl2086 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parallel__Group_2__1__Impl_in_rule__Parallel__Group_2__12115 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parallel__StatementListsAssignment_2_1_in_rule__Parallel__Group_2__1__Impl2142 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Command__Group__0__Impl_in_rule__Command__Group__02176 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_rule__Command__Group__1_in_rule__Command__Group__02179 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Command__Alternatives_0_in_rule__Command__Group__0__Impl2206 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Command__Group__1__Impl_in_rule__Command__Group__12236 = new BitSet(new long[]{0x0000000000000400L});
-    public static final BitSet FOLLOW_rule__Command__Group__2_in_rule__Command__Group__12239 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_LP_in_rule__Command__Group__1__Impl2266 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Command__Group__2__Impl_in_rule__Command__Group__22295 = new BitSet(new long[]{0x0000000000000140L});
-    public static final BitSet FOLLOW_rule__Command__Group__3_in_rule__Command__Group__22298 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Command__ParamsAssignment_2_in_rule__Command__Group__2__Impl2325 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Command__Group__3__Impl_in_rule__Command__Group__32355 = new BitSet(new long[]{0x0000000000000140L});
-    public static final BitSet FOLLOW_rule__Command__Group__4_in_rule__Command__Group__32358 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Command__Group_3__0_in_rule__Command__Group__3__Impl2385 = new BitSet(new long[]{0x0000000000000102L});
-    public static final BitSet FOLLOW_rule__Command__Group__4__Impl_in_rule__Command__Group__42416 = new BitSet(new long[]{0x0000000000000080L});
-    public static final BitSet FOLLOW_rule__Command__Group__5_in_rule__Command__Group__42419 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_RP_in_rule__Command__Group__4__Impl2446 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Command__Group__5__Impl_in_rule__Command__Group__52475 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_SEQUENTIAL_SEPARATOR_in_rule__Command__Group__5__Impl2502 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Command__Group_3__0__Impl_in_rule__Command__Group_3__02543 = new BitSet(new long[]{0x0000000000000400L});
-    public static final BitSet FOLLOW_rule__Command__Group_3__1_in_rule__Command__Group_3__02546 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_COMMA_in_rule__Command__Group_3__0__Impl2573 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Command__Group_3__1__Impl_in_rule__Command__Group_3__12602 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Command__ParamsAssignment_3_1_in_rule__Command__Group_3__1__Impl2629 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleBeginScript_in_rule__Script__BeginScriptAssignment_02668 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleStatementList_in_rule__Script__ScriptStatementAssignment_12699 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEndScript_in_rule__Script__EndScriptAssignment_22730 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__BeginScript__NameAssignment2766 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__EndScript__NameAssignment2810 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleBeginParallel_in_rule__Parallel__BeginParallelAssignment_02849 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleStatementList_in_rule__Parallel__StatementListsAssignment_12880 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleStatementList_in_rule__Parallel__StatementListsAssignment_2_12911 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEndParallel_in_rule__Parallel__EndParallelAssignment_32942 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__BeginParallel__NameAssignment2978 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__EndParallel__NameAssignment3022 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleStatement_in_rule__StatementList__StatementsAssignment3061 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleParam_in_rule__Command__ParamsAssignment_23092 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleParam_in_rule__Command__ParamsAssignment_3_13123 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_rule__WaitFunction__NameAssignment3159 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__GenericFunction__NameAssignment3198 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_23_in_rule__ScaleInInfra__NameAssignment3234 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_rule__ScaleOutInfra__NameAssignment3278 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rule__ScaleUpInfra__NameAssignment3322 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_rule__ScaleDownInfra__NameAssignment3366 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_rule__ScaleInSoft__NameAssignment3410 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_rule__ScaleOutSoft__NameAssignment3454 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_rule__ScaleUpSoft__NameAssignment3498 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_rule__ScaleDownSoft__NameAssignment3542 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__Param__ValueAssignment3581 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_RP_in_rule__Command__Alternatives_21462 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Command__Group_2_1__0_in_rule__Command__Alternatives_21479 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleInInfra_in_rule__ScaleFunction__Alternatives1512 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleOutInfra_in_rule__ScaleFunction__Alternatives1529 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleUpInfra_in_rule__ScaleFunction__Alternatives1546 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleDownInfra_in_rule__ScaleFunction__Alternatives1563 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleInSoft_in_rule__ScaleFunction__Alternatives1580 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleOutSoft_in_rule__ScaleFunction__Alternatives1597 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleUpSoft_in_rule__ScaleFunction__Alternatives1614 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleDownSoft_in_rule__ScaleFunction__Alternatives1631 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Script__Group__0__Impl_in_rule__Script__Group__01661 = new BitSet(new long[]{0x000000007FD00200L});
+    public static final BitSet FOLLOW_rule__Script__Group__1_in_rule__Script__Group__01664 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Script__BeginScriptAssignment_0_in_rule__Script__Group__0__Impl1691 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Script__Group__1__Impl_in_rule__Script__Group__11721 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_rule__Script__Group__2_in_rule__Script__Group__11724 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Script__ScriptStatementAssignment_1_in_rule__Script__Group__1__Impl1751 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Script__Group__2__Impl_in_rule__Script__Group__21781 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Script__EndScriptAssignment_2_in_rule__Script__Group__2__Impl1808 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parallel__Group__0__Impl_in_rule__Parallel__Group__01844 = new BitSet(new long[]{0x000000007FD00200L});
+    public static final BitSet FOLLOW_rule__Parallel__Group__1_in_rule__Parallel__Group__01847 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parallel__BeginParallelAssignment_0_in_rule__Parallel__Group__0__Impl1874 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parallel__Group__1__Impl_in_rule__Parallel__Group__11904 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_rule__Parallel__Group__2_in_rule__Parallel__Group__11907 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parallel__StatementListsAssignment_1_in_rule__Parallel__Group__1__Impl1934 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parallel__Group__2__Impl_in_rule__Parallel__Group__21964 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_rule__Parallel__Group__3_in_rule__Parallel__Group__21967 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parallel__Group_2__0_in_rule__Parallel__Group__2__Impl1996 = new BitSet(new long[]{0x0000000000000022L});
+    public static final BitSet FOLLOW_rule__Parallel__Group_2__0_in_rule__Parallel__Group__2__Impl2008 = new BitSet(new long[]{0x0000000000000022L});
+    public static final BitSet FOLLOW_rule__Parallel__Group__3__Impl_in_rule__Parallel__Group__32041 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parallel__EndParallelAssignment_3_in_rule__Parallel__Group__3__Impl2068 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parallel__Group_2__0__Impl_in_rule__Parallel__Group_2__02106 = new BitSet(new long[]{0x000000007FD00200L});
+    public static final BitSet FOLLOW_rule__Parallel__Group_2__1_in_rule__Parallel__Group_2__02109 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_PARALLEL_SEPARATOR_in_rule__Parallel__Group_2__0__Impl2136 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parallel__Group_2__1__Impl_in_rule__Parallel__Group_2__12165 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parallel__StatementListsAssignment_2_1_in_rule__Parallel__Group_2__1__Impl2192 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Command__Group__0__Impl_in_rule__Command__Group__02226 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__Command__Group__1_in_rule__Command__Group__02229 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Command__Alternatives_0_in_rule__Command__Group__0__Impl2256 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Command__Group__1__Impl_in_rule__Command__Group__12286 = new BitSet(new long[]{0x0000000000000410L});
+    public static final BitSet FOLLOW_rule__Command__Group__2_in_rule__Command__Group__12289 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_LP_in_rule__Command__Group__1__Impl2316 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Command__Group__2__Impl_in_rule__Command__Group__22345 = new BitSet(new long[]{0x0000000000000080L});
+    public static final BitSet FOLLOW_rule__Command__Group__3_in_rule__Command__Group__22348 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Command__Alternatives_2_in_rule__Command__Group__2__Impl2375 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Command__Group__3__Impl_in_rule__Command__Group__32405 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_SEQUENTIAL_SEPARATOR_in_rule__Command__Group__3__Impl2432 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Command__Group_2_1__0__Impl_in_rule__Command__Group_2_1__02469 = new BitSet(new long[]{0x0000000000000410L});
+    public static final BitSet FOLLOW_rule__Command__Group_2_1__1_in_rule__Command__Group_2_1__02472 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Command__Group_2_1_0__0_in_rule__Command__Group_2_1__0__Impl2499 = new BitSet(new long[]{0x0000000000000402L});
+    public static final BitSet FOLLOW_rule__Command__Group_2_1__1__Impl_in_rule__Command__Group_2_1__12530 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__Command__Group_2_1__2_in_rule__Command__Group_2_1__12533 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Command__ParamsAssignment_2_1_1_in_rule__Command__Group_2_1__1__Impl2560 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Command__Group_2_1__2__Impl_in_rule__Command__Group_2_1__22590 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_RP_in_rule__Command__Group_2_1__2__Impl2617 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Command__Group_2_1_0__0__Impl_in_rule__Command__Group_2_1_0__02652 = new BitSet(new long[]{0x0000000000000100L});
+    public static final BitSet FOLLOW_rule__Command__Group_2_1_0__1_in_rule__Command__Group_2_1_0__02655 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Command__ParamsAssignment_2_1_0_0_in_rule__Command__Group_2_1_0__0__Impl2682 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Command__Group_2_1_0__1__Impl_in_rule__Command__Group_2_1_0__12712 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_COMMA_in_rule__Command__Group_2_1_0__1__Impl2739 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleBeginScript_in_rule__Script__BeginScriptAssignment_02777 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStatementList_in_rule__Script__ScriptStatementAssignment_12808 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEndScript_in_rule__Script__EndScriptAssignment_22839 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__BeginScript__NameAssignment2875 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__EndScript__NameAssignment2919 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleBeginParallel_in_rule__Parallel__BeginParallelAssignment_02958 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStatementList_in_rule__Parallel__StatementListsAssignment_12989 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStatementList_in_rule__Parallel__StatementListsAssignment_2_13020 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEndParallel_in_rule__Parallel__EndParallelAssignment_33051 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__BeginParallel__NameAssignment3087 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__EndParallel__NameAssignment3131 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStatement_in_rule__StatementList__StatementsAssignment3170 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleParam_in_rule__Command__ParamsAssignment_2_1_0_03201 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleParam_in_rule__Command__ParamsAssignment_2_1_13232 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_rule__WaitFunction__NameAssignment3268 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__GenericFunction__NameAssignment3307 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_rule__ScaleInInfra__NameAssignment3343 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_rule__ScaleOutInfra__NameAssignment3387 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_rule__ScaleUpInfra__NameAssignment3431 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__ScaleDownInfra__NameAssignment3475 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rule__ScaleInSoft__NameAssignment3519 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_rule__ScaleOutSoft__NameAssignment3563 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_rule__ScaleUpSoft__NameAssignment3607 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_rule__ScaleDownSoft__NameAssignment3651 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__Param__ValueAssignment3690 = new BitSet(new long[]{0x0000000000000002L});
 
 }

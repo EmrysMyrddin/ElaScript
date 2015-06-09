@@ -216,20 +216,24 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cGenericFunctionParserRuleCall_0_1 = (RuleCall)cAlternatives_0.eContents().get(1);
 		private final RuleCall cWaitFunctionParserRuleCall_0_2 = (RuleCall)cAlternatives_0.eContents().get(2);
 		private final RuleCall cLPTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
-		private final Assignment cParamsAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cParamsParamParserRuleCall_2_0 = (RuleCall)cParamsAssignment_2.eContents().get(0);
-		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
-		private final RuleCall cCOMMATerminalRuleCall_3_0 = (RuleCall)cGroup_3.eContents().get(0);
-		private final Assignment cParamsAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
-		private final RuleCall cParamsParamParserRuleCall_3_1_0 = (RuleCall)cParamsAssignment_3_1.eContents().get(0);
-		private final RuleCall cRPTerminalRuleCall_4 = (RuleCall)cGroup.eContents().get(4);
-		private final RuleCall cSEQUENTIAL_SEPARATORTerminalRuleCall_5 = (RuleCall)cGroup.eContents().get(5);
+		private final Alternatives cAlternatives_2 = (Alternatives)cGroup.eContents().get(2);
+		private final RuleCall cRPTerminalRuleCall_2_0 = (RuleCall)cAlternatives_2.eContents().get(0);
+		private final Group cGroup_2_1 = (Group)cAlternatives_2.eContents().get(1);
+		private final Group cGroup_2_1_0 = (Group)cGroup_2_1.eContents().get(0);
+		private final Assignment cParamsAssignment_2_1_0_0 = (Assignment)cGroup_2_1_0.eContents().get(0);
+		private final RuleCall cParamsParamParserRuleCall_2_1_0_0_0 = (RuleCall)cParamsAssignment_2_1_0_0.eContents().get(0);
+		private final RuleCall cCOMMATerminalRuleCall_2_1_0_1 = (RuleCall)cGroup_2_1_0.eContents().get(1);
+		private final Assignment cParamsAssignment_2_1_1 = (Assignment)cGroup_2_1.eContents().get(1);
+		private final RuleCall cParamsParamParserRuleCall_2_1_1_0 = (RuleCall)cParamsAssignment_2_1_1.eContents().get(0);
+		private final RuleCall cRPTerminalRuleCall_2_1_2 = (RuleCall)cGroup_2_1.eContents().get(2);
+		private final RuleCall cSEQUENTIAL_SEPARATORTerminalRuleCall_3 = (RuleCall)cGroup.eContents().get(3);
 		
 		//Command:
-		//	(ScaleFunction | GenericFunction | WaitFunction) LP params+=Param (COMMA params+=Param)* RP SEQUENTIAL_SEPARATOR;
+		//	(ScaleFunction | GenericFunction | WaitFunction) LP (RP | (params+=Param COMMA)* params+=Param RP)
+		//	SEQUENTIAL_SEPARATOR;
 		public ParserRule getRule() { return rule; }
 
-		//(ScaleFunction | GenericFunction | WaitFunction) LP params+=Param (COMMA params+=Param)* RP SEQUENTIAL_SEPARATOR
+		//(ScaleFunction | GenericFunction | WaitFunction) LP (RP | (params+=Param COMMA)* params+=Param RP) SEQUENTIAL_SEPARATOR
 		public Group getGroup() { return cGroup; }
 
 		//ScaleFunction | GenericFunction | WaitFunction
@@ -247,29 +251,38 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 		//LP
 		public RuleCall getLPTerminalRuleCall_1() { return cLPTerminalRuleCall_1; }
 
-		//params+=Param
-		public Assignment getParamsAssignment_2() { return cParamsAssignment_2; }
-
-		//Param
-		public RuleCall getParamsParamParserRuleCall_2_0() { return cParamsParamParserRuleCall_2_0; }
-
-		//(COMMA params+=Param)*
-		public Group getGroup_3() { return cGroup_3; }
-
-		//COMMA
-		public RuleCall getCOMMATerminalRuleCall_3_0() { return cCOMMATerminalRuleCall_3_0; }
-
-		//params+=Param
-		public Assignment getParamsAssignment_3_1() { return cParamsAssignment_3_1; }
-
-		//Param
-		public RuleCall getParamsParamParserRuleCall_3_1_0() { return cParamsParamParserRuleCall_3_1_0; }
+		//RP | (params+=Param COMMA)* params+=Param RP
+		public Alternatives getAlternatives_2() { return cAlternatives_2; }
 
 		//RP
-		public RuleCall getRPTerminalRuleCall_4() { return cRPTerminalRuleCall_4; }
+		public RuleCall getRPTerminalRuleCall_2_0() { return cRPTerminalRuleCall_2_0; }
+
+		//(params+=Param COMMA)* params+=Param RP
+		public Group getGroup_2_1() { return cGroup_2_1; }
+
+		//(params+=Param COMMA)*
+		public Group getGroup_2_1_0() { return cGroup_2_1_0; }
+
+		//params+=Param
+		public Assignment getParamsAssignment_2_1_0_0() { return cParamsAssignment_2_1_0_0; }
+
+		//Param
+		public RuleCall getParamsParamParserRuleCall_2_1_0_0_0() { return cParamsParamParserRuleCall_2_1_0_0_0; }
+
+		//COMMA
+		public RuleCall getCOMMATerminalRuleCall_2_1_0_1() { return cCOMMATerminalRuleCall_2_1_0_1; }
+
+		//params+=Param
+		public Assignment getParamsAssignment_2_1_1() { return cParamsAssignment_2_1_1; }
+
+		//Param
+		public RuleCall getParamsParamParserRuleCall_2_1_1_0() { return cParamsParamParserRuleCall_2_1_1_0; }
+
+		//RP
+		public RuleCall getRPTerminalRuleCall_2_1_2() { return cRPTerminalRuleCall_2_1_2; }
 
 		//SEQUENTIAL_SEPARATOR
-		public RuleCall getSEQUENTIAL_SEPARATORTerminalRuleCall_5() { return cSEQUENTIAL_SEPARATORTerminalRuleCall_5; }
+		public RuleCall getSEQUENTIAL_SEPARATORTerminalRuleCall_3() { return cSEQUENTIAL_SEPARATORTerminalRuleCall_3; }
 	}
 
 	public class ScaleFunctionElements extends AbstractParserRuleElementFinder {
@@ -671,7 +684,8 @@ public class ElascriptGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Command:
-	//	(ScaleFunction | GenericFunction | WaitFunction) LP params+=Param (COMMA params+=Param)* RP SEQUENTIAL_SEPARATOR;
+	//	(ScaleFunction | GenericFunction | WaitFunction) LP (RP | (params+=Param COMMA)* params+=Param RP)
+	//	SEQUENTIAL_SEPARATOR;
 	public CommandElements getCommandAccess() {
 		return pCommand;
 	}

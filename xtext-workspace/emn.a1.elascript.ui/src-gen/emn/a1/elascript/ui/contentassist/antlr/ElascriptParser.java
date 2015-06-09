@@ -39,12 +39,14 @@ public class ElascriptParser extends AbstractContentAssistParser {
 				{
 					put(grammarAccess.getStatementAccess().getAlternatives(), "rule__Statement__Alternatives");
 					put(grammarAccess.getCommandAccess().getAlternatives_0(), "rule__Command__Alternatives_0");
+					put(grammarAccess.getCommandAccess().getAlternatives_2(), "rule__Command__Alternatives_2");
 					put(grammarAccess.getScaleFunctionAccess().getAlternatives(), "rule__ScaleFunction__Alternatives");
 					put(grammarAccess.getScriptAccess().getGroup(), "rule__Script__Group__0");
 					put(grammarAccess.getParallelAccess().getGroup(), "rule__Parallel__Group__0");
 					put(grammarAccess.getParallelAccess().getGroup_2(), "rule__Parallel__Group_2__0");
 					put(grammarAccess.getCommandAccess().getGroup(), "rule__Command__Group__0");
-					put(grammarAccess.getCommandAccess().getGroup_3(), "rule__Command__Group_3__0");
+					put(grammarAccess.getCommandAccess().getGroup_2_1(), "rule__Command__Group_2_1__0");
+					put(grammarAccess.getCommandAccess().getGroup_2_1_0(), "rule__Command__Group_2_1_0__0");
 					put(grammarAccess.getScriptAccess().getBeginScriptAssignment_0(), "rule__Script__BeginScriptAssignment_0");
 					put(grammarAccess.getScriptAccess().getScriptStatementAssignment_1(), "rule__Script__ScriptStatementAssignment_1");
 					put(grammarAccess.getScriptAccess().getEndScriptAssignment_2(), "rule__Script__EndScriptAssignment_2");
@@ -57,8 +59,8 @@ public class ElascriptParser extends AbstractContentAssistParser {
 					put(grammarAccess.getBeginParallelAccess().getNameAssignment(), "rule__BeginParallel__NameAssignment");
 					put(grammarAccess.getEndParallelAccess().getNameAssignment(), "rule__EndParallel__NameAssignment");
 					put(grammarAccess.getStatementListAccess().getStatementsAssignment(), "rule__StatementList__StatementsAssignment");
-					put(grammarAccess.getCommandAccess().getParamsAssignment_2(), "rule__Command__ParamsAssignment_2");
-					put(grammarAccess.getCommandAccess().getParamsAssignment_3_1(), "rule__Command__ParamsAssignment_3_1");
+					put(grammarAccess.getCommandAccess().getParamsAssignment_2_1_0_0(), "rule__Command__ParamsAssignment_2_1_0_0");
+					put(grammarAccess.getCommandAccess().getParamsAssignment_2_1_1(), "rule__Command__ParamsAssignment_2_1_1");
 					put(grammarAccess.getWaitFunctionAccess().getNameAssignment(), "rule__WaitFunction__NameAssignment");
 					put(grammarAccess.getGenericFunctionAccess().getNameAssignment(), "rule__GenericFunction__NameAssignment");
 					put(grammarAccess.getScaleInInfraAccess().getNameAssignment(), "rule__ScaleInInfra__NameAssignment");

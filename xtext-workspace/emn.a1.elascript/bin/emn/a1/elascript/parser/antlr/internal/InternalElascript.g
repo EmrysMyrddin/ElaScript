@@ -505,53 +505,58 @@ ruleCommand returns [EObject current=null]
     { 
     newLeafNode(this_LP_3, grammarAccess.getCommandAccess().getLPTerminalRuleCall_1()); 
     }
-(
+(this_RP_4=RULE_RP
+    { 
+    newLeafNode(this_RP_4, grammarAccess.getCommandAccess().getRPTerminalRuleCall_2_0()); 
+    }
+
+    |(((
 (
 		{ 
-	        newCompositeNode(grammarAccess.getCommandAccess().getParamsParamParserRuleCall_2_0()); 
+	        newCompositeNode(grammarAccess.getCommandAccess().getParamsParamParserRuleCall_2_1_0_0_0()); 
 	    }
-		lv_params_4_0=ruleParam		{
+		lv_params_5_0=ruleParam		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getCommandRule());
 	        }
        		add(
        			$current, 
        			"params",
-        		lv_params_4_0, 
+        		lv_params_5_0, 
         		"Param");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-)(this_COMMA_5=RULE_COMMA
+)this_COMMA_6=RULE_COMMA
     { 
-    newLeafNode(this_COMMA_5, grammarAccess.getCommandAccess().getCOMMATerminalRuleCall_3_0()); 
+    newLeafNode(this_COMMA_6, grammarAccess.getCommandAccess().getCOMMATerminalRuleCall_2_1_0_1()); 
     }
-(
+)*(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getCommandAccess().getParamsParamParserRuleCall_3_1_0()); 
+	        newCompositeNode(grammarAccess.getCommandAccess().getParamsParamParserRuleCall_2_1_1_0()); 
 	    }
-		lv_params_6_0=ruleParam		{
+		lv_params_7_0=ruleParam		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getCommandRule());
 	        }
        		add(
        			$current, 
        			"params",
-        		lv_params_6_0, 
+        		lv_params_7_0, 
         		"Param");
 	        afterParserOrEnumRuleCall();
 	    }
 
 )
-))*this_RP_7=RULE_RP
+)this_RP_8=RULE_RP
     { 
-    newLeafNode(this_RP_7, grammarAccess.getCommandAccess().getRPTerminalRuleCall_4()); 
+    newLeafNode(this_RP_8, grammarAccess.getCommandAccess().getRPTerminalRuleCall_2_1_2()); 
     }
-this_SEQUENTIAL_SEPARATOR_8=RULE_SEQUENTIAL_SEPARATOR
+))this_SEQUENTIAL_SEPARATOR_9=RULE_SEQUENTIAL_SEPARATOR
     { 
-    newLeafNode(this_SEQUENTIAL_SEPARATOR_8, grammarAccess.getCommandAccess().getSEQUENTIAL_SEPARATORTerminalRuleCall_5()); 
+    newLeafNode(this_SEQUENTIAL_SEPARATOR_9, grammarAccess.getCommandAccess().getSEQUENTIAL_SEPARATORTerminalRuleCall_3()); 
     }
 )
 ;

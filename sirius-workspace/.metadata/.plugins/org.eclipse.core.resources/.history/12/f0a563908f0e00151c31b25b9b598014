@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:elascript="http://www.a1.emn/elascript/Elascript" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_JJVsgA3xEeWTX7pUjpnYfQ" selectedViews="_PTik8A3xEeWTX7pUjpnYfQ" version="8.1.1">
+  <models xmi:type="elascript:Script" href="example.ela#/"/>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_PTik8A3xEeWTX7pUjpnYfQ" initialized="true">
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_PXX8EA3xEeWTX7pUjpnYfQ" name="script">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_PXtTQA3xEeWTX7pUjpnYfQ" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_PXtTQQ3xEeWTX7pUjpnYfQ" type="Sirius" element="_PXX8EA3xEeWTX7pUjpnYfQ" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_PX6HkA3xEeWTX7pUjpnYfQ" type="2001" element="_PXX8EQ3xEeWTX7pUjpnYfQ">
+            <children xmi:type="notation:Node" xmi:id="_PYNCgA3xEeWTX7pUjpnYfQ" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_PYNCgQ3xEeWTX7pUjpnYfQ" x="-25" y="1"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_PYhLkA3xEeWTX7pUjpnYfQ" type="3005" element="_PXX8Eg3xEeWTX7pUjpnYfQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_PYhLkQ3xEeWTX7pUjpnYfQ" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PYhLkg3xEeWTX7pUjpnYfQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_PX6HkQ3xEeWTX7pUjpnYfQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PX6Hkg3xEeWTX7pUjpnYfQ" x="80" y="620" width="50" height="50"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PYevUg3xEeWTX7pUjpnYfQ" type="2001" element="_PXX8GQ3xEeWTX7pUjpnYfQ">
+            <children xmi:type="notation:Node" xmi:id="_PYfWYA3xEeWTX7pUjpnYfQ" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_PYfWYQ3xEeWTX7pUjpnYfQ" x="-25" y="1"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_PYiZsA3xEeWTX7pUjpnYfQ" type="3005" element="_PXX8Gg3xEeWTX7pUjpnYfQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_PYiZsQ3xEeWTX7pUjpnYfQ" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PYiZsg3xEeWTX7pUjpnYfQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_PYevUw3xEeWTX7pUjpnYfQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PYevVA3xEeWTX7pUjpnYfQ" x="80" y="730" width="50" height="50"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_PYfWYg3xEeWTX7pUjpnYfQ" type="2001" element="_PXX8HQ3xEeWTX7pUjpnYfQ">
+            <children xmi:type="notation:Node" xmi:id="_PYf9cA3xEeWTX7pUjpnYfQ" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_PYf9cQ3xEeWTX7pUjpnYfQ" x="-25" y="1"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_PYiZsw3xEeWTX7pUjpnYfQ" type="3005" element="_PXX8Hg3xEeWTX7pUjpnYfQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_PYiZtA3xEeWTX7pUjpnYfQ" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PYiZtQ3xEeWTX7pUjpnYfQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_PYfWYw3xEeWTX7pUjpnYfQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PYfWZA3xEeWTX7pUjpnYfQ" x="38" width="50" height="50"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ZjGTwA3yEeWTX7pUjpnYfQ" type="2001" element="_Zi9w4A3yEeWTX7pUjpnYfQ">
+            <children xmi:type="notation:Node" xmi:id="_ZjG60A3yEeWTX7pUjpnYfQ" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_ZjG60Q3yEeWTX7pUjpnYfQ" x="-25" y="1"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ZjHh4A3yEeWTX7pUjpnYfQ" type="3005" element="_Zi-X8A3yEeWTX7pUjpnYfQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_ZjHh4Q3yEeWTX7pUjpnYfQ" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZjHh4g3yEeWTX7pUjpnYfQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_ZjGTwQ3yEeWTX7pUjpnYfQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZjGTwg3yEeWTX7pUjpnYfQ" x="80" y="510" width="50" height="50"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_c_DdQA3yEeWTX7pUjpnYfQ" type="2001" element="_c9f-EA3yEeWTX7pUjpnYfQ">
+            <children xmi:type="notation:Node" xmi:id="_c_EEUA3yEeWTX7pUjpnYfQ" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_c_EEUQ3yEeWTX7pUjpnYfQ" x="31"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_c_GgkA3yEeWTX7pUjpnYfQ" type="3002" element="_c-O94A3yEeWTX7pUjpnYfQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_c_GgkQ3yEeWTX7pUjpnYfQ" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_Ggkg3yEeWTX7pUjpnYfQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_c_DdQQ3yEeWTX7pUjpnYfQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_DdQg3yEeWTX7pUjpnYfQ" x="90" y="220" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_c_EEUg3yEeWTX7pUjpnYfQ" type="2001" element="_c-Pk8A3yEeWTX7pUjpnYfQ">
+            <children xmi:type="notation:Node" xmi:id="_c_ErYA3yEeWTX7pUjpnYfQ" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_c_ErYQ3yEeWTX7pUjpnYfQ" x="31"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_c_HHoA3yEeWTX7pUjpnYfQ" type="3002" element="_c-QzEA3yEeWTX7pUjpnYfQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_c_HHoQ3yEeWTX7pUjpnYfQ" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_HHog3yEeWTX7pUjpnYfQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_c_EEUw3yEeWTX7pUjpnYfQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_EEVA3yEeWTX7pUjpnYfQ" y="310" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_c_ErYg3yEeWTX7pUjpnYfQ" type="2001" element="_c-RaIA3yEeWTX7pUjpnYfQ">
+            <children xmi:type="notation:Node" xmi:id="_c_ErZQ3yEeWTX7pUjpnYfQ" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_c_ErZg3yEeWTX7pUjpnYfQ" x="-25" y="1"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_c_HHow3yEeWTX7pUjpnYfQ" type="3005" element="_c-RaIQ3yEeWTX7pUjpnYfQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_c_HHpA3yEeWTX7pUjpnYfQ" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_HHpQ3yEeWTX7pUjpnYfQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_c_ErYw3yEeWTX7pUjpnYfQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_ErZA3yEeWTX7pUjpnYfQ" x="38" y="110" width="50" height="50"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_c_FScA3yEeWTX7pUjpnYfQ" type="2001" element="_c-SBMA3yEeWTX7pUjpnYfQ">
+            <children xmi:type="notation:Node" xmi:id="_c_F5gA3yEeWTX7pUjpnYfQ" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_c_F5gQ3yEeWTX7pUjpnYfQ" x="-25" y="1"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_c_IVwA3yEeWTX7pUjpnYfQ" type="3005" element="_c-SBMQ3yEeWTX7pUjpnYfQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_c_IVwQ3yEeWTX7pUjpnYfQ" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_IVwg3yEeWTX7pUjpnYfQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_c_FScQ3yEeWTX7pUjpnYfQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_FScg3yEeWTX7pUjpnYfQ" x="80" y="400" width="50" height="50"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_WlPC8A6LEeWpYLNfAy-fyQ" type="2001" element="_WjFt4A6LEeWpYLNfAy-fyQ">
+            <children xmi:type="notation:Node" xmi:id="_WlT7cA6LEeWpYLNfAy-fyQ" type="5002">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_WlT7cQ6LEeWpYLNfAy-fyQ" x="31"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_WlZbAA6LEeWpYLNfAy-fyQ" type="3002" element="_WjHjEA6LEeWpYLNfAy-fyQ">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_WlZbAQ6LEeWpYLNfAy-fyQ" fontName="Segoe UI"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WlZbAg6LEeWpYLNfAy-fyQ"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_WlPC8Q6LEeWpYLNfAy-fyQ" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WlPC8g6LEeWpYLNfAy-fyQ" y="220" width="30" height="30"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_PXtTQg3xEeWTX7pUjpnYfQ"/>
+          <edges xmi:type="notation:Edge" xmi:id="_PY9QcQ3xEeWTX7pUjpnYfQ" type="4001" element="_PXX8Jg3xEeWTX7pUjpnYfQ" source="_PYevUg3xEeWTX7pUjpnYfQ" target="_PX6HkA3xEeWTX7pUjpnYfQ">
+            <children xmi:type="notation:Node" xmi:id="_PY93gA3xEeWTX7pUjpnYfQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PY93gQ3xEeWTX7pUjpnYfQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_PY93gg3xEeWTX7pUjpnYfQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PY93gw3xEeWTX7pUjpnYfQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_PY93hA3xEeWTX7pUjpnYfQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PY93hQ3xEeWTX7pUjpnYfQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_PY9Qcg3xEeWTX7pUjpnYfQ" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_PY9Qcw3xEeWTX7pUjpnYfQ" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PY9QdA3xEeWTX7pUjpnYfQ" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PY_ssA3xEeWTX7pUjpnYfQ" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PY_ssQ3xEeWTX7pUjpnYfQ" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_ZjJ-IA3yEeWTX7pUjpnYfQ" type="4001" element="_ZjANIA3yEeWTX7pUjpnYfQ" source="_PX6HkA3xEeWTX7pUjpnYfQ" target="_ZjGTwA3yEeWTX7pUjpnYfQ">
+            <children xmi:type="notation:Node" xmi:id="_ZjKlMA3yEeWTX7pUjpnYfQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZjKlMQ3yEeWTX7pUjpnYfQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ZjKlMg3yEeWTX7pUjpnYfQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZjKlMw3yEeWTX7pUjpnYfQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ZjKlNA3yEeWTX7pUjpnYfQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZjKlNQ3yEeWTX7pUjpnYfQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_ZjJ-IQ3yEeWTX7pUjpnYfQ" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_ZjJ-Ig3yEeWTX7pUjpnYfQ" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZjJ-Iw3yEeWTX7pUjpnYfQ" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZjKlNg3yEeWTX7pUjpnYfQ" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ZjKlNw3yEeWTX7pUjpnYfQ" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_c_KK8A3yEeWTX7pUjpnYfQ" type="4001" element="_c-akEA3yEeWTX7pUjpnYfQ" source="_c_DdQA3yEeWTX7pUjpnYfQ" target="_c_ErYg3yEeWTX7pUjpnYfQ">
+            <children xmi:type="notation:Node" xmi:id="_c_KyAA3yEeWTX7pUjpnYfQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_KyAQ3yEeWTX7pUjpnYfQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_c_KyAg3yEeWTX7pUjpnYfQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_KyAw3yEeWTX7pUjpnYfQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_c_KyBA3yEeWTX7pUjpnYfQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_KyBQ3yEeWTX7pUjpnYfQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_c_KK8Q3yEeWTX7pUjpnYfQ" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_c_KK8g3yEeWTX7pUjpnYfQ" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_c_KK8w3yEeWTX7pUjpnYfQ" points="[0, 0, 45, 60]$[-45, -60, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c_KyBg3yEeWTX7pUjpnYfQ" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c_LZEA3yEeWTX7pUjpnYfQ" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_c_MAIg3yEeWTX7pUjpnYfQ" type="4001" element="_c-gDoA3yEeWTX7pUjpnYfQ" source="_c_FScA3yEeWTX7pUjpnYfQ" target="_c_DdQA3yEeWTX7pUjpnYfQ">
+            <children xmi:type="notation:Node" xmi:id="_c_MAJg3yEeWTX7pUjpnYfQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_MAJw3yEeWTX7pUjpnYfQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_c_MAKA3yEeWTX7pUjpnYfQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_MAKQ3yEeWTX7pUjpnYfQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_c_MAKg3yEeWTX7pUjpnYfQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_MAKw3yEeWTX7pUjpnYfQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_c_MAIw3yEeWTX7pUjpnYfQ" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_c_MAJA3yEeWTX7pUjpnYfQ" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_c_MAJQ3yEeWTX7pUjpnYfQ" points="[0, 0, 0, 150]$[0, -150, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c_MnMA3yEeWTX7pUjpnYfQ" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c_MnMQ3yEeWTX7pUjpnYfQ" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_c_MnMg3yEeWTX7pUjpnYfQ" type="4001" element="_c-gDpQ3yEeWTX7pUjpnYfQ" source="_c_FScA3yEeWTX7pUjpnYfQ" target="_c_EEUg3yEeWTX7pUjpnYfQ">
+            <children xmi:type="notation:Node" xmi:id="_c_MnNg3yEeWTX7pUjpnYfQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_MnNw3yEeWTX7pUjpnYfQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_c_MnOA3yEeWTX7pUjpnYfQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_MnOQ3yEeWTX7pUjpnYfQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_c_NOQA3yEeWTX7pUjpnYfQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_NOQQ3yEeWTX7pUjpnYfQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_c_MnMw3yEeWTX7pUjpnYfQ" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_c_MnNA3yEeWTX7pUjpnYfQ" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_c_MnNQ3yEeWTX7pUjpnYfQ" points="[0, 0, 60, 60]$[-60, -60, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c_NOQg3yEeWTX7pUjpnYfQ" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c_NOQw3yEeWTX7pUjpnYfQ" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_c_NORA3yEeWTX7pUjpnYfQ" type="4001" element="_c-n_cA3yEeWTX7pUjpnYfQ" source="_ZjGTwA3yEeWTX7pUjpnYfQ" target="_c_FScA3yEeWTX7pUjpnYfQ">
+            <children xmi:type="notation:Node" xmi:id="_c_NOSA3yEeWTX7pUjpnYfQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_NOSQ3yEeWTX7pUjpnYfQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_c_NOSg3yEeWTX7pUjpnYfQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_NOSw3yEeWTX7pUjpnYfQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_c_N1UA3yEeWTX7pUjpnYfQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_N1UQ3yEeWTX7pUjpnYfQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_c_NORQ3yEeWTX7pUjpnYfQ" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_c_NORg3yEeWTX7pUjpnYfQ" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_c_NORw3yEeWTX7pUjpnYfQ" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c_N1Ug3yEeWTX7pUjpnYfQ" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c_N1Uw3yEeWTX7pUjpnYfQ" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_c_N1VA3yEeWTX7pUjpnYfQ" type="4001" element="_c-8vkA3yEeWTX7pUjpnYfQ" source="_c_ErYg3yEeWTX7pUjpnYfQ" target="_PYfWYg3xEeWTX7pUjpnYfQ">
+            <children xmi:type="notation:Node" xmi:id="_c_N1WA3yEeWTX7pUjpnYfQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_N1WQ3yEeWTX7pUjpnYfQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_c_N1Wg3yEeWTX7pUjpnYfQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_N1Ww3yEeWTX7pUjpnYfQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_c_N1XA3yEeWTX7pUjpnYfQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c_N1XQ3yEeWTX7pUjpnYfQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_c_N1VQ3yEeWTX7pUjpnYfQ" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_c_N1Vg3yEeWTX7pUjpnYfQ" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_c_N1Vw3yEeWTX7pUjpnYfQ" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c_OcYA3yEeWTX7pUjpnYfQ" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c_OcYQ3yEeWTX7pUjpnYfQ" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_Wl1f4A6LEeWpYLNfAy-fyQ" type="4001" element="_WjunEA6LEeWpYLNfAy-fyQ" source="_WlPC8A6LEeWpYLNfAy-fyQ" target="_c_ErYg3yEeWTX7pUjpnYfQ">
+            <children xmi:type="notation:Node" xmi:id="_Wl2G8A6LEeWpYLNfAy-fyQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Wl2G8Q6LEeWpYLNfAy-fyQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Wl2uAA6LEeWpYLNfAy-fyQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Wl2uAQ6LEeWpYLNfAy-fyQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Wl3VEA6LEeWpYLNfAy-fyQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Wl3VEQ6LEeWpYLNfAy-fyQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_Wl1f4Q6LEeWpYLNfAy-fyQ" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_Wl1f4g6LEeWpYLNfAy-fyQ" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Wl1f4w6LEeWpYLNfAy-fyQ" points="[0, 0, -45, 60]$[45, -60, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WmAfAA6LEeWpYLNfAy-fyQ" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WmAfAQ6LEeWpYLNfAy-fyQ" id="(0.5,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_WmBGEA6LEeWpYLNfAy-fyQ" type="4001" element="_Wj93oA6LEeWpYLNfAy-fyQ" source="_c_EEUg3yEeWTX7pUjpnYfQ" target="_WlPC8A6LEeWpYLNfAy-fyQ">
+            <children xmi:type="notation:Node" xmi:id="_WmBGFA6LEeWpYLNfAy-fyQ" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WmBGFQ6LEeWpYLNfAy-fyQ" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_WmBGFg6LEeWpYLNfAy-fyQ" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WmBGFw6LEeWpYLNfAy-fyQ" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_WmBtIA6LEeWpYLNfAy-fyQ" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WmBtIQ6LEeWpYLNfAy-fyQ" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_WmBGEQ6LEeWpYLNfAy-fyQ" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_WmBGEg6LEeWpYLNfAy-fyQ" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WmBGEw6LEeWpYLNfAy-fyQ" points="[0, 0, 30, 60]$[-30, -60, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WmC7QA6LEeWpYLNfAy-fyQ" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WmC7QQ6LEeWpYLNfAy-fyQ" id="(0.5,1.0)"/>
+          </edges>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_PXX8EQ3xEeWTX7pUjpnYfQ" name="wait" outgoingEdges="_ZjANIA3yEeWTX7pUjpnYfQ" incomingEdges="_PXX8Jg3xEeWTX7pUjpnYfQ" width="-1" height="-1">
+        <target xmi:type="elascript:WaitFunction" href="example.ela#//@scriptStatement/@statements.0"/>
+        <semanticElements xmi:type="elascript:WaitFunction" href="example.ela#//@scriptStatement/@statements.0"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_PXX8Eg3xEeWTX7pUjpnYfQ" workspacePath="/elascript/images/50/Wait.png">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_PXX8Ew3xEeWTX7pUjpnYfQ"/>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']/@conditionnalStyles.4/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_PXX8FA3xEeWTX7pUjpnYfQ"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_Zi9w4A3yEeWTX7pUjpnYfQ" name="scaleInInfra" outgoingEdges="_c-n_cA3yEeWTX7pUjpnYfQ" incomingEdges="_ZjANIA3yEeWTX7pUjpnYfQ" width="-1" height="-1">
+        <target xmi:type="elascript:ScaleInInfra" href="example.ela#//@scriptStatement/@statements.1"/>
+        <semanticElements xmi:type="elascript:ScaleInInfra" href="example.ela#//@scriptStatement/@statements.1"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_Zi-X8A3yEeWTX7pUjpnYfQ" workspacePath="/elascript/images/50/II.png">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_Zi-X8Q3yEeWTX7pUjpnYfQ"/>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']/@conditionnalStyles.0/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_Zi-X8g3yEeWTX7pUjpnYfQ"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_c9f-EA3yEeWTX7pUjpnYfQ" name="lol" outgoingEdges="_c-akEA3yEeWTX7pUjpnYfQ" incomingEdges="_c-gDoA3yEeWTX7pUjpnYfQ" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="elascript:GenericFunction" href="example.ela#//@scriptStatement/@statements.2/@statementLists.0/@statements.0"/>
+        <semanticElements xmi:type="elascript:GenericFunction" href="example.ela#//@scriptStatement/@statements.2/@statementLists.0/@statements.0"/>
+        <ownedStyle xmi:type="diagram:Dot" xmi:id="_c-O94A3yEeWTX7pUjpnYfQ">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_c-O94Q3yEeWTX7pUjpnYfQ"/>
+          <description xmi:type="style:DotDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_c-O94g3yEeWTX7pUjpnYfQ"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_c-O94w3yEeWTX7pUjpnYfQ" red="136" green="136" blue="136"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_c-Pk8A3yEeWTX7pUjpnYfQ" name="super" outgoingEdges="_Wj93oA6LEeWpYLNfAy-fyQ" incomingEdges="_c-gDpQ3yEeWTX7pUjpnYfQ" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="elascript:GenericFunction" href="example.ela#//@scriptStatement/@statements.2/@statementLists.1/@statements.0"/>
+        <semanticElements xmi:type="elascript:GenericFunction" href="example.ela#//@scriptStatement/@statements.2/@statementLists.1/@statements.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Dot" xmi:id="_c-QzEA3yEeWTX7pUjpnYfQ">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_c-QzEQ3yEeWTX7pUjpnYfQ"/>
+          <description xmi:type="style:DotDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_c-QzEg3yEeWTX7pUjpnYfQ"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_c-QzEw3yEeWTX7pUjpnYfQ" red="136" green="136" blue="136"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_WjFt4A6LEeWpYLNfAy-fyQ" name="hy" outgoingEdges="_WjunEA6LEeWpYLNfAy-fyQ" incomingEdges="_Wj93oA6LEeWpYLNfAy-fyQ" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="elascript:GenericFunction" href="example.ela#//@scriptStatement/@statements.2/@statementLists.1/@statements.1"/>
+        <semanticElements xmi:type="elascript:GenericFunction" href="example.ela#//@scriptStatement/@statements.2/@statementLists.1/@statements.1"/>
+        <ownedStyle xmi:type="diagram:Dot" xmi:id="_WjHjEA6LEeWpYLNfAy-fyQ">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_WjHjEQ6LEeWpYLNfAy-fyQ"/>
+          <description xmi:type="style:DotDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_WjHjEg6LEeWpYLNfAy-fyQ"/>
+          <backgroundColor xmi:type="viewpoint:RGBValues" xmi:id="_WjHjEw6LEeWpYLNfAy-fyQ" red="136" green="136" blue="136"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='command']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_PXX8GQ3xEeWTX7pUjpnYfQ" name="begin" outgoingEdges="_PXX8Jg3xEeWTX7pUjpnYfQ" width="-1" height="-1">
+        <target xmi:type="elascript:BeginScript" href="example.ela#//@BeginScript"/>
+        <semanticElements xmi:type="elascript:BeginScript" href="example.ela#//@BeginScript"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_PXX8Gg3xEeWTX7pUjpnYfQ" workspacePath="/elascript/images/50/start.png">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_PXX8Gw3xEeWTX7pUjpnYfQ"/>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='BeginScript']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_PXX8HA3xEeWTX7pUjpnYfQ"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='BeginScript']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_PXX8HQ3xEeWTX7pUjpnYfQ" name="end" incomingEdges="_c-8vkA3yEeWTX7pUjpnYfQ" width="-1" height="-1">
+        <target xmi:type="elascript:EndScript" href="example.ela#//@EndScript"/>
+        <semanticElements xmi:type="elascript:EndScript" href="example.ela#//@EndScript"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_PXX8Hg3xEeWTX7pUjpnYfQ" workspacePath="/elascript/images/50/end.png">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_PXX8Hw3xEeWTX7pUjpnYfQ"/>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='EndScript']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_PXX8IA3xEeWTX7pUjpnYfQ"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='EndScript']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_PXX8Jg3xEeWTX7pUjpnYfQ" sourceNode="_PXX8GQ3xEeWTX7pUjpnYfQ" targetNode="_PXX8EQ3xEeWTX7pUjpnYfQ">
+        <target xmi:type="elascript:BeginScript" href="example.ela#//@BeginScript"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_PXX8Jw3xEeWTX7pUjpnYfQ" size="2" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='BeginScriptToCommand']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_PXX8KA3xEeWTX7pUjpnYfQ" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_PXX8KQ3xEeWTX7pUjpnYfQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_PXX8Kg3xEeWTX7pUjpnYfQ"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='BeginScriptToCommand']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_ZjANIA3yEeWTX7pUjpnYfQ" sourceNode="_PXX8EQ3xEeWTX7pUjpnYfQ" targetNode="_Zi9w4A3yEeWTX7pUjpnYfQ">
+        <target xmi:type="elascript:WaitFunction" href="example.ela#//@scriptStatement/@statements.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_ZjA0MA3yEeWTX7pUjpnYfQ" size="2" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='CommandToCommand']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_ZjA0MQ3yEeWTX7pUjpnYfQ" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_ZjA0Mg3yEeWTX7pUjpnYfQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_ZjA0Mw3yEeWTX7pUjpnYfQ"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='CommandToCommand']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_c-RaIA3yEeWTX7pUjpnYfQ" name="]" outgoingEdges="_c-8vkA3yEeWTX7pUjpnYfQ" incomingEdges="_c-akEA3yEeWTX7pUjpnYfQ _WjunEA6LEeWpYLNfAy-fyQ" width="-1" height="-1">
+        <target xmi:type="elascript:EndParallel" href="example.ela#//@scriptStatement/@statements.2/@EndParallel"/>
+        <semanticElements xmi:type="elascript:EndParallel" href="example.ela#//@scriptStatement/@statements.2/@EndParallel"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_c-RaIQ3yEeWTX7pUjpnYfQ" workspacePath="/elascript/images/50/join.png">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_c-RaIg3yEeWTX7pUjpnYfQ"/>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='EndParallel']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_c-RaIw3yEeWTX7pUjpnYfQ"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='EndParallel']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_c-SBMA3yEeWTX7pUjpnYfQ" name="[" outgoingEdges="_c-gDoA3yEeWTX7pUjpnYfQ _c-gDpQ3yEeWTX7pUjpnYfQ" incomingEdges="_c-n_cA3yEeWTX7pUjpnYfQ" width="-1" height="-1">
+        <target xmi:type="elascript:BeginParallel" href="example.ela#//@scriptStatement/@statements.2/@BeginParallel"/>
+        <semanticElements xmi:type="elascript:BeginParallel" href="example.ela#//@scriptStatement/@statements.2/@BeginParallel"/>
+        <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_c-SBMQ3yEeWTX7pUjpnYfQ" workspacePath="/elascript/images/50/split.png">
+          <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_c-SBMg3yEeWTX7pUjpnYfQ"/>
+          <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='BeginParallel']/@style"/>
+          <borderColor xmi:type="viewpoint:RGBValues" xmi:id="_c-SBMw3yEeWTX7pUjpnYfQ"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer/@nodeMappings[name='BeginParallel']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_c-akEA3yEeWTX7pUjpnYfQ" sourceNode="_c9f-EA3yEeWTX7pUjpnYfQ" targetNode="_c-RaIA3yEeWTX7pUjpnYfQ">
+        <target xmi:type="elascript:GenericFunction" href="example.ela#//@scriptStatement/@statements.2/@statementLists.0/@statements.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_c-bLIA3yEeWTX7pUjpnYfQ" size="2" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='CommandToEndParallel']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_c-bLIQ3yEeWTX7pUjpnYfQ" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_c-bLIg3yEeWTX7pUjpnYfQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_c-bLIw3yEeWTX7pUjpnYfQ"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='CommandToEndParallel']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_c-gDoA3yEeWTX7pUjpnYfQ" sourceNode="_c-SBMA3yEeWTX7pUjpnYfQ" targetNode="_c9f-EA3yEeWTX7pUjpnYfQ">
+        <target xmi:type="elascript:BeginParallel" href="example.ela#//@scriptStatement/@statements.2/@BeginParallel"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_c-gDoQ3yEeWTX7pUjpnYfQ" size="2" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='BeginParallelToCommand']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_c-gDog3yEeWTX7pUjpnYfQ" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_c-gDow3yEeWTX7pUjpnYfQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_c-gDpA3yEeWTX7pUjpnYfQ"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='BeginParallelToCommand']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_c-gDpQ3yEeWTX7pUjpnYfQ" sourceNode="_c-SBMA3yEeWTX7pUjpnYfQ" targetNode="_c-Pk8A3yEeWTX7pUjpnYfQ">
+        <target xmi:type="elascript:BeginParallel" href="example.ela#//@scriptStatement/@statements.2/@BeginParallel"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_c-gqsA3yEeWTX7pUjpnYfQ" size="2" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='BeginParallelToCommand']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_c-gqsQ3yEeWTX7pUjpnYfQ" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_c-gqsg3yEeWTX7pUjpnYfQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_c-gqsw3yEeWTX7pUjpnYfQ"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='BeginParallelToCommand']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_c-n_cA3yEeWTX7pUjpnYfQ" sourceNode="_Zi9w4A3yEeWTX7pUjpnYfQ" targetNode="_c-SBMA3yEeWTX7pUjpnYfQ">
+        <target xmi:type="elascript:ScaleInInfra" href="example.ela#//@scriptStatement/@statements.1"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_c-omgA3yEeWTX7pUjpnYfQ" size="2" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='CommandToBeginParallel']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_c-omgQ3yEeWTX7pUjpnYfQ" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_c-omgg3yEeWTX7pUjpnYfQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_c-omgw3yEeWTX7pUjpnYfQ"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='CommandToBeginParallel']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_c-8vkA3yEeWTX7pUjpnYfQ" sourceNode="_c-RaIA3yEeWTX7pUjpnYfQ" targetNode="_PXX8HQ3xEeWTX7pUjpnYfQ">
+        <target xmi:type="elascript:EndParallel" href="example.ela#//@scriptStatement/@statements.2/@EndParallel"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_c-8vkQ3yEeWTX7pUjpnYfQ" size="2" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='EndParallelToEndScript']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_c-8vkg3yEeWTX7pUjpnYfQ" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_c-8vkw3yEeWTX7pUjpnYfQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_c-8vlA3yEeWTX7pUjpnYfQ"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='EndParallelToEndScript']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_WjunEA6LEeWpYLNfAy-fyQ" sourceNode="_WjFt4A6LEeWpYLNfAy-fyQ" targetNode="_c-RaIA3yEeWTX7pUjpnYfQ">
+        <target xmi:type="elascript:GenericFunction" href="example.ela#//@scriptStatement/@statements.2/@statementLists.1/@statements.1"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_WjunEQ6LEeWpYLNfAy-fyQ" size="2" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='CommandToEndParallel']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_WjunEg6LEeWpYLNfAy-fyQ" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_WjunEw6LEeWpYLNfAy-fyQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_WjunFA6LEeWpYLNfAy-fyQ"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='CommandToEndParallel']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Wj93oA6LEeWpYLNfAy-fyQ" sourceNode="_c-Pk8A3yEeWTX7pUjpnYfQ" targetNode="_WjFt4A6LEeWpYLNfAy-fyQ">
+        <target xmi:type="elascript:GenericFunction" href="example.ela#//@scriptStatement/@statements.2/@statementLists.1/@statements.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_Wj93oQ6LEeWpYLNfAy-fyQ" size="2" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='CommandToCommand']/@style"/>
+          <strokeColor xmi:type="viewpoint:RGBValues" xmi:id="_Wj93og6LEeWpYLNfAy-fyQ" red="136" green="136" blue="136"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_Wj93ow6LEeWpYLNfAy-fyQ">
+            <labelColor xmi:type="viewpoint:RGBValues" xmi:id="_Wj93pA6LEeWpYLNfAy-fyQ"/>
+          </centerLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']/@edgeMappings[name='CommandToCommand']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_PXX8MA3xEeWTX7pUjpnYfQ"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@defaultLayer"/>
+      <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Relations']"/>
+      <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']/@ownedRepresentations[name='script']/@additionalLayers[name='Tools']"/>
+      <target xmi:type="elascript:Script" href="example.ela#/"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/elascript.design/description/elascript.odesign#//@ownedViewpoints[name='ElascriptFlowChart']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>

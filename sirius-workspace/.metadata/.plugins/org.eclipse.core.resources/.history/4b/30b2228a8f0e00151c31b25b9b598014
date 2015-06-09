@@ -1,0 +1,9 @@
+begin 
+wait(5);
+scaleInInfra(56);
+[
+	wait();
+	||
+	scaleInSoft(6); wait(25); scaleOutSoft(65);
+]
+end

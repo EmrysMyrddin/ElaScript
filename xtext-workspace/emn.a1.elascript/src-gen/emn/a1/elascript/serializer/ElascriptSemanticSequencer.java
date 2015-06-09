@@ -247,7 +247,7 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	
 	/**
 	 * Constraint:
-	 *     (name=ID params+=Param params+=Param*)
+	 *     (name=ID (params+=Param* params+=Param)?)
 	 */
 	protected void sequence_Command_GenericFunction(EObject context, GenericFunction semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -256,7 +256,7 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	
 	/**
 	 * Constraint:
-	 *     (name='scaleDownInfra' params+=Param params+=Param*)
+	 *     (name='scaleDownInfra' (params+=Param* params+=Param)?)
 	 */
 	protected void sequence_Command_ScaleDownInfra(EObject context, ScaleDownInfra semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -265,7 +265,7 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	
 	/**
 	 * Constraint:
-	 *     (name='scaleDownSoft' params+=Param params+=Param*)
+	 *     (name='scaleDownSoft' (params+=Param* params+=Param)?)
 	 */
 	protected void sequence_Command_ScaleDownSoft(EObject context, ScaleDownSoft semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -274,7 +274,7 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	
 	/**
 	 * Constraint:
-	 *     (name='scaleInInfra' params+=Param params+=Param*)
+	 *     (name='scaleInInfra' (params+=Param* params+=Param)?)
 	 */
 	protected void sequence_Command_ScaleInInfra(EObject context, ScaleInInfra semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -283,7 +283,7 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	
 	/**
 	 * Constraint:
-	 *     (name='scaleInSoft' params+=Param params+=Param*)
+	 *     (name='scaleInSoft' (params+=Param* params+=Param)?)
 	 */
 	protected void sequence_Command_ScaleInSoft(EObject context, ScaleInSoft semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -292,7 +292,7 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	
 	/**
 	 * Constraint:
-	 *     (name='scaleOutInfra' params+=Param params+=Param*)
+	 *     (name='scaleOutInfra' (params+=Param* params+=Param)?)
 	 */
 	protected void sequence_Command_ScaleOutInfra(EObject context, ScaleOutInfra semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -301,7 +301,7 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	
 	/**
 	 * Constraint:
-	 *     (name='scaleOutSoft' params+=Param params+=Param*)
+	 *     (name='scaleOutSoft' (params+=Param* params+=Param)?)
 	 */
 	protected void sequence_Command_ScaleOutSoft(EObject context, ScaleOutSoft semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -310,7 +310,7 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	
 	/**
 	 * Constraint:
-	 *     (name='scaleUpInfra' params+=Param params+=Param*)
+	 *     (name='scaleUpInfra' (params+=Param* params+=Param)?)
 	 */
 	protected void sequence_Command_ScaleUpInfra(EObject context, ScaleUpInfra semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -319,7 +319,7 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	
 	/**
 	 * Constraint:
-	 *     (name='scaleUpSoft' params+=Param params+=Param*)
+	 *     (name='scaleUpSoft' (params+=Param* params+=Param)?)
 	 */
 	protected void sequence_Command_ScaleUpSoft(EObject context, ScaleUpSoft semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -328,7 +328,7 @@ public class ElascriptSemanticSequencer extends AbstractDelegatingSemanticSequen
 	
 	/**
 	 * Constraint:
-	 *     (name='wait' params+=Param params+=Param*)
+	 *     (name='wait' (params+=Param* params+=Param)?)
 	 */
 	protected void sequence_Command_WaitFunction(EObject context, WaitFunction semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

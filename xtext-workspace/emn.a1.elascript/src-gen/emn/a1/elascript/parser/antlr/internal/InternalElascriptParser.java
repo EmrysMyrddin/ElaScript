@@ -21,7 +21,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalElascriptParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_PARALLEL_SEPARATOR", "RULE_LP", "RULE_COMMA", "RULE_RP", "RULE_SEQUENTIAL_SEPARATOR", "RULE_ID", "RULE_INT", "RULE_LETTER", "RULE_NUMBER", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'begin'", "'end'", "'['", "']'", "'wait'", "'scaleInInfra'", "'scaleOutInfra'", "'scaleUpInfra'", "'scaleDownInfra'", "'scaleInSoft'", "'scaleOutSoft'", "'scaleUpSoft'", "'scaleDownSoft'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_PARALLEL_SEPARATOR", "RULE_LP", "RULE_RP", "RULE_COMMA", "RULE_SEQUENTIAL_SEPARATOR", "RULE_ID", "RULE_INT", "RULE_LETTER", "RULE_NUMBER", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'begin'", "'end'", "'['", "']'", "'wait'", "'scaleInInfra'", "'scaleOutInfra'", "'scaleUpInfra'", "'scaleDownInfra'", "'scaleInSoft'", "'scaleOutSoft'", "'scaleUpSoft'", "'scaleDownSoft'"
     };
     public static final int RULE_SEQUENTIAL_SEPARATOR=8;
     public static final int RULE_STRING=13;
@@ -31,7 +31,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
     public static final int EOF=-1;
     public static final int T__30=30;
     public static final int RULE_ID=9;
-    public static final int RULE_COMMA=6;
+    public static final int RULE_COMMA=7;
     public static final int RULE_WS=16;
     public static final int RULE_PARALLEL_SEPARATOR=4;
     public static final int RULE_ANY_OTHER=17;
@@ -47,7 +47,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
     public static final int T__23=23;
     public static final int T__24=24;
     public static final int T__25=25;
-    public static final int RULE_RP=7;
+    public static final int RULE_RP=6;
     public static final int RULE_LP=5;
     public static final int T__20=20;
     public static final int T__21=21;
@@ -1132,33 +1132,34 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleCommand"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:471:1: ruleCommand returns [EObject current=null] : ( (this_ScaleFunction_0= ruleScaleFunction | this_GenericFunction_1= ruleGenericFunction | this_WaitFunction_2= ruleWaitFunction ) this_LP_3= RULE_LP ( (lv_params_4_0= ruleParam ) ) (this_COMMA_5= RULE_COMMA ( (lv_params_6_0= ruleParam ) ) )* this_RP_7= RULE_RP this_SEQUENTIAL_SEPARATOR_8= RULE_SEQUENTIAL_SEPARATOR ) ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:471:1: ruleCommand returns [EObject current=null] : ( (this_ScaleFunction_0= ruleScaleFunction | this_GenericFunction_1= ruleGenericFunction | this_WaitFunction_2= ruleWaitFunction ) this_LP_3= RULE_LP (this_RP_4= RULE_RP | ( ( ( (lv_params_5_0= ruleParam ) ) this_COMMA_6= RULE_COMMA )* ( (lv_params_7_0= ruleParam ) ) this_RP_8= RULE_RP ) ) this_SEQUENTIAL_SEPARATOR_9= RULE_SEQUENTIAL_SEPARATOR ) ;
     public final EObject ruleCommand() throws RecognitionException {
         EObject current = null;
 
         Token this_LP_3=null;
-        Token this_COMMA_5=null;
-        Token this_RP_7=null;
-        Token this_SEQUENTIAL_SEPARATOR_8=null;
+        Token this_RP_4=null;
+        Token this_COMMA_6=null;
+        Token this_RP_8=null;
+        Token this_SEQUENTIAL_SEPARATOR_9=null;
         EObject this_ScaleFunction_0 = null;
 
         EObject this_GenericFunction_1 = null;
 
         EObject this_WaitFunction_2 = null;
 
-        EObject lv_params_4_0 = null;
+        EObject lv_params_5_0 = null;
 
-        EObject lv_params_6_0 = null;
+        EObject lv_params_7_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:474:28: ( ( (this_ScaleFunction_0= ruleScaleFunction | this_GenericFunction_1= ruleGenericFunction | this_WaitFunction_2= ruleWaitFunction ) this_LP_3= RULE_LP ( (lv_params_4_0= ruleParam ) ) (this_COMMA_5= RULE_COMMA ( (lv_params_6_0= ruleParam ) ) )* this_RP_7= RULE_RP this_SEQUENTIAL_SEPARATOR_8= RULE_SEQUENTIAL_SEPARATOR ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:475:1: ( (this_ScaleFunction_0= ruleScaleFunction | this_GenericFunction_1= ruleGenericFunction | this_WaitFunction_2= ruleWaitFunction ) this_LP_3= RULE_LP ( (lv_params_4_0= ruleParam ) ) (this_COMMA_5= RULE_COMMA ( (lv_params_6_0= ruleParam ) ) )* this_RP_7= RULE_RP this_SEQUENTIAL_SEPARATOR_8= RULE_SEQUENTIAL_SEPARATOR )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:474:28: ( ( (this_ScaleFunction_0= ruleScaleFunction | this_GenericFunction_1= ruleGenericFunction | this_WaitFunction_2= ruleWaitFunction ) this_LP_3= RULE_LP (this_RP_4= RULE_RP | ( ( ( (lv_params_5_0= ruleParam ) ) this_COMMA_6= RULE_COMMA )* ( (lv_params_7_0= ruleParam ) ) this_RP_8= RULE_RP ) ) this_SEQUENTIAL_SEPARATOR_9= RULE_SEQUENTIAL_SEPARATOR ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:475:1: ( (this_ScaleFunction_0= ruleScaleFunction | this_GenericFunction_1= ruleGenericFunction | this_WaitFunction_2= ruleWaitFunction ) this_LP_3= RULE_LP (this_RP_4= RULE_RP | ( ( ( (lv_params_5_0= ruleParam ) ) this_COMMA_6= RULE_COMMA )* ( (lv_params_7_0= ruleParam ) ) this_RP_8= RULE_RP ) ) this_SEQUENTIAL_SEPARATOR_9= RULE_SEQUENTIAL_SEPARATOR )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:475:1: ( (this_ScaleFunction_0= ruleScaleFunction | this_GenericFunction_1= ruleGenericFunction | this_WaitFunction_2= ruleWaitFunction ) this_LP_3= RULE_LP ( (lv_params_4_0= ruleParam ) ) (this_COMMA_5= RULE_COMMA ( (lv_params_6_0= ruleParam ) ) )* this_RP_7= RULE_RP this_SEQUENTIAL_SEPARATOR_8= RULE_SEQUENTIAL_SEPARATOR )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:475:2: (this_ScaleFunction_0= ruleScaleFunction | this_GenericFunction_1= ruleGenericFunction | this_WaitFunction_2= ruleWaitFunction ) this_LP_3= RULE_LP ( (lv_params_4_0= ruleParam ) ) (this_COMMA_5= RULE_COMMA ( (lv_params_6_0= ruleParam ) ) )* this_RP_7= RULE_RP this_SEQUENTIAL_SEPARATOR_8= RULE_SEQUENTIAL_SEPARATOR
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:475:1: ( (this_ScaleFunction_0= ruleScaleFunction | this_GenericFunction_1= ruleGenericFunction | this_WaitFunction_2= ruleWaitFunction ) this_LP_3= RULE_LP (this_RP_4= RULE_RP | ( ( ( (lv_params_5_0= ruleParam ) ) this_COMMA_6= RULE_COMMA )* ( (lv_params_7_0= ruleParam ) ) this_RP_8= RULE_RP ) ) this_SEQUENTIAL_SEPARATOR_9= RULE_SEQUENTIAL_SEPARATOR )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:475:2: (this_ScaleFunction_0= ruleScaleFunction | this_GenericFunction_1= ruleGenericFunction | this_WaitFunction_2= ruleWaitFunction ) this_LP_3= RULE_LP (this_RP_4= RULE_RP | ( ( ( (lv_params_5_0= ruleParam ) ) this_COMMA_6= RULE_COMMA )* ( (lv_params_7_0= ruleParam ) ) this_RP_8= RULE_RP ) ) this_SEQUENTIAL_SEPARATOR_9= RULE_SEQUENTIAL_SEPARATOR
             {
             // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:475:2: (this_ScaleFunction_0= ruleScaleFunction | this_GenericFunction_1= ruleGenericFunction | this_WaitFunction_2= ruleWaitFunction )
             int alt4=3;
@@ -1254,103 +1255,151 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
              
                 newLeafNode(this_LP_3, grammarAccess.getCommandAccess().getLPTerminalRuleCall_1()); 
                 
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:508:1: ( (lv_params_4_0= ruleParam ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:509:1: (lv_params_4_0= ruleParam )
-            {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:509:1: (lv_params_4_0= ruleParam )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:510:3: lv_params_4_0= ruleParam
-            {
-             
-            	        newCompositeNode(grammarAccess.getCommandAccess().getParamsParamParserRuleCall_2_0()); 
-            	    
-            pushFollow(FOLLOW_ruleParam_in_ruleCommand1130);
-            lv_params_4_0=ruleParam();
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:508:1: (this_RP_4= RULE_RP | ( ( ( (lv_params_5_0= ruleParam ) ) this_COMMA_6= RULE_COMMA )* ( (lv_params_7_0= ruleParam ) ) this_RP_8= RULE_RP ) )
+            int alt6=2;
+            int LA6_0 = input.LA(1);
 
-            state._fsp--;
+            if ( (LA6_0==RULE_RP) ) {
+                alt6=1;
+            }
+            else if ( (LA6_0==RULE_INT) ) {
+                alt6=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 6, 0, input);
+
+                throw nvae;
+            }
+            switch (alt6) {
+                case 1 :
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:508:2: this_RP_4= RULE_RP
+                    {
+                    this_RP_4=(Token)match(input,RULE_RP,FOLLOW_RULE_RP_in_ruleCommand1121); 
+                     
+                        newLeafNode(this_RP_4, grammarAccess.getCommandAccess().getRPTerminalRuleCall_2_0()); 
+                        
+
+                    }
+                    break;
+                case 2 :
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:513:6: ( ( ( (lv_params_5_0= ruleParam ) ) this_COMMA_6= RULE_COMMA )* ( (lv_params_7_0= ruleParam ) ) this_RP_8= RULE_RP )
+                    {
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:513:6: ( ( ( (lv_params_5_0= ruleParam ) ) this_COMMA_6= RULE_COMMA )* ( (lv_params_7_0= ruleParam ) ) this_RP_8= RULE_RP )
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:513:7: ( ( (lv_params_5_0= ruleParam ) ) this_COMMA_6= RULE_COMMA )* ( (lv_params_7_0= ruleParam ) ) this_RP_8= RULE_RP
+                    {
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:513:7: ( ( (lv_params_5_0= ruleParam ) ) this_COMMA_6= RULE_COMMA )*
+                    loop5:
+                    do {
+                        int alt5=2;
+                        int LA5_0 = input.LA(1);
+
+                        if ( (LA5_0==RULE_INT) ) {
+                            int LA5_1 = input.LA(2);
+
+                            if ( (LA5_1==RULE_COMMA) ) {
+                                alt5=1;
+                            }
 
 
-            	        if (current==null) {
-            	            current = createModelElementForParent(grammarAccess.getCommandRule());
-            	        }
-                   		add(
-                   			current, 
-                   			"params",
-                    		lv_params_4_0, 
-                    		"Param");
-            	        afterParserOrEnumRuleCall();
-            	    
+                        }
+
+
+                        switch (alt5) {
+                    	case 1 :
+                    	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:513:8: ( (lv_params_5_0= ruleParam ) ) this_COMMA_6= RULE_COMMA
+                    	    {
+                    	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:513:8: ( (lv_params_5_0= ruleParam ) )
+                    	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:514:1: (lv_params_5_0= ruleParam )
+                    	    {
+                    	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:514:1: (lv_params_5_0= ruleParam )
+                    	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:515:3: lv_params_5_0= ruleParam
+                    	    {
+                    	     
+                    	    	        newCompositeNode(grammarAccess.getCommandAccess().getParamsParamParserRuleCall_2_1_0_0_0()); 
+                    	    	    
+                    	    pushFollow(FOLLOW_ruleParam_in_ruleCommand1149);
+                    	    lv_params_5_0=ruleParam();
+
+                    	    state._fsp--;
+
+
+                    	    	        if (current==null) {
+                    	    	            current = createModelElementForParent(grammarAccess.getCommandRule());
+                    	    	        }
+                    	           		add(
+                    	           			current, 
+                    	           			"params",
+                    	            		lv_params_5_0, 
+                    	            		"Param");
+                    	    	        afterParserOrEnumRuleCall();
+                    	    	    
+
+                    	    }
+
+
+                    	    }
+
+                    	    this_COMMA_6=(Token)match(input,RULE_COMMA,FOLLOW_RULE_COMMA_in_ruleCommand1160); 
+                    	     
+                    	        newLeafNode(this_COMMA_6, grammarAccess.getCommandAccess().getCOMMATerminalRuleCall_2_1_0_1()); 
+                    	        
+
+                    	    }
+                    	    break;
+
+                    	default :
+                    	    break loop5;
+                        }
+                    } while (true);
+
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:535:3: ( (lv_params_7_0= ruleParam ) )
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:536:1: (lv_params_7_0= ruleParam )
+                    {
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:536:1: (lv_params_7_0= ruleParam )
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:537:3: lv_params_7_0= ruleParam
+                    {
+                     
+                    	        newCompositeNode(grammarAccess.getCommandAccess().getParamsParamParserRuleCall_2_1_1_0()); 
+                    	    
+                    pushFollow(FOLLOW_ruleParam_in_ruleCommand1182);
+                    lv_params_7_0=ruleParam();
+
+                    state._fsp--;
+
+
+                    	        if (current==null) {
+                    	            current = createModelElementForParent(grammarAccess.getCommandRule());
+                    	        }
+                           		add(
+                           			current, 
+                           			"params",
+                            		lv_params_7_0, 
+                            		"Param");
+                    	        afterParserOrEnumRuleCall();
+                    	    
+
+                    }
+
+
+                    }
+
+                    this_RP_8=(Token)match(input,RULE_RP,FOLLOW_RULE_RP_in_ruleCommand1193); 
+                     
+                        newLeafNode(this_RP_8, grammarAccess.getCommandAccess().getRPTerminalRuleCall_2_1_2()); 
+                        
+
+                    }
+
+
+                    }
+                    break;
 
             }
 
-
-            }
-
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:526:2: (this_COMMA_5= RULE_COMMA ( (lv_params_6_0= ruleParam ) ) )*
-            loop5:
-            do {
-                int alt5=2;
-                int LA5_0 = input.LA(1);
-
-                if ( (LA5_0==RULE_COMMA) ) {
-                    alt5=1;
-                }
-
-
-                switch (alt5) {
-            	case 1 :
-            	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:526:3: this_COMMA_5= RULE_COMMA ( (lv_params_6_0= ruleParam ) )
-            	    {
-            	    this_COMMA_5=(Token)match(input,RULE_COMMA,FOLLOW_RULE_COMMA_in_ruleCommand1142); 
-            	     
-            	        newLeafNode(this_COMMA_5, grammarAccess.getCommandAccess().getCOMMATerminalRuleCall_3_0()); 
-            	        
-            	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:530:1: ( (lv_params_6_0= ruleParam ) )
-            	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:531:1: (lv_params_6_0= ruleParam )
-            	    {
-            	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:531:1: (lv_params_6_0= ruleParam )
-            	    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:532:3: lv_params_6_0= ruleParam
-            	    {
-            	     
-            	    	        newCompositeNode(grammarAccess.getCommandAccess().getParamsParamParserRuleCall_3_1_0()); 
-            	    	    
-            	    pushFollow(FOLLOW_ruleParam_in_ruleCommand1162);
-            	    lv_params_6_0=ruleParam();
-
-            	    state._fsp--;
-
-
-            	    	        if (current==null) {
-            	    	            current = createModelElementForParent(grammarAccess.getCommandRule());
-            	    	        }
-            	           		add(
-            	           			current, 
-            	           			"params",
-            	            		lv_params_6_0, 
-            	            		"Param");
-            	    	        afterParserOrEnumRuleCall();
-            	    	    
-
-            	    }
-
-
-            	    }
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop5;
-                }
-            } while (true);
-
-            this_RP_7=(Token)match(input,RULE_RP,FOLLOW_RULE_RP_in_ruleCommand1175); 
+            this_SEQUENTIAL_SEPARATOR_9=(Token)match(input,RULE_SEQUENTIAL_SEPARATOR,FOLLOW_RULE_SEQUENTIAL_SEPARATOR_in_ruleCommand1205); 
              
-                newLeafNode(this_RP_7, grammarAccess.getCommandAccess().getRPTerminalRuleCall_4()); 
-                
-            this_SEQUENTIAL_SEPARATOR_8=(Token)match(input,RULE_SEQUENTIAL_SEPARATOR,FOLLOW_RULE_SEQUENTIAL_SEPARATOR_in_ruleCommand1185); 
-             
-                newLeafNode(this_SEQUENTIAL_SEPARATOR_8, grammarAccess.getCommandAccess().getSEQUENTIAL_SEPARATORTerminalRuleCall_5()); 
+                newLeafNode(this_SEQUENTIAL_SEPARATOR_9, grammarAccess.getCommandAccess().getSEQUENTIAL_SEPARATORTerminalRuleCall_3()); 
                 
 
             }
@@ -1373,7 +1422,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleScaleFunction"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:564:1: entryRuleScaleFunction returns [EObject current=null] : iv_ruleScaleFunction= ruleScaleFunction EOF ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:569:1: entryRuleScaleFunction returns [EObject current=null] : iv_ruleScaleFunction= ruleScaleFunction EOF ;
     public final EObject entryRuleScaleFunction() throws RecognitionException {
         EObject current = null;
 
@@ -1381,17 +1430,17 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:565:2: (iv_ruleScaleFunction= ruleScaleFunction EOF )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:566:2: iv_ruleScaleFunction= ruleScaleFunction EOF
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:570:2: (iv_ruleScaleFunction= ruleScaleFunction EOF )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:571:2: iv_ruleScaleFunction= ruleScaleFunction EOF
             {
              newCompositeNode(grammarAccess.getScaleFunctionRule()); 
-            pushFollow(FOLLOW_ruleScaleFunction_in_entryRuleScaleFunction1220);
+            pushFollow(FOLLOW_ruleScaleFunction_in_entryRuleScaleFunction1240);
             iv_ruleScaleFunction=ruleScaleFunction();
 
             state._fsp--;
 
              current =iv_ruleScaleFunction; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleFunction1230); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleFunction1250); 
 
             }
 
@@ -1409,7 +1458,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleScaleFunction"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:573:1: ruleScaleFunction returns [EObject current=null] : (this_ScaleInInfra_0= ruleScaleInInfra | this_ScaleOutInfra_1= ruleScaleOutInfra | this_ScaleUpInfra_2= ruleScaleUpInfra | this_ScaleDownInfra_3= ruleScaleDownInfra | this_ScaleInSoft_4= ruleScaleInSoft | this_ScaleOutSoft_5= ruleScaleOutSoft | this_ScaleUpSoft_6= ruleScaleUpSoft | this_ScaleDownSoft_7= ruleScaleDownSoft ) ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:578:1: ruleScaleFunction returns [EObject current=null] : (this_ScaleInInfra_0= ruleScaleInInfra | this_ScaleOutInfra_1= ruleScaleOutInfra | this_ScaleUpInfra_2= ruleScaleUpInfra | this_ScaleDownInfra_3= ruleScaleDownInfra | this_ScaleInSoft_4= ruleScaleInSoft | this_ScaleOutSoft_5= ruleScaleOutSoft | this_ScaleUpSoft_6= ruleScaleUpSoft | this_ScaleDownSoft_7= ruleScaleDownSoft ) ;
     public final EObject ruleScaleFunction() throws RecognitionException {
         EObject current = null;
 
@@ -1433,67 +1482,67 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:576:28: ( (this_ScaleInInfra_0= ruleScaleInInfra | this_ScaleOutInfra_1= ruleScaleOutInfra | this_ScaleUpInfra_2= ruleScaleUpInfra | this_ScaleDownInfra_3= ruleScaleDownInfra | this_ScaleInSoft_4= ruleScaleInSoft | this_ScaleOutSoft_5= ruleScaleOutSoft | this_ScaleUpSoft_6= ruleScaleUpSoft | this_ScaleDownSoft_7= ruleScaleDownSoft ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:577:1: (this_ScaleInInfra_0= ruleScaleInInfra | this_ScaleOutInfra_1= ruleScaleOutInfra | this_ScaleUpInfra_2= ruleScaleUpInfra | this_ScaleDownInfra_3= ruleScaleDownInfra | this_ScaleInSoft_4= ruleScaleInSoft | this_ScaleOutSoft_5= ruleScaleOutSoft | this_ScaleUpSoft_6= ruleScaleUpSoft | this_ScaleDownSoft_7= ruleScaleDownSoft )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:581:28: ( (this_ScaleInInfra_0= ruleScaleInInfra | this_ScaleOutInfra_1= ruleScaleOutInfra | this_ScaleUpInfra_2= ruleScaleUpInfra | this_ScaleDownInfra_3= ruleScaleDownInfra | this_ScaleInSoft_4= ruleScaleInSoft | this_ScaleOutSoft_5= ruleScaleOutSoft | this_ScaleUpSoft_6= ruleScaleUpSoft | this_ScaleDownSoft_7= ruleScaleDownSoft ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:582:1: (this_ScaleInInfra_0= ruleScaleInInfra | this_ScaleOutInfra_1= ruleScaleOutInfra | this_ScaleUpInfra_2= ruleScaleUpInfra | this_ScaleDownInfra_3= ruleScaleDownInfra | this_ScaleInSoft_4= ruleScaleInSoft | this_ScaleOutSoft_5= ruleScaleOutSoft | this_ScaleUpSoft_6= ruleScaleUpSoft | this_ScaleDownSoft_7= ruleScaleDownSoft )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:577:1: (this_ScaleInInfra_0= ruleScaleInInfra | this_ScaleOutInfra_1= ruleScaleOutInfra | this_ScaleUpInfra_2= ruleScaleUpInfra | this_ScaleDownInfra_3= ruleScaleDownInfra | this_ScaleInSoft_4= ruleScaleInSoft | this_ScaleOutSoft_5= ruleScaleOutSoft | this_ScaleUpSoft_6= ruleScaleUpSoft | this_ScaleDownSoft_7= ruleScaleDownSoft )
-            int alt6=8;
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:582:1: (this_ScaleInInfra_0= ruleScaleInInfra | this_ScaleOutInfra_1= ruleScaleOutInfra | this_ScaleUpInfra_2= ruleScaleUpInfra | this_ScaleDownInfra_3= ruleScaleDownInfra | this_ScaleInSoft_4= ruleScaleInSoft | this_ScaleOutSoft_5= ruleScaleOutSoft | this_ScaleUpSoft_6= ruleScaleUpSoft | this_ScaleDownSoft_7= ruleScaleDownSoft )
+            int alt7=8;
             switch ( input.LA(1) ) {
             case 23:
                 {
-                alt6=1;
+                alt7=1;
                 }
                 break;
             case 24:
                 {
-                alt6=2;
+                alt7=2;
                 }
                 break;
             case 25:
                 {
-                alt6=3;
+                alt7=3;
                 }
                 break;
             case 26:
                 {
-                alt6=4;
+                alt7=4;
                 }
                 break;
             case 27:
                 {
-                alt6=5;
+                alt7=5;
                 }
                 break;
             case 28:
                 {
-                alt6=6;
+                alt7=6;
                 }
                 break;
             case 29:
                 {
-                alt6=7;
+                alt7=7;
                 }
                 break;
             case 30:
                 {
-                alt6=8;
+                alt7=8;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 6, 0, input);
+                    new NoViableAltException("", 7, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt6) {
+            switch (alt7) {
                 case 1 :
-                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:578:5: this_ScaleInInfra_0= ruleScaleInInfra
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:583:5: this_ScaleInInfra_0= ruleScaleInInfra
                     {
                      
                             newCompositeNode(grammarAccess.getScaleFunctionAccess().getScaleInInfraParserRuleCall_0()); 
                         
-                    pushFollow(FOLLOW_ruleScaleInInfra_in_ruleScaleFunction1277);
+                    pushFollow(FOLLOW_ruleScaleInInfra_in_ruleScaleFunction1297);
                     this_ScaleInInfra_0=ruleScaleInInfra();
 
                     state._fsp--;
@@ -1506,12 +1555,12 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:588:5: this_ScaleOutInfra_1= ruleScaleOutInfra
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:593:5: this_ScaleOutInfra_1= ruleScaleOutInfra
                     {
                      
                             newCompositeNode(grammarAccess.getScaleFunctionAccess().getScaleOutInfraParserRuleCall_1()); 
                         
-                    pushFollow(FOLLOW_ruleScaleOutInfra_in_ruleScaleFunction1304);
+                    pushFollow(FOLLOW_ruleScaleOutInfra_in_ruleScaleFunction1324);
                     this_ScaleOutInfra_1=ruleScaleOutInfra();
 
                     state._fsp--;
@@ -1524,12 +1573,12 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:598:5: this_ScaleUpInfra_2= ruleScaleUpInfra
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:603:5: this_ScaleUpInfra_2= ruleScaleUpInfra
                     {
                      
                             newCompositeNode(grammarAccess.getScaleFunctionAccess().getScaleUpInfraParserRuleCall_2()); 
                         
-                    pushFollow(FOLLOW_ruleScaleUpInfra_in_ruleScaleFunction1331);
+                    pushFollow(FOLLOW_ruleScaleUpInfra_in_ruleScaleFunction1351);
                     this_ScaleUpInfra_2=ruleScaleUpInfra();
 
                     state._fsp--;
@@ -1542,12 +1591,12 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:608:5: this_ScaleDownInfra_3= ruleScaleDownInfra
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:613:5: this_ScaleDownInfra_3= ruleScaleDownInfra
                     {
                      
                             newCompositeNode(grammarAccess.getScaleFunctionAccess().getScaleDownInfraParserRuleCall_3()); 
                         
-                    pushFollow(FOLLOW_ruleScaleDownInfra_in_ruleScaleFunction1358);
+                    pushFollow(FOLLOW_ruleScaleDownInfra_in_ruleScaleFunction1378);
                     this_ScaleDownInfra_3=ruleScaleDownInfra();
 
                     state._fsp--;
@@ -1560,12 +1609,12 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:618:5: this_ScaleInSoft_4= ruleScaleInSoft
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:623:5: this_ScaleInSoft_4= ruleScaleInSoft
                     {
                      
                             newCompositeNode(grammarAccess.getScaleFunctionAccess().getScaleInSoftParserRuleCall_4()); 
                         
-                    pushFollow(FOLLOW_ruleScaleInSoft_in_ruleScaleFunction1385);
+                    pushFollow(FOLLOW_ruleScaleInSoft_in_ruleScaleFunction1405);
                     this_ScaleInSoft_4=ruleScaleInSoft();
 
                     state._fsp--;
@@ -1578,12 +1627,12 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 6 :
-                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:628:5: this_ScaleOutSoft_5= ruleScaleOutSoft
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:633:5: this_ScaleOutSoft_5= ruleScaleOutSoft
                     {
                      
                             newCompositeNode(grammarAccess.getScaleFunctionAccess().getScaleOutSoftParserRuleCall_5()); 
                         
-                    pushFollow(FOLLOW_ruleScaleOutSoft_in_ruleScaleFunction1412);
+                    pushFollow(FOLLOW_ruleScaleOutSoft_in_ruleScaleFunction1432);
                     this_ScaleOutSoft_5=ruleScaleOutSoft();
 
                     state._fsp--;
@@ -1596,12 +1645,12 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 7 :
-                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:638:5: this_ScaleUpSoft_6= ruleScaleUpSoft
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:643:5: this_ScaleUpSoft_6= ruleScaleUpSoft
                     {
                      
                             newCompositeNode(grammarAccess.getScaleFunctionAccess().getScaleUpSoftParserRuleCall_6()); 
                         
-                    pushFollow(FOLLOW_ruleScaleUpSoft_in_ruleScaleFunction1439);
+                    pushFollow(FOLLOW_ruleScaleUpSoft_in_ruleScaleFunction1459);
                     this_ScaleUpSoft_6=ruleScaleUpSoft();
 
                     state._fsp--;
@@ -1614,12 +1663,12 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 8 :
-                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:648:5: this_ScaleDownSoft_7= ruleScaleDownSoft
+                    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:653:5: this_ScaleDownSoft_7= ruleScaleDownSoft
                     {
                      
                             newCompositeNode(grammarAccess.getScaleFunctionAccess().getScaleDownSoftParserRuleCall_7()); 
                         
-                    pushFollow(FOLLOW_ruleScaleDownSoft_in_ruleScaleFunction1466);
+                    pushFollow(FOLLOW_ruleScaleDownSoft_in_ruleScaleFunction1486);
                     this_ScaleDownSoft_7=ruleScaleDownSoft();
 
                     state._fsp--;
@@ -1652,7 +1701,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleWaitFunction"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:664:1: entryRuleWaitFunction returns [EObject current=null] : iv_ruleWaitFunction= ruleWaitFunction EOF ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:669:1: entryRuleWaitFunction returns [EObject current=null] : iv_ruleWaitFunction= ruleWaitFunction EOF ;
     public final EObject entryRuleWaitFunction() throws RecognitionException {
         EObject current = null;
 
@@ -1660,17 +1709,17 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:665:2: (iv_ruleWaitFunction= ruleWaitFunction EOF )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:666:2: iv_ruleWaitFunction= ruleWaitFunction EOF
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:670:2: (iv_ruleWaitFunction= ruleWaitFunction EOF )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:671:2: iv_ruleWaitFunction= ruleWaitFunction EOF
             {
              newCompositeNode(grammarAccess.getWaitFunctionRule()); 
-            pushFollow(FOLLOW_ruleWaitFunction_in_entryRuleWaitFunction1501);
+            pushFollow(FOLLOW_ruleWaitFunction_in_entryRuleWaitFunction1521);
             iv_ruleWaitFunction=ruleWaitFunction();
 
             state._fsp--;
 
              current =iv_ruleWaitFunction; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleWaitFunction1511); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleWaitFunction1531); 
 
             }
 
@@ -1688,7 +1737,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleWaitFunction"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:673:1: ruleWaitFunction returns [EObject current=null] : ( (lv_name_0_0= 'wait' ) ) ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:678:1: ruleWaitFunction returns [EObject current=null] : ( (lv_name_0_0= 'wait' ) ) ;
     public final EObject ruleWaitFunction() throws RecognitionException {
         EObject current = null;
 
@@ -1697,16 +1746,16 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:676:28: ( ( (lv_name_0_0= 'wait' ) ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:677:1: ( (lv_name_0_0= 'wait' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:681:28: ( ( (lv_name_0_0= 'wait' ) ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:682:1: ( (lv_name_0_0= 'wait' ) )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:677:1: ( (lv_name_0_0= 'wait' ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:678:1: (lv_name_0_0= 'wait' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:682:1: ( (lv_name_0_0= 'wait' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:683:1: (lv_name_0_0= 'wait' )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:678:1: (lv_name_0_0= 'wait' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:679:3: lv_name_0_0= 'wait'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:683:1: (lv_name_0_0= 'wait' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:684:3: lv_name_0_0= 'wait'
             {
-            lv_name_0_0=(Token)match(input,22,FOLLOW_22_in_ruleWaitFunction1553); 
+            lv_name_0_0=(Token)match(input,22,FOLLOW_22_in_ruleWaitFunction1573); 
 
                     newLeafNode(lv_name_0_0, grammarAccess.getWaitFunctionAccess().getNameWaitKeyword_0());
                 
@@ -1740,7 +1789,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleGenericFunction"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:700:1: entryRuleGenericFunction returns [EObject current=null] : iv_ruleGenericFunction= ruleGenericFunction EOF ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:705:1: entryRuleGenericFunction returns [EObject current=null] : iv_ruleGenericFunction= ruleGenericFunction EOF ;
     public final EObject entryRuleGenericFunction() throws RecognitionException {
         EObject current = null;
 
@@ -1748,17 +1797,17 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:701:2: (iv_ruleGenericFunction= ruleGenericFunction EOF )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:702:2: iv_ruleGenericFunction= ruleGenericFunction EOF
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:706:2: (iv_ruleGenericFunction= ruleGenericFunction EOF )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:707:2: iv_ruleGenericFunction= ruleGenericFunction EOF
             {
              newCompositeNode(grammarAccess.getGenericFunctionRule()); 
-            pushFollow(FOLLOW_ruleGenericFunction_in_entryRuleGenericFunction1601);
+            pushFollow(FOLLOW_ruleGenericFunction_in_entryRuleGenericFunction1621);
             iv_ruleGenericFunction=ruleGenericFunction();
 
             state._fsp--;
 
              current =iv_ruleGenericFunction; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleGenericFunction1611); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleGenericFunction1631); 
 
             }
 
@@ -1776,7 +1825,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleGenericFunction"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:709:1: ruleGenericFunction returns [EObject current=null] : ( (lv_name_0_0= RULE_ID ) ) ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:714:1: ruleGenericFunction returns [EObject current=null] : ( (lv_name_0_0= RULE_ID ) ) ;
     public final EObject ruleGenericFunction() throws RecognitionException {
         EObject current = null;
 
@@ -1785,16 +1834,16 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:712:28: ( ( (lv_name_0_0= RULE_ID ) ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:713:1: ( (lv_name_0_0= RULE_ID ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:717:28: ( ( (lv_name_0_0= RULE_ID ) ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:718:1: ( (lv_name_0_0= RULE_ID ) )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:713:1: ( (lv_name_0_0= RULE_ID ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:714:1: (lv_name_0_0= RULE_ID )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:718:1: ( (lv_name_0_0= RULE_ID ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:719:1: (lv_name_0_0= RULE_ID )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:714:1: (lv_name_0_0= RULE_ID )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:715:3: lv_name_0_0= RULE_ID
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:719:1: (lv_name_0_0= RULE_ID )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:720:3: lv_name_0_0= RULE_ID
             {
-            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleGenericFunction1652); 
+            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleGenericFunction1672); 
 
             			newLeafNode(lv_name_0_0, grammarAccess.getGenericFunctionAccess().getNameIDTerminalRuleCall_0()); 
             		
@@ -1832,7 +1881,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleScaleInInfra"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:739:1: entryRuleScaleInInfra returns [EObject current=null] : iv_ruleScaleInInfra= ruleScaleInInfra EOF ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:744:1: entryRuleScaleInInfra returns [EObject current=null] : iv_ruleScaleInInfra= ruleScaleInInfra EOF ;
     public final EObject entryRuleScaleInInfra() throws RecognitionException {
         EObject current = null;
 
@@ -1840,17 +1889,17 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:740:2: (iv_ruleScaleInInfra= ruleScaleInInfra EOF )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:741:2: iv_ruleScaleInInfra= ruleScaleInInfra EOF
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:745:2: (iv_ruleScaleInInfra= ruleScaleInInfra EOF )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:746:2: iv_ruleScaleInInfra= ruleScaleInInfra EOF
             {
              newCompositeNode(grammarAccess.getScaleInInfraRule()); 
-            pushFollow(FOLLOW_ruleScaleInInfra_in_entryRuleScaleInInfra1692);
+            pushFollow(FOLLOW_ruleScaleInInfra_in_entryRuleScaleInInfra1712);
             iv_ruleScaleInInfra=ruleScaleInInfra();
 
             state._fsp--;
 
              current =iv_ruleScaleInInfra; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleInInfra1702); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleInInfra1722); 
 
             }
 
@@ -1868,7 +1917,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleScaleInInfra"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:748:1: ruleScaleInInfra returns [EObject current=null] : ( (lv_name_0_0= 'scaleInInfra' ) ) ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:753:1: ruleScaleInInfra returns [EObject current=null] : ( (lv_name_0_0= 'scaleInInfra' ) ) ;
     public final EObject ruleScaleInInfra() throws RecognitionException {
         EObject current = null;
 
@@ -1877,16 +1926,16 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:751:28: ( ( (lv_name_0_0= 'scaleInInfra' ) ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:752:1: ( (lv_name_0_0= 'scaleInInfra' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:756:28: ( ( (lv_name_0_0= 'scaleInInfra' ) ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:757:1: ( (lv_name_0_0= 'scaleInInfra' ) )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:752:1: ( (lv_name_0_0= 'scaleInInfra' ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:753:1: (lv_name_0_0= 'scaleInInfra' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:757:1: ( (lv_name_0_0= 'scaleInInfra' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:758:1: (lv_name_0_0= 'scaleInInfra' )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:753:1: (lv_name_0_0= 'scaleInInfra' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:754:3: lv_name_0_0= 'scaleInInfra'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:758:1: (lv_name_0_0= 'scaleInInfra' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:759:3: lv_name_0_0= 'scaleInInfra'
             {
-            lv_name_0_0=(Token)match(input,23,FOLLOW_23_in_ruleScaleInInfra1744); 
+            lv_name_0_0=(Token)match(input,23,FOLLOW_23_in_ruleScaleInInfra1764); 
 
                     newLeafNode(lv_name_0_0, grammarAccess.getScaleInInfraAccess().getNameScaleInInfraKeyword_0());
                 
@@ -1920,7 +1969,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleScaleOutInfra"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:775:1: entryRuleScaleOutInfra returns [EObject current=null] : iv_ruleScaleOutInfra= ruleScaleOutInfra EOF ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:780:1: entryRuleScaleOutInfra returns [EObject current=null] : iv_ruleScaleOutInfra= ruleScaleOutInfra EOF ;
     public final EObject entryRuleScaleOutInfra() throws RecognitionException {
         EObject current = null;
 
@@ -1928,17 +1977,17 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:776:2: (iv_ruleScaleOutInfra= ruleScaleOutInfra EOF )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:777:2: iv_ruleScaleOutInfra= ruleScaleOutInfra EOF
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:781:2: (iv_ruleScaleOutInfra= ruleScaleOutInfra EOF )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:782:2: iv_ruleScaleOutInfra= ruleScaleOutInfra EOF
             {
              newCompositeNode(grammarAccess.getScaleOutInfraRule()); 
-            pushFollow(FOLLOW_ruleScaleOutInfra_in_entryRuleScaleOutInfra1792);
+            pushFollow(FOLLOW_ruleScaleOutInfra_in_entryRuleScaleOutInfra1812);
             iv_ruleScaleOutInfra=ruleScaleOutInfra();
 
             state._fsp--;
 
              current =iv_ruleScaleOutInfra; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleOutInfra1802); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleOutInfra1822); 
 
             }
 
@@ -1956,7 +2005,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleScaleOutInfra"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:784:1: ruleScaleOutInfra returns [EObject current=null] : ( (lv_name_0_0= 'scaleOutInfra' ) ) ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:789:1: ruleScaleOutInfra returns [EObject current=null] : ( (lv_name_0_0= 'scaleOutInfra' ) ) ;
     public final EObject ruleScaleOutInfra() throws RecognitionException {
         EObject current = null;
 
@@ -1965,16 +2014,16 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:787:28: ( ( (lv_name_0_0= 'scaleOutInfra' ) ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:788:1: ( (lv_name_0_0= 'scaleOutInfra' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:792:28: ( ( (lv_name_0_0= 'scaleOutInfra' ) ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:793:1: ( (lv_name_0_0= 'scaleOutInfra' ) )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:788:1: ( (lv_name_0_0= 'scaleOutInfra' ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:789:1: (lv_name_0_0= 'scaleOutInfra' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:793:1: ( (lv_name_0_0= 'scaleOutInfra' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:794:1: (lv_name_0_0= 'scaleOutInfra' )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:789:1: (lv_name_0_0= 'scaleOutInfra' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:790:3: lv_name_0_0= 'scaleOutInfra'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:794:1: (lv_name_0_0= 'scaleOutInfra' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:795:3: lv_name_0_0= 'scaleOutInfra'
             {
-            lv_name_0_0=(Token)match(input,24,FOLLOW_24_in_ruleScaleOutInfra1844); 
+            lv_name_0_0=(Token)match(input,24,FOLLOW_24_in_ruleScaleOutInfra1864); 
 
                     newLeafNode(lv_name_0_0, grammarAccess.getScaleOutInfraAccess().getNameScaleOutInfraKeyword_0());
                 
@@ -2008,7 +2057,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleScaleUpInfra"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:811:1: entryRuleScaleUpInfra returns [EObject current=null] : iv_ruleScaleUpInfra= ruleScaleUpInfra EOF ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:816:1: entryRuleScaleUpInfra returns [EObject current=null] : iv_ruleScaleUpInfra= ruleScaleUpInfra EOF ;
     public final EObject entryRuleScaleUpInfra() throws RecognitionException {
         EObject current = null;
 
@@ -2016,17 +2065,17 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:812:2: (iv_ruleScaleUpInfra= ruleScaleUpInfra EOF )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:813:2: iv_ruleScaleUpInfra= ruleScaleUpInfra EOF
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:817:2: (iv_ruleScaleUpInfra= ruleScaleUpInfra EOF )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:818:2: iv_ruleScaleUpInfra= ruleScaleUpInfra EOF
             {
              newCompositeNode(grammarAccess.getScaleUpInfraRule()); 
-            pushFollow(FOLLOW_ruleScaleUpInfra_in_entryRuleScaleUpInfra1892);
+            pushFollow(FOLLOW_ruleScaleUpInfra_in_entryRuleScaleUpInfra1912);
             iv_ruleScaleUpInfra=ruleScaleUpInfra();
 
             state._fsp--;
 
              current =iv_ruleScaleUpInfra; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleUpInfra1902); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleUpInfra1922); 
 
             }
 
@@ -2044,7 +2093,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleScaleUpInfra"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:820:1: ruleScaleUpInfra returns [EObject current=null] : ( (lv_name_0_0= 'scaleUpInfra' ) ) ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:825:1: ruleScaleUpInfra returns [EObject current=null] : ( (lv_name_0_0= 'scaleUpInfra' ) ) ;
     public final EObject ruleScaleUpInfra() throws RecognitionException {
         EObject current = null;
 
@@ -2053,16 +2102,16 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:823:28: ( ( (lv_name_0_0= 'scaleUpInfra' ) ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:824:1: ( (lv_name_0_0= 'scaleUpInfra' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:828:28: ( ( (lv_name_0_0= 'scaleUpInfra' ) ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:829:1: ( (lv_name_0_0= 'scaleUpInfra' ) )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:824:1: ( (lv_name_0_0= 'scaleUpInfra' ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:825:1: (lv_name_0_0= 'scaleUpInfra' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:829:1: ( (lv_name_0_0= 'scaleUpInfra' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:830:1: (lv_name_0_0= 'scaleUpInfra' )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:825:1: (lv_name_0_0= 'scaleUpInfra' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:826:3: lv_name_0_0= 'scaleUpInfra'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:830:1: (lv_name_0_0= 'scaleUpInfra' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:831:3: lv_name_0_0= 'scaleUpInfra'
             {
-            lv_name_0_0=(Token)match(input,25,FOLLOW_25_in_ruleScaleUpInfra1944); 
+            lv_name_0_0=(Token)match(input,25,FOLLOW_25_in_ruleScaleUpInfra1964); 
 
                     newLeafNode(lv_name_0_0, grammarAccess.getScaleUpInfraAccess().getNameScaleUpInfraKeyword_0());
                 
@@ -2096,7 +2145,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleScaleDownInfra"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:847:1: entryRuleScaleDownInfra returns [EObject current=null] : iv_ruleScaleDownInfra= ruleScaleDownInfra EOF ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:852:1: entryRuleScaleDownInfra returns [EObject current=null] : iv_ruleScaleDownInfra= ruleScaleDownInfra EOF ;
     public final EObject entryRuleScaleDownInfra() throws RecognitionException {
         EObject current = null;
 
@@ -2104,17 +2153,17 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:848:2: (iv_ruleScaleDownInfra= ruleScaleDownInfra EOF )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:849:2: iv_ruleScaleDownInfra= ruleScaleDownInfra EOF
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:853:2: (iv_ruleScaleDownInfra= ruleScaleDownInfra EOF )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:854:2: iv_ruleScaleDownInfra= ruleScaleDownInfra EOF
             {
              newCompositeNode(grammarAccess.getScaleDownInfraRule()); 
-            pushFollow(FOLLOW_ruleScaleDownInfra_in_entryRuleScaleDownInfra1992);
+            pushFollow(FOLLOW_ruleScaleDownInfra_in_entryRuleScaleDownInfra2012);
             iv_ruleScaleDownInfra=ruleScaleDownInfra();
 
             state._fsp--;
 
              current =iv_ruleScaleDownInfra; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleDownInfra2002); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleDownInfra2022); 
 
             }
 
@@ -2132,7 +2181,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleScaleDownInfra"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:856:1: ruleScaleDownInfra returns [EObject current=null] : ( (lv_name_0_0= 'scaleDownInfra' ) ) ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:861:1: ruleScaleDownInfra returns [EObject current=null] : ( (lv_name_0_0= 'scaleDownInfra' ) ) ;
     public final EObject ruleScaleDownInfra() throws RecognitionException {
         EObject current = null;
 
@@ -2141,16 +2190,16 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:859:28: ( ( (lv_name_0_0= 'scaleDownInfra' ) ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:860:1: ( (lv_name_0_0= 'scaleDownInfra' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:864:28: ( ( (lv_name_0_0= 'scaleDownInfra' ) ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:865:1: ( (lv_name_0_0= 'scaleDownInfra' ) )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:860:1: ( (lv_name_0_0= 'scaleDownInfra' ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:861:1: (lv_name_0_0= 'scaleDownInfra' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:865:1: ( (lv_name_0_0= 'scaleDownInfra' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:866:1: (lv_name_0_0= 'scaleDownInfra' )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:861:1: (lv_name_0_0= 'scaleDownInfra' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:862:3: lv_name_0_0= 'scaleDownInfra'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:866:1: (lv_name_0_0= 'scaleDownInfra' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:867:3: lv_name_0_0= 'scaleDownInfra'
             {
-            lv_name_0_0=(Token)match(input,26,FOLLOW_26_in_ruleScaleDownInfra2044); 
+            lv_name_0_0=(Token)match(input,26,FOLLOW_26_in_ruleScaleDownInfra2064); 
 
                     newLeafNode(lv_name_0_0, grammarAccess.getScaleDownInfraAccess().getNameScaleDownInfraKeyword_0());
                 
@@ -2184,7 +2233,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleScaleInSoft"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:883:1: entryRuleScaleInSoft returns [EObject current=null] : iv_ruleScaleInSoft= ruleScaleInSoft EOF ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:888:1: entryRuleScaleInSoft returns [EObject current=null] : iv_ruleScaleInSoft= ruleScaleInSoft EOF ;
     public final EObject entryRuleScaleInSoft() throws RecognitionException {
         EObject current = null;
 
@@ -2192,17 +2241,17 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:884:2: (iv_ruleScaleInSoft= ruleScaleInSoft EOF )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:885:2: iv_ruleScaleInSoft= ruleScaleInSoft EOF
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:889:2: (iv_ruleScaleInSoft= ruleScaleInSoft EOF )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:890:2: iv_ruleScaleInSoft= ruleScaleInSoft EOF
             {
              newCompositeNode(grammarAccess.getScaleInSoftRule()); 
-            pushFollow(FOLLOW_ruleScaleInSoft_in_entryRuleScaleInSoft2092);
+            pushFollow(FOLLOW_ruleScaleInSoft_in_entryRuleScaleInSoft2112);
             iv_ruleScaleInSoft=ruleScaleInSoft();
 
             state._fsp--;
 
              current =iv_ruleScaleInSoft; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleInSoft2102); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleInSoft2122); 
 
             }
 
@@ -2220,7 +2269,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleScaleInSoft"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:892:1: ruleScaleInSoft returns [EObject current=null] : ( (lv_name_0_0= 'scaleInSoft' ) ) ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:897:1: ruleScaleInSoft returns [EObject current=null] : ( (lv_name_0_0= 'scaleInSoft' ) ) ;
     public final EObject ruleScaleInSoft() throws RecognitionException {
         EObject current = null;
 
@@ -2229,16 +2278,16 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:895:28: ( ( (lv_name_0_0= 'scaleInSoft' ) ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:896:1: ( (lv_name_0_0= 'scaleInSoft' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:900:28: ( ( (lv_name_0_0= 'scaleInSoft' ) ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:901:1: ( (lv_name_0_0= 'scaleInSoft' ) )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:896:1: ( (lv_name_0_0= 'scaleInSoft' ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:897:1: (lv_name_0_0= 'scaleInSoft' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:901:1: ( (lv_name_0_0= 'scaleInSoft' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:902:1: (lv_name_0_0= 'scaleInSoft' )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:897:1: (lv_name_0_0= 'scaleInSoft' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:898:3: lv_name_0_0= 'scaleInSoft'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:902:1: (lv_name_0_0= 'scaleInSoft' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:903:3: lv_name_0_0= 'scaleInSoft'
             {
-            lv_name_0_0=(Token)match(input,27,FOLLOW_27_in_ruleScaleInSoft2144); 
+            lv_name_0_0=(Token)match(input,27,FOLLOW_27_in_ruleScaleInSoft2164); 
 
                     newLeafNode(lv_name_0_0, grammarAccess.getScaleInSoftAccess().getNameScaleInSoftKeyword_0());
                 
@@ -2272,7 +2321,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleScaleOutSoft"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:919:1: entryRuleScaleOutSoft returns [EObject current=null] : iv_ruleScaleOutSoft= ruleScaleOutSoft EOF ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:924:1: entryRuleScaleOutSoft returns [EObject current=null] : iv_ruleScaleOutSoft= ruleScaleOutSoft EOF ;
     public final EObject entryRuleScaleOutSoft() throws RecognitionException {
         EObject current = null;
 
@@ -2280,17 +2329,17 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:920:2: (iv_ruleScaleOutSoft= ruleScaleOutSoft EOF )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:921:2: iv_ruleScaleOutSoft= ruleScaleOutSoft EOF
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:925:2: (iv_ruleScaleOutSoft= ruleScaleOutSoft EOF )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:926:2: iv_ruleScaleOutSoft= ruleScaleOutSoft EOF
             {
              newCompositeNode(grammarAccess.getScaleOutSoftRule()); 
-            pushFollow(FOLLOW_ruleScaleOutSoft_in_entryRuleScaleOutSoft2192);
+            pushFollow(FOLLOW_ruleScaleOutSoft_in_entryRuleScaleOutSoft2212);
             iv_ruleScaleOutSoft=ruleScaleOutSoft();
 
             state._fsp--;
 
              current =iv_ruleScaleOutSoft; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleOutSoft2202); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleOutSoft2222); 
 
             }
 
@@ -2308,7 +2357,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleScaleOutSoft"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:928:1: ruleScaleOutSoft returns [EObject current=null] : ( (lv_name_0_0= 'scaleOutSoft' ) ) ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:933:1: ruleScaleOutSoft returns [EObject current=null] : ( (lv_name_0_0= 'scaleOutSoft' ) ) ;
     public final EObject ruleScaleOutSoft() throws RecognitionException {
         EObject current = null;
 
@@ -2317,16 +2366,16 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:931:28: ( ( (lv_name_0_0= 'scaleOutSoft' ) ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:932:1: ( (lv_name_0_0= 'scaleOutSoft' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:936:28: ( ( (lv_name_0_0= 'scaleOutSoft' ) ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:937:1: ( (lv_name_0_0= 'scaleOutSoft' ) )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:932:1: ( (lv_name_0_0= 'scaleOutSoft' ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:933:1: (lv_name_0_0= 'scaleOutSoft' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:937:1: ( (lv_name_0_0= 'scaleOutSoft' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:938:1: (lv_name_0_0= 'scaleOutSoft' )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:933:1: (lv_name_0_0= 'scaleOutSoft' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:934:3: lv_name_0_0= 'scaleOutSoft'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:938:1: (lv_name_0_0= 'scaleOutSoft' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:939:3: lv_name_0_0= 'scaleOutSoft'
             {
-            lv_name_0_0=(Token)match(input,28,FOLLOW_28_in_ruleScaleOutSoft2244); 
+            lv_name_0_0=(Token)match(input,28,FOLLOW_28_in_ruleScaleOutSoft2264); 
 
                     newLeafNode(lv_name_0_0, grammarAccess.getScaleOutSoftAccess().getNameScaleOutSoftKeyword_0());
                 
@@ -2360,7 +2409,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleScaleUpSoft"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:955:1: entryRuleScaleUpSoft returns [EObject current=null] : iv_ruleScaleUpSoft= ruleScaleUpSoft EOF ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:960:1: entryRuleScaleUpSoft returns [EObject current=null] : iv_ruleScaleUpSoft= ruleScaleUpSoft EOF ;
     public final EObject entryRuleScaleUpSoft() throws RecognitionException {
         EObject current = null;
 
@@ -2368,17 +2417,17 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:956:2: (iv_ruleScaleUpSoft= ruleScaleUpSoft EOF )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:957:2: iv_ruleScaleUpSoft= ruleScaleUpSoft EOF
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:961:2: (iv_ruleScaleUpSoft= ruleScaleUpSoft EOF )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:962:2: iv_ruleScaleUpSoft= ruleScaleUpSoft EOF
             {
              newCompositeNode(grammarAccess.getScaleUpSoftRule()); 
-            pushFollow(FOLLOW_ruleScaleUpSoft_in_entryRuleScaleUpSoft2292);
+            pushFollow(FOLLOW_ruleScaleUpSoft_in_entryRuleScaleUpSoft2312);
             iv_ruleScaleUpSoft=ruleScaleUpSoft();
 
             state._fsp--;
 
              current =iv_ruleScaleUpSoft; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleUpSoft2302); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleUpSoft2322); 
 
             }
 
@@ -2396,7 +2445,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleScaleUpSoft"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:964:1: ruleScaleUpSoft returns [EObject current=null] : ( (lv_name_0_0= 'scaleUpSoft' ) ) ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:969:1: ruleScaleUpSoft returns [EObject current=null] : ( (lv_name_0_0= 'scaleUpSoft' ) ) ;
     public final EObject ruleScaleUpSoft() throws RecognitionException {
         EObject current = null;
 
@@ -2405,16 +2454,16 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:967:28: ( ( (lv_name_0_0= 'scaleUpSoft' ) ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:968:1: ( (lv_name_0_0= 'scaleUpSoft' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:972:28: ( ( (lv_name_0_0= 'scaleUpSoft' ) ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:973:1: ( (lv_name_0_0= 'scaleUpSoft' ) )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:968:1: ( (lv_name_0_0= 'scaleUpSoft' ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:969:1: (lv_name_0_0= 'scaleUpSoft' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:973:1: ( (lv_name_0_0= 'scaleUpSoft' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:974:1: (lv_name_0_0= 'scaleUpSoft' )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:969:1: (lv_name_0_0= 'scaleUpSoft' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:970:3: lv_name_0_0= 'scaleUpSoft'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:974:1: (lv_name_0_0= 'scaleUpSoft' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:975:3: lv_name_0_0= 'scaleUpSoft'
             {
-            lv_name_0_0=(Token)match(input,29,FOLLOW_29_in_ruleScaleUpSoft2344); 
+            lv_name_0_0=(Token)match(input,29,FOLLOW_29_in_ruleScaleUpSoft2364); 
 
                     newLeafNode(lv_name_0_0, grammarAccess.getScaleUpSoftAccess().getNameScaleUpSoftKeyword_0());
                 
@@ -2448,7 +2497,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleScaleDownSoft"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:991:1: entryRuleScaleDownSoft returns [EObject current=null] : iv_ruleScaleDownSoft= ruleScaleDownSoft EOF ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:996:1: entryRuleScaleDownSoft returns [EObject current=null] : iv_ruleScaleDownSoft= ruleScaleDownSoft EOF ;
     public final EObject entryRuleScaleDownSoft() throws RecognitionException {
         EObject current = null;
 
@@ -2456,17 +2505,17 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:992:2: (iv_ruleScaleDownSoft= ruleScaleDownSoft EOF )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:993:2: iv_ruleScaleDownSoft= ruleScaleDownSoft EOF
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:997:2: (iv_ruleScaleDownSoft= ruleScaleDownSoft EOF )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:998:2: iv_ruleScaleDownSoft= ruleScaleDownSoft EOF
             {
              newCompositeNode(grammarAccess.getScaleDownSoftRule()); 
-            pushFollow(FOLLOW_ruleScaleDownSoft_in_entryRuleScaleDownSoft2392);
+            pushFollow(FOLLOW_ruleScaleDownSoft_in_entryRuleScaleDownSoft2412);
             iv_ruleScaleDownSoft=ruleScaleDownSoft();
 
             state._fsp--;
 
              current =iv_ruleScaleDownSoft; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleDownSoft2402); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleScaleDownSoft2422); 
 
             }
 
@@ -2484,7 +2533,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleScaleDownSoft"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1000:1: ruleScaleDownSoft returns [EObject current=null] : ( (lv_name_0_0= 'scaleDownSoft' ) ) ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1005:1: ruleScaleDownSoft returns [EObject current=null] : ( (lv_name_0_0= 'scaleDownSoft' ) ) ;
     public final EObject ruleScaleDownSoft() throws RecognitionException {
         EObject current = null;
 
@@ -2493,16 +2542,16 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1003:28: ( ( (lv_name_0_0= 'scaleDownSoft' ) ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1004:1: ( (lv_name_0_0= 'scaleDownSoft' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1008:28: ( ( (lv_name_0_0= 'scaleDownSoft' ) ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1009:1: ( (lv_name_0_0= 'scaleDownSoft' ) )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1004:1: ( (lv_name_0_0= 'scaleDownSoft' ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1005:1: (lv_name_0_0= 'scaleDownSoft' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1009:1: ( (lv_name_0_0= 'scaleDownSoft' ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1010:1: (lv_name_0_0= 'scaleDownSoft' )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1005:1: (lv_name_0_0= 'scaleDownSoft' )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1006:3: lv_name_0_0= 'scaleDownSoft'
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1010:1: (lv_name_0_0= 'scaleDownSoft' )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1011:3: lv_name_0_0= 'scaleDownSoft'
             {
-            lv_name_0_0=(Token)match(input,30,FOLLOW_30_in_ruleScaleDownSoft2444); 
+            lv_name_0_0=(Token)match(input,30,FOLLOW_30_in_ruleScaleDownSoft2464); 
 
                     newLeafNode(lv_name_0_0, grammarAccess.getScaleDownSoftAccess().getNameScaleDownSoftKeyword_0());
                 
@@ -2536,7 +2585,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleParam"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1027:1: entryRuleParam returns [EObject current=null] : iv_ruleParam= ruleParam EOF ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1032:1: entryRuleParam returns [EObject current=null] : iv_ruleParam= ruleParam EOF ;
     public final EObject entryRuleParam() throws RecognitionException {
         EObject current = null;
 
@@ -2544,17 +2593,17 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1028:2: (iv_ruleParam= ruleParam EOF )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1029:2: iv_ruleParam= ruleParam EOF
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1033:2: (iv_ruleParam= ruleParam EOF )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1034:2: iv_ruleParam= ruleParam EOF
             {
              newCompositeNode(grammarAccess.getParamRule()); 
-            pushFollow(FOLLOW_ruleParam_in_entryRuleParam2492);
+            pushFollow(FOLLOW_ruleParam_in_entryRuleParam2512);
             iv_ruleParam=ruleParam();
 
             state._fsp--;
 
              current =iv_ruleParam; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleParam2502); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleParam2522); 
 
             }
 
@@ -2572,7 +2621,7 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleParam"
-    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1036:1: ruleParam returns [EObject current=null] : ( (lv_value_0_0= RULE_INT ) ) ;
+    // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1041:1: ruleParam returns [EObject current=null] : ( (lv_value_0_0= RULE_INT ) ) ;
     public final EObject ruleParam() throws RecognitionException {
         EObject current = null;
 
@@ -2581,16 +2630,16 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1039:28: ( ( (lv_value_0_0= RULE_INT ) ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1040:1: ( (lv_value_0_0= RULE_INT ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1044:28: ( ( (lv_value_0_0= RULE_INT ) ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1045:1: ( (lv_value_0_0= RULE_INT ) )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1040:1: ( (lv_value_0_0= RULE_INT ) )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1041:1: (lv_value_0_0= RULE_INT )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1045:1: ( (lv_value_0_0= RULE_INT ) )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1046:1: (lv_value_0_0= RULE_INT )
             {
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1041:1: (lv_value_0_0= RULE_INT )
-            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1042:3: lv_value_0_0= RULE_INT
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1046:1: (lv_value_0_0= RULE_INT )
+            // ../emn.a1.elascript/src-gen/emn/a1/elascript/parser/antlr/internal/InternalElascript.g:1047:3: lv_value_0_0= RULE_INT
             {
-            lv_value_0_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleParam2543); 
+            lv_value_0_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleParam2563); 
 
             			newLeafNode(lv_value_0_0, grammarAccess.getParamAccess().getValueINTTerminalRuleCall_0()); 
             		
@@ -2667,54 +2716,55 @@ public class InternalElascriptParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_ruleScaleFunction_in_ruleCommand1045 = new BitSet(new long[]{0x0000000000000020L});
     public static final BitSet FOLLOW_ruleGenericFunction_in_ruleCommand1072 = new BitSet(new long[]{0x0000000000000020L});
     public static final BitSet FOLLOW_ruleWaitFunction_in_ruleCommand1099 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_LP_in_ruleCommand1110 = new BitSet(new long[]{0x0000000000000400L});
-    public static final BitSet FOLLOW_ruleParam_in_ruleCommand1130 = new BitSet(new long[]{0x00000000000000C0L});
-    public static final BitSet FOLLOW_RULE_COMMA_in_ruleCommand1142 = new BitSet(new long[]{0x0000000000000400L});
-    public static final BitSet FOLLOW_ruleParam_in_ruleCommand1162 = new BitSet(new long[]{0x00000000000000C0L});
-    public static final BitSet FOLLOW_RULE_RP_in_ruleCommand1175 = new BitSet(new long[]{0x0000000000000100L});
-    public static final BitSet FOLLOW_RULE_SEQUENTIAL_SEPARATOR_in_ruleCommand1185 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleFunction_in_entryRuleScaleFunction1220 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleScaleFunction1230 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleInInfra_in_ruleScaleFunction1277 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleOutInfra_in_ruleScaleFunction1304 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleUpInfra_in_ruleScaleFunction1331 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleDownInfra_in_ruleScaleFunction1358 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleInSoft_in_ruleScaleFunction1385 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleOutSoft_in_ruleScaleFunction1412 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleUpSoft_in_ruleScaleFunction1439 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleDownSoft_in_ruleScaleFunction1466 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleWaitFunction_in_entryRuleWaitFunction1501 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleWaitFunction1511 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_ruleWaitFunction1553 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleGenericFunction_in_entryRuleGenericFunction1601 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleGenericFunction1611 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleGenericFunction1652 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleInInfra_in_entryRuleScaleInInfra1692 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleScaleInInfra1702 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_23_in_ruleScaleInInfra1744 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleOutInfra_in_entryRuleScaleOutInfra1792 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleScaleOutInfra1802 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_ruleScaleOutInfra1844 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleUpInfra_in_entryRuleScaleUpInfra1892 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleScaleUpInfra1902 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_ruleScaleUpInfra1944 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleDownInfra_in_entryRuleScaleDownInfra1992 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleScaleDownInfra2002 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_ruleScaleDownInfra2044 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleInSoft_in_entryRuleScaleInSoft2092 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleScaleInSoft2102 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_ruleScaleInSoft2144 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleOutSoft_in_entryRuleScaleOutSoft2192 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleScaleOutSoft2202 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_ruleScaleOutSoft2244 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleUpSoft_in_entryRuleScaleUpSoft2292 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleScaleUpSoft2302 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_ruleScaleUpSoft2344 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleScaleDownSoft_in_entryRuleScaleDownSoft2392 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleScaleDownSoft2402 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_ruleScaleDownSoft2444 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleParam_in_entryRuleParam2492 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleParam2502 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleParam2543 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_LP_in_ruleCommand1110 = new BitSet(new long[]{0x0000000000000440L});
+    public static final BitSet FOLLOW_RULE_RP_in_ruleCommand1121 = new BitSet(new long[]{0x0000000000000100L});
+    public static final BitSet FOLLOW_ruleParam_in_ruleCommand1149 = new BitSet(new long[]{0x0000000000000080L});
+    public static final BitSet FOLLOW_RULE_COMMA_in_ruleCommand1160 = new BitSet(new long[]{0x0000000000000400L});
+    public static final BitSet FOLLOW_ruleParam_in_ruleCommand1182 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_RULE_RP_in_ruleCommand1193 = new BitSet(new long[]{0x0000000000000100L});
+    public static final BitSet FOLLOW_RULE_SEQUENTIAL_SEPARATOR_in_ruleCommand1205 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleFunction_in_entryRuleScaleFunction1240 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleScaleFunction1250 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleInInfra_in_ruleScaleFunction1297 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleOutInfra_in_ruleScaleFunction1324 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleUpInfra_in_ruleScaleFunction1351 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleDownInfra_in_ruleScaleFunction1378 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleInSoft_in_ruleScaleFunction1405 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleOutSoft_in_ruleScaleFunction1432 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleUpSoft_in_ruleScaleFunction1459 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleDownSoft_in_ruleScaleFunction1486 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleWaitFunction_in_entryRuleWaitFunction1521 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleWaitFunction1531 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_ruleWaitFunction1573 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleGenericFunction_in_entryRuleGenericFunction1621 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleGenericFunction1631 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleGenericFunction1672 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleInInfra_in_entryRuleScaleInInfra1712 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleScaleInInfra1722 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_ruleScaleInInfra1764 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleOutInfra_in_entryRuleScaleOutInfra1812 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleScaleOutInfra1822 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_ruleScaleOutInfra1864 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleUpInfra_in_entryRuleScaleUpInfra1912 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleScaleUpInfra1922 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_ruleScaleUpInfra1964 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleDownInfra_in_entryRuleScaleDownInfra2012 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleScaleDownInfra2022 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_ruleScaleDownInfra2064 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleInSoft_in_entryRuleScaleInSoft2112 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleScaleInSoft2122 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_ruleScaleInSoft2164 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleOutSoft_in_entryRuleScaleOutSoft2212 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleScaleOutSoft2222 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_ruleScaleOutSoft2264 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleUpSoft_in_entryRuleScaleUpSoft2312 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleScaleUpSoft2322 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_ruleScaleUpSoft2364 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleScaleDownSoft_in_entryRuleScaleDownSoft2412 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleScaleDownSoft2422 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_ruleScaleDownSoft2464 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleParam_in_entryRuleParam2512 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleParam2522 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleParam2563 = new BitSet(new long[]{0x0000000000000002L});
 
 }
