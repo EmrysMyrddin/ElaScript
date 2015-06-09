@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.eclipse.sirius.runtime.ocl.source" version="2.0.0.201410241344" plugin="org.eclipse.sirius.common.ocl" label="%featureName" provider-name="%providerName">
+  <includes id="org.eclipse.sirius.runtime.ocl" version="2.0.0.201410241344"/>
+  <description url="http://www.eclipse.org/sirius">
+      Sirius runtime support for interpreting OCL queries used in Viewpoint
+Specification Models. Install this if you want to use Sirius-based modelers which use raw OCL expressions in their definitions.
+   </description>
+  <copyright>
+      %copyright
+   </copyright>
+  <license url="%licenseURL">
+      %license
+   </license>
+  <plugin id="org.eclipse.sirius.common.ocl.source" version="2.0.0.201410241344" download-size="0" install-size="0" unpack="false"/>
+</feature>
