@@ -7,13 +7,13 @@ Voir : [trello](https://trello.com/b/eXo56Ghg/elascript)
 Rapports : [ShareLaTeX](https://www.sharelatex.com/project/557584a2102ebf4b1338c71e)
 
 ## Arborescence :
-	- ./conception : Grammaire, rapport, demo ANTLR, ...
-	- ./xtext-workspace : Workspace contenant le projet xText.
-	- ./sirius-workspace : Workspace contenant le projet Sirius
-		- Note : Doit être lancer via le runtime Eclipse du projet xText ou avec le plugin Elascript
-	- ./formalisme-graph : Contient les images du formalismes graphiques de Elascript
-	- ./eclipse-plugin : Contient le plugin Elascript pour Eclipse
-	- ./eclipse-elascript : Eclipse pour Win32 avec xText, Sirius, PDE et Elascript pré-installé.
+- ./conception : Grammaire, rapport, demo ANTLR, ...
+- ./xtext-workspace : Workspace contenant le projet xText.
+- ./sirius-workspace : Workspace contenant le projet Sirius
+	- Note : Doit être lancer via le runtime Eclipse du projet xText ou avec le plugin Elascript
+- ./formalisme-graph : Contient les images du formalismes graphiques de Elascript
+- ./eclipse-plugin : Contient le plugin Elascript pour Eclipse
+- ./eclipse-elascript : Eclipse pour Win32 avec xText, Sirius, PDE et Elascript pré-installé.
 
 ## Utilisation :
 Pour tester xText :
