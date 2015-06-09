@@ -22,7 +22,6 @@ LP ::= '('
 RP ::= ')'
 LETTER ::= [a-zA-Z]
 NUMBER ::= [0-9]
-TIMER ::= 'wait'
 SEQUENCIALSEPARATOR ::= ';'
 PARALLELSEPARATOR ::= '||'
 COMMA ::= ','
