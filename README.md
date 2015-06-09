@@ -3,6 +3,7 @@ ElaScript est un DSL pour faciliter la création de règles pour l'élasticité 
 
 ## Organisation :
 Voir : [trello](https://trello.com/b/eXo56Ghg/elascript)
+
 Rapports : [ShareLaTeX](https://www.sharelatex.com/project/557584a2102ebf4b1338c71e)
 
 ## Arborescence :
