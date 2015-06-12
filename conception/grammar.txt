@@ -1,5 +1,5 @@
 //Rules
-Script ::= Statement+
+Script ::= BEGIN Statement+ END
 
 Statement ::= Command | Parallelized
 
@@ -9,13 +9,35 @@ Body ::= BodyPart (PARALLELSEPARATOR BodyPart)+
 
 BodyPart ::= Statement+
 
-Command ::= (Function | Function ParamList) SEQUENCIALSEPARATOR
-
-Function ::= LETTER (LETTER | NUMBER)*
+Command ::= (FUNCTION | FUNCTION ParamList) SEQUENCIALSEPARATOR
 
 ParamList ::= LP Param ( COMMA Param )* RP
 
 Param ::= NUMBER+
+
+// Functions Names
+FUNCTION ::= (ScaleFunctions | WaitFunction)
+
+ScaleFunctions::=
+	ScaleInInfra 
+	| ScaleOutInfra 
+	| ScaleUpInfra 
+	| ScaleDownInfra 
+	| ScaleInSoft 
+	| ScaleOutSoft 
+	| ScaleUpSoft 
+	|ScaleDownSoft
+
+WaitFunction   ::= "wait"
+
+ScaleInInfra   ::= "scaleInInfra"
+ScaleOutInfra  ::= "scaleOutInfra"
+ScaleUpInfra   ::= "scaleUpInfra"
+ScaleDownInfra ::= "scaleDownInfra"
+ScaleInSoft    ::= "scaleInSoft"
+ScaleOutSoft   ::= "scaleOutSoft"
+ScaleUpSoft    ::= "scaleUpSoft" 
+ScaleDownSoft  ::= "scaleDownSoft"
 
 //Lexems
 LP ::= '('
@@ -27,5 +49,6 @@ PARALLELSEPARATOR ::= '||'
 COMMA ::= ','
 SPLIT ::= '['
 JOIN ::= ']'
-
+BEGIN ::= 'begin'
+END ::= 'end'
 
